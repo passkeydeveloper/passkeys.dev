@@ -1,7 +1,7 @@
 {
   "name": "doks-child-theme",
   "description": "Doks child theme",
-  "version": "0.1.0",
+  "version": "0.2.2",
   "hugo-bin": {
     "buildTags": "extended"
   },
