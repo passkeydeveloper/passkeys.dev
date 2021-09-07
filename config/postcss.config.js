@@ -21,6 +21,7 @@ module.exports = {
         'th',
         'td',
         'h5',
+        'alert-link',
         ...whitelister([
           './node_modules/@hyas/doks/assets/scss/common/_variables.scss',
           './node_modules/@hyas/doks/assets/scss/components/_buttons.scss',

@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://doks-child-theme.netlify.app/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
@@ -42,6 +42,11 @@ isPlainText = true
 noUgly = true
 rel  = "sitemap"
 
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "10s"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
@@ -75,6 +80,9 @@ rel  = "sitemap"
 
 [permalinks]
   blog = "/blog/:title/"
+
+[minify.tdewolff.html]
+  keepWhitespace = false
 
 [module]
   [module.hugoVersion]
