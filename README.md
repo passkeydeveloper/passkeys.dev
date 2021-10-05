@@ -9,11 +9,11 @@
 </h1>
 
 <h3 align="center">
-  Doks child theme
+  Doks Child Theme
 </h3>
 
 <p align="center">
-  Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default.
+  Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize.
 </p>
 
 <p align="center">
@@ -39,7 +39,7 @@
 
 ## Why Doks?
 
-Nine reasons why you should use Doks:
+Nine main reasons why you should use Doks:
 
 1. __Security aware__. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/doks.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
 
@@ -58,6 +58,14 @@ Nine reasons why you should use Doks:
 8. __Page layouts__. Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.
 
 9. __Dark mode__. Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.
+
+### Other features
+
+- __Multilingual and i18n__ support
+- __Versioning__ documentation support
+- __KaTeX__ math typesetting
+- __Mermaid__ diagrams and visualization
+- __highlight.js__ syntax highlighting
 
 ## Requirements
 
@@ -117,3 +125,15 @@ Doks comes with [commands](https://getdoks.org/docs/prologue/commands/) for comm
 - [Netlify Community](https://community.netlify.com/)
 - [Hugo Forums](https://discourse.gohugo.io/)
 - [Doks Discussions](https://github.com/h-enk/doks/discussions)
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website.
+
+[![OC sponsor 0](https://opencollective.com/doks/sponsor/0/avatar.svg)](https://opencollective.com/doks/sponsor/0/website)
+
+## Backers
+
+Support this project by becoming a backer. Your avatar will show up here.
+
+[![Backers](https://opencollective.com/doks/backers.svg)](https://opencollective.com/doks)
