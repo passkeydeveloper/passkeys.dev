@@ -105,9 +105,9 @@ rel  = "sitemap"
   [[module.mounts]]
     source = "static"
     target = "static"
-  [[module.mounts]]
-    source = "content"
-    target = "content"
+#  [[module.mounts]]
+#    source = "content"
+#    target = "content"
   [[module.mounts]]
     source = "layouts"
     target = "layouts"
