@@ -54,7 +54,7 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
+footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
 
 # Feed
 copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
@@ -66,9 +66,14 @@ alertDismissable = true
 alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
 
 # Edit Page
+# repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
+repoHost = "GitHub"
+#repoHost = "Gitea"
 docsRepo = "https://github.com/h-enk/doks"
 docsRepoBranch = "master"
+docsRepoSubPath = ""
 editPage = false
+lastMod = false
 
 [options]
   lazySizes = true
@@ -80,6 +85,11 @@ editPage = false
   breadCrumb = false
   highLight = true
   kaTex = false
-  collapsibleSidebar = true
   multilingualMode = false
   docsVersioning = false
+  fullWidth = false
+
+[menu]
+  [menu.section]
+    auto = true
+    collapsibleSidebar = true
