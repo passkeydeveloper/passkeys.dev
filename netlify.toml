@@ -3,8 +3,8 @@
   functions = "functions"
 
 [build.environment]
-  NODE_VERSION = "16.13.1"
-  NPM_VERSION = "8.1.2"
+  NODE_VERSION = "17.8.0"
+  NPM_VERSION = "8.5.5"
 
 [context.production]
   command = "npm run build"
@@ -20,6 +20,19 @@
 
 [context.next.environment]
   HUGO_ENV = "next"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+	[plugins.inputs]
+    baseUrl = "https://doks-child-theme.netlify.app/"
+    sitemapPath = "/sitemap.xml"
+    ignorePeriod = 0
+    providers = [
+      "google",
+      "bing",
+      "yandex"
+    ]
 
 [dev]
   framework = "#custom"
