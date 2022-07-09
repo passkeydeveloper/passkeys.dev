@@ -5,7 +5,6 @@ disableHugoGeneratorInject = true
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
-languageCode = "en-US"
 paginate = 7
 rssLimit = 10
 
@@ -59,6 +58,8 @@ rel  = "sitemap"
 
 [taxonomies]
   contributor = "contributors"
+  category = "categories"
+  tag = "tags"
 
 [permalinks]
   blog = "/blog/:title/"
