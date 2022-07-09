@@ -67,53 +67,16 @@ rel  = "sitemap"
 [minify.tdewolff.html]
   keepWhitespace = false
 
-[module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.80.0"
-    max = ""
-  [[module.mounts]]
-    source = "node_modules/@hyas/doks/archetypes"
-    target = "archetypes"
-  [[module.mounts]]
-    source = "node_modules/@hyas/doks/assets"
-    target = "assets"
-#  [[module.mounts]]
-#    source = "node_modules/@hyas/doks/content"
-#    target = "content"
-  [[module.mounts]]
-    source = "node_modules/@hyas/doks/data"
-    target = "data"
-  [[module.mounts]]
-    source = "node_modules/@hyas/doks/layouts"
-    target = "layouts"
-  [[module.mounts]]
-    source = "node_modules/@hyas/doks/static"
-    target = "static"
-  [[module.mounts]]
-    source = "node_modules/flexsearch"
-    target = "assets/js/vendor/flexsearch"
-  [[module.mounts]]
-    source = "node_modules/katex"
-    target = "assets/js/vendor/katex"
-  [[module.mounts]]
-    source = "node_modules/mermaid"
-    target = "assets/js/vendor/mermaid"
-  [[module.mounts]]
-    source = "assets"
-    target = "assets"
-  [[module.mounts]]
-    source = "static"
-    target = "static"
-#  [[module.mounts]]
-#    source = "content"
-#    target = "content"
-  [[module.mounts]]
-    source = "layouts"
-    target = "layouts"
-  [[module.mounts]]
-    source = "archetypes"
-    target = "archetypes"
-  [[module.mounts]]
-    source = "data"
-    target = "data"
+[related]
+  threshold = 80
+  includeNewer = true
+  toLower = false
+    [[related.indices]]
+    name = "categories"
+    weight = 100
+    [[related.indices]]
+    name = "tags"
+    weight = 80
+    [[related.indices]]
+    name = "date"
+    weight = 10

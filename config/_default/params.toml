@@ -45,13 +45,24 @@ siteLinksSearchBox = false
 ## Chrome Browser
 themeColor = "#fff"
 
-# Images
+# Images - Temporarily left in place for backward compatibility
 quality = 85
 bgColor = "#fff"
 landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 smallLimit = "300"
+
+# Images
+imageResponsive = true
+imageConvertTo = "webp"
+imageImageSizes = ["480","720","1080","1280","1600","2048"]
+singleSize = false
+imageAddClass = "img-fluid lazyload blur-up"
+
+### Image template
+defaultImage = "default-image.png" # put in `./assets/images/`
+fillImage = "1270x740 Center" # normalize image size
 
 # Footer
 footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
@@ -75,11 +86,16 @@ docsRepoSubPath = ""
 editPage = false
 lastMod = false
 
+[sections]
+  sectionNav = ["docs", "guides"]
+
 [options]
   lazySizes = true
   clipBoard = true
   instantPage = true
   flexSearch = true
+  searchSectionsShow = []
+  searchSectionsIndex = []
   darkMode = true
   bootStrapJs = true
   breadCrumb = false
@@ -88,6 +104,9 @@ lastMod = false
   multilingualMode = false
   docsVersioning = false
   fullWidth = false
+  navbarSticky = true
+  toTopButton = false
+  scrollSpy = false # experimental; needs Bootstrap >= 5.2.0-beta1
 
 [menu]
   [menu.section]
