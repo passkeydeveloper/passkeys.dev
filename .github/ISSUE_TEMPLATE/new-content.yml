@@ -36,9 +36,11 @@ body:
         Choose the type or types of documentation required.
       multiple: true
       options:
-        - Cmdlet Reference
-        - About Topic
+        - Best Practice
+        - User Journey
+        - Protocol Deep Dive
         - FAQ Item
+        - Demo
         - Other / Unknown
   - type: input
     id: title
