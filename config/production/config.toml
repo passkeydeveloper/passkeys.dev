@@ -1,2 +1,2 @@
-canonifyURLs = false
+canonifyURLs = true
 baseurl = "https://passkeydeveloper.github.io/passkeys.dev/"
