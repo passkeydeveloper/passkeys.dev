@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://passkeys.dev/sitemap.xml
