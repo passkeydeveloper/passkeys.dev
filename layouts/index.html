@@ -7,7 +7,9 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">Get Started</a>
+      <a class="btn btn-primary btn-lg px-4 mb-2"
+        href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/"
+        role="button">Get Started</a>
     </div>
   </div>
 </section>
@@ -18,30 +20,21 @@
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-5">
-        <h2 class="h4">Phishing Resistant</h2>
-        <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks-child-theme.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
+        <h2 class="h4">Friendly to Humans</h2>
+        <p>sign in to services the same way you unlock your device</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Easy To Use ⚡️</h2>
+        <h2 class="h4">Phishing Resistant</h2>
+        <p>each passkey is unique to a site or service and requires local proximity</p>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h4">Secure by Design</h2>
         <p>native and cross-ecosystem support</p>
       </div>
-      <div class="col-lg-5">
-        <h2 class="h4">Wide Support</h2>
-        <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
-      </div>
     </div>
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-5">
-        <h2 class="h4">Industry Standard</h2>
-        <p>passkeys use the FIDO2/WebAuthn standards stack, built into every major operating system and browser</p>
-      </div>
-      <div class="col-lg-5">
-        <h2 class="h4">Page layouts</h2>
-        <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
-      </div>
-      <div class="col-lg-5">
-        <h2 class="h4">Dark mode</h2>
-        <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
+    <div class="row justify-content-center text-center mt-5">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/SWocv4BhCNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>
