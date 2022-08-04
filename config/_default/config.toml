@@ -1,4 +1,4 @@
-baseurl = "https://passkeydeveloper.github.io/passkeys.dev/"
+baseurl = "https://passkeys.dev/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
