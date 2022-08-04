@@ -67,5 +67,8 @@
   },
   "otherDependencies": {
     "hugo": "0.101.0"
+  },
+  "volta": {
+    "node": "16.16.0"
   }
 }

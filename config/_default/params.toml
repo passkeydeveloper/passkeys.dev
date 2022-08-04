@@ -1,7 +1,7 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "How To Passkey"
 titleSeparator = "-"
 titleAddition = "Modern Documentation Theme"
 description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
@@ -65,7 +65,7 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
+footer = "Brought to you by the <a class=\"text-muted\" href=\"https://www.w3.org/community/webauthn-adoption/\">W3C WebAuthn Community Adoption Group</a></br>and the <a class=\"text-muted\" href=\"https://fidoalliance.org/\">FIDO Alliance</a>"
 
 # Feed
 copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
