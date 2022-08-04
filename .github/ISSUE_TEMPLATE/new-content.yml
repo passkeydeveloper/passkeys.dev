@@ -1,0 +1,63 @@
+name: "💡 New Content Suggestion"
+description: >-
+  Suggest new content or major update of an existing content.
+labels:
+  - content
+  - needs-triage
+body:
+  - type: textarea
+    id: summary
+    validations:
+      required: true
+    attributes:
+      label: Summary
+      description: >-
+        Write a clear and concise description of the proposed document. Why is it needed? What gap
+        will it fill? Who is the intended audience? What scenarios will it address?
+      placeholder: |
+        Try formulating the need for this documentation as a user story.
+
+  - type: textarea
+    id: details
+    validations:
+      required: false
+    attributes:
+      label: Details
+      description: >-
+        If possible, please provide extended details that will add context and help the team write
+        the documentation.
+  - type: dropdown
+    id: type
+    validations:
+      required: true
+    attributes:
+      label: Proposed Content Type
+      description: >-
+        Choose the type or types of documentation required.
+      multiple: true
+      options:
+        - Cmdlet Reference
+        - About Topic
+        - FAQ Item
+        - Other / Unknown
+  - type: input
+    id: title
+    validations:
+      required: false
+    attributes:
+      label: Proposed Content Title
+  - type: textarea
+    id: related_documents
+    validations:
+      required: false
+    attributes:
+      label: Related Articles
+      description: >-
+        Provide a list of links to the documentation page(s) that are related to this request. Use
+        the markdown list syntax for each item. If the entire article is relevant, just link to the
+        permalink for its source or the live page. If only a section of the article is relevant, use
+        the permalink to the lines for the most relevant section of the source or the anchor link to
+        the nearest header for the relevant content instead of the page itself.
+      placeholder: |
+        - https://passkeys.dev/faq
+        - https://passkeys.dev/faq/#what-is-a-passkey
