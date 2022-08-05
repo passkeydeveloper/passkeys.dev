@@ -39,6 +39,11 @@ name = "FAQs"
 url = "/faq/"
 weight = 20
 
+[[main]]
+name = "Ecosystem"
+url = "/ecosystem/"
+weight = 30
+
 # [[main]]
 #   name = "Tutorial"
 #   url = "/tutorial/lorem/ipsum/"
@@ -51,7 +56,7 @@ weight = 20
 
 [[main]]
   name = "Get Started"
-  weight = 30
+  weight = 40
   identifier = "get-started"
   url = "/docs/prologue/introduction/"
 
