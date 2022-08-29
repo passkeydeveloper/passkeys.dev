@@ -40,8 +40,8 @@ url = "/faq/"
 weight = 20
 
 [[main]]
-name = "Ecosystem"
-url = "/ecosystem/"
+name = "Device Support"
+url = "/device-support/"
 weight = 30
 
 # [[main]]
