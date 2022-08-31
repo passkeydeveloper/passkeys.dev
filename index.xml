@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>passkeys on</title><link>https://passkeydeveloper.github.io/passkeys.dev/</link><description>Recent content in passkeys on</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><copyright>Copyright (c) 2020-2021 Henk Verlinde</copyright><lastBuildDate>Tue, 06 Oct 2020 08:47:36 +0000</lastBuildDate><atom:link href="https://passkeydeveloper.github.io/passkeys.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Device Support</title><link>https://passkeydeveloper.github.io/passkeys.dev/device-support/</link><pubDate>Fri, 05 Aug 2022 18:08:48 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/device-support/</guid><description>Overview #
 write a narrative here about current state of affairs
 Matrix #
-Component Android Chrome OS iOS/iPad OS macOS Windows Passkeys
-(multi-device) Planned Planned iOS 16+ macOS 13+ Planned Single-device passkeys Not Supported Not Supported Not Supported Browser Autofill UI Chrome
-Edge ? Safari
+Capability Android Chrome OS iOS/iPad OS macOS Windows Passkeys
+(multi-device) Planned Planned iOS 16+ macOS 13+ Planned Single-device passkeys Not Supported Not Supported 2 Not Supported 2 Browser Autofill UI Chrome
 Edge
-Chrome Safari Chrome
-Edge Cross-Device Authentication
-Authenticator ? iOS 16+ Not Supported Not Supported Cross-Device Authentication
-Client Not Supported ? iOS 16+ macOS 13+ Chrome</description></item><item><title>Frequently Asked Questions</title><link>https://passkeydeveloper.github.io/passkeys.dev/faq/</link><pubDate>Thu, 04 Aug 2022 18:01:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/faq/</guid><description>Intro to passkeys #
+Firefox Planned Safari
+Edge
+Chrome
+Firefox Safari
+Chrome
+Edge
+Firefox Chrome 1
+Edge
+Firefox Cross-Device Authentication
+Authenticator Android 9+ Not Supported iOS 16+ Not Supported Not Supported Cross-Device Authentication</description></item><item><title>Frequently Asked Questions</title><link>https://passkeydeveloper.github.io/passkeys.dev/faq/</link><pubDate>Thu, 04 Aug 2022 18:01:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/faq/</guid><description>Intro to passkeys #
 What is a passkey?
 Commodo pariatur laboris excepteur excepteur ut nostrud voluptate. What is the difference between a passkey and a multi-device credential?
 blah What is the difference between a single-device passkey and a multi-device passkey?
