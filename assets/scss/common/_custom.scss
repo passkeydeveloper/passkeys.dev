@@ -215,3 +215,13 @@ h3 {
 summary {
   font-weight: 500;
 }
+
+#faq #content > details {
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+#faq #content > details > summary {
+  font-weight: 600;
+  font-size: 1.1em;
+}
