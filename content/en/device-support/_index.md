@@ -3,7 +3,7 @@ title: "Device Support"
 description: ""
 lead: ""
 date: 2022-08-05T18:08:48.678Z
-lastmod: 2022-08-31T01:26:08.049Z
+lastmod: 2022-08-31T16:26:04.951Z
 draft: false
 images: []
 weight: 100
@@ -14,7 +14,7 @@ weight: 100
 write a narrative here about current state of affairs
 
 ## Matrix
-
+<div id="device-support-table" class="table-responsive">
 <table class="table table-striped">
     <thead>
         <tr class="fw-bold">
@@ -128,7 +128,7 @@ write a narrative here about current state of affairs
         <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned</td>
     </tr>
 </table>
-
+</div>
 <div class="text-end">
     <sup>1</sup> Chrome M108 and Windows 11 22H2
     <br>

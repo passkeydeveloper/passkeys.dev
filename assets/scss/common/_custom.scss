@@ -216,6 +216,10 @@ summary {
   font-weight: 500;
 }
 
+/*
+SPECIFIC TO FAQ CONTENT
+*/ 
+
 #faq #content > details {
   margin-top: 0.7em;
   margin-bottom: 0.7em;
@@ -224,4 +228,16 @@ summary {
 #faq #content > details > summary {
   font-weight: 600;
   font-size: 1.1em;
+}
+
+
+/*
+SPECIFIC TO DEVICE SUPPORT PAGE
+*/
+
+#device-support-table th:first-child, td:first-child{
+  position: sticky;
+  left: 0px;
+  z-index: 1;
+  background-color: white;
 }
