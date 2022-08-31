@@ -41,10 +41,8 @@ write a narrative here about current state of affairs
         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                 Supported</span></td>
         <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                Supported <sup>2</sup></span></td>
-        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                Supported <sup>2</sup></span></td>
+        <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>security keys only</td>
+        <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>security keys only</td>
         <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
     </tr>
     <tr>
@@ -131,8 +129,6 @@ write a narrative here about current state of affairs
 </div>
 <div class="text-end">
     <sup>1</sup> Chrome M108 and Windows 11 22H2
-    <br>
-    <sup>2</sup> Supported on external security keys
 </div>
 
 ## Additional Information
