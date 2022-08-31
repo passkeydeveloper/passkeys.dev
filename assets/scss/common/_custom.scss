@@ -229,6 +229,12 @@ SPECIFIC TO FAQ CONTENT
   font-size: 1.1em;
 }
 
+.embed-responsive-item {
+  aspect-ratio: 16/9;
+  width: 100%;
+  max-width: 536px;
+}
+
 /*
 SPECIFIC TO DEVICE SUPPORT PAGE
 */
