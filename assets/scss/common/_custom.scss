@@ -225,3 +225,9 @@ summary {
   font-weight: 600;
   font-size: 1.1em;
 }
+
+.embed-responsive-item {
+  aspect-ratio: 16/9;
+  width: 100%;
+  max-width: 536px;
+}
