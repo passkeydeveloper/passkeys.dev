@@ -45,7 +45,8 @@ write a narrative here about current state of affairs
             </td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
+                    Supported</span></td>
             <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>security keys only</td>
             <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>security keys only</td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
@@ -104,7 +105,7 @@ write a narrative here about current state of affairs
             </td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
             </td>
-            <td class="text-center">?</td>
+            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned</td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
@@ -116,8 +117,10 @@ write a narrative here about current state of affairs
             <td class="fw-bold">Passkey attestation <a href="https://w3c.github.io/webauthn/#sctn-attestation"
                     target="_blank"><i class="bi bi-info-circle fs-6"
                         title="Attestation for the primary credential (multi-device credential)"></i></a></td>
-            <td class="text-center">?</td>
-            <td class="text-center">?</td>
+            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
+                    Supported</span></td>
+            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
+                    Supported</span></td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
@@ -127,9 +130,11 @@ write a narrative here about current state of affairs
         <tr class="align-middle">
             <td class="fw-bold">DPK attestation <a href="" target="_blank"><i class="bi bi-info-circle fs-6"
                         title="Attestation for the device public key"></i></a></td>
-            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
+            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
+                    Supported</span>
             </td>
-            <td class="text-center">?</td>
+            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
+                    Supported</span></td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
