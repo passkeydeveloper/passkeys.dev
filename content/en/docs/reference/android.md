@@ -19,5 +19,3 @@ This page will be updated with passkey specific content from Google when release
 
 - [FIDO2 API for Android](https://developers.google.com/identity/fido/android/native-apps)
 - [Sample app](https://github.com/android/security-samples/tree/master/Fido)
-
-
