@@ -30,7 +30,7 @@
 
 [[main]]
   name = "Docs"
-  url = "/docs/prologue/introduction/"
+  url = "/docs/intro/what-are-passkeys/"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 10
 
