@@ -87,7 +87,7 @@ weight = 30
   url = "https://twitter.com/i/communities/1492980146265018374"
   weight = 20
 
-[[footer]]
-  name = "Privacy"
-  url = "/privacy-policy/"
-  weight = 10
+#[[footer]]
+#  name = "Privacy"
+#  url = "/privacy-policy/"
+#  weight = 10
