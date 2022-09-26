@@ -20,7 +20,6 @@ The platform authenticator in macOS Ventura (13) has the following capabilities:
 
 - creating and using passkeys that are backed up to iCloud Keychain
 - creating and using passkeys on/from another device, such as:
-  - an Android device
   - an iPhone or iPad signed in to a different iCloud account
   - a FIDO2 security key
 
