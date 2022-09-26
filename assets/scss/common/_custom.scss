@@ -205,6 +205,17 @@ summary {
 }
 
 /*
+change bw icons to white in dark mode
+*/
+.svg-icon-bw g {
+  fill: #000;
+}
+
+[data-dark-mode] .svg-icon-bw g {
+  fill: #fff;
+}
+
+/*
 SPECIFIC TO FAQ CONTENT
 */
 #faq #content > details {

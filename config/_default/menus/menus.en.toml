@@ -6,8 +6,8 @@
 
 [[main]]
   name = "Docs"
-  url = "/docs/reference/android/"
-# url = "/docs/1.0/prologue/introduction/"
+  url = "/docs/intro/what-are-passkeys/"
+  # url = "/docs/1.0/prologue/introduction/"
   weight = 10
 
 [[main]]
@@ -33,7 +33,7 @@ weight = 30
   url = "https://twitter.com/i/communities/1492980146265018374"
   weight = 20
 
-[[footer]]
-  name = "Privacy"
-  url = "/privacy-policy/"
-  weight = 10
+#[[footer]]
+#  name = "Privacy"
+#  url = "/privacy-policy/"
+#  weight = 10
