@@ -1,9 +1,8 @@
 ---
 title: "Android"
 description: "Resources for passkeys in Android"
-lead: "Resources for passkeys in Android"
 date: 2022-09-03T16:09:38.358Z
-lastmod: 2022-09-03T16:09:42.350Z
+lastmod: 2022-09-26T19:04:01.841Z
 draft: false
 images: []
 menu:
@@ -15,9 +14,15 @@ toc: true
 
 {{% ds-none %}}
 
-Passkeys are not currently supported in Android but support is [coming soon](/device-support/)!
+## Overview
 
-This page will be updated with passkey specific content from Google when released. Below are some higher level FIDO2 developer docs for Android.
+Passkeys are not currently supported in Android but are [coming soon](/device-support/)!
+
+## Platform Notes
+
+> Coming Soon
+
+## Resources
 
 - [FIDO2 API for Android](https://developers.google.com/identity/fido/android/native-apps)
 - [Sample app](https://github.com/android/security-samples/tree/master/Fido)
