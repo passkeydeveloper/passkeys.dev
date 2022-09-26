@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reference on</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/</link><description>Recent content in Reference on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 06 Oct 2020 08:49:15 +0000</lastBuildDate><atom:link href="https://passkeydeveloper.github.io/passkeys.dev/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Android</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/android/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/android/</guid><description> Local Authenticator (create and use passkeys from the local device)
 Planned External Authenticator (create and use passkeys from another device)
-Planned Passkeys are not currently supported in Android but support is coming soon!
-This page will be updated with passkey specific content from Google when released. Below are some higher level FIDO2 developer docs for Android.
+Planned Overview #
+Passkeys are not currently supported in Android but are coming soon!
+Platform Notes #
+Coming Soon
+Resources #
 FIDO2 API for Android Sample app</description></item><item><title>Chrome OS</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/chromeos/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/chromeos/</guid><description> Local Authenticator (create and use passkeys from the local device)
 Planned External Authenticator (create and use passkeys from another device)
-Supported</description></item><item><title>iOS &amp; iPadOS</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/ios/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/ios/</guid><description> Local Authenticator (create and use passkeys from the local device)
+Supported</description></item><item><title>iOS &amp; iPadOS</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/ios/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/ios/</guid><description>Local Authenticator (create and use passkeys from the local device)
 Supported External Authenticator (create and use passkeys from another device)
-Supported</description></item><item><title>macOS</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/macos/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/macos/</guid><description> Local Authenticator (create and use passkeys from the local device)
+Supported Overview #
+The platform authenticators in iOS 16+ and iPadOS 16+ have the following capabilities:
+creating and using passkeys that are backed up to iCloud Keychain creating and using passkeys on/from another device, such as: an iPhone or iPad signed in to a different iCloud account a FIDO2 security key Platform Notes #
+WebAuthn credentials created using the platform authenticator in iOS/iPadOS 15 and earlier will not not be converted to passkeys but will remain available for the lifetime of the device.</description></item><item><title>macOS</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/macos/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/macos/</guid><description>Local Authenticator (create and use passkeys from the local device)
 Supported External Authenticator (create and use passkeys from another device)
-Supported</description></item><item><title>Windows</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/windows/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/windows/</guid><description> Local Authenticator (create and use passkeys from the local device)
+Supported Overview #
+The platform authenticator in macOS Ventura (13) has the following capabilities:
+creating and using passkeys that are backed up to iCloud Keychain creating and using passkeys on/from another device, such as: an iPhone or iPad signed in to a different iCloud account a FIDO2 security key Platform Notes #
+Legacy Credentials #
+WebAuthn credentials created using the platform authenticator in macOS Monterey (12) and earlier will not not be converted to passkeys but will remain available for the lifetime of the device.</description></item><item><title>Windows</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/windows/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/windows/</guid><description>Local Authenticator (create and use passkeys from the local device)
 Planned External Authenticator (create and use passkeys from another device)
-Partially Supported</description></item><item><title>Specifications</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/specs/</link><pubDate>Thu, 04 Aug 2022 17:33:14 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/specs/</guid><description>The two primary technical specifications that work together to enable passkeys are Web Authentication, commonly referred to as WebAuthn, and the Client to Authenticator Protocol (CTAP), commonly referred to as FIDO2.
+Partially Supported Overview #
+Windows Hello, the platform authenticator in Windows 10 and 11, has the following capabilities:
+creating and using single-device passkeys that are bound to the device creating and using single-device passkeys on a FIDO2 security key Passkeys from iOS, and iPadOS can be used in Chrome (105+) and Edge (105+) for signing in to web services using FIDO Cross-Device Authentication.</description></item><item><title>Specifications</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/specs/</link><pubDate>Thu, 04 Aug 2022 17:33:14 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/specs/</guid><description>The two primary technical specifications that work together to enable passkeys are Web Authentication, commonly referred to as WebAuthn, and the Client to Authenticator Protocol (CTAP), commonly referred to as FIDO2.
 The two specs together are often referred to as one stack, FIDO2/WebAuthn.
 W3C Web Authentication (WebAuthn) #
 WebAuthn is the primary specification used by developers.
