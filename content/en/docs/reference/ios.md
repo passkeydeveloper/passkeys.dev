@@ -28,8 +28,8 @@ The platform authenticators in iOS 16+ and iPadOS 16+ have the following capabil
 
 WebAuthn credentials created using the platform authenticator in iOS/iPadOS 15 and earlier ***will not*** not be converted to passkeys but will remain available for the lifetime of the device.
 
-<!-- TODO: cross link to generic content about "upgrading to a passley" -->
-To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. iOS/iPadOS will overwrite the legacy credential with a new passkey that will be backed up to their iCloud Keychain.
+<!-- TODO: cross link to generic content about "upgrading to a passkey" -->
+To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. iOS/iPadOS will overwrite the legacy credential with a new passkey that will be backed up to iCloud Keychain.
 
 ## Resources
 
