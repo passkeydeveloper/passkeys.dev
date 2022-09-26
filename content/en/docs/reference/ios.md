@@ -20,7 +20,6 @@ The platform authenticators in iOS 16+ and iPadOS 16+ have the following capabil
 
 - creating and using passkeys that are backed up to iCloud Keychain
 - creating and using passkeys on/from another device, such as:
-  - an Android device
   - an iPhone or iPad signed in to a different iCloud account
   - a FIDO2 security key
 
