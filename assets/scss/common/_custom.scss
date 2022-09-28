@@ -184,7 +184,6 @@ body {
   border-color: #005a9c;
 }
 
-
 [data-dark-mode] body .btn-primary:hover {
   background-color: #4a266b;
   border-color: #4a266b;
@@ -195,8 +194,8 @@ a {
 }
 
 .header-bar {
-  border-top: 5px solid;
-  border-image-source: linear-gradient(90deg, #005a9c, #004b4e 50%, #ffbf3b);
+  border-top: 10px solid;
+  border-image-source: linear-gradient(90deg, #005a9c, #4a266b);
   border-image-slice: 1;
 }
 
