@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Implement on</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/implement/</link><description>Recent content in Implement on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 24 Sep 2022 15:57:34 +0000</lastBuildDate><atom:link href="https://passkeydeveloper.github.io/passkeys.dev/docs/implement/index.xml" rel="self" type="application/rss+xml"/><item><title>Requirements</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/implement/requirements/</link><pubDate>Sat, 24 Sep 2022 16:02:27 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/implement/requirements/</guid><description>Back End #
+Your back end will need to generate a challenge, and a set of configuration parameters for WebAuthn.
+This challenge
+Session Data #
+Persistent Data #
+Each passkey will
+Front End #</description></item></channel></rss>
