@@ -172,6 +172,35 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
+::selection {
+  background-color: rgba(0, 90, 156, 0.2);
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+a {
+  color: #005a9c;
+}
+
+.strong {
+  font-weight: 500;
+}
+
+.header-bar {
+  border-top: 10px solid;
+  border-image-source: linear-gradient(90deg, #005a9c, #4a266b);
+  border-image-slice: 1;
+}
+
+/*
+button tweaks
+*/
 .btn-primary {
   color: #fff;
   background-color: #005a9c;
@@ -189,32 +218,6 @@ body {
   border-color: #4a266b;
 }
 
-a {
-  color: #005a9c;
-}
-
-.header-bar {
-  border-top: 10px solid;
-  border-image-source: linear-gradient(90deg, #005a9c, #4a266b);
-  border-image-slice: 1;
-}
-
-h2 {
-  font-weight: 500;
-}
-
-h3 {
-  font-weight: 500;
-}
-
-.strong {
-  font-weight: 500;
-}
-
-summary {
-  font-weight: 500;
-}
-
 /*
 change bw icons to white in dark mode
 */
@@ -227,7 +230,51 @@ change bw icons to white in dark mode
 }
 
 /*
-SPECIFIC TO FAQ CONTENT
+code snippet tweaks (pre)
+*/
+pre > .btn-copy {
+  background-color: #005a9c;
+  border-color: #002e50;
+}
+
+pre > .btn-copy:hover {
+  background-color: #4a266b;
+  border-color: #301945;
+}
+
+pre > .hljs {
+  background: #f0f0f0;
+}
+
+.hljs-string {
+  color: #0950a4;
+}
+
+summary {
+  font-weight: 500;
+}
+
+blockquote {
+  font-size: 1rem;
+}
+
+/*
+COLORS
+*/
+.color-twitter-blue {
+  color: #1da1f2;
+}
+
+.color-black {
+  color: #000;
+}
+
+/*
+SPECIFIC PAGE OVERRIDES
+*/
+
+/*
+Specific to FAQ content
 */
 #faq #content > details {
   margin-top: 0.7em;
@@ -246,22 +293,11 @@ SPECIFIC TO FAQ CONTENT
 }
 
 /*
-SPECIFIC TO DEVICE SUPPORT PAGE
+Specific to device support page
 */
 #device-support-table th:first-child,
 td:first-child {
   position: sticky;
   left: 0;
   z-index: 1;
-}
-
-/*
-COLORS
-*/
-.color-twitter-blue {
-  color: #1da1f2;
-}
-
-.color-black {
-  color: #000;
 }
