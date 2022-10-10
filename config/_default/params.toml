@@ -45,7 +45,7 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "Brought to you by the <a class=\"text-muted\" href=\"https://www.w3.org/community/webauthn-adoption/\">W3C WebAuthn Community Adoption Group</a></br>and the <a class=\"text-muted\" href=\"https://fidoalliance.org/\">FIDO Alliance</a>"
+footer = "<a class=\"text-muted\" href=\"/about\">about passkeys.dev</a>"
 
 # Feed
 copyRight = ""
