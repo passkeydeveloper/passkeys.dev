@@ -4,13 +4,13 @@
 title = "passkeys.dev"
 titleSeparator = "-"
 titleAddition = "Home"
-description = "Hello passkeys. Goodbye passwords."
+description = "A collection of resources and insights to help you deploy passkeys, including practical user experiences, support across the ecosystems, and more."
 
 ## Documentation
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["pkdd-social-card.jpg"]
 ogLocale = "en_US"
 domainTLD = "passkeys.dev"
 titleHome = "passkeys.dev"
@@ -23,7 +23,7 @@ titleHome = "passkeys.dev"
 siteLinksSearchBox = false
 
 ## Chrome Browser
-themeColor = "#fff"
+themeColor = "#005a9c"
 
 # Images - Temporarily left in place for backward compatibility
 quality = 85
