@@ -1,5 +1,5 @@
 baseurl = "https://passkeys.dev/"
-canonifyURLs = false
+canonifyURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
