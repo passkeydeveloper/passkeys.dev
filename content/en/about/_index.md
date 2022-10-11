@@ -44,7 +44,9 @@ Matthew Miller | <a href="https://github.com/MasterKale" target="_blank"><i clas
 - Adam Langley
 - Ricky Mondello
 
-## Other Information
+## Attributions
+
+**passkeys.dev is powered by [Doks](https://getdoks.org/) and [Hugo](https://gohugo.io/). Special thanks to [Henk Verlinde](https://github.com/h-enk).**
 
 AirDrop, Apple, iPadOS, iCloud Keychain, iPhone, MacBook, and macOS are trademarks of Apple Inc., registered in the U.S. and other countries and regions.
 

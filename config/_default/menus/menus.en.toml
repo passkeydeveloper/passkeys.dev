@@ -1,9 +1,3 @@
-[[docs]]
-name = "Prologue"
-weight = 10
-identifier = "prologue"
-url = "/docs/prologue/"
-
 [[main]]
 name = "Docs"
 url = "/docs/intro/what-are-passkeys/"
@@ -19,6 +13,11 @@ weight = 20
 name = "Device Support"
 url = "/device-support/"
 weight = 30
+
+[[main]]
+name = "About"
+url = "/about/"
+weight = 90
 
 [[social]]
 name = "GitHub"
