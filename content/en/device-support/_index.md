@@ -3,7 +3,7 @@ title: "Device Support"
 description: ""
 lead: ""
 date: 2022-08-05T18:08:48.678Z
-lastmod: 2022-09-28T16:15:15.610Z
+lastmod: 2022-10-11T21:09:37.692Z
 draft: false
 images: []
 weight: 100
