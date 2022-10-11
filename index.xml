@@ -12,11 +12,16 @@ Chrome
 Edge
 Firefox Not Supported Chrome 1
 Edge
-Firefox Cross-Device Authentication</description></item><item><title>Frequently Asked Questions</title><link>https://passkeydeveloper.github.io/passkeys.dev/faq/</link><pubDate>Thu, 04 Aug 2022 18:01:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/faq/</guid><description>Intro to passkeys #
+Firefox Cross-Device Authentication</description></item><item><title>Privacy Policy</title><link>https://passkeydeveloper.github.io/passkeys.dev/privacy-policy/</link><pubDate>Tue, 11 Oct 2022 01:40:04 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/privacy-policy/</guid><description>TLDR: We do not use cookies and we do not collect any personal data.
+Website visitors #
+No personal information is collected. No information is stored in the browser. No information is shared with, sent to or sold to third-parties. No information is shared with advertising companies. No information is mined and harvested for personal and behavioral trends. No information is monetized.</description></item><item><title>About</title><link>https://passkeydeveloper.github.io/passkeys.dev/about/</link><pubDate>Mon, 26 Sep 2022 19:48:01 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/about/</guid><description>passkeys.dev is brought to you by the W3C WebAuthn Community Adoption Group and the FIDO Alliance.
+Engage #
+W3C WebAuthn Community Adoption Group GitHub Suggest content or report a site issue FIDO2, WebAuthn, and passkey discussions Twitter &amp;ldquo;Passkeys &amp;amp; FIDO2 &amp;amp; WebAuthn&amp;rdquo; Community FIDO Alliance W3C Developers Maintainers #
+Tim Cappalli | Matthew Miller | Contributors #
+Dirk Balfanz Arnar Birgisson Christiaan Brand Garrett Davidson Jesse Endahl Akshay Kumar Dominique Hazael-Massieux Jeff Hodges Adam Langley Ricky Mondello Attributions #
+passkeys.</description></item><item><title>Frequently Asked Questions</title><link>https://passkeydeveloper.github.io/passkeys.dev/faq/</link><pubDate>Thu, 04 Aug 2022 18:01:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/faq/</guid><description>Intro to passkeys #
 What is a passkey?
 Commodo pariatur laboris excepteur excepteur ut nostrud voluptate. What is the difference between a passkey and a multi-device credential?
 blah What is the difference between a single-device passkey and a multi-device passkey?
 Ipsum officia dolore incididunt consequat laborum. Do security keys support passkeys?
-Today, security keys hold single-device passkeys, as they are bound to the authenticator. Security key vendors may decide to offer multi-device passkey authenticators in the future.</description></item><item><title>Docs</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/</link><pubDate>Tue, 06 Oct 2020 08:48:23 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/</guid><description/></item><item><title>Privacy Policy</title><link>https://passkeydeveloper.github.io/passkeys.dev/privacy-policy/</link><pubDate>Thu, 27 Aug 2020 19:23:18 +0200</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/privacy-policy/</guid><description>TLDR: We do not use cookies and we do not collect any personal data.
-Website visitors #
-No personal information is collected. No information is stored in the browser. No information is shared with, sent to or sold to third-parties. No information is shared with advertising companies. No information is mined and harvested for personal and behavioral trends. No information is monetized.</description></item></channel></rss>
+Today, security keys hold single-device passkeys, as they are bound to the authenticator. Security key vendors may decide to offer multi-device passkey authenticators in the future.</description></item><item><title>Docs</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/</link><pubDate>Tue, 06 Oct 2020 08:48:23 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/</guid><description/></item></channel></rss>
