@@ -230,8 +230,13 @@ change bw icons to white in dark mode
 }
 
 /*
-code snippet tweaks (pre)
+code snippet tweaks (pre and code)
 */
+
+code {
+  background: #f0f0f0;
+}
+
 pre > .btn-copy {
   background-color: #005a9c;
   border-color: #002e50;
