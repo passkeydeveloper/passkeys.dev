@@ -1,6 +1,6 @@
 {
-    "name": "How to Passkey",
-    "short_name": "How to Passkey",
+    "name": "passkeys.dev",
+    "short_name": "passkeys.dev",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#4f2872",
-    "background_color": "#4f2872",
+    "theme_color": "#005a9c",
+    "background_color": "#005a9c",
     "display": "standalone"
 }
