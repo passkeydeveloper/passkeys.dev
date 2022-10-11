@@ -1,7 +1,7 @@
 ---
 title : "Bootstrapping"
-description: "Bootstrapping an account"
-lead: "Bootstrapping an account"
+description: "Bootstrapping an account on the web"
+lead: "Bootstrapping an account on the web"
 date: 2022-10-10T19:52:26.819Z
 lastmod: 2022-10-10T19:52:32.388Z
 draft: false
