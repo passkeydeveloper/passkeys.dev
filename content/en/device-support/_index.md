@@ -137,7 +137,8 @@ write a narrative here about current state of affairs
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
-            <td class="text-center">?</td>
+            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
+                    Supported</span></td>
         </tr>
         <tr class="align-middle">
             <td class="fw-bold">DPK attestation <a href="" target="_blank"><i class="bi bi-info-circle fs-6"
