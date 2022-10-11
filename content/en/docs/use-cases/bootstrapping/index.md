@@ -13,7 +13,7 @@ weight: 310
 
 This section applies when the [relying party](/) does not yet know who is controlling the client device. There is no browser artifact (such as a cookie or a credential ID in local storage) available to the relying party, although for now we assume that the user has an existing account with the relying party.
 
-To bootstrap an account, serve the user a sign-in page. 
+To bootstrap an account, serve the user a sign-in page.
 
 Start off by asking the user for their account identifier, typically a username or email address:
 
@@ -88,7 +88,7 @@ PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()
 navigator.credentials.conditionalMediationSupported
 ```
 
-If they are, then the user's system features a FIDO platform authenticator that supports conditional UI mode, and you can offer the user the convenience and security of using passkeys. 
+If they are, then the user's system features a FIDO platform authenticator that supports conditional UI mode, and you can offer the user the convenience and security of using passkeys.
 
 Serve an opt-in or "upsell" modal/interstitial or page to the user offering them to create a passkey:
 
