@@ -5,9 +5,15 @@ Passkeys are not currently supported in Android but are coming soon!
 Platform Notes #
 Coming Soon
 Resources #
-FIDO2 API for Android Sample app</description></item><item><title>Chrome OS</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/chromeos/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/chromeos/</guid><description> Local Authenticator (create and use passkeys from the local device)
+FIDO2 API for Android Sample app</description></item><item><title>Chrome OS</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/chromeos/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/chromeos/</guid><description>Local Authenticator (create and use passkeys from the local device)
 Planned External Authenticator (create and use passkeys from another device)
-Supported</description></item><item><title>iOS &amp; iPadOS</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/ios/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/ios/</guid><description>Local Authenticator (create and use passkeys from the local device)
+Supported Overview #
+Creation of passkeys in Chrome OS is not currently supported.
+Passkeys from iOS and iPadOS can be used to sign in to web services using FIDO Cross-Device Authentication.
+Platform Notes #
+Coming Soon
+Resources #
+Coming Soon</description></item><item><title>iOS &amp; iPadOS</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/ios/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/ios/</guid><description>Local Authenticator (create and use passkeys from the local device)
 Supported External Authenticator (create and use passkeys from another device)
 Supported Overview #
 The platform authenticators in iOS 16+ and iPadOS 16+ have the following capabilities:
@@ -22,13 +28,14 @@ WebAuthn credentials created using the platform authenticator in macOS Monterey 
 Planned External Authenticator (create and use passkeys from another device)
 Partially Supported Overview #
 Windows Hello, the platform authenticator in Windows 10 and 11, has the following capabilities:
-creating and using single-device passkeys that are bound to the device creating and using single-device passkeys on a FIDO2 security key Passkeys from iOS, and iPadOS can be used in Chrome (105+) and Edge (105+) for signing in to web services using FIDO Cross-Device Authentication.</description></item><item><title>Terms</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/terms/</link><pubDate>Thu, 12 Nov 2020 13:26:54 +0100</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/terms/</guid><description>2FA user #
-a user whose account has 2FA turned on, i.e., who must present 2 authentication factors during sign-in.
+creating and using single-device passkeys that are bound to the device creating and using single-device passkeys on a FIDO2 security key using passkeys from iOS and iPadOS in Chrome (105+) and Edge (105+) for signing in to web services using FIDO Cross-Device Authentication Platform Notes #
+Coming Soon</description></item><item><title>Terms</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/terms/</link><pubDate>Thu, 12 Nov 2020 13:26:54 +0100</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/terms/</guid><description>2FA user #
+A user whose account has 2FA turned on, i.e., who must present 2 authentication factors during sign-in.
 2-Factor Authentication (2FA) #
 also sometimes referred to as MFA: multi-factor authentication or 2SV: two-step verification
-This refers to a contract between a user and a relying party where the relying party must collect at least two distinct authentication factors from the user during a bootstrap sign-in.
+This refers to a contract between a user and a Relying Party (RP) where the RP must collect at least two distinct authentication factors from the user during a bootstrap sign-in.
 Account boostrapping #
-A relying party authenticates a user without any prior knowledge of who the user is.</description></item><item><title>Specifications</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/specs/</link><pubDate>Thu, 04 Aug 2022 17:33:14 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/specs/</guid><description>The two primary technical specifications that work together to enable passkeys are Web Authentication, commonly referred to as WebAuthn, and the Client to Authenticator Protocol (CTAP), commonly referred to as FIDO2.
+A Relying Party (RP) authenticates a user without any prior knowledge of who the user is.</description></item><item><title>Specifications</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/specs/</link><pubDate>Thu, 04 Aug 2022 17:33:14 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/specs/</guid><description>The two primary technical specifications that work together to enable passkeys are Web Authentication, commonly referred to as WebAuthn, and the Client to Authenticator Protocol (CTAP), commonly referred to as FIDO2.
 The two specs together are often referred to as one stack, FIDO2/WebAuthn.
 W3C Web Authentication (WebAuthn) #
 WebAuthn is the primary specification used by developers.
