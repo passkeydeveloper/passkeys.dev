@@ -30,7 +30,7 @@ write a narrative here about current state of affairs
         </thead>
         <tr>
             <td><span class="fw-bold">Passkeys</span></td>
-            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
+            <td class="text-center"><i class="bi bi-wrench-adjustable-circle-fill" title="Beta" alt="wrench in circle icon"></i><br>Beta<sup>2</sup>
             </td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
             </td>
@@ -109,10 +109,11 @@ write a narrative here about current state of affairs
             </tr>
         </tbody>
         <tr class="align-middle">
-            <td class="fw-bold">Device Public Key <a href="" target="_blank"><i class="bi bi-info-circle fs-6"
+            <td class="fw-bold">Device Public Key (DPK) <a href="" target="_blank"><i class="bi bi-info-circle fs-6"
                         title="The additional (optional) device-bound key that can be used by a relying party for risk analysis"></i></a>
             </td>
-            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned</td>
+            <td class="text-center"><i class="bi bi-wrench-adjustable-circle-fill" title="Beta" alt="wrench in circle icon"></i><br>Beta<sup>2</sup>
+            </td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned</td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
@@ -161,6 +162,7 @@ write a narrative here about current state of affairs
 </div>
 <div class="text-end">
     <sup>1</sup> Chrome M108 and Windows 11 2022
+    <sup>2</sup> Requires [Google Play Services Beta](https://developers.google.com/android/guides/beta-program)
 </div>
 
 ## Additional Information
