@@ -4,7 +4,7 @@
 title = "passkeys.dev"
 titleSeparator = "-"
 titleAddition = "Home"
-description = "A collection of resources and insights to help you deploy passkeys, including practical user experiences, support across the ecosystems, and more."
+description = "A collection of resources and insights to help you deploy passkeys, including practical user experiences, device ecosystem support, frequently asked questions, and more."
 
 ## Documentation
 # docsVersion = "0.3"
