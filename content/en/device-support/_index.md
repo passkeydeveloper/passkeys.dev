@@ -29,7 +29,7 @@ write a narrative here about current state of affairs
             </tr>
         </thead>
         <tr>
-            <td><span class="fw-bold">Passkeys</span><br>(multi-device)</td>
+            <td><span class="fw-bold">Passkeys</span></td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
             </td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
