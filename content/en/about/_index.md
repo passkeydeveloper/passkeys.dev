@@ -15,7 +15,6 @@ passkeys.dev was launched in October 2022 and is rapidly evolving. You can expec
 
 <a href="roadmap"><button type="button" class="btn btn-primary">View Site Roadmap <i class="bi bi-cone-striped"></i></button></a>
 
-
 ## Engage and Contribute
 
 <a href="https://www.w3.org/community/webauthn-adoption/" target="_blank">W3C WebAuthn Community Adoption Group <i class="bi bi-box-arrow-up-right"></i></a>
