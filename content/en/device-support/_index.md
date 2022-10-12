@@ -162,7 +162,7 @@ write a narrative here about current state of affairs
 </div>
 <div class="text-end">
     <sup>1</sup> Chrome M108 and Windows 11 2022
-    <sup>2</sup> Requires [Google Play Services Beta](https://developers.google.com/android/guides/beta-program)
+    <br><sup>2</sup> Requires <a href="https://developers.google.com/android/guides/beta-program" target="_blank">Google Play Services Beta</a>
 </div>
 
 ## Additional Information
