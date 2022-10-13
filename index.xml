@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Passkey Developer Resources on</title><link>https://passkeydeveloper.github.io/passkeys.dev/</link><description>Recent content in Passkey Developer Resources on</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Tue, 06 Oct 2020 08:47:36 +0000</lastBuildDate><atom:link href="https://passkeydeveloper.github.io/passkeys.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Device Support</title><link>https://passkeydeveloper.github.io/passkeys.dev/device-support/</link><pubDate>Fri, 05 Aug 2022 18:08:48 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/device-support/</guid><description>Overview #
 write a narrative here about current state of affairs
 Matrix #
-Capability Android Chrome OS iOS/iPad OS macOS Ubuntu Windows Passkeys
-(multi-device) Planned Planned iOS 16+ macOS 13+ Not Supported Planned Single-device passkeys Not Supported Not Supported security keys only security keys only security keys only Browser Autofill UI Chrome
+Capability Android Chrome OS iOS/iPad OS macOS Ubuntu Windows Passkeys Beta2 Planned iOS 16+ macOS 13+ Not Supported Planned Single-device passkeys Not Supported Not Supported security keys only security keys only security keys only Browser Autofill UI Chrome
 Edge
 Firefox Planned Safari
 Edge

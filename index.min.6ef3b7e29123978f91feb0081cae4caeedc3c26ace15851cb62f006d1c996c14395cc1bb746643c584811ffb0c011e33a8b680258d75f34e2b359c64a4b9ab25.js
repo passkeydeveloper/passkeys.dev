@@ -50,10 +50,9 @@ If, however, you do find at least one passkey credential ID for the user, then y
 When the user is ready (in the above example, when they click on the “Go!” button), call navigator.credentials.get(), exactly as shown above (i.e., by passing in all the user’s passkey credential IDs).
 If the user instead clicks on \u0026ldquo;Try another way\u0026rdquo;, you should offer them other sign in methods (password, etc.) to reauthenticate them.
 `}),e.add({id:5,href:"/docs/tools-libraries/",title:"Tools \u0026 Libraries",description:"Prologue Doks.",content:""}),e.add({id:6,href:"/docs/tools-libraries/libraries/",title:"Libraries",description:`Recommended #Simple WebAuthn `,content:`Recommended #Simple WebAuthn `}),e.add({id:7,href:"/docs/tools-libraries/test-sites/",title:"Test Sites",description:"",content:""}),e.add({id:8,href:"/docs/reference/",title:"Reference",description:"Help Doks.",content:""}),e.add({id:9,href:"/docs/reference/android/",title:"Android",description:"Resources for passkeys in Android",content:` Local Authenticator (create and use passkeys from the local device)
-Planned External Authenticator (create and use passkeys from another device)
-Planned Overview #Passkeys are not currently supported in Android but are coming soon!
-Platform Notes #Coming Soon
-Resources #FIDO2 API for Android Sample app `}),e.add({id:10,href:"/docs/reference/chromeos/",title:"Chrome OS",description:"Resources for passkeys in Google's Chrome OS",content:` Local Authenticator (create and use passkeys from the local device)
+Beta External Authenticator (create and use passkeys from another device)
+Planned Overview #Passkey support in Android is currently in beta!
+Announcement Platform Notes #Beta Notes #The Device Public Key (DPK) extension is supported in the beta, but is currently gated behind a flag in Chrome. Developers can enable chrome://flags/#enable-experimental-web-platform-features to experiment with DPK on Android, or on desktop Chrome when using Cross-Device Authentication with an Android device. Resources #Security of Passkeys in the Google Password Manager Beta announcement FIDO2 API for Android Sample app `}),e.add({id:10,href:"/docs/reference/chromeos/",title:"Chrome OS",description:"Resources for passkeys in Google's Chrome OS",content:` Local Authenticator (create and use passkeys from the local device)
 Planned External Authenticator (create and use passkeys from another device)
 Supported Overview #Creation of passkeys in Chrome OS is not currently supported.
 Passkeys from iOS and iPadOS can be used to sign in to web services using FIDO Cross-Device Authentication.

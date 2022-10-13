@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reference on</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/</link><description>Recent content in Reference on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 06 Oct 2020 08:49:15 +0000</lastBuildDate><atom:link href="https://passkeydeveloper.github.io/passkeys.dev/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Android</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/android/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/android/</guid><description> Local Authenticator (create and use passkeys from the local device)
-Planned External Authenticator (create and use passkeys from another device)
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reference on</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/</link><description>Recent content in Reference on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 06 Oct 2020 08:49:15 +0000</lastBuildDate><atom:link href="https://passkeydeveloper.github.io/passkeys.dev/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Android</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/android/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/android/</guid><description>Local Authenticator (create and use passkeys from the local device)
+Beta External Authenticator (create and use passkeys from another device)
 Planned Overview #
-Passkeys are not currently supported in Android but are coming soon!
-Platform Notes #
-Coming Soon
-Resources #
-FIDO2 API for Android Sample app</description></item><item><title>Chrome OS</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/chromeos/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/chromeos/</guid><description>Local Authenticator (create and use passkeys from the local device)
+Passkey support in Android is currently in beta!
+Announcement Platform Notes #
+Beta Notes #
+The Device Public Key (DPK) extension is supported in the beta, but is currently gated behind a flag in Chrome. Developers can enable chrome://flags/#enable-experimental-web-platform-features to experiment with DPK on Android, or on desktop Chrome when using Cross-Device Authentication with an Android device.</description></item><item><title>Chrome OS</title><link>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/chromeos/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeydeveloper.github.io/passkeys.dev/docs/reference/chromeos/</guid><description>Local Authenticator (create and use passkeys from the local device)
 Planned External Authenticator (create and use passkeys from another device)
 Supported Overview #
 Creation of passkeys in Chrome OS is not currently supported.
