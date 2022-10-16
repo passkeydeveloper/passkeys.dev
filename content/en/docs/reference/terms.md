@@ -3,7 +3,7 @@ title: "Terms"
 description: "A list of terms which are used frequently throughout this site and in discussions about passkeys, FIDO2, and WebAuthn."
 lead: "Here's a list of terms which are used frequently throughout this site and in discussions about passkeys, FIDO2, and WebAuthn."
 date: 2020-11-12T13:26:54+01:00
-lastmod: 2020-11-12T13:26:54+01:00
+lastmod: 2022-10-16T18:33:25.877Z
 draft: false
 images: []
 menu:
@@ -38,6 +38,16 @@ Information provided by a user (or one of the user’s devices) for purposes of 
 FIDO Cross-Device Authentication (CDA) allows a passkey from one device to be used to sign in on another device. For example, your phone can be linked to your laptop, allowing you to use a passkey from your phone to sign into a service on your laptop.
 
 CDA is powered by the FIDO Client-to-Authenticator Protocol (CTAP) using "hybrid" transport. CTAP is implemented by authenticators and client platforms, not Relying Parties.
+
+## Device Public Key (DPK)
+
+A Device Public Key (DPK) is a device-bound key that can be requested by a [Relying Party (RP)](#relying-party-rp) for higher assurance scenarios where device contintuity signals are desired. If supported by the authenticator, a signature from both the passkey and DPK are returned.
+
+> Example: Say that a sign-in request appears at a website along with some geolocation signal that has not been seen for this user account before, and is outside of the typical usage hours observed for the account. The risk may be deemed high enough not to allow the request, even with an assertion by a passkey on its own. But if a signature by a device-bound key that is well established for this user can also be presented, then that may tip the balance.
+
+Just like a passkey, DPKs are unique to each RP.
+
+<a href="https://w3c.github.io/webauthn/#device-public-key" target="_blank"><button type="button" class="btn btn-light">Spec Reference (L3 Draft) <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
 
 ## Discoverable Credential
 

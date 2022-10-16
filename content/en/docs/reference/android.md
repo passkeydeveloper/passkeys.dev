@@ -24,7 +24,7 @@ Passkey support in Android is currently in beta!
 
 ### Beta Notes
 
-- The Device Public Key (DPK) extension is supported in the beta, but is currently gated behind a flag in Chrome. Developers can enable `chrome://flags/#enable-experimental-web-platform-features` to experiment with DPK on Android, or on desktop Chrome when using Cross-Device Authentication with an Android device.
+- The [Device Public Key (DPK)](../terms#device-public-key-dpk) extension is supported in the beta, but is currently gated behind a flag in Chrome. Developers can enable `chrome://flags/#enable-experimental-web-platform-features` to experiment with DPK on Android, or on desktop Chrome when using Cross-Device Authentication with an Android device.
 
 ## Resources
 
