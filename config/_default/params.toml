@@ -45,7 +45,7 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "<a class=\"text-muted\" href=\"/about\">about passkeys.dev</a>"
+footer = "<a class=\"text-muted\" href=\"/about\">about passkeys.dev</a> | Content available under a <a class=\"text-muted\" href=\"/about/#copyright-and-attributions\">Creative Commons license.</a>"
 
 # Feed
 copyRight = ""
