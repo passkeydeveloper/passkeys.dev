@@ -3,7 +3,7 @@ title: "Device Support"
 description: ""
 lead: ""
 date: 2022-08-05T18:08:48.678Z
-lastmod: 2022-10-12T17:27:06.350Z
+lastmod: 2022-10-17T04:41:05.913Z
 draft: false
 images: []
 weight: 100
@@ -11,7 +11,34 @@ weight: 100
 
 ## Overview
 
-write a narrative here about current state of affairs
+Support for passkeys is currently rolling out across major operating systems and browsers, and will continue into 2023. This page will be updated as the ecosystem evolves. The [matrix below](#matrix) maps out the various features that support the passkey experience. Additional information about each platform is available in the [Reference section of Docs](/docs/reference/android).
+
+Passkeys created in **iOS or iPadOS** can be used on:
+
+- The same iPhone or iPad
+- iPhones and iPads using the same Apple ID and iCloud Keychain (synced automatically)
+- MacBooks using the same Apple ID and iCloud Keychain (synced automatically)
+- MacBooks using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- Windows devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- Chrome OS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- Ubuntu devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+
+Passkeys created on **Android** can be used on:
+
+- The same Android device
+- Android devices using the same Google account (synced automatically)
+- MacBooks using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- Windows devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- iPhones and iPads using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+
+Passkeys created in **macOS** can be used on:
+
+- MacBooks using the same Apple ID and iCloud Keychain (synced automatically)
+- iPhones and iPads using the same Apple ID and iCloud Keychain (synced automatically)
+
+[Single-device passkeys](/docs/reference/terms/#single-device-passkeys) created in **Windows** can be used on:
+
+- the same Windows device that created them
 
 ## Matrix
 
@@ -160,11 +187,7 @@ write a narrative here about current state of affairs
         </tr>
     </table>
 </div>
-<div class="text-end">
+<div class="text-end mb-5">
     <sup>1</sup> Chrome M108 and Windows 11 2022
     <br><sup>2</sup> Requires <a href="https://developers.google.com/android/guides/beta-program" target="_blank">Google Play Services Beta</a>
 </div>
-
-## Additional Information
-
-insert additional info here
