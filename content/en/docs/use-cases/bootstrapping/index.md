@@ -34,7 +34,7 @@ To support the [autofill UI](/) for passkeys, make sure to:
 2. On page load, check to see if conditional mediation (autofill UI) is supported using an if statement, then call `navigator.credentials.get()` with `mediation: "conditional"` and `userVerification: "required"`.
 
     ```js
-    if (navigator.credentials.conditionalMediationSupported) {
+    if (PublicKeyCredential.isConditionalMediationSupported()) {
       navigator.credentials.get({
         mediation: "conditional",  
         publicKey: {
@@ -85,7 +85,7 @@ PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()
 ```
 
 ```js
-navigator.credentials.conditionalMediationSupported
+PublicKeyCredential.isConditionalMediationSupported()
 ```
 
 If they are, then the user's system features a FIDO platform authenticator that supports conditional UI mode, and you can offer the user the convenience and security of using passkeys.
