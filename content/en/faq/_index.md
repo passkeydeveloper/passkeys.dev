@@ -4,7 +4,7 @@ description: ""
 lead: "put some intro text here"
 date: 2022-08-04T18:01:38.505Z
 lastmod: 2022-08-04T18:01:33.513Z
-draft: false
+draft: true
 images: []
 toc: true
 ---
@@ -16,15 +16,17 @@ Commodo pariatur laboris excepteur excepteur ut nostrud voluptate.
 {{< /details >}}
 
 {{< details "What is the difference between a passkey and a multi-device credential?" >}}
-blah
+They are the same. "Multi-device credential" is the official name in the WebAuthn specification, whereas "passkey" is a more user friendly term (similar to "password").
 {{< /details >}}
 
-{{< details "What is the difference between a single-device passkey and a multi-device passkey?" >}}
-Ipsum officia dolore incididunt consequat laborum.
+{{< details "What is the difference between a single-device passkey and a passkey?" >}}
+A single-device passkey is bound to a device and cannot be backed up or synced.
 {{< /details >}}
 
 {{< details "Do security keys support passkeys?" >}}
-Today, security keys hold single-device passkeys, as they are bound to the authenticator. Security key vendors may decide to offer multi-device passkey authenticators in the future.
+Today, security keys can hold single-device passkeys, as they are bound to the authenticator. Security key vendors may decide to offer multi-device passkey authenticators in the future.
+
+Security keys also support second-factor only credentials (often referred to as U2F credentials), which are _not_ passkeys.
 {{< /details >}}
 
 {{< details "What is the difference between a passkey and a multi-device credential?" >}}
