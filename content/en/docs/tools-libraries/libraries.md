@@ -1,9 +1,9 @@
 ---
 title: "Libraries"
-description: ""
+description: "A list of libraries for passkeys and FIDO2/WebAuthn"
 lead: ""
 date: 2022-09-24T16:02:27.390Z
-lastmod: 2022-09-24T16:02:27.390Z
+lastmod: 2022-10-17T05:07:21.912Z
 draft: false
 images: []
 menu:
@@ -13,6 +13,32 @@ weight: 701
 toc: true
 ---
 
-## Recommended
+## Updated for passkeys
 
-- Simple WebAuthn
+### TypeScript
+
+- [Simple WebAuthn](https://simplewebauthn.dev/) (Matthew Miller)
+
+## Other FIDO2/WebAuthn libraries
+
+The ["Awesome WebAuthn"](https://github.com/herrjemand/awesome-webauthn) GitHub repo is also regularly updated with libraries from the community.
+
+### .NET
+
+- [FIDO2 .NET Library](https://fido2-net-lib.passwordless.dev/)
+
+### Go
+
+- [Go WebAuthn Library](https://github.com/duo-labs/webauthn) (Duo Labs)
+
+### Java
+
+- [WebAuthn4J](https://github.com/webauthn4j/webauthn4j) (Yoshikazu Nojima)
+
+### Python
+
+- [py_webauthn](https://github.com/duo-labs/py_webauthn) (Duo Labs)
+
+### Ruby
+
+- [webauthn-ruby](https://github.com/cedarcode/webauthn-ruby) (Cedarcode)
