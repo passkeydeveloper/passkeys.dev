@@ -21,7 +21,7 @@ A user whose account has [2FA](#2-factor-authentication-2fa) turned on, i.e., wh
 
 > _also sometimes referred to as MFA: multi-factor authentication or 2SV: two-step verification_
 
-This refers to a contract between a user and a [Relying Party (RP)](#relying-party-rp) where the RP must collect at least two distinct authentication factors from the user during a [bootstrap](#account-boostrapping) sign-in.
+This refers to a contract between a user and a [Relying Party (RP)](#relying-party-rp) where the RP must collect at least two distinct authentication factors from the user during a [bootstrap](#account-bootstrapping) sign-in.
 
 ## Account bootstrapping
 
@@ -117,7 +117,7 @@ A FIDO authenticator usable with any device the user is trying to sign-in from. 
 
 ## Signing in
 
-This can refer to either account [bootstrapping](#account-boostrapping) or [reauthentication](#reauthentication).
+This can refer to either account [bootstrapping](#account-bootstrapping) or [reauthentication](#reauthentication).
 
 ## Single-device passkey
 
