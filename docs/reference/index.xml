@@ -33,7 +33,7 @@ A user whose account has 2FA turned on, i.e., who must present 2 authentication 
 2-Factor Authentication (2FA) #
 also sometimes referred to as MFA: multi-factor authentication or 2SV: two-step verification
 This refers to a contract between a user and a Relying Party (RP) where the RP must collect at least two distinct authentication factors from the user during a bootstrap sign-in.
-Account boostrapping #
+Account bootstrapping #
 A Relying Party (RP) authenticates a user without any prior knowledge of who the user is.</description></item><item><title>Specifications</title><link>https://passkeys.dev/docs/reference/specs/</link><pubDate>Thu, 04 Aug 2022 17:33:14 +0000</pubDate><guid>https://passkeys.dev/docs/reference/specs/</guid><description>The two primary technical specifications that work together to enable passkeys are Web Authentication, commonly referred to as WebAuthn, and the Client to Authenticator Protocol (CTAP), commonly referred to as FIDO2.
 The two specs together are often referred to as one stack, FIDO2/WebAuthn.
 W3C Web Authentication (WebAuthn) #
