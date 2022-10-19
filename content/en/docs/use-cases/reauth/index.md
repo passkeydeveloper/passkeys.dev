@@ -3,7 +3,7 @@ title : "Reauthentication"
 description: "Performing a reauthentication with passkeys"
 lead: "Performing a reauthentication with passkeys"
 date: 2022-10-10T19:52:16.153Z
-lastmod: 2022-10-10T19:52:21.232Z
+lastmod: 2022-10-19T00:17:57.101Z
 draft: false
 images: []
 weight: 320
@@ -56,7 +56,7 @@ If the user instead clicks on "Try another way", you should offer them other sig
 
 ## Expired Sessions and Logout
 
-Now let’s look at the case where the reauthentication is triggered because the user logged themselves out, or the relying party expired the user's session. To facilitate this, the relying party would have to keep some form of user session state reminding them of the account that used to be signed in, even when they consider the user signed-out (this could be acheived using browser artifacts such as cookies or local storage).
+Now let’s look at the case where the reauthentication is triggered because the user logged themselves out, or the relying party expired the user's session. To facilitate this, the relying party would have to keep some form of user session state reminding them of the account that used to be signed in, even when they consider the user signed-out (this could be achieved using browser artifacts such as cookies or local storage).
 
 > Note that a relying party may choose to treat signing-out as a comprehensive action and thus delete all references to the user’s identity. Such a relying party ought to treat a subsequent sign-in like an account bootstrap, and repeat the steps explained above.
 

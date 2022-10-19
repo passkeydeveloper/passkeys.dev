@@ -11,7 +11,7 @@ weight: 310
 
 ## Authenticating the user
 
-This section applies when the [relying party](/) does not yet know who is controlling the client device. There is no browser artifact (such as a cookie or a credential ID in local storage) available to the relying party, although for now we assume that the user has an existing account with the relying party.
+This section applies when the [Relying Party (RP)](/docs/reference/terms/#relying-party-rp) does not yet know who is controlling the client device. There is no browser artifact (such as a cookie or a credential ID in local storage) available to the RP, although for now we assume that the user has an existing account with the RP.
 
 To bootstrap an account, serve the user a sign-in page.
 
@@ -73,8 +73,6 @@ Once the user is signed in, it might be time to set up a new passkey for them. D
 - The user bootstrapped their account on the device by passing non-passkey login challenges (such as using a password).
 - The user just created a new account at the relying party, and is considered signed-in because of that.
 - The user was using a passkey, but they used a different device than the one they’re currently on (by selecting the "other device" shown in the example above). This can be checked by inspecting the [`authenticatorAttachment`](/) attribute in the returned PublicKeyCredential object.
-
-Setting up a new passkey for these cases is in the next session.
 
 ## Opting the user into passkeys
 
