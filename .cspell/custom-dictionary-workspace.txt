@@ -1,0 +1,10 @@
+# Custom Dictionary Words
+cdaps
+CTAP
+geolocation
+Keychain
+lastmod
+Reauthentication
+upsell
+UVRA
+webauthn
