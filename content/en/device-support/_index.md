@@ -3,7 +3,7 @@ title: "Device Support"
 description: ""
 lead: ""
 date: 2022-08-05T18:08:48.678Z
-lastmod: 2022-10-20T17:01:54.174Z
+lastmod: 2022-10-20T19:11:43.813Z
 draft: false
 images: []
 weight: 100
@@ -62,7 +62,7 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
             </td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>iOS 16+</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>macOS 13+</td>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>macOS 13+ <sup>3</sup></td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
@@ -189,4 +189,5 @@ Passkeys created in **macOS** can be used on:
 <div class="text-end mb-5">
     <sup>1</sup> Chrome M108 and Windows 11 2022
     <br><sup>2</sup> Requires <a href="https://developers.google.com/android/guides/beta-program" target="_blank">Google Play Services Beta</a>
+    <br><sup>3</sup> See <a href="/docs/reference/macos/#browser-behavior" target="_blank">macOS browser behavior</a> for caveats
 </div>
