@@ -3,7 +3,7 @@ title: "Device Support"
 description: ""
 lead: ""
 date: 2022-08-05T18:08:48.678Z
-lastmod: 2022-10-17T04:41:05.913Z
+lastmod: 2022-10-20T17:01:54.174Z
 draft: false
 images: []
 weight: 100
@@ -120,8 +120,7 @@ Passkeys created in **macOS** can be used on:
             <td>Cross-Device Authentication<br><span class="fst-italic fw-bold">Client <i class="bi bi-info-circle fs-6"
                         title="The client in a cross-device authentication flow is the device where the relying party is being actively accessed"></i></span>
             </td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
+            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned</td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>iOS 16+</td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>macOS 13+</td>
