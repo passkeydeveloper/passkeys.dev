@@ -15,6 +15,10 @@ toc: true
 
 ## Updated for passkeys
 
+### Rust
+
+- [webauthn_rs: WebAuthn for Rust Server Applications](https://docs.rs/webauthn-rs/latest/webauthn_rs/) (William Brown)
+
 ### TypeScript
 
 - [Simple WebAuthn](https://simplewebauthn.dev/) (Matthew Miller)
@@ -25,7 +29,7 @@ The ["Awesome WebAuthn"](https://github.com/herrjemand/awesome-webauthn) GitHub 
 
 ### .NET
 
-- [FIDO2 .NET Library](https://fido2-net-lib.passwordless.dev/)
+- [FIDO2 .NET Library](https://fido2-net-lib.passwordless.dev/) (Anders Åberg, Alex Seigler)
 
 ### Go
 
