@@ -21,7 +21,7 @@ toc: true
 
 ### TypeScript
 
-- [Simple WebAuthn](https://simplewebauthn.dev/) (Matthew Miller)
+- [SimpleWebAuthn](https://simplewebauthn.dev/) (Matthew Miller)
 
 ## Other FIDO2/WebAuthn libraries
 
