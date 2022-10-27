@@ -72,7 +72,7 @@ To replace a legacy platform credential with a passkey, start a credential regis
 Browser Behavior #Safari: credentials created in Safari are passkeys, are backed up to iCloud Keychain, and are available in other apps and services.
 Chrome: credentials created by Chrome are currently single-device passkeys, are not backed up to iCloud Keychain, and are not available outside of Chrome.
 Edge: credentials created by Edge are currently single-device passkeys, are not backed up to iCloud Keychain, and are not available outside of Edge.
-Firefox: passkeys are not currently supported in Firefox on macOS. Single-device passkeys on a FIDO2 security key are supported.
+Firefox: passkeys are not currently supported in Firefox on macOS. Single-device passkeys on a FIDO2 security key are supported. User verification is not supported, though, which makes it impossible to implement WebAuthn-based passwordless authentication at this time.
 Resources #Apple landing page for passkeys Supporting passkeys Supporting single-device passkeys on security keys Sample Code `}),e.add({id:13,href:"/docs/reference/windows/",title:"Windows",description:"Resources for passkeys in Microsoft Windows",content:` Local Authenticator (create and use passkeys from the local device)
 Planned External Authenticator (create and use passkeys from another device)
 Partially Supported Overview #Windows Hello, the platform authenticator in Windows 10 and 11, has the following capabilities:
