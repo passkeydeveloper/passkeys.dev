@@ -306,3 +306,14 @@ td:first-child {
   left: 0;
   z-index: 1;
 }
+
+/*
+YouTube preview image on homepage
+*/
+.youtube-preview {
+  img {
+    width: 90%;
+    max-width: 536px;
+    height: auto;
+  }
+}
