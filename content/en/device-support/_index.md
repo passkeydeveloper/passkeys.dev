@@ -47,12 +47,12 @@ Passkeys created in **macOS** can be used on:
         <thead>
             <tr class="fw-bold">
                 <td>Capability</td>
-                <td class="text-center">Android</td>
+                <td class="text-center"><a href="/docs/reference/android/">Android</a></td>
                 <td class="text-center">Chrome OS</td>
-                <td class="text-center">iOS/iPad OS</td>
-                <td class="text-center">macOS</td>
+                <td class="text-center"><a href="/docs/reference/ios/">iOS/iPad OS</a></td>
+                <td class="text-center"><a href="/docs/reference/macos/">macOS</a></td>
                 <td class="text-center">Ubuntu</td>
-                <td class="text-center">Windows</td>
+                <td class="text-center"><a href="/docs/reference/windows/">Windows</a></td>
             </tr>
         </thead>
         <tr>
