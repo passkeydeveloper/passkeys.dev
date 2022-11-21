@@ -20,7 +20,7 @@ WebAuthn credentials created using the platform authenticator in iOS/iPadOS 15 a
 Supported External Authenticator (create and use passkeys from another device)
 Supported Overview #
 The platform authenticator in macOS Ventura (13) has the following capabilities:
-creating and using passkeys that are backed up to iCloud Keychain creating and using passkeys on/from another device, such as: an iPhone or iPad signed in to a different iCloud account a FIDO2 security key Platform Notes #
+creating and using passkeys that are backed up to iCloud Keychain creating and using passkeys on/from another device, such as: an iPhone or iPad signed in to a different iCloud account an Android device a FIDO2 security key Platform Notes #
 Legacy Credentials #
 WebAuthn credentials created using the platform authenticator in macOS Monterey (12) and earlier will not not be converted to passkeys but will remain available for the lifetime of the device.</description></item><item><title>Windows</title><link>https://passkeys.dev/docs/reference/windows/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeys.dev/docs/reference/windows/</guid><description>Local Authenticator (create and use passkeys from the local device)
 Planned External Authenticator (create and use passkeys from another device)
