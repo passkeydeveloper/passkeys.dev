@@ -2,7 +2,7 @@
 title: "Android"
 description: "Resources for passkeys in Android"
 date: 2022-09-03T16:09:38.358Z
-lastmod: 2022-10-12T17:26:50.879Z
+lastmod: 2022-11-21T18:04:47.207Z
 draft: false
 images: []
 menu:
@@ -12,19 +12,18 @@ weight: 1001
 toc: true
 ---
 
-{{% ds-la_b-ea_p %}}
+{{% ds-pa %}}
 
 ## Overview
 
-Passkey support in Android is currently in beta!
+The platform authenticator in Android 9+ has the following capabilities:
 
-<a href="https://android-developers.googleblog.com/2022/10/bringing-passkeys-to-android-and-chrome.html" target="_blank"><button type="button" class="btn btn-light">Announcement <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
+- creating and using passkeys that are backed up to Google Password Manager
+- using a passkey from the local Android device to sign into services on another device (such as a laptop or desktop), using FIDO [Cross-Device Authentication](../terms#cross-device-authentication-cda)
 
 ## Platform Notes
 
-### Beta Notes
-
-- The [Device Public Key (DPK)](../terms#device-public-key-dpk) extension is supported in the beta, but is currently gated behind a flag in Chrome. Developers can enable `chrome://flags/#enable-experimental-web-platform-features` to experiment with DPK on Android, or on desktop Chrome when using [Cross-Device Authentication](../terms#cross-device-authentication-cda) with an Android device.
+- The [Device Public Key (DPK)](../terms#device-public-key-dpk) extension is supported in beta, but is currently gated behind a flag in Chrome. Developers can enable `chrome://flags/#enable-experimental-web-platform-features` to experiment with DPK on Android, or on desktop Chrome when using [Cross-Device Authentication](../terms#cross-device-authentication-cda) with an Android device.
 
 ## Resources
 
