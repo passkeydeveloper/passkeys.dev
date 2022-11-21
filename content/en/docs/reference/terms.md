@@ -55,10 +55,6 @@ A Discoverable Credential (previously known as a "resident credential" or "resid
 
 [Passkeys](#passkey) (and [single-device passkeys](#single-device-passkey)) are Discoverable Credentials.
 
-In contrast, a non-discoverable credential (also known as a U2F credential) is encrypted by the authenticator and stored by the RP. The RP must know something about the user in advance, typically a username, in order to request an assertion for the credential from the authenticator.
-
-Many deployments that predate passkeys use non-discoverable credentials for a second factor.
-
 <a href="https://www.w3.org/TR/webauthn-2/#discoverable-credential" target="_blank"><button type="button" class="btn btn-light">Spec Reference <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
 
 ## Login challenge
