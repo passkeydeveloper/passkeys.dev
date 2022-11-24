@@ -1,0 +1,39 @@
+# .github/workflows/pr-preview.yml
+name: Deploy PR previews
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+concurrency: preview-${{ github.ref }}
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+     - name: Node setup
+       uses: actions/setup-node@v2
+       with:
+         node-version: '16'
+         cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check for linting errors
+        run: npm test
+
+      - name: Build website
+        run: npm run build
+
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./build/
