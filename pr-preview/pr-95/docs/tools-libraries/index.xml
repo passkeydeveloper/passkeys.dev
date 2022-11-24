@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools &amp; Libraries on</title><link>https://passkeys.dev/docs/tools-libraries/</link><description>Recent content in Tools &amp; Libraries on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 24 Sep 2022 15:57:34 +0000</lastBuildDate><atom:link href="https://passkeys.dev/docs/tools-libraries/index.xml" rel="self" type="application/rss+xml"/><item><title>Libraries</title><link>https://passkeys.dev/docs/tools-libraries/libraries/</link><pubDate>Sat, 24 Sep 2022 16:02:27 +0000</pubDate><guid>https://passkeys.dev/docs/tools-libraries/libraries/</guid><description>Updated for passkeys #
+Rust #
+webauthn_rs: WebAuthn for Rust Server Applications (William Brown) TypeScript #
+SimpleWebAuthn (Matthew Miller) Other FIDO2/WebAuthn libraries #
+The &amp;ldquo;Awesome WebAuthn&amp;rdquo; GitHub repo is also regularly updated with libraries from the community.
+.NET #
+FIDO2 .NET Library (Anders Åberg, Alex Seigler) Go #
+Go WebAuthn Library (Duo Labs) Java #
+WebAuthn4J (Yoshikazu Nojima) Python #
+py_webauthn (Duo Labs) Ruby #
+webauthn-ruby (Cedarcode)</description></item><item><title>Test &amp; Demo Sites</title><link>https://passkeys.dev/docs/tools-libraries/test-sites/</link><pubDate>Sat, 24 Sep 2022 16:02:27 +0000</pubDate><guid>https://passkeys.dev/docs/tools-libraries/test-sites/</guid><description>Updated for passkeys #
+WebAuthn.io passkeys.io Other FIDO2/WebAuthn Tools and Demos #
+Basic #
+Yubico Demo Site WebAuthn.me Advanced #
+aka.ms/webauthntest lbuchs/WebAuthn WebAuthn Response Debugger The &amp;ldquo;Awesome WebAuthn&amp;rdquo; GitHub repo is also regularly updated with tools and demos from the community.</description></item></channel></rss>
