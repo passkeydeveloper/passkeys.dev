@@ -3,7 +3,7 @@ title: "Device Support"
 description: ""
 lead: ""
 date: 2022-08-05T18:08:48.678Z
-lastmod: 2022-11-21T18:04:55.190Z
+lastmod: 2022-11-30T20:51:23.924Z
 draft: false
 images: []
 weight: 100
@@ -64,7 +64,7 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
             </td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>iOS 16+</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>macOS 13+ <sup>2</sup></td>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>macOS 13+ <sup>1</sup></td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
@@ -98,8 +98,8 @@ Passkeys created in **macOS** can be used on:
                     class="bi bi-x-circle-fill text-danger"></i><br>Firefox</td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
-            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Chrome
-                <sup>1</sup><br>Edge<br><br><i class="bi bi-x-circle-fill text-danger"></i><br>Firefox
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome
+                <sup>2</sup><br>Edge <sup>3</sup><br><br><i class="bi bi-x-circle-fill text-danger"></i><br>Firefox
             </td>
         </tr>
         <tr class="align-middle">
@@ -189,6 +189,7 @@ Passkeys created in **macOS** can be used on:
     </table>
 </div>
 <div class="text-end mb-5">
-    <sup>1</sup> Chrome M108 and Windows 11 2022
-    <br><sup>2</sup> See <a href="/docs/reference/macos/#browser-behavior" target="_blank">macOS browser behavior</a> for caveats
+    <sup>1</sup> See <a href="/docs/reference/macos/#browser-behavior" target="_blank">macOS browser behavior</a> for caveats
+    <br><sup>2</sup> Chrome M108 and Windows 11 22H2
+    <br><sup>3</sup> Edge 108 and Windows 11 22H2
 </div>
