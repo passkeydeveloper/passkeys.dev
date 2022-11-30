@@ -28,7 +28,7 @@ The platform authenticator in macOS Ventura (13) has the following capabilities:
 
 ### Legacy Credentials
 
-WebAuthn credentials created using the platform authenticator in macOS Monterey (12) and earlier ***will not*** not be converted to passkeys but will remain available for the lifetime of the device.
+WebAuthn credentials created using the platform authenticator in macOS Monterey (12) and earlier ***will not*** be converted to passkeys but will remain available for the lifetime of the device.
 
 <!-- TODO: cross link to generic content about "upgrading to a passkey" -->
 To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. macOS will overwrite the legacy credential with a new passkey that will be backed up to iCloud Keychain.
