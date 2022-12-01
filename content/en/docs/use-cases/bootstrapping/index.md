@@ -44,8 +44,7 @@ To support the [autofill UI](/) for passkeys, make sure to:
 
       if (supported) {
         /**
-         * Replace `getAuthenticationOptions()` with logic that queries
-         * your server for options for `navigator.credentials.get()`
+         * Query your server for options for `navigator.credentials.get()`
          */
         try {
           const authOptions = await getAuthenticationOptions();
