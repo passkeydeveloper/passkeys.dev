@@ -33,18 +33,52 @@ To support the [autofill UI](/) for passkeys, make sure to:
 
 2. On page load, check to see if conditional mediation (autofill UI) is supported using an if statement, then call `navigator.credentials.get()` with `mediation: "conditional"` and `userVerification: "required"`.
 
-    ```js
-    if (PublicKeyCredential.isConditionalMediationSupported()) {
-      navigator.credentials.get({
-        mediation: "conditional",  
-        publicKey: {
-          challenge: ..., // server generated challenge value
-          rpId: ..., // RP's domain name
-          userVerification: "required", 
+```html
+<script>
+  (async () => {
+    if (
+      typeof window.PublicKeyCredential !== 'undefined'
+      && typeof window.PublicKeyCredential.isConditionalMediationSupported === 'function'
+    ) {
+      const supported = await PublicKeyCredential.isConditionalMediationSupported();
+
+      if (supported) {
+        /**
+         * Query your server for options for `navigator.credentials.get()`
+         */
+        try {
+          const authOptions = await getAuthenticationOptions();
+          /**
+           * This call to `navigator.credentials.get()` is "set and forget."
+           * The Promise will only resolve if the user successfully interacts
+           * with the browser's autofill UI to select a passkey.
+           */
+          const autoFillResponse = await navigator.credentials.get({
+            mediation: "conditional",
+            publicKey: {
+              ...authOptions,
+              /**
+               * `userVerification: "required"` MUST be set in the
+               * options returned from your server. Setting it here
+               * is for illustrative purposes only.
+               */
+              userVerification: "required",
+            }
+          });
+
+          /**
+           * Send the response to your server for verification.
+           * Authenticate the user if the response is valid.
+           */
+          await verifyAutoFillResponse(autoFillResponse);
+        } catch (err) {
+          console.error('Error with conditional UI:', err);
         }
-      });
+      }
     }
-    ```
+  })();
+</script>
+```
 
 This will cause the following to happen:
 
