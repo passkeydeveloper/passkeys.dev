@@ -3,7 +3,7 @@ title : "Bootstrapping"
 description: "Bootstrapping an account on the web"
 lead: "Bootstrapping an account on the web"
 date: 2022-10-10T19:52:26.819Z
-lastmod: 2022-10-10T19:52:32.388Z
+lastmod: 2022-12-01T02:10:54.414Z
 draft: false
 images: ['pkdd-signin-username-next.png']
 weight: 310
@@ -43,33 +43,24 @@ To support the [autofill UI](/) for passkeys, make sure to:
       const supported = await PublicKeyCredential.isConditionalMediationSupported();
 
       if (supported) {
-        /**
-         * Query your server for options for `navigator.credentials.get()`
-         */
+         // Query your server for options for `navigator.credentials.get()`
         try {
           const authOptions = await getAuthenticationOptions();
-          /**
-           * This call to `navigator.credentials.get()` is "set and forget."
-           * The Promise will only resolve if the user successfully interacts
-           * with the browser's autofill UI to select a passkey.
-           */
+          // This call to `navigator.credentials.get()` is "set and forget."
+          // The Promise will only resolve if the user successfully interacts
+          // with the browser's autofill UI to select a passkey.
           const autoFillResponse = await navigator.credentials.get({
             mediation: "conditional",
             publicKey: {
               ...authOptions,
-              /**
-               * `userVerification: "required"` MUST be set in the
-               * options returned from your server. Setting it here
-               * is for illustrative purposes only.
-               */
+              // `userVerification: "required"` MUST be set in the
+              // options returned from your server. Setting it here
+              // is for illustrative purposes only.
               userVerification: "required",
             }
           });
-
-          /**
-           * Send the response to your server for verification.
-           * Authenticate the user if the response is valid.
-           */
+           // Send the response to your server for verification.
+           // Authenticate the user if the response is valid.
           await verifyAutoFillResponse(autoFillResponse);
         } catch (err) {
           console.error('Error with conditional UI:', err);
