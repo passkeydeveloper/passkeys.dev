@@ -31,7 +31,7 @@ To support the [autofill UI](/) for passkeys, make sure to:
     </div>
     ```
 
-2. On page load, check to see if conditional mediation (autofill UI) is supported using an if statement, then call `navigator.credentials.get()` with `mediation: "conditional"` and `userVerification: "required"`.
+2. On page load, check to see if conditional mediation (autofill UI) is supported using an if statement, then call `navigator.credentials.get()` with `mediation: "conditional"` and `userVerification: "preferred"`.
 
 ```html
 <script>
@@ -53,10 +53,8 @@ To support the [autofill UI](/) for passkeys, make sure to:
             mediation: "conditional",
             publicKey: {
               ...authOptions,
-              // `userVerification: "required"` MUST be set in the
-              // options returned from your server. Setting it here
-              // is for illustrative purposes only.
-              userVerification: "required",
+              // see note about userVerification below
+              userVerification: "preferred",
             }
           });
            // Send the response to your server for verification.
@@ -99,6 +97,16 @@ Once the user is signed in, it might be time to set up a new passkey for them. D
 - The user just created a new account at the relying party, and is considered signed-in because of that.
 - The user was using a passkey, but they used a different device than the one they’re currently on (by selecting the "other device" shown in the example above). This can be checked by inspecting the [`authenticatorAttachment`](/) attribute in the returned PublicKeyCredential object.
 
+### A note about user verification
+
+This guidance sets `userVerification` to `preferred`, meaning that user verification will be attempted when possible.
+
+Some devices, such as desktops and older laptops, may not have biometric sensors. On these devices, the user may be asked to enter their system login password for each sign in using a passkey if `userVerification` is set to `required`. This can be a very frustrating user experience to repeat over and over.
+
+When `preferred` is used, some platform authenticators will always require a user verification check when the device has biometric sensors, but may skip user verification on devices without them.
+
+The user verification result (conveyed in [authenticator data flags](https://www.w3.org/TR/2021/REC-webauthn-2-20210408/#flags)) will reflect the actual user verification result and should always be validated against your requirements on the server.
+
 ## Opting the user into passkeys
 
 First check whether the two calls below return `true`.
@@ -123,7 +131,7 @@ If the user has signed in with a passkey from a another device (such as a phone,
 
 > Consider showing (or linking to) longer descriptions explaining that all users that are able to unlock the current device will be able to access the account at the relying party to ensure that the user is giving fully informed consent.
 
-If the user consents, call `navigator.credentials.create()`, making sure to ask for a [platform authenticator](/), [user verification](/), [discoverable credentials](/) (aka "resident keys"), and passing an [exclude list](/) of existing passkeys for the account:
+If the user consents, call `navigator.credentials.create()`, making sure to ask for a [platform authenticator](/), [user verification preferred](#a-note-about-user-verification), [discoverable credentials](/) (aka "resident keys"), and passing an [exclude list](/) of existing passkeys for the account:
 
 ```js
 navigator.credentials.create({
@@ -157,7 +165,7 @@ navigator.credentials.create({
     authenticatorSelection: {
       authenticatorAttachment: "platform",
       residentKey: "required",
-      userVerification: "required"
+      userVerification: "preferred"
     },
   }
 })
