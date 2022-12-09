@@ -47,10 +47,13 @@ navigator.credentials.get({
     }, {
       ...
     }],
-    userVerification: "required", 
+    // see note below
+    userVerification: "preferred", 
   }
 });
 ```
+
+> NOTE: Be sure to read the guidance around userVerification from the [previous page](../bootstrapping#a-note-about-user-verification)
 
 If the user instead clicks on "Try another way", you should offer them other sign in methods (password, etc.) to reauthenticate them (assuming the user has such other sign in methods available to them).
 
