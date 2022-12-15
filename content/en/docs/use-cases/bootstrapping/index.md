@@ -125,7 +125,7 @@ Serve an opt-in or "upsell" modal/interstitial or page to the user offering them
 
 ![Image](pkdd-interstitial-upgradeaccount.png "A sample interstitial with the title: Faster, safer sign-in with passkeys, with the passkey icon to the left. Below is text that reads: You can now sign into this site using your face, fingerprint, or device PIN! Under that is a button that says create a passkey and a link that says not now.")
 
-If the user has signed in with a passkey from a another device (such as a phone, tablet, or FIDO2 security key), you might adjust the wording accordingly:
+If the user has signed in with a passkey from another device (such as a phone, tablet, or FIDO2 security key), you might adjust the wording accordingly:
 
 ![Image](pkdd-interstitial-cdalocal.png "A sample interstitial with the title: Set up a passkey on this device, with the passkey icon to the left. Below is text that reads: Next time you sign in, would you like to use this device instead of your phone? Under that is a button that says yes and a link that says not now.")
 
