@@ -39,6 +39,14 @@ FIDO Cross-Device Authentication (CDA) allows a passkey from one device to be us
 
 CDA is powered by the FIDO Client-to-Authenticator Protocol (CTAP) using "hybrid" transport. CTAP is implemented by authenticators and client platforms, not Relying Parties.
 
+### CDA Client
+
+The _client_ in a cross-device authentication flow is the device where the relying party is being actively accessed.
+
+### CDA Authenticator
+
+ The _authenticator_ in a cross-device authentication flow is the device generating the FIDO assertion.
+
 ## Device Public Key (DPK)
 
 A Device Public Key (DPK) is a device-bound key that can be requested by a [Relying Party (RP)](#relying-party-rp) for higher assurance scenarios where device continuity signals are desired. If supported by the authenticator, a signature from both the passkey and DPK are returned.
