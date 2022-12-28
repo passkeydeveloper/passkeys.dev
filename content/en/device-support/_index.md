@@ -64,14 +64,17 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
             </td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>iOS 16+</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>macOS 13+ <sup>1</sup></td>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>macOS 13+
+                <sup>1</sup>
+            </td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
             </td>
         </tr>
         <tr class="align-middle">
-            <td class="fw-bold"><a href="../docs/reference/terms/#single-device-passkey" target="_blank"><span class="fst-italic">Single-device</span> passkeys</a>
+            <td class="fw-bold"><a href="../docs/reference/terms/#single-device-passkey" target="_blank"><span
+                        class="fst-italic">Single-device</span> passkeys</a>
             </td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
@@ -84,8 +87,8 @@ Passkeys created in **macOS** can be used on:
         </tr>
         <tr>
             <td class="fw-bold">Browser Autofill UI</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome<br><br><i class="bi bi-calendar-plus" title="Planned"
-                    alt="calendar icon"></i><br>Edge<br><br><i
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome<br><br><i
+                    class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Edge<br><br><i
                     class="bi bi-x-circle-fill text-danger"></i><br>Firefox</td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
             </td>
@@ -101,7 +104,9 @@ Passkeys created in **macOS** can be used on:
             </td>
         </tr>
         <tr class="align-middle">
-            <td><a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">Cross-Device Authentication</a><br><a href="../docs/reference/terms/#cda-authenticator" target="_blank"><span class="fst-italic fw-bold">Authenticator</span></i></a>
+            <td><a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">Cross-Device
+                    Authentication</a><br><a href="../docs/reference/terms/#cda-authenticator" target="_blank"><span
+                        class="fst-italic fw-bold">Authenticator</span></i></a>
             </td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Android 9+</td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
@@ -115,72 +120,111 @@ Passkeys created in **macOS** can be used on:
                     Supported</span></td>
         </tr>
         <tr>
-            <td><a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">Cross-Device Authentication</a><br><a href="../docs/reference/terms/#cda-client" target="_blank"><span class="fst-italic fw-bold">Client</span></a>
+            <td><a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">Cross-Device
+                    Authentication</a><br><a href="../docs/reference/terms/#cda-client" target="_blank"><span
+                        class="fst-italic fw-bold">Client</span></a>
             </td>
-            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned</td>
+            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
+            </td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>iOS 16+</td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>macOS 13+</td>
-                        <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome<br>Edge</td>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome<br>Edge
+            </td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome<br>Edge<br><br><i
-                    class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Firefox <br>Windows apps
-            </td>
-        </tr>
-        <tbody class="table-group-divider">
-            <tr>
-                <td colspan="7" class="fs-5 fw-bold">Advanced Capabilities</td>
-            </tr>
-        </tbody>
-        <tr class="align-middle">
-            <td class="fw-bold"><a href="../docs/reference/terms/#device-public-key-dpk" target="_blank">Device Public Key (DPK)</a>
-            </td>
-            <td class="text-center"><i class="bi bi-wrench-adjustable-circle-fill" title="Beta" alt="wrench in circle icon"></i><br>Beta
-            </td>
-            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned</td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
-            </td>
-        </tr>
-        <tr class="align-middle">
-            <td class="fw-bold">Passkey attestation</td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-        </tr>
-        <tr class="align-middle">
-            <td class="fw-bold">DPK attestation</td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span>
-            </td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
+                    class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Firefox
+                <br>Windows apps
             </td>
         </tr>
     </table>
-</div>
-<div class="text-end mb-5">
-    <sup>1</sup> See <a href="/docs/reference/macos/#browser-behavior" target="_blank">macOS browser behavior</a> for caveats
-    <br><sup>2</sup> Chrome M108 and Windows 11 22H2
-    <br><sup>3</sup> Edge 108 and Windows 11 22H2
+    {{< details "Advanced Capabilities" >}}
+    <div id="device-support-table" class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr class="fw-bold">
+                    <td>Capability</td>
+                    <td class="text-center"><a href="/docs/reference/android/">Android</a></td>
+                    <td class="text-center">Chrome OS</td>
+                    <td class="text-center"><a href="/docs/reference/ios/">iOS/iPad OS</a></td>
+                    <td class="text-center"><a href="/docs/reference/macos/">macOS</a></td>
+                    <td class="text-center">Ubuntu</td>
+                    <td class="text-center"><a href="/docs/reference/windows/">Windows</a></td>
+                </tr>
+                <tr class="align-middle">
+                    <td class="fw-bold"><a href="../docs/reference/terms/#device-public-key-dpk" target="_blank">Device
+                            Public
+                            Key (DPK)</a>
+                    </td>
+                    <td class="text-center"><i class="bi bi-wrench-adjustable-circle-fill" title="Beta"
+                            alt="wrench in circle icon"></i><br>Beta
+                    </td>
+                    <td class="text-center"><i class="bi bi-calendar-plus" title="Planned"
+                            alt="calendar icon"></i><br>Planned
+                    </td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                    <td class="text-center"><i class="bi bi-calendar-plus" title="Planned"
+                            alt="calendar icon"></i><br>Planned
+                    </td>
+                </tr>
+                <tr class="align-middle">
+                    <td class="fw-bold">Passkey attestation</td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                </tr>
+                <tr class="align-middle">
+                    <td class="fw-bold">DPK attestation</td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span>
+                    </td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                    <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                            class="fs-6 text-muted">Not
+                            Supported</span></td>
+                    <td class="text-center"><i class="bi bi-calendar-plus" title="Planned"
+                            alt="calendar icon"></i><br>Planned
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    {{< /details >}}
+    <div class="text-end mb-5">
+        <sup>1</sup> See <a href="/docs/reference/macos/#browser-behavior" target="_blank">macOS browser
+            behavior</a> for caveats
+        <br><sup>2</sup> Chrome M108 and Windows 11 22H2
+        <br><sup>3</sup> Edge 108 and Windows 11 22H2
+    </div>
 </div>
