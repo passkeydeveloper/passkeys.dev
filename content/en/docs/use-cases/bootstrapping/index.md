@@ -31,7 +31,7 @@ To support the [autofill UI](/) for passkeys, make sure to:
     </div>
     ```
 
-2. On page load, check to see if conditional mediation (autofill UI) is available using an if statement, then call `navigator.credentials.get()` with `mediation: "conditional"` and `userVerification: "preferred"`.
+2. On page load, check to see if autofill UI (conditional mediation) is available using an if statement, then call `navigator.credentials.get()` with `mediation: "conditional"` and `userVerification: "preferred"`.
 
 ```html
 <script>
@@ -83,7 +83,7 @@ This will cause the following to happen:
 
 - If the user selects the "Passkey from another device" option (NOTE: the exact text will vary slightly by platform), then the browser/platform will guide the user through using a FIDO2 security key or the  Cross-Device Authentication (CDA) flow to use a passkey from their smartphone or tablet to deliver a WebAuthn response to the `navigator.credentials.get()` call.
 
-This is why this is called the Conditional UI (often called the Autofill UI) mode of WebAuthn — the platform authenticator UI that guides the user through the verification, or through using their phone, is only shown if the user has a passkey on this device (or chooses the "another device" option).
+This is why this is called the Conditional UI (or more commonly, the autofill UI) mode of WebAuthn — the platform authenticator UI that guides the user through the verification, or through using their phone, is only shown if the user has a passkey on this device (or chooses the "another device" option).
 
 As we can see, in this mode the `navigator.credentials.get()` call either succeeds, or it doesn’t (never resolves). If it does succeed, then the result of the call will reveal both a user id, as well as a signed WebAuthn assertion, which the relying party will use to authenticate the user.
 
@@ -109,17 +109,13 @@ The user verification result (conveyed in [authenticator data flags](https://www
 
 ## Opting the user into passkeys
 
-First check whether the two calls below return `true`.
+First, ensure that the user's device and OS combo supports passkeys by calling:
 
 ```js
 PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()
 ```
 
-```js
-PublicKeyCredential.isConditionalMediationAvailable()
-```
-
-If they are, then the user's system features a FIDO platform authenticator that supports conditional UI mode, and you can offer the user the convenience and security of using passkeys.
+If passkeys are supported, this will return `true`. If they aren't supported, this will return `false` and you should abort the passkey enrollment flow.
 
 Serve an opt-in or "upsell" modal/interstitial or page to the user offering them to create a passkey:
 
