@@ -3,7 +3,7 @@ title: "Terms"
 description: "A list of terms which are used frequently throughout this site and in discussions about passkeys, FIDO2, and WebAuthn."
 lead: "Here's a list of terms which are used frequently throughout this site and in discussions about passkeys, FIDO2, and WebAuthn."
 date: 2020-11-12T13:26:54+01:00
-lastmod: 2022-10-19T00:18:06.729Z
+lastmod: 2022-12-28T20:24:31.012Z
 draft: false
 images: []
 menu:
@@ -33,6 +33,22 @@ A [Relying Party (RP)](#relying-party-rp) authenticates a user without any prior
 
 Information provided by a user (or one of the user’s devices) for purposes of authentication, usually in response to a login challenge. Often categorized into "knowledge factors" (e.g. passwords), "something you have" factors (e.g. another already signed-in device), and "something you are" factors (e.g. biometrics). Note that a single login challenge may collect multiple factors simultaneously.
 
+## Autofill UI
+
+A privacy preserving list UI element that is rendered by the browser (or the OS platform in the case of native apps), in cooperation with the platform authenticator, on username and/or password fields that have the `webauthn` value included in the `autocomplete` attribute.
+
+This UI element provides a list of passkeys that are available for the [Relying Party (RP)](#relying-party-rp) on the local device, and may also provide an option to kick off [Cross-Device Authentication (CDA)](#cross-device-authentication-cda) or use a FIDO2 security key.
+
+A generic example of an autofill UI for passkeys is shown below:
+
+![Image](pkdd-signin-username-autofill.png "Sample sign in screen with the autofill UI rendered under the username field, showing a passkey for bob@example.com, an other accounts option and a passkey from another device option")
+
+The technical name for this feature in the WebAuthn and Credential Management specifications is "Conditional Mediation".
+
+<a href="https://w3c.github.io/webauthn/#dom-publickeycredential-isconditionalmediationavailable" target="_blank"><button type="button" class="btn btn-light">WebAuthn Spec Reference <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
+
+<a href="https://w3c.github.io/webappsec-credential-management/#mediation-requirements" target="_blank"><button type="button" class="btn btn-light">Credential Management Spec Reference <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
+
 ## Cross-Device Authentication (CDA)
 
 FIDO Cross-Device Authentication (CDA) allows a passkey from one device to be used to sign in on another device. For example, your phone can be linked to your laptop, allowing you to use a passkey from your phone to sign into a service on your laptop.
@@ -46,6 +62,14 @@ The _client_ in a cross-device authentication flow is the device where the relyi
 ### CDA Authenticator
 
  The _authenticator_ in a cross-device authentication flow is the device generating the FIDO assertion.
+
+## Conditional Mediation
+
+See [_Autofill UI_](#autofill-ui)
+
+## Conditional UI
+
+See [_Autofill UI_](#autofill-ui)
 
 ## Device Public Key (DPK)
 
