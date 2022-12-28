@@ -19,7 +19,7 @@ Start off by asking the user for their account identifier, typically a username 
 
 ![Image](pkdd-signin-username-next.png "Sample sign in screen with a username field and next button")
 
-To support the [autofill UI](/) for passkeys, make sure to:
+To support the [autofill UI](/docs/reference/terms/#autofill-ui) for passkeys, make sure to:
 
 1. Add the `username` and `webauthn` value to any existing autocomplete annotations on the username input field as shown below in the example.
 
