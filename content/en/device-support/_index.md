@@ -71,9 +71,7 @@ Passkeys created in **macOS** can be used on:
             </td>
         </tr>
         <tr class="align-middle">
-            <td class="fw-bold"><span class="fst-italic">Single-device</span> passkeys <i
-                    class="bi bi-info-circle fs-6s"
-                    title="Single-device passkeys are traditional FIDO credentials that never leave the device on which they were created"></i>
+            <td class="fw-bold"><a href="../docs/reference/terms/#single-device-passkey" target="_blank"><span class="fst-italic">Single-device</span> passkeys</a>
             </td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
@@ -103,9 +101,7 @@ Passkeys created in **macOS** can be used on:
             </td>
         </tr>
         <tr class="align-middle">
-            <td>Cross-Device Authentication<br><span class="fst-italic fw-bold">Authenticator <i
-                        class="bi bi-info-circle fs-6"
-                        title="The authenticator in a cross-device authentication flow is the device generating the FIDO assertion"></i></span>
+            <td><a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">Cross-Device Authentication</a><br><a href="../docs/reference/terms/#cda-authenticator" target="_blank"><span class="fst-italic fw-bold">Authenticator</span></i></a>
             </td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Android 9+</td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
@@ -119,8 +115,7 @@ Passkeys created in **macOS** can be used on:
                     Supported</span></td>
         </tr>
         <tr>
-            <td>Cross-Device Authentication<br><span class="fst-italic fw-bold">Client <i class="bi bi-info-circle fs-6"
-                        title="The client in a cross-device authentication flow is the device where the relying party is being actively accessed"></i></span>
+            <td><a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">Cross-Device Authentication</a><br><a href="../docs/reference/terms/#cda-client" target="_blank"><span class="fst-italic fw-bold">Client</span></a>
             </td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned</td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
@@ -137,8 +132,7 @@ Passkeys created in **macOS** can be used on:
             </tr>
         </tbody>
         <tr class="align-middle">
-            <td class="fw-bold">Device Public Key (DPK) <a href="" target="_blank"><i class="bi bi-info-circle fs-6"
-                        title="The additional (optional) device-bound key that can be used by a relying party for risk analysis"></i></a>
+            <td class="fw-bold"><a href="../docs/reference/terms/#device-public-key-dpk" target="_blank">Device Public Key (DPK)</a>
             </td>
             <td class="text-center"><i class="bi bi-wrench-adjustable-circle-fill" title="Beta" alt="wrench in circle icon"></i><br>Beta
             </td>
@@ -153,9 +147,7 @@ Passkeys created in **macOS** can be used on:
             </td>
         </tr>
         <tr class="align-middle">
-            <td class="fw-bold">Passkey attestation <a href="https://w3c.github.io/webauthn/#sctn-attestation"
-                    target="_blank"><i class="bi bi-info-circle fs-6"
-                        title="Attestation for the primary credential (multi-device credential)"></i></a></td>
+            <td class="fw-bold">Passkey attestation</td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
@@ -170,8 +162,7 @@ Passkeys created in **macOS** can be used on:
                     Supported</span></td>
         </tr>
         <tr class="align-middle">
-            <td class="fw-bold">DPK attestation <a href="" target="_blank"><i class="bi bi-info-circle fs-6"
-                        title="Attestation for the device public key"></i></a></td>
+            <td class="fw-bold">DPK attestation</td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span>
             </td>
