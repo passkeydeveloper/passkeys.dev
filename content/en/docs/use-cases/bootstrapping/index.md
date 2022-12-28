@@ -159,7 +159,6 @@ navigator.credentials.create({
       }
     ],
     authenticatorSelection: {
-      authenticatorAttachment: "platform",
       residentKey: "required",
       userVerification: "preferred"
     },
