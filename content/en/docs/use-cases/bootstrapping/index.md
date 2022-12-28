@@ -127,7 +127,7 @@ If the user has signed in with a passkey from another device (such as a phone, t
 
 > Consider showing (or linking to) longer descriptions explaining that all users that are able to unlock the current device will be able to access the account at the relying party to ensure that the user is giving fully informed consent.
 
-If the user consents, call `navigator.credentials.create()`, making sure to ask for a [platform authenticator](/), [user verification preferred](#a-note-about-user-verification), [discoverable credentials](/) (aka "resident keys"), and passing an [exclude list](/) of existing passkeys for the account:
+If the user consents, call `navigator.credentials.create()`, making sure to ask for a [platform authenticator](/), [user verification preferred](#a-note-about-user-verification), [discoverable credentials](/docs/reference/terms/#discoverable-credential) (formerly known as "resident keys"), and passing an [exclude list](/) of existing passkeys for the account:
 
 ```js
 navigator.credentials.create({
