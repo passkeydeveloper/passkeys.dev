@@ -81,8 +81,9 @@ Edge: credentials created by Edge are currently single-device passkeys, are not 
 Firefox: passkeys are not currently supported in Firefox on macOS. Single-device passkeys on a FIDO2 security key are supported. User verification is not supported, though, which makes it impossible to implement WebAuthn-based passwordless authentication at this time.
 Resources #Apple landing page for passkeys About the security of passkeys Supporting passkeys Supporting single-device passkeys on security keys Sample Code `}),e.add({id:13,href:"/docs/reference/windows/",title:"Windows",description:"Resources for passkeys in Microsoft Windows",content:` Local Authenticator (create and use passkeys from the local device)
 Planned External Authenticator (create and use passkeys from another device)
-Partially Supported Overview #Windows Hello, the platform authenticator in Windows 10 and 11, has the following capabilities:
-creating and using single-device passkeys that are bound to the device creating and using single-device passkeys on a FIDO2 security key using passkeys from iOS and iPadOS in Chrome (105+) and Edge (105+) for signing in to web services using FIDO Cross-Device Authentication Platform Notes #Coming Soon
+Partially Supported Overview #Windows Hello, the local platform authenticator in Windows 10 and 11, has the following capabilities:
+creating and using single-device passkeys that are bound to the local device creating and using single-device passkeys on a FIDO2 security key The following is also possible in both Windows 10 and 11:
+using passkeys from iOS and iPadOS devices in Chrome (108+) and Edge (108+) for signing in to web services using FIDO Cross-Device Authentication using passkeys from Android devices in Chrome (108+) and Edge (108+) for signing in to web services using FIDO Cross-Device Authentication Platform Notes #Coming Soon
 Resources #Coming Soon
 `}),e.add({id:14,href:"/docs/reference/terms/",title:"Terms",description:"A list of terms which are used frequently throughout this site and in discussions about passkeys, FIDO2, and WebAuthn.",content:`2FA user #A user whose account has 2FA turned on, i.e., who must present 2 authentication factors during sign-in.
 2-Factor Authentication (2FA) #also sometimes referred to as MFA: multi-factor authentication or 2SV: two-step verification

@@ -25,9 +25,8 @@ Legacy Credentials #
 WebAuthn credentials created using the platform authenticator in macOS Monterey (12) and earlier will not be converted to passkeys but will remain available for the lifetime of the device.</description></item><item><title>Windows</title><link>https://passkeys.dev/docs/reference/windows/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeys.dev/docs/reference/windows/</guid><description>Local Authenticator (create and use passkeys from the local device)
 Planned External Authenticator (create and use passkeys from another device)
 Partially Supported Overview #
-Windows Hello, the platform authenticator in Windows 10 and 11, has the following capabilities:
-creating and using single-device passkeys that are bound to the device creating and using single-device passkeys on a FIDO2 security key using passkeys from iOS and iPadOS in Chrome (105+) and Edge (105+) for signing in to web services using FIDO Cross-Device Authentication Platform Notes #
-Coming Soon</description></item><item><title>Terms</title><link>https://passkeys.dev/docs/reference/terms/</link><pubDate>Thu, 12 Nov 2020 13:26:54 +0100</pubDate><guid>https://passkeys.dev/docs/reference/terms/</guid><description>2FA user #
+Windows Hello, the local platform authenticator in Windows 10 and 11, has the following capabilities:
+creating and using single-device passkeys that are bound to the local device creating and using single-device passkeys on a FIDO2 security key The following is also possible in both Windows 10 and 11:</description></item><item><title>Terms</title><link>https://passkeys.dev/docs/reference/terms/</link><pubDate>Thu, 12 Nov 2020 13:26:54 +0100</pubDate><guid>https://passkeys.dev/docs/reference/terms/</guid><description>2FA user #
 A user whose account has 2FA turned on, i.e., who must present 2 authentication factors during sign-in.
 2-Factor Authentication (2FA) #
 also sometimes referred to as MFA: multi-factor authentication or 2SV: two-step verification
