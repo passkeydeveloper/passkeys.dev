@@ -2,7 +2,7 @@
 title: "Windows"
 description: "Resources for passkeys in Microsoft Windows"
 date: 2022-09-03T16:09:38.358Z
-lastmod: 2022-09-26T18:39:16.749Z
+lastmod: 2023-01-10T20:48:52.923Z
 draft: false
 images: []
 menu:
@@ -16,11 +16,15 @@ toc: true
 
 ## Overview
 
-Windows Hello, the platform authenticator in Windows 10 and 11, has the following capabilities:
+Windows Hello, the local platform authenticator in Windows 10 and 11, has the following capabilities:
 
-- creating and using [***single-device*** passkeys](/docs/reference/terms/#single-device-passkey) that are bound to the device
+- creating and using [***single-device*** passkeys](/docs/reference/terms/#single-device-passkey) that are bound to the local device
 - creating and using [***single-device*** passkeys](/docs/reference/terms/#single-device-passkey) on a FIDO2 security key
-- using passkeys from iOS and iPadOS in Chrome (105+) and Edge (105+) for signing in to web services using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+
+The following is also possible in both Windows 10 and 11:
+
+- using passkeys from iOS and iPadOS devices in Chrome (108+) and Edge (108+) for signing in to web services using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- using passkeys from Android devices in Chrome (108+) and Edge (108+) for signing in to web services using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 
 ## Platform Notes
 
