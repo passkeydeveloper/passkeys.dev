@@ -2,7 +2,7 @@
 title: "iOS & iPadOS"
 description: "Resources for passkeys in Apple's iOS and iPadOS"
 date: 2022-09-03T16:09:38.358Z
-lastmod: 2022-09-26T18:19:03.365Z
+lastmod: 2023-01-11T20:23:13.879Z
 draft: false
 images: []
 menu:

@@ -2,7 +2,7 @@
 title: "macOS"
 description: "Resources for passkeys in Apple macOS"
 date: 2022-09-03T16:09:38.358Z
-lastmod: 2022-09-26T18:22:09.454Z
+lastmod: 2023-01-11T20:23:23.564Z
 draft: false
 images: []
 menu:
