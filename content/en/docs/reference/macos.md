@@ -2,7 +2,7 @@
 title: "macOS"
 description: "Resources for passkeys in Apple macOS"
 date: 2022-09-03T16:09:38.358Z
-lastmod: 2023-01-11T20:23:23.564Z
+lastmod: 2023-01-11T20:27:10.299Z
 draft: false
 images: []
 menu:
@@ -24,7 +24,7 @@ The platform authenticator in macOS Ventura (13) has the following capabilities:
   - an Android device
   - a FIDO2 security key<sup>1</sup>
 
-<p class="fs-6 text-muted"><sup>1</sup> On iOS and iPad OS, user verification methods (device PIN, biometric, etc) must already be configured on the security key prior to credential creation</p>
+<p class="fs-6 text-muted"><sup>1</sup> On macOS, user verification methods (device PIN, biometric, etc) must already be configured on the security key prior to credential creation</p>
 
 ## Platform Notes
 
