@@ -22,7 +22,9 @@ The platform authenticator in macOS Ventura (13) has the following capabilities:
 - creating and using passkeys on/from another device, such as:
   - an iPhone or iPad signed in to a different iCloud account
   - an Android device
-  - a FIDO2 security key
+  - a FIDO2 security key<sup>1</sup>
+
+<p class="fs-6 text-muted"><sup>1</sup> On iOS and iPad OS, user verification methods (device PIN, biometric, etc) must already be configured on the security key prior to credential creation</p>
 
 ## Platform Notes
 
