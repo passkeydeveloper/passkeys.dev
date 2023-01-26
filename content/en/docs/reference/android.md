@@ -2,7 +2,7 @@
 title: "Android"
 description: "Resources for passkeys in Android"
 date: 2022-09-03T16:09:38.358Z
-lastmod: 2022-11-21T18:04:47.207Z
+lastmod: 2023-01-26T15:08:06.604Z
 draft: false
 images: []
 menu:
@@ -30,4 +30,4 @@ The platform authenticator in Android 9+ has the following capabilities:
 - [Security of Passkeys in the Google Password Manager](https://security.googleblog.com/2022/10/SecurityofPasskeysintheGooglePasswordManager.html)
 - [Beta announcement](https://android-developers.googleblog.com/2022/10/bringing-passkeys-to-android-and-chrome.html)
 - [FIDO2 API for Android](https://developers.google.com/identity/fido/android/native-apps)
-- [Sample app](https://github.com/android/security-samples/tree/master/Fido)
+- [Sample app](https://github.com/android/identity-samples/tree/main/Fido2)
