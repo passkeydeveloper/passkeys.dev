@@ -3,7 +3,7 @@ title: "Device Support"
 description: "Detailed information about passkey support across devices and ecosystems"
 lead: ""
 date: 2022-08-05T18:08:48.678Z
-lastmod: 2022-12-29T18:41:18.370Z
+lastmod: 2023-01-30T16:31:05.109Z
 draft: false
 images: []
 weight: 100
@@ -100,7 +100,8 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome
-                <sup>2</sup><br>Edge <sup>3</sup><br><br><i class="bi bi-x-circle-fill text-danger"></i><br>Firefox
+                <sup>2</sup><br><br><i
+                    class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Edge<br><br><i class="bi bi-x-circle-fill text-danger"></i><br>Firefox
             </td>
         </tr>
         <tr class="align-middle">
@@ -227,5 +228,4 @@ Passkeys created in **macOS** can be used on:
     <sup>1</sup> See <a href="/docs/reference/macos/#browser-behavior" target="_blank">macOS browser
         behavior</a> for caveats
     <br><sup>2</sup> Chrome M108 and Windows 11 22H2
-    <br><sup>3</sup> Edge 108 and Windows 11 22H2
 </div>
