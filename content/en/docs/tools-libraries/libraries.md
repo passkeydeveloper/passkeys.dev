@@ -3,7 +3,6 @@ title: "Libraries"
 description: "A list of libraries for passkeys and FIDO2/WebAuthn"
 lead: ""
 date: 2022-09-24T16:02:27.390Z
-lastmod: 2022-10-17T05:07:21.912Z
 draft: false
 images: []
 menu:

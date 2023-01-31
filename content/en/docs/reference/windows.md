@@ -2,7 +2,6 @@
 title: "Windows"
 description: "Resources for passkeys in Microsoft Windows"
 date: 2022-09-03T16:09:38.358Z
-lastmod: 2023-01-10T20:48:52.923Z
 draft: false
 images: []
 menu:

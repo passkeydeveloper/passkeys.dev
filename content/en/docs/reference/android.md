@@ -2,7 +2,6 @@
 title: "Android"
 description: "Resources for passkeys in Android"
 date: 2022-09-03T16:09:38.358Z
-lastmod: 2023-01-26T15:08:06.604Z
 draft: false
 images: []
 menu:
