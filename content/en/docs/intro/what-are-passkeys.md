@@ -3,7 +3,6 @@ title: "What are passkeys?"
 description: "Passkeys are a replacement for passwords. A password is something that can be remembered and typed, and a passkey is a secret stored on one’s devices, unlocked with biometrics."
 lead: "Passkeys are a replacement for passwords. A password is something that can be remembered and typed, and a passkey is a secret stored on one’s devices, unlocked with biometrics."
 date: 2022-09-24T16:02:27.390Z
-lastmod: 2022-10-12T00:47:54.366Z
 draft: false
 images: []
 menu:

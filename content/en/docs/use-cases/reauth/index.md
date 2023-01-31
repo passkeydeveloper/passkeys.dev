@@ -3,7 +3,6 @@ title : "Reauthentication"
 description: "Performing a reauthentication with passkeys"
 lead: "Performing a reauthentication with passkeys"
 date: 2022-10-10T19:52:16.153Z
-lastmod: 2022-10-19T00:17:57.101Z
 draft: false
 images: []
 weight: 320

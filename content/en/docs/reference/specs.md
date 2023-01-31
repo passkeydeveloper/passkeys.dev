@@ -3,7 +3,6 @@ title: "Specifications"
 description: "List of specifications that enable passkeys"
 lead: ""
 date: 2022-08-04T17:33:14.682Z
-lastmod: 2022-08-04T17:33:14.682Z
 draft: false
 images: []
 menu:

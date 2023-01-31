@@ -3,7 +3,6 @@ title : "Bootstrapping"
 description: "Bootstrapping an account on the web"
 lead: "Bootstrapping an account on the web"
 date: 2022-10-10T19:52:26.819Z
-lastmod: 2022-12-01T02:10:54.414Z
 draft: false
 images: ['pkdd-signin-username-next.png']
 weight: 310
