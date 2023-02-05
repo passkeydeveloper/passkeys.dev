@@ -300,6 +300,16 @@ Specific to FAQ content
 /*
 Specific to device support page
 */
+#device-support-table table {
+  --#{$prefix}table-bg: #{$light};
+}
+
+[data-dark-mode] {
+  #device-support-table table {
+    --#{$prefix}table-bg: #{$dark};
+  }
+}
+
 #device-support-table th:first-child,
 td:first-child {
   position: sticky;
