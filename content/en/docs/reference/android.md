@@ -22,11 +22,12 @@ The platform authenticator in Android 9+ has the following capabilities:
 
 ## Platform Notes
 
+- **Credential Manager** is a new Android Jetpack API that supports multiple sign-in methods, including passkeys, in a single API, thus simplifying the integration for developers.<br><br><a href="https://developer.android.com/training/sign-in/passkeys" target="_blank"><button type="button" class="btn btn-light">Credential Manager API <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
+
 - The [Device Public Key (DPK)](../terms#device-public-key-dpk) extension is supported in beta, but is currently gated behind a flag in Chrome. Developers can enable `chrome://flags/#enable-experimental-web-platform-features` to experiment with DPK on Android, or on desktop Chrome when using [Cross-Device Authentication](../terms#cross-device-authentication-cda) with an Android device.
 
 ## Resources
 
+- [Credential Manager API](https://developer.android.com/training/sign-in/passkeys)
 - [Security of Passkeys in the Google Password Manager](https://security.googleblog.com/2022/10/SecurityofPasskeysintheGooglePasswordManager.html)
-- [Beta announcement](https://android-developers.googleblog.com/2022/10/bringing-passkeys-to-android-and-chrome.html)
-- [FIDO2 API for Android](https://developers.google.com/identity/fido/android/native-apps)
 - [Sample app](https://github.com/android/identity-samples/tree/main/Fido2)
