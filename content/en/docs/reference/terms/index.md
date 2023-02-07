@@ -60,7 +60,7 @@ The _client_ in a cross-device authentication flow is the device where the relyi
 
 ### CDA Authenticator
 
- The _authenticator_ in a cross-device authentication flow is the device generating the FIDO assertion.
+The _authenticator_ in a cross-device authentication flow is the device generating the FIDO assertion.
 
 ## Conditional Mediation
 
@@ -69,6 +69,10 @@ See [_Autofill UI_](#autofill-ui)
 ## Conditional UI
 
 See [_Autofill UI_](#autofill-ui)
+
+## Device-bound passkey
+
+A FIDO2 [Discoverable Credential](#discoverable-credential) that requires [user verification](#user-verification-uv) and is bound to a single authenticator. For example, FIDO2 security keys typically hold device-bound passkeys as the credential cannot leave the device. Device-bound passkeys have been previously referred to as _single-device passkeys_.
 
 ## Device Public Key (DPK)
 
@@ -84,7 +88,7 @@ Just like a passkey, DPKs are unique to each RP.
 
 A Discoverable Credential (previously known as a "resident credential" or "resident key") is a FIDO2/WebAuthn credential that is entirely stored in the authenticator (private key, credential ID, user handle, and other metadata). The [Relying Party (RP)](#relying-party-rp) also stores a copy of the _public_ key and credential ID
 
-[Passkeys](#passkey) (and [single-device passkeys](#single-device-passkey)) are Discoverable Credentials.
+[Passkeys](#passkey) are Discoverable Credentials.
 
 <a href="https://www.w3.org/TR/webauthn-2/#discoverable-credential" target="_blank"><button type="button" class="btn btn-light">Spec Reference <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
 
@@ -148,7 +152,7 @@ This can refer to either account [bootstrapping](#account-bootstrapping) or [rea
 
 ## Single-device passkey
 
-A FIDO2 [Discoverable Credential](#discoverable-credential) that requires [user verification](#user-verification-uv) and is bound to a single authenticator. For example, FIDO2 security keys hold single-device passkeys as the credential cannot leave the device.
+see [_Device-bound passkey_.](#device-bound-passkey)
 
 ## User Presence (UP)
 

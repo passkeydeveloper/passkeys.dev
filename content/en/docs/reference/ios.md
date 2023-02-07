@@ -37,5 +37,5 @@ To replace a legacy platform credential with a passkey, start a credential regis
 - [Apple landing page for passkeys](https://developer.apple.com/passkeys/)
 - [About the security of passkeys](https://support.apple.com/en-us/HT213305)
 - [Supporting passkeys](https://developer.apple.com/documentation/authenticationservices/public-private_key_authentication/supporting_passkeys)
-- [Supporting single-device passkeys on security keys](https://developer.apple.com/documentation/authenticationservices/public-private_key_authentication/supporting_security_key_authentication_using_physical_keys)
+- [Supporting device-bound passkeys on security keys](https://developer.apple.com/documentation/authenticationservices/public-private_key_authentication/supporting_security_key_authentication_using_physical_keys)
 - [Sample Code](https://developer.apple.com/documentation/authenticationservices/connecting_to_a_service_with_passkeys)
