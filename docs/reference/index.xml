@@ -3,7 +3,7 @@ Supported External Authenticator (create and use passkeys from another device)
 Planned Overview #
 The platform authenticator in Android 9+ has the following capabilities:
 creating and using passkeys that are backed up to Google Password Manager using a passkey from the local Android device to sign into services on another device (such as a laptop or desktop), using FIDO Cross-Device Authentication Platform Notes #
-The Device Public Key (DPK) extension is supported in beta, but is currently gated behind a flag in Chrome.</description></item><item><title>Chrome OS</title><link>https://passkeys.dev/docs/reference/chromeos/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeys.dev/docs/reference/chromeos/</guid><description>Local Authenticator (create and use passkeys from the local device)
+Credential Manager is a new Android Jetpack API that supports multiple sign-in methods, including passkeys, in a single API, thus simplifying the integration for developers.</description></item><item><title>Chrome OS</title><link>https://passkeys.dev/docs/reference/chromeos/</link><pubDate>Sat, 03 Sep 2022 16:09:38 +0000</pubDate><guid>https://passkeys.dev/docs/reference/chromeos/</guid><description>Local Authenticator (create and use passkeys from the local device)
 Planned External Authenticator (create and use passkeys from another device)
 Supported Overview #
 Creation of passkeys in Chrome OS is not currently supported.
