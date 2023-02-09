@@ -27,7 +27,7 @@ The following is also possible in both Windows 10 and 11:
 
 ## Platform Notes
 
-- the [authenticatorAttachment property of responses](https://w3c.github.io/webauthn/#dom-publickeycredential-authenticatorattachment), planned for specification delivery in WebAuthn L3, is not currently available
+> Coming Soon
 
 ## Resources
 
