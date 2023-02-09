@@ -17,8 +17,8 @@ toc: true
 
 Windows Hello, the local platform authenticator in Windows 10 and 11, has the following capabilities:
 
-- creating and using [***single-device*** passkeys](/docs/reference/terms/#single-device-passkey) that are bound to the local device
-- creating and using [***single-device*** passkeys](/docs/reference/terms/#single-device-passkey) on a FIDO2 security key
+- creating and using [***device-bound*** passkeys](/docs/reference/terms/#device-bound-passkey) on the local device
+- creating and using [***device-bound*** passkeys](/docs/reference/terms/#device-bound-passkey) on a FIDO2 security key
 
 The following is also possible in both Windows 10 and 11:
 
