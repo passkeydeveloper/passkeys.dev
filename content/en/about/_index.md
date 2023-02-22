@@ -26,7 +26,6 @@ passkeys.dev was launched in October 2022 and is rapidly evolving. You can expec
 
 <strong>Twitter</strong> <i class="bi bi-twitter color-twitter-blue"></i>
 
-- <a href="https://twitter.com/i/communities/1492980146265018374" target="_blank">"Passkeys & FIDO2 & WebAuthn" Community <i class="bi bi-box-arrow-up-right"></i></a>
 - <a href="https://twitter.com/FIDOAlliance" target="_blank">FIDO Alliance <i class="bi bi-box-arrow-up-right"></i></a>
 - <a href="https://twitter.com/w3cdevs" target="_blank">W3C Developers <i class="bi bi-box-arrow-up-right"></i></a>
 
