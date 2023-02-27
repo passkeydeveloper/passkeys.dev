@@ -218,6 +218,29 @@ Passkeys created in **macOS** can be used on:
                                 alt="calendar icon"></i><br>Planned
                         </td>
                     </tr>
+                    <tr class="align-middle">
+                        <td class="fw-bold">Support in Native Apps</td>
+                        <td class="text-center"><i class="bi bi-wrench-adjustable-circle-fill" title="Beta"
+                                alt="wrench in circle icon"></i><br>Alpha<sup>4</sup>
+                        </td>
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                                class="fs-6 text-muted">Not
+                                Supported</span></td>
+                        <td class="text-center">
+                          <i class="bi bi-check-circle-fill text-success"></i><br>
+                          <span>iOS 16+<sup>4</sup></span>
+                        </td>
+                        <td class="text-center">
+                          <i class="bi bi-check-circle-fill text-success"></i><br>
+                          <span>macOS 13+<sup>4</sup></span>
+                        </td>
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                                class="fs-6 text-muted">Not
+                                Supported</span></td>
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                                class="fs-6 text-muted">Not
+                                Supported</span></td>
+                    </tr>
                 </thead>
             </table>
         </div>
@@ -228,4 +251,5 @@ Passkeys created in **macOS** can be used on:
     <br><sup>2</sup> See <a href="/docs/reference/macos/#browser-behavior" target="_blank">macOS browser
         behavior</a> for caveats
     <br><sup>3</sup> Chrome M108 and Windows 11 22H2
+    <br><sup>4</sup> Android: requires <a href="https://developers.google.com/identity/passkeys/supported-environments#android-passkey-support">Android 9+ and the Credential Manager Alpha</a>; iOS/macOS: see <a href="https://developer.apple.com/documentation/authenticationservices/public-private_key_authentication/supporting_passkeys">Apple Developer Documentation</a>
 </div>
