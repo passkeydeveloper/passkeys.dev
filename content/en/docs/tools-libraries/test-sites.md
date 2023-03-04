@@ -16,6 +16,7 @@ toc: true
 
 - [WebAuthn.io](https://webauthn.io)
 - [passkeys.io](https://www.passkeys.io/)
+- [passkeys.guru](https://passkeys.guru/)
 
 ## Other FIDO2/WebAuthn Tools and Demos
 
