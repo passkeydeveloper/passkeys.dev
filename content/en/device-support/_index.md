@@ -88,7 +88,7 @@ Passkeys created in **macOS** can be used on:
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome
                 <sup>3</sup><br><br><i
-                    class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Edge<br><br><i class="bi bi-x-circle-fill text-danger"></i><br>Firefox
+                    class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Edge<br>Firefox<br>
             </td>
         </tr>
         <tr class="align-middle">
