@@ -53,7 +53,7 @@
     "flexsearch": "^0.7.21",
     "highlight.js": "^11.5",
     "hugo-installer": "^3.1",
-    "husky": "^8.0.1",
+    "husky": "^8.0.3",
     "instant.page": "^5.1",
     "katex": "^0.16",
     "lazysizes": "^5.3",
