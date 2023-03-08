@@ -85,7 +85,7 @@ This will cause the following to happen:
 
 - If the user selects the "Passkey from another device" option (NOTE: the exact text will vary slightly by platform), then the browser/platform will guide the user through using a FIDO2 security key or the  Cross-Device Authentication (CDA) flow to use a passkey from their smartphone or tablet to deliver a WebAuthn response to the `navigator.credentials.get()` call.
 
-- Send the WebAuthn response to your server for verification and additional security checks. When all checks are successful: the user is authenticated. Next, continue to start an authenticated session for this user.
+- Send the WebAuthn response to your server for verification and additional security checks. If all checks succeed then start an authenticated session for this user.
 
 This is why this is called the Conditional UI (or more commonly, the autofill UI) mode of WebAuthn — the platform authenticator UI that guides the user through the verification, or through using their phone, is only shown if the user has a passkey on this device (or chooses the "another device" option).
 
