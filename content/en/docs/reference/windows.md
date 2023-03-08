@@ -27,7 +27,11 @@ The following is also possible in both Windows 10 and 11:
 
 ## Platform Notes
 
-> Coming Soon
+### Cross-Device Authentication
+
+Windows does not currently support [FIDO Cross-Device Authentication (CDA)](/docs/reference/terms/#cross-device-authentication-cda) globally at the operating system level. CDA is available, however, directly in both Chrome and Edge on Windows 10 and 11.
+
+Persistent linking is available between Android devices (authenticator) and Chrome and Edge (clients) on Windows. iOS and iPadOS do not support persistent linking.
 
 ## Resources
 

@@ -19,13 +19,21 @@ The platform authenticator in macOS Ventura (13) has the following capabilities:
 
 - creating and using passkeys that are backed up to iCloud Keychain
 - creating and using passkeys on/from another device, such as:
-  - an iPhone or iPad signed in to a different iCloud account
-  - an Android device
+  - an iPhone or iPad signed in to a different iCloud account, using FIDO [Cross-Device Authentication](../terms#cross-device-authentication-cda)
+  - an Android device, using FIDO [Cross-Device Authentication](../terms#cross-device-authentication-cda)
   - a FIDO2 security key<sup>1</sup>
 
 <p class="fs-6 text-muted"><sup>1</sup> On macOS, user verification methods (device PIN, biometric, etc) must already be configured on the security key prior to credential creation</p>
 
 ## Platform Notes
+
+### Cross-Device Authentication
+
+macOS does not currently support persistent linking of external authenticators for [Cross-Device Authentication](../terms#cross-device-authentication-cda) at the operating system level.
+
+Persistent linking is available between Android devices (authenticator) and Chrome and Edge (clients) on macOS.
+
+When an authenticator is not persistently linked, a QR code must be scanned on every use.
 
 ### Legacy Credentials
 
