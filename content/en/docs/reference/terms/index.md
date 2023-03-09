@@ -72,7 +72,7 @@ See [_Autofill UI_](#autofill-ui)
 
 ## Device-bound passkey
 
-A FIDO2 [Discoverable Credential](#discoverable-credential) that requires [user verification](#user-verification-uv) and is bound to a single authenticator. For example, FIDO2 security keys typically hold device-bound passkeys as the credential cannot leave the device. Device-bound passkeys have been previously referred to as _single-device passkeys_.
+A FIDO2 [Discoverable Credential](#discoverable-credential) that is bound to a single authenticator. For example, FIDO2 security keys typically hold device-bound passkeys as the credential cannot leave the device. Device-bound passkeys have been previously referred to as _single-device passkeys_.
 
 ## Device Public Key (DPK)
 
@@ -114,7 +114,7 @@ see [_Signing in_.](#signing-in)
 
 Short version:
 
-A passkey is a FIDO2 [Discoverable Credential](#discoverable-credential) that requires [user verification](#user-verification-uv) and is protected against device loss.
+A passkey is a FIDO2 [Discoverable Credential](#discoverable-credential) that is protected against device loss.
 
 Longer version:
 
