@@ -19,39 +19,44 @@ images: []
             </tr>
         </thead>
         <tr>
+            <td>Front End Requirements</td>
+            <td>Content</td>
+            <td class="text-center">Q3CY23 <a href="https://github.com/passkeydeveloper/passkeys.dev/issues/151" target="_blank"><i class="bi bi-github"></i></a></td>
+        </tr>
+        <tr>
+            <td>Back End Requirements</td>
+            <td>Content</td>
+            <td class="text-center">Q3CY23 <a href="https://github.com/passkeydeveloper/passkeys.dev/issues/152" target="_blank"><i class="bi bi-github"></i></a></td>
+        </tr>
+        <tr>
+            <td>Security Considerations</td>
+            <td>Content</td>
+            <td class="text-center">Q3CY23 <a href="https://github.com/passkeydeveloper/passkeys.dev/issues/153" target="_blank"><i class="bi bi-github"></i></a></td>
+        </tr>
+        <tr>
             <td>Frequently Asked Questions</td>
             <td>Content</td>
-            <td class="text-center">November 2022 <a href="https://github.com/passkeydeveloper/passkeys.dev/issues/48" target="_blank"><i class="bi bi-github"></i></a></td>
-        </tr>
-        <tr>
-            <td>Backend Requirements</td>
-            <td>Content</td>
-            <td class="text-center">December 2022</td>
-        </tr>
-        <tr>
-            <td>Frontend Requirements</td>
-            <td>Content</td>
-            <td class="text-center">December 2022</td>
+            <td class="text-center">H2CY23 <a href="https://github.com/passkeydeveloper/passkeys.dev/issues/48" target="_blank"><i class="bi bi-github"></i></a></td>
         </tr>
         <tr>
             <td>Deployment Considerations: Consumer Services</td>
             <td>Content</td>
-            <td class="text-center">Q1 2023</td>
+            <td class="text-center">H2CY23</td>
         </tr>
         <tr>
             <td>Deployment Considerations: High Value and Regulated Consumer</td>
             <td>Content</td>
-            <td class="text-center">Q1 2023</td>
+            <td class="text-center">2HCY23</td>
         </tr>
         <tr>
             <td>Deployment Considerations: Work/School</td>
             <td>Content</td>
-            <td class="text-center">Q1 2023</td>
+            <td class="text-center">H2CY23</td>
         </tr>
         <tr>
             <td>Persona-based demo site</td>
             <td>Demo</td>
-            <td class="text-center">Q2 2023</td>
+            <td class="text-center">H2CY23</td>
         </tr>
     </table>
 </div>
