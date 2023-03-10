@@ -2,6 +2,13 @@ name: GitHub Pages
 
 on:
   push:
+    paths-ignore:
+      - README.md
+      - CHANGELOG.md
+      - CODE_OF_CONDUCT.md
+      - LICENSE
+      - SECURITY.md
+      - '.github/**'
     branches:
       - main
 
