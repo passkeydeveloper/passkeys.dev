@@ -3,7 +3,6 @@ title: "Device Support"
 description: "Detailed information about passkey support across devices and ecosystems"
 lead: ""
 date: 2022-08-05T18:08:48.678Z
-lastmod: 2023-02-08T12:00:00.00Z
 draft: false
 images: []
 weight: 100
