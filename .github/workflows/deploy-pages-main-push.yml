@@ -1,4 +1,4 @@
-name: GitHub Pages Autodeploy
+name: GitHub Pages - Auto Deploy
 
 on:
   push:
@@ -11,6 +11,11 @@ on:
       - '.github/**'
     branches:
       - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: pages
