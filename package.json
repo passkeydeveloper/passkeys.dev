@@ -54,7 +54,7 @@
     "highlight.js": "^11.7",
     "hugo-installer": "^3.1",
     "husky": "^8.0.3",
-    "instant.page": "^5.1",
+    "instant.page": "^5.2",
     "katex": "^0.16",
     "lazysizes": "^5.3",
     "markdownlint-cli2": "^0.6.0",
