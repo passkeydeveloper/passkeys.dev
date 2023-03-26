@@ -29,13 +29,13 @@ weight = 20
 [[social]]
 name = "Mastodon"
 pre = "<i class=\"bi bi-mastodon\"></i>"
-url = "https://fosstodon.org/@passkeydeveloper"
+url = "https://fosstodon.org/@passkeysdev"
 weight = 30
 
 [[social]]
 name = "Twitter"
 pre = "<i class=\"bi bi-twitter\"></i>"
-url = "https://twitter.com/@passkeydev"
+url = "https://twitter.com/@passkeysdev"
 weight = 40
 
 [[footer]]
