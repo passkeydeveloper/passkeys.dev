@@ -25,7 +25,7 @@ To support the [autofill UI](/docs/reference/terms/#autofill-ui) for passkeys, m
     ```html
     <div>
       <label for="username">Username:</label>
-      <input name="username" id="loginform.username" 
+      <input name="username" id="loginform.username"
              autocomplete="username webauthn">
     </div>
     ```
@@ -42,13 +42,14 @@ To support the [autofill UI](/docs/reference/terms/#autofill-ui) for passkeys, m
       const available = await PublicKeyCredential.isConditionalMediationAvailable();
 
       if (available) {
-         // Query your server for options for `navigator.credentials.get()`
         try {
+          // Retrieve authentication options for `navigator.credentials.get()`
+          // from your server.
           const authOptions = await getAuthenticationOptions();
           // This call to `navigator.credentials.get()` is "set and forget."
           // The Promise will only resolve if the user successfully interacts
           // with the browser's autofill UI to select a passkey.
-          const autoFillResponse = await navigator.credentials.get({
+          const webAuthnResponse = await navigator.credentials.get({
             mediation: "conditional",
             publicKey: {
               ...authOptions,
@@ -56,9 +57,9 @@ To support the [autofill UI](/docs/reference/terms/#autofill-ui) for passkeys, m
               userVerification: "preferred",
             }
           });
-           // Send the response to your server for verification.
-           // Authenticate the user if the response is valid.
-          await verifyAutoFillResponse(autoFillResponse);
+          // Send the response to your server for verification and
+          // authenticate the user if the response is valid.
+          await verifyAutoFillResponse(webAuthnResponse);
         } catch (err) {
           console.error('Error with conditional UI:', err);
         }
@@ -69,6 +70,8 @@ To support the [autofill UI](/docs/reference/terms/#autofill-ui) for passkeys, m
 ```
 
 This will cause the following to happen:
+
+- Retrieve the authentication options from your server. Return at least a random `challenge` and `rpId` to be associated with this authentication request.
 
 - When the user interacts with the username field, the browser and platform will check whether a passkey exists in the platform authenticator that can be used with the relying party. <br><br>If this is the case, the passkey will be presented to the user as an option to choose (along with other credentials that can be auto-filled, such as usernames stored in the browser’s password manager). The browser/platform might render a UI similar to the one shown below, although the exact look and feel will vary from platform to platform (Windows vs. Android vs. iOS), and from form factor to form factor (desktop vs. mobile):
 
@@ -81,6 +84,8 @@ This will cause the following to happen:
 - If the user selects a credential other than a passkey, the browser/platform chooses a different appropriate action (such as auto-filling the username), and the `navigator.credentials.get()` call does not resolve.
 
 - If the user selects the "Passkey from another device" option (NOTE: the exact text will vary slightly by platform), then the browser/platform will guide the user through using a FIDO2 security key or the  Cross-Device Authentication (CDA) flow to use a passkey from their smartphone or tablet to deliver a WebAuthn response to the `navigator.credentials.get()` call.
+
+- Send the WebAuthn response to your server for verification and additional security checks. If all checks succeed then start an authenticated session for this user.
 
 This is why this is called the Conditional UI (or more commonly, the autofill UI) mode of WebAuthn — the platform authenticator UI that guides the user through the verification, or through using their phone, is only shown if the user has a passkey on this device (or chooses the "another device" option).
 
@@ -108,7 +113,9 @@ The user verification result (conveyed in [authenticator data flags](https://www
 
 ## Opting the user into passkeys
 
-First, ensure that the user's device and OS combo supports passkeys by calling:
+First, verify that the user is sufficiently strongly authenticated using other login methods, including multi-factor authentication.
+
+Second, ensure that the user's device and OS combo supports passkeys by calling:
 
 ```js
 PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()
@@ -146,8 +153,8 @@ navigator.credentials.create({
     ],
     excludeCredentials: [
       {  // other passkeys (i.e., credentials) tied to the user account
-        type: "public-key", 
-        id: new UInt8Array([21, 31, 56, ...]).buffer, 
+        type: "public-key",
+        id: new UInt8Array([21, 31, 56, ...]).buffer,
       },
       {
         type: "public-key",
@@ -167,4 +174,4 @@ navigator.credentials.create({
 
 > A note on attestation: We recommend that most relying parties not specify the attestation conveyance parameter `attestation` (thus defaulting to none), or instead explicitly use the value `indirect`. This guarantees the most streamlined user experience (platforms are likely to obtain consent from the user for other types of attestation conveyances, which likely results in a larger fraction of unsuccessful credential creations due to users canceling the creation).
 
-When the WebAuthn call resolves, send the response to your server and associate the returned public key and credential ID with the user account.
+When the WebAuthn call resolves, send the response to your server and associate the returned public key and credential ID with the previously authenticated user account.
