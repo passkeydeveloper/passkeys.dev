@@ -48,6 +48,8 @@ To replace a legacy platform credential with a passkey, start a credential regis
 
 **Chrome**: credentials created by Chrome are currently [***device-bound*** passkeys](/docs/reference/terms/#device-bound-passkey), are not backed up to iCloud Keychain, and are ***not available outside of Chrome***.
 
+The autofill UI in Chrome on macOS only displays device-bound passkeys for the current Chrome profile. Passkeys in iCloud Keychain do not currently surface in the autofill UI.
+
 **Edge**: credentials created by Edge are currently [***device-bound*** passkeys](/docs/reference/terms/#device-bound-passkey), are not backed up to iCloud Keychain, and are ***not available outside of Edge***.
 
 **Firefox**: passkeys are not currently supported in Firefox on macOS. [***Device-bound*** passkeys](/docs/reference/terms/#device-bound-passkey) on a FIDO2 security key are supported. [User verification]({{< ref "terms/#user-verification-uv" >}}) is not supported, though, which makes it impossible to implement WebAuthn-based passwordless authentication at this time.
