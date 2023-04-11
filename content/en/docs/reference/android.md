@@ -49,3 +49,4 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 - [Credential Manager API](https://developer.android.com/training/sign-in/passkeys)
 - [Security of Passkeys in the Google Password Manager](https://security.googleblog.com/2022/10/SecurityofPasskeysintheGooglePasswordManager.html)
 - [Sample app](https://github.com/android/identity-samples/tree/main/Fido2)
+- [Passkey example app](https://github.com/Dashlane/android-passkey-example)
