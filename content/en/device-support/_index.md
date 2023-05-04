@@ -36,12 +36,7 @@ Passkeys created in **macOS** can be used on:
 
 - Macs using the same Apple ID (synced automatically)
 - iPhones and iPads using the same Apple ID (synced automatically)
-  - ...which can then be used on:
-    - Windows devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-    - Chromebooks and other ChromeOS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-    - Ubuntu devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-    - Macs signed in with a different Apple ID, using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-    - iPhones and iPads signed in with a different Apple ID, using [FIDO Cross-Device Authentication](/docs/reference/terms/)
+  - Passkeys created on a Mac and synced to an iPhone and/or iPad via iCloud Keychain can be used in all the places listed above under "iOS or iPadOS"
 
 [Device-bound passkeys](/docs/reference/terms/#device-bound-passkey) created in **Windows** can be used on:
 
