@@ -16,8 +16,8 @@ Passkeys created in **iOS or iPadOS** can be used on:
 
 - The same iPhone or iPad
 - iPhones and iPads using the same Apple ID and iCloud Keychain (synced automatically)
-- MacBooks using the same Apple ID and iCloud Keychain (synced automatically)
-- MacBooks using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- Macs using the same Apple ID and iCloud Keychain (synced automatically)
+- Macs using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Windows devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Chromebooks and other Chrome OS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Ubuntu devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
@@ -26,7 +26,7 @@ Passkeys created in **Android** can be used on:
 
 - The same Android device
 - Android devices using the same Google account (synced automatically)
-- MacBooks using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- Macs using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Windows devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - iPhones and iPads using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Chromebooks and other Chrome OS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
@@ -34,8 +34,14 @@ Passkeys created in **Android** can be used on:
 
 Passkeys created in **macOS** can be used on:
 
-- MacBooks using the same Apple ID and iCloud Keychain (synced automatically)
+- Macs using the same Apple ID and iCloud Keychain (synced automatically)
 - iPhones and iPads using the same Apple ID and iCloud Keychain (synced automatically)
+  - ...which can then be used on:
+    - Windows devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+    - Chromebooks and other Chrome OS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+    - Ubuntu devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+    - Macs signed in with a different Apple ID, using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+    - iPhones and iPads signed in with a different Apple ID, using [FIDO Cross-Device Authentication](/docs/reference/terms/)
 
 [Device-bound passkeys](/docs/reference/terms/#device-bound-passkey) created in **Windows** can be used on:
 
