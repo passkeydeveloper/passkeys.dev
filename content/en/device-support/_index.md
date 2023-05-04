@@ -10,7 +10,7 @@ weight: 100
 
 ## Overview
 
-Support for passkeys is currently rolling out across major operating systems and browsers, and continues throughout 2023. This page will be updated as the ecosystem evolves. The [matrix below](#matrix) maps out the various features that support the passkey experience. Additional information about each platform is available in the [Reference section of Docs](/docs/reference/android).
+Support for passkeys is currently rolling out across major operating systems and browsers. This page will be updated as the ecosystem evolves. The [matrix below](#matrix) maps out the various features that support the passkey experience. Additional information about each platform is available in the [Reference section of Docs](/docs/reference/android).
 
 Passkeys created in **iOS or iPadOS** can be used on:
 
