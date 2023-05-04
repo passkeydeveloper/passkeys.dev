@@ -10,13 +10,13 @@ weight: 100
 
 ## Overview
 
-Support for passkeys is currently rolling out across major operating systems and browsers, and will continue into 2023. This page will be updated as the ecosystem evolves. The [matrix below](#matrix) maps out the various features that support the passkey experience. Additional information about each platform is available in the [Reference section of Docs](/docs/reference/android).
+Support for passkeys is currently rolling out across major operating systems and browsers, and continues throughout 2023. This page will be updated as the ecosystem evolves. The [matrix below](#matrix) maps out the various features that support the passkey experience. Additional information about each platform is available in the [Reference section of Docs](/docs/reference/android).
 
 Passkeys created in **iOS or iPadOS** can be used on:
 
 - The same iPhone or iPad
-- iPhones and iPads using the same Apple ID and iCloud Keychain (synced automatically)
-- Macs using the same Apple ID and iCloud Keychain (synced automatically)
+- iPhones and iPads using the same Apple ID (synced automatically)
+- Macs using the same Apple ID (synced automatically)
 - Macs using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Windows devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Chromebooks and other Chrome OS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
@@ -34,8 +34,8 @@ Passkeys created in **Android** can be used on:
 
 Passkeys created in **macOS** can be used on:
 
-- Macs using the same Apple ID and iCloud Keychain (synced automatically)
-- iPhones and iPads using the same Apple ID and iCloud Keychain (synced automatically)
+- Macs using the same Apple ID (synced automatically)
+- iPhones and iPads using the same Apple ID (synced automatically)
   - ...which can then be used on:
     - Windows devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
     - Chromebooks and other Chrome OS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
