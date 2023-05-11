@@ -46,8 +46,19 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 
 ## Resources
 
+### Docs
+
 - [Credential Manager API](https://developer.android.com/training/sign-in/passkeys)
 - [Security of Passkeys in the Google Password Manager](https://security.googleblog.com/2022/10/SecurityofPasskeysintheGooglePasswordManager.html)
+
+### Videos
+
+- [Passkeys: a simpler and safer sign-in (Google I/O 2023)](https://www.youtube.com/watch?v=SF8ueIn2Nlc)
+- [Reduce reliance on passwords in Android apps with passkey support (Google I/O 2023)](https://www.youtube.com/watch?v=36peNZUlgzU)
+- [Learn how to implement passkeys with form autofill in a web app(Google I/O 2023)](https://www.youtube.com/watch?v=_qSCYiU_Yr4)
+
+### Sample Code
+
 - [Sample app](https://github.com/android/identity-samples/tree/main/Fido2)
 
 ### Community Resources
