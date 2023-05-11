@@ -26,7 +26,6 @@ toc: true
 
 - [java-webauthn-server](https://github.com/Yubico/java-webauthn-server) ([Yubico](https://developers.yubico.com/java-webauthn-server/))
 
-
 ## Other FIDO2/WebAuthn libraries
 
 The ["Awesome WebAuthn"](https://github.com/herrjemand/awesome-webauthn) GitHub repo is also regularly updated with libraries from the community.
