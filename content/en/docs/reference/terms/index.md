@@ -100,17 +100,13 @@ see [_Signing in_.](#signing-in)
 
 ## Passkey
 
-> _sometimes referred to as a multi-device passkey_
+> Usage: "a passkey" or "passkeys"
 
-Short version:
+The high level, end-user centric term for a FIDO2/WebAuthn [Discoverable Credential](#discoverable-credential). Like "password", "passkey" is a common noun intended to be used in every day conversations and experiences.
 
-A passkey is a FIDO2 [Discoverable Credential](#discoverable-credential) that is protected against device loss.
+Passkeys are designed to be used without additional login challenges. All passkeys can be used with modern sign in experiences like the [Autofill UI](#autofill-ui) or with a "Sign in with a passkey" button.
 
-Longer version:
-
-A FIDO2/WebAuthn credential that can reliably be used for bootstrap sign-in, without requiring other login challenges such as passwords. "Reliable" here means that the passkey should be available to, and usable by, the user whenever they need to sign in. This availability can be achieved through different means: for example, platforms could restore passkeys from a backup whenever a user sets up a new device, offer passkeys across different contexts (a passkey established from an app can be used in the browser when visiting the app’s website), or allow users to [exercise passkeys across devices](#cross-device-authentication-cda) (by, say, using the passkey from a nearby phone when signing in from a laptop).
-
-The important thing is that a passkey is there when the user needs it, and that it can be used without other login challenges. A WebAuthn credential that was created in a private browsing context and disappears when that browsing context is dismissed would not be considered a passkey (since it won’t be there for the user next time they’re trying to sign in). Nor would a U2F credential on a security key (since it requires additional factors for sign-in).
+From the technical side, there are two flavors of passkeys: [synced](#synced-passkey) and [device-bound](#device-bound-passkey).
 
 ## Platform authenticator
 
@@ -143,6 +139,10 @@ This can refer to either account [bootstrapping](#account-bootstrapping) or [rea
 ## Single-device passkey
 
 see [_Device-bound passkey_.](#device-bound-passkey)
+
+## Synced passkey
+
+A FIDO2 [Discoverable Credential](#discoverable-credential) that can reliably be used for bootstrapping sign-in, without requiring other login challenges such as passwords and OTPs. "Reliable" here means that the passkey should be available to, and usable by, the user whenever they need to sign in. This availability can be achieved through different means: for example, passkey providers could sync passkeys in real-time across a user's devices, restore passkeys from a backup whenever a user sets up a new device, offer passkeys across different contexts (a passkey established from an app can be used in the browser when visiting the app’s website), or allow users to [exercise passkeys across devices](#cross-device-authentication-cda) (by, say, using the passkey from a nearby phone when signing in from a laptop).
 
 ## User Presence (UP)
 
