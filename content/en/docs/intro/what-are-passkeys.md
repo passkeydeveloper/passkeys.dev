@@ -18,7 +18,7 @@ Passkeys are:
 
 **Automatically unique per-service**<br>By design, passkeys are unique per-service. There’s no chance to reuse them.
 
-**Breach-resistant**<br>A passkey is only stored on a user’s devices. RP servers store public keys. Even servers that assist in the syncing of passkeys across a user’s devices never have the ability to view or use the private keys for a user's passkeys.
+**Breach-resistant**<br>A passkey is only stored on a user’s devices. [Relying Party (RP)](/docs/reference/terms/#relying-party-rp) servers store public keys. Even servers that assist in the syncing of passkeys across a user’s devices never have the ability to view or use the private keys for a user's passkeys.
 
 **Phishing-resistant**<br>Rather than trust being rooted in a human who has to verify they’re signing into the right website or app, browser, and operating systems enforce that passkeys are only ever used for the appropriate service.
 
