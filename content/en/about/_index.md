@@ -12,7 +12,9 @@ passkeys.dev is brought to you by the [W3C WebAuthn Community Adoption Group](ht
 
 passkeys.dev was launched in October 2022 and is rapidly evolving. You can expect frequent updates with new content and improvements through the end of 2022 and early 2023 as passkeys continue rolling out across the ecosystem and as guidance is developed for additional use cases and verticals.
 
+<!--
 <a href="roadmap"><button type="button" class="btn btn-primary">View Site Roadmap <i class="bi bi-cone-striped"></i></button></a>
+-->
 
 ## Engage and Contribute
 
