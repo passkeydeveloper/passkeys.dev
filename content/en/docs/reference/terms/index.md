@@ -110,9 +110,11 @@ see [_Signing in_.](#signing-in)
 
 ## Passkey
 
-The high level, end-user centric term for a FIDO2/WebAuthn [Discoverable Credential](#discoverable-credential). Like "password", "passkey" is a common noun intended to be used in every day conversation and experiences. Passkeys are designed to be used without additional login challenges.
+> Usage: "a passkey" or "passkeys"
 
-All passkeys can be used with modern sign in experiences like the [Autofill UI](#autofill-ui) or with a "Sign in with a passkey" button.
+The high level, end-user centric term for a FIDO2/WebAuthn [Discoverable Credential](#discoverable-credential). Like "password", "passkey" is a common noun intended to be used in every day conversations and experiences.
+
+Passkeys are designed to be used without additional login challenges. All passkeys can be used with modern sign in experiences like the [Autofill UI](#autofill-ui) or with a "Sign in with a passkey" button.
 
 From the technical side, there are two flavors of passkeys: [syncable](#syncable-passkey) and [device-bound](#device-bound-passkey).
 
