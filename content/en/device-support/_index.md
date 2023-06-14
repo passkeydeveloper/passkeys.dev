@@ -156,12 +156,6 @@ Passkeys created in **macOS** can be used on:
                                 Public
                                 Key (DPK)</a>
                         </td>
-                        <td class="text-center"><i class="bi bi-wrench-adjustable-circle-fill" title="Beta"
-                                alt="wrench in circle icon"></i><br>Beta
-                        </td>
-                        <td class="text-center"><i class="bi bi-calendar-plus" title="Planned"
-                                alt="calendar icon"></i><br>Planned
-                        </td>
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
                                 class="fs-6 text-muted">Not
                                 Supported</span></td>
@@ -171,9 +165,15 @@ Passkeys created in **macOS** can be used on:
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
                                 class="fs-6 text-muted">Not
                                 Supported</span></td>
-                        <td class="text-center"><i class="bi bi-calendar-plus" title="Planned"
-                                alt="calendar icon"></i><br>Planned
-                        </td>
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                                class="fs-6 text-muted">Not
+                                Supported</span></td>
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                                class="fs-6 text-muted">Not
+                                Supported</span></td>
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                                class="fs-6 text-muted">Not
+                                Supported</span></td>
                     </tr>
                     <tr class="align-middle">
                         <td class="fw-bold">Passkey attestation</td>
@@ -214,9 +214,9 @@ Passkeys created in **macOS** can be used on:
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
                                 class="fs-6 text-muted">Not
                                 Supported</span></td>
-                        <td class="text-center"><i class="bi bi-calendar-plus" title="Planned"
-                                alt="calendar icon"></i><br>Planned
-                        </td>
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                                class="fs-6 text-muted">Not
+                                Supported</span></td>
                     </tr>
                 </thead>
             </table>

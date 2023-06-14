@@ -74,16 +74,6 @@ See [_Autofill UI_](#autofill-ui)
 
 A FIDO2 [Discoverable Credential](#discoverable-credential) that is bound to a single authenticator. For example, FIDO2 security keys typically hold device-bound passkeys as the credential cannot leave the device. Device-bound passkeys have been previously referred to as _single-device passkeys_.
 
-## Device Public Key (DPK)
-
-A Device Public Key (DPK) is a device-bound key that can be requested by a [Relying Party (RP)](#relying-party-rp) for higher assurance scenarios where device continuity signals are desired. If supported by the authenticator, a signature from both the passkey and DPK are returned.
-
-> Example: Say that a sign-in request appears at a website along with some geolocation signal that has not been seen for this user account before, and is outside of the typical usage hours observed for the account. The risk may be deemed high enough not to allow the request, even with an assertion by a passkey on its own. But if a signature by a device-bound key that is well established for this user can also be presented, then that may tip the balance.
-
-Just like a passkey, DPKs are unique to each RP.
-
-<a href="https://w3c.github.io/webauthn/#device-public-key" target="_blank"><button type="button" class="btn btn-light">Spec Reference (L3 Draft) <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
-
 ## Discoverable Credential
 
 A Discoverable Credential (previously known as a "resident credential" or "resident key") is a FIDO2/WebAuthn credential that is entirely stored in the authenticator (private key, credential ID, user handle, and other metadata). The [Relying Party (RP)](#relying-party-rp) also stores a copy of the _public_ key and credential ID
