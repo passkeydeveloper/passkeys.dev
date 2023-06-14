@@ -152,7 +152,7 @@ see [_Device-bound passkey_.](#device-bound-passkey)
 
 ## Synced passkey
 
-A FIDO2 [Discoverable Credential](#discoverable-credential) that can reliably be used for bootstrap sign-in, without requiring other login challenges such as passwords and OTPs. "Reliable" here means that the passkey should be available to, and usable by, the user whenever they need to sign in. This availability can be achieved through different means: for example, passkey providers could real-time sync passkeys across a user's devices, restore passkeys from a backup whenever a user sets up a new device, offer passkeys across different contexts (a passkey established from an app can be used in the browser when visiting the app’s website), or allow users to [exercise passkeys across devices](#cross-device-authentication-cda) (by, say, using the passkey from a nearby phone when signing in from a laptop).
+A FIDO2 [Discoverable Credential](#discoverable-credential) that can reliably be used for bootstrapping sign-in, without requiring other login challenges such as passwords and OTPs. "Reliable" here means that the passkey should be available to, and usable by, the user whenever they need to sign in. This availability can be achieved through different means: for example, passkey providers could sync passkeys in real-time across a user's devices, restore passkeys from a backup whenever a user sets up a new device, offer passkeys across different contexts (a passkey established from an app can be used in the browser when visiting the app’s website), or allow users to [exercise passkeys across devices](#cross-device-authentication-cda) (by, say, using the passkey from a nearby phone when signing in from a laptop).
 
 ## User Presence (UP)
 
