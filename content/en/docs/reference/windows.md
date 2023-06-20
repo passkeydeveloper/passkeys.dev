@@ -27,6 +27,8 @@ The following is also possible in both Windows 10 and 11:
 
 ## Platform Notes
 
+- The [authenticatorAttachment property of responses](https://w3c.github.io/webauthn/#dom-publickeycredential-authenticatorattachment), planned for specification delivery in WebAuthn L3, is not currently available in responses to `navigator.credentials.get` when using the platform authenticator or a hardware security key. It is supplied during credential creation, or when using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda) for an authentication ceremony.
+
 ### Cross-Device Authentication
 
 Windows does not currently support [FIDO Cross-Device Authentication (CDA)](../terms#cross-device-authentication-cda) globally at the operating system level. CDA is available, however, directly in both Chrome and Edge on Windows 10 and 11.
