@@ -1,0 +1,64 @@
+name: GitHub Pages - Auto Deploy
+
+on:
+  push:
+    paths-ignore:
+      - README.md
+      - CHANGELOG.md
+      - CODE_OF_CONDUCT.md
+      - LICENSE
+      - SECURITY.md
+      - package.json
+      - package-lock.json
+      - '.github/**'
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check for linting errors
+        run: npm test
+
+      - name: Build production website
+        run: npm run build
+        
+      - name: Upload artifcact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./public
+  
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

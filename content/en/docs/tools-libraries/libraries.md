@@ -22,6 +22,10 @@ toc: true
 
 - [SimpleWebAuthn](https://simplewebauthn.dev/) (Matthew Miller)
 
+### Java
+
+- [java-webauthn-server](https://github.com/Yubico/java-webauthn-server) ([Yubico](https://developers.yubico.com/java-webauthn-server/))
+
 ## Other FIDO2/WebAuthn libraries
 
 The ["Awesome WebAuthn"](https://github.com/herrjemand/awesome-webauthn) GitHub repo is also regularly updated with libraries from the community.
@@ -45,3 +49,5 @@ The ["Awesome WebAuthn"](https://github.com/herrjemand/awesome-webauthn) GitHub 
 ### Ruby
 
 - [webauthn-ruby](https://github.com/cedarcode/webauthn-ruby) (Cedarcode)
+- [devise-passkeys](https://github.com/ruby-passkeys/devise-passkeys) (Ruby Passkeys, wrapper around `webauthn-ruby`)
+- [warden-webauthn](https://github.com/ruby-passkeys/warden-webauthn) (Ruby Passkeys, wrapper around `webauthn-ruby`)

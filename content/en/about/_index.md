@@ -12,7 +12,9 @@ passkeys.dev is brought to you by the [W3C WebAuthn Community Adoption Group](ht
 
 passkeys.dev was launched in October 2022 and is rapidly evolving. You can expect frequent updates with new content and improvements through the end of 2022 and early 2023 as passkeys continue rolling out across the ecosystem and as guidance is developed for additional use cases and verticals.
 
+<!--
 <a href="roadmap"><button type="button" class="btn btn-primary">View Site Roadmap <i class="bi bi-cone-striped"></i></button></a>
+-->
 
 ## Engage and Contribute
 
@@ -26,7 +28,6 @@ passkeys.dev was launched in October 2022 and is rapidly evolving. You can expec
 
 <strong>Twitter</strong> <i class="bi bi-twitter color-twitter-blue"></i>
 
-- <a href="https://twitter.com/i/communities/1492980146265018374" target="_blank">"Passkeys & FIDO2 & WebAuthn" Community <i class="bi bi-box-arrow-up-right"></i></a>
 - <a href="https://twitter.com/FIDOAlliance" target="_blank">FIDO Alliance <i class="bi bi-box-arrow-up-right"></i></a>
 - <a href="https://twitter.com/w3cdevs" target="_blank">W3C Developers <i class="bi bi-box-arrow-up-right"></i></a>
 

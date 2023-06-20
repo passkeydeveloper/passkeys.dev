@@ -12,10 +12,17 @@ weight: 702
 toc: true
 ---
 
-## Updated for passkeys
+## General Passkey Demo Sites
 
 - [WebAuthn.io](https://webauthn.io)
-- [passkeys.io](https://www.passkeys.io/)
+
+## Vendor Demo Sites
+
+These demo sites have been created and are maintained by FIDO2/WebAuthn vendors in the industry.
+
+- [passkeys.io (Hanko)](https://www.passkeys.io/)
+- [passkeys.guru (Descope)](https://passkeys.guru/)
+- [passkey.org (Yubico)](https://passkey.org)
 
 ## Other FIDO2/WebAuthn Tools and Demos
 

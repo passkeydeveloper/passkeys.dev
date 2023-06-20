@@ -10,34 +10,35 @@ weight: 100
 
 ## Overview
 
-Support for passkeys is currently rolling out across major operating systems and browsers, and will continue into 2023. This page will be updated as the ecosystem evolves. The [matrix below](#matrix) maps out the various features that support the passkey experience. Additional information about each platform is available in the [Reference section of Docs](/docs/reference/android).
+Support for passkeys is currently rolling out across major operating systems and browsers. This page will be updated as the ecosystem evolves. The [matrix below](#matrix) maps out the various features that support the passkey experience. Additional information about each platform is available in the [Reference section of Docs](/docs/reference/android).
 
 Passkeys created in **iOS or iPadOS** can be used on:
 
 - The same iPhone or iPad
-- iPhones and iPads using the same Apple ID and iCloud Keychain (synced automatically)
-- MacBooks using the same Apple ID and iCloud Keychain (synced automatically)
-- MacBooks using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- iPhones and iPads using the same Apple ID (synced automatically)
+- Macs using the same Apple ID (synced automatically)
+- Macs using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Windows devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-- Chrome OS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- Chromebooks and other ChromeOS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Ubuntu devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 
 Passkeys created in **Android** can be used on:
 
 - The same Android device
 - Android devices using the same Google account (synced automatically)
-- MacBooks using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- Macs using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Windows devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - iPhones and iPads using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-- Chrome OS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- Chromebooks and other ChromeOS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Ubuntu devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 
 Passkeys created in **macOS** can be used on:
 
-- MacBooks using the same Apple ID and iCloud Keychain (synced automatically)
-- iPhones and iPads using the same Apple ID and iCloud Keychain (synced automatically)
+- Macs using the same Apple ID (synced automatically)
+- iPhones and iPads using the same Apple ID (synced automatically)
+  - Passkeys created on a Mac and synced to an iPhone and/or iPad via iCloud Keychain can be used in all the places listed above under "iOS or iPadOS"
 
-[Single-device passkeys](/docs/reference/terms/#single-device-passkeys) created in **Windows** can be used on:
+[Device-bound passkeys](/docs/reference/terms/#device-bound-passkey) created in **Windows** can be used on:
 
 - the same Windows device that created them
 
@@ -60,29 +61,16 @@ Passkeys created in **macOS** can be used on:
             <td><span class="fw-bold">Passkeys</span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Android 9+
             </td>
-            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
+            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned <sup>1</sup>
             </td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>iOS 16+</td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>macOS 13+
-                <sup>1</sup>
+                <sup>2</sup>
             </td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
-            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
+            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned <sup>1</sup>
             </td>
-        </tr>
-        <tr class="align-middle">
-            <td class="fw-bold"><a href="../docs/reference/terms/#single-device-passkey" target="_blank"><span
-                        class="fst-italic">Single-device</span> passkeys</a>
-            </td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>security keys only</td>
-            <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>security keys only</td>
-            <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>security keys only</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
         </tr>
         <tr>
             <td class="fw-bold">Browser Autofill UI</td>
@@ -91,16 +79,15 @@ Passkeys created in **macOS** can be used on:
                     class="bi bi-x-circle-fill text-danger"></i><br>Firefox</td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
             </td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Safari<br><br><i
-                    class="bi bi-x-circle-fill text-danger"></i><br>Edge<br>Chrome<br>Firefox</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Safari<br><br><i
-                    class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Chrome<br>Edge<br><br><i
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Safari<br>Chrome<br>Edge<br>Firefox</td>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Safari<br>Chrome <sup>2</sup><br><br><i
+                    class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Edge<br><br><i
                     class="bi bi-x-circle-fill text-danger"></i><br>Firefox</td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome
-                <sup>2</sup><br><br><i
-                    class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Edge<br><br><i class="bi bi-x-circle-fill text-danger"></i><br>Firefox
+                <sup>3</sup><br><br><i
+                    class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Edge<br>Firefox<br>
             </td>
         </tr>
         <tr class="align-middle">
@@ -151,17 +138,24 @@ Passkeys created in **macOS** can be used on:
                         <td class="text-center">Ubuntu</td>
                         <td class="text-center"><a href="/docs/reference/windows/">Windows</a></td>
                     </tr>
+                        <tr class="align-middle">
+                            <td class="fw-bold"><a href="../docs/reference/terms/#device-bound-passkey" target="_blank"><span
+                                        class="fst-italic">Device-bound</span> passkeys</a>
+                            </td>
+                            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
+                                    Supported</span></td>
+                            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
+                                    Supported</span></td>
+                            <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>on security keys</td>
+                            <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>on security keys</td>
+                            <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>on security keys</td>
+                            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+                        </tr>
                     <tr class="align-middle">
                         <td class="fw-bold"><a href="../docs/reference/terms/#device-public-key-dpk" target="_blank">Device
                                 Public
                                 Key (DPK)</a>
                         </td>
-                        <td class="text-center"><i class="bi bi-wrench-adjustable-circle-fill" title="Beta"
-                                alt="wrench in circle icon"></i><br>Beta
-                        </td>
-                        <td class="text-center"><i class="bi bi-calendar-plus" title="Planned"
-                                alt="calendar icon"></i><br>Planned
-                        </td>
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
                                 class="fs-6 text-muted">Not
                                 Supported</span></td>
@@ -171,9 +165,15 @@ Passkeys created in **macOS** can be used on:
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
                                 class="fs-6 text-muted">Not
                                 Supported</span></td>
-                        <td class="text-center"><i class="bi bi-calendar-plus" title="Planned"
-                                alt="calendar icon"></i><br>Planned
-                        </td>
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                                class="fs-6 text-muted">Not
+                                Supported</span></td>
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                                class="fs-6 text-muted">Not
+                                Supported</span></td>
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                                class="fs-6 text-muted">Not
+                                Supported</span></td>
                     </tr>
                     <tr class="align-middle">
                         <td class="fw-bold">Passkey attestation</td>
@@ -214,9 +214,9 @@ Passkeys created in **macOS** can be used on:
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
                                 class="fs-6 text-muted">Not
                                 Supported</span></td>
-                        <td class="text-center"><i class="bi bi-calendar-plus" title="Planned"
-                                alt="calendar icon"></i><br>Planned
-                        </td>
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                                class="fs-6 text-muted">Not
+                                Supported</span></td>
                     </tr>
                 </thead>
             </table>
@@ -224,7 +224,8 @@ Passkeys created in **macOS** can be used on:
     </details>
 </div>
 <div class="text-end mb-5 mt-5">
-    <sup>1</sup> See <a href="/docs/reference/macos/#browser-behavior" target="_blank">macOS browser
+    <sup>1</sup> Device-bound passkeys supported
+    <br><sup>2</sup> See <a href="/docs/reference/macos/#browser-behavior" target="_blank">macOS browser
         behavior</a> for caveats
-    <br><sup>2</sup> Chrome M108 and Windows 11 22H2
+    <br><sup>3</sup> Chrome M108 and Windows 11 22H2
 </div>

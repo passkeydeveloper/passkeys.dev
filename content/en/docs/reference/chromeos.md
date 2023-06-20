@@ -18,7 +18,7 @@ toc: true
 
 Creation of passkeys in Chrome OS is not currently supported.
 
-Passkeys from iOS and iPadOS can be used to sign in to web services using [FIDO Cross-Device Authentication](../terms#cross-device-authentication-cda).
+Passkeys from Android, iOS, and iPadOS can be used to sign in to web services on Chrome OS using [FIDO Cross-Device Authentication](../terms#cross-device-authentication-cda).
 
 ## Platform Notes
 

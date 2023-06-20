@@ -16,7 +16,7 @@ domainTLD = "passkeys.dev"
 titleHome = "passkeys.dev"
 
 ## Twitter Cards
-#twitterSite = "@getdoks"
+twitterSite = "@passkeysdev"
 #twitterCreator = "@henkverlinde"
 
 ## Sitelinks Search Box
