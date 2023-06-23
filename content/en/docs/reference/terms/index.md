@@ -108,6 +108,10 @@ Passkeys are designed to be used without additional login challenges. All passke
 
 From the technical side, there are two flavors of passkeys: [synced](#synced-passkey) and [device-bound](#device-bound-passkey).
 
+## Passkey Provider
+
+An app and/or service that is responsible for storing and managing passkeys. Many operating systems include a default passkey provider, and many also support [third-party](#third-party-passkey-provider) providers.
+
 ## Platform authenticator
 
 A FIDO authenticator that is built-in to a user's device.
@@ -143,6 +147,10 @@ see [_Device-bound passkey_.](#device-bound-passkey)
 ## Synced passkey
 
 A FIDO2 [Discoverable Credential](#discoverable-credential) that can reliably be used for bootstrapping sign-in, without requiring other login challenges such as passwords and OTPs. "Reliable" here means that the passkey should be available to, and usable by, the user whenever they need to sign in. This availability can be achieved through different means: for example, passkey providers could sync passkeys in real-time across a user's devices, restore passkeys from a backup whenever a user sets up a new device, offer passkeys across different contexts (a passkey established from an app can be used in the browser when visiting the app’s website), or allow users to [exercise passkeys across devices](#cross-device-authentication-cda) (by, say, using the passkey from a nearby phone when signing in from a laptop).
+
+## Third-Party Passkey Provider
+
+A [Passkey Provider](#passkey-provider) that is not built-in to the device's operating system and plugs in to the OS via platform APIs.
 
 ## User Presence (UP)
 
