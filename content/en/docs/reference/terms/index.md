@@ -82,6 +82,10 @@ A Discoverable Credential (previously known as a "resident credential" or "resid
 
 <a href="https://www.w3.org/TR/webauthn-2/#discoverable-credential" target="_blank"><button type="button" class="btn btn-light">Spec Reference <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
 
+## First-Party Passkey Provider
+
+A [Passkey Provider](#passkey-provider) that is provided by the OS platform vendor and is often enabled by default. Examples include "Windows Hello" on Windows, "Apple iCloud Keychain" on macOS and iOS, and "Google Password Manager" on most Android devices.
+
 ## Login challenge
 
 A prompt served to the user that they need to satisfy.
@@ -110,7 +114,7 @@ From the technical side, there are two flavors of passkeys: [synced](#synced-pas
 
 ## Passkey Provider
 
-An app and/or service that is responsible for storing and managing passkeys. Many operating systems include a default passkey provider, and many also support [third-party](#third-party-passkey-provider) providers.
+An app and/or service that is responsible for storing and managing passkeys. Many operating systems include a default passkey provider ([first-party](#first-party-passkey-provider)), and many also support [third-party](#third-party-passkey-provider) providers.
 
 ## Platform authenticator
 
