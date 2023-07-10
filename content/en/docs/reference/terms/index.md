@@ -150,7 +150,7 @@ A FIDO2 [Discoverable Credential](#discoverable-credential) that can reliably be
 
 ## Third-Party Passkey Provider
 
-A [Passkey Provider](#passkey-provider) that is not built-in to the device's operating system and plugs in to the OS via platform APIs.
+A [Passkey Provider](#passkey-provider) that plugs in to the OS via platform APIs to store and manage a user's passkeys via the platform authenticator.
 
 ## User Presence (UP)
 
