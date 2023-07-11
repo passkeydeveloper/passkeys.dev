@@ -6,7 +6,7 @@ draft: false
 images: []
 ---
 
-passkeys.dev is brought to you by the [W3C WebAuthn Community Adoption Group](https://www.w3.org/community/webauthn-adoption/) and the [FIDO Alliance](https://fidoalliance.org/).
+passkeys.dev is brought to you by the [W3C WebAuthn Community Adoption Group](https://www.w3.org/community/webauthn-adoption/) and members of the [FIDO Alliance](https://fidoalliance.org/).
 
 ## What's next?
 
