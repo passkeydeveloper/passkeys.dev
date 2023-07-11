@@ -82,6 +82,10 @@ A Discoverable Credential (previously known as a "resident credential" or "resid
 
 <a href="https://www.w3.org/TR/webauthn-2/#discoverable-credential" target="_blank"><button type="button" class="btn btn-light">Spec Reference <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
 
+## First-Party Passkey Provider
+
+A [Passkey Provider](#passkey-provider) that is provided by the OS platform vendor and is often enabled by default. Examples include "Windows Hello" on Windows, "Apple iCloud Keychain" on macOS and iOS, and "Google Password Manager" on most Android devices.
+
 ## Login challenge
 
 A prompt served to the user that they need to satisfy.
@@ -107,6 +111,10 @@ The high level, end-user centric term for a FIDO2/WebAuthn [Discoverable Credent
 Passkeys are designed to be used without additional login challenges. All passkeys can be used with modern sign in experiences like the [Autofill UI](#autofill-ui) or with a "Sign in with a passkey" button.
 
 From the technical side, there are two flavors of passkeys: [synced](#synced-passkey) and [device-bound](#device-bound-passkey).
+
+## Passkey Provider
+
+An app and/or service that is responsible for storing and managing passkeys. Many operating systems include a default passkey provider ([first-party](#first-party-passkey-provider)), and many also support [third-party](#third-party-passkey-provider) providers.
 
 ## Platform authenticator
 
@@ -143,6 +151,10 @@ see [_Device-bound passkey_.](#device-bound-passkey)
 ## Synced passkey
 
 A FIDO2 [Discoverable Credential](#discoverable-credential) that can reliably be used for bootstrapping sign-in, without requiring other login challenges such as passwords and OTPs. "Reliable" here means that the passkey should be available to, and usable by, the user whenever they need to sign in. This availability can be achieved through different means: for example, passkey providers could sync passkeys in real-time across a user's devices, restore passkeys from a backup whenever a user sets up a new device, offer passkeys across different contexts (a passkey established from an app can be used in the browser when visiting the app’s website), or allow users to [exercise passkeys across devices](#cross-device-authentication-cda) (by, say, using the passkey from a nearby phone when signing in from a laptop).
+
+## Third-Party Passkey Provider
+
+A [Passkey Provider](#passkey-provider) that plugs in to the OS via platform APIs to store and manage a user's passkeys via the platform authenticator.
 
 ## User Presence (UP)
 

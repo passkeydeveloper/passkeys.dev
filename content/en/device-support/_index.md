@@ -123,6 +123,22 @@ Passkeys created in **macOS** can be used on:
                 <br>Windows apps
             </td>
         </tr>
+        <tr>
+            <td><a href="../docs/reference/terms/#third-party-passkey-provider" target="_blank">Third-Party Passkey Providers</a>
+            </td>
+            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Android 14+
+            </td>
+            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
+                    Supported</span></td>
+            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>iOS 17+
+            </td>
+            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>macOS 14+
+            </td>
+            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
+                    Supported</span></td>
+            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
+            </td>
+        </tr>
     </table>
     <details>
         <summary>Advanced Capabilities</summary>
