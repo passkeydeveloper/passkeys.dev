@@ -101,6 +101,14 @@ Once the user is signed in, it might be time to set up a new passkey for them. D
 - The user just created a new account at the relying party, and is considered signed-in because of that.
 - The user was using a passkey, but they used a different device than the one they’re currently on (by selecting the "other device" shown in the example above). This can be checked by inspecting the [`authenticatorAttachment`](/) attribute in the returned PublicKeyCredential object.
 
+### Cross-Device Authentication
+
+If the user used a passkey from another device (such as a phone, tablet, or FIDO2 security key), the `authenticatorAttachment` property in the authentication response (getAssertion) will have the value `cross-platform`.
+
+In such a scenario, offer the user the choice to create a passkey on their local device. This will result in a more seamless user experience in the future, as the user will not be required to use their other device.
+
+![Image](pkdd-interstitial-cdalocal.png "A sample interstitial with the title: Set up a passkey on this device, with the passkey icon to the left. Below is text that reads: Next time you sign in, would you like to use this device instead of your phone? Under that is a button that says yes and a link that says not now.")
+
 ### A note about user verification
 
 This guidance sets `userVerification` to `preferred`, meaning that user verification will be attempted when possible.
@@ -126,10 +134,6 @@ If passkeys are supported, this will return `true`. If they aren't supported, th
 Serve an opt-in or "upsell" modal/interstitial or page to the user offering them to create a passkey:
 
 ![Image](pkdd-interstitial-upgradeaccount.png "A sample interstitial with the title: Faster, safer sign-in with passkeys, with the passkey icon to the left. Below is text that reads: You can now sign into this site using your face, fingerprint, or device PIN! Under that is a button that says create a passkey and a link that says not now.")
-
-If the user has signed in with a passkey from another device (such as a phone, tablet, or FIDO2 security key), you might adjust the wording accordingly:
-
-![Image](pkdd-interstitial-cdalocal.png "A sample interstitial with the title: Set up a passkey on this device, with the passkey icon to the left. Below is text that reads: Next time you sign in, would you like to use this device instead of your phone? Under that is a button that says yes and a link that says not now.")
 
 > Consider showing (or linking to) longer descriptions explaining that all users that are able to unlock the current device will be able to access the account at the relying party to ensure that the user is giving fully informed consent.
 
