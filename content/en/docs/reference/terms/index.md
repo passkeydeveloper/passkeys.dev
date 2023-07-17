@@ -124,7 +124,7 @@ Both the client and authenticator must support the functionality.
 
 Example with an Android phone linked to a Windows 11 device:
 
-![Image captions](pkdd-terms-cda-pl-androidwin.png "Example of a persistently linked Android phone in Windows 11")
+![Image captions](pkdd-terms-cda-pl-androidwin.png "A screenshot of the Windows Hello prompt asking the user to choose where to save their new passkey. The list of options includes an entry with a phone icon titled cappy-p7p as an example of a phone that has been persistently linked to the access device the user is current registering a new passkey from.")
 
 ## Platform authenticator
 
