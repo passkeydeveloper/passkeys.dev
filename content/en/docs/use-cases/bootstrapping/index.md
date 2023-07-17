@@ -172,6 +172,9 @@ navigator.credentials.create({
       residentKey: "required",
       userVerification: "preferred"
     },
+    "extensions": {
+      "credProps": true
+    }
   }
 })
 ```
