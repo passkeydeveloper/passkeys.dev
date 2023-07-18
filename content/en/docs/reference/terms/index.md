@@ -116,6 +116,16 @@ From the technical side, there are two flavors of passkeys: [synced](#synced-pas
 
 An app and/or service that is responsible for storing and managing passkeys. Many operating systems include a default passkey provider ([first-party](#first-party-passkey-provider)), and many also support [third-party](#third-party-passkey-provider) providers.
 
+## Persistent Linking
+
+The informal name for creating a relationship between a [Cross-Device Authentication authenticator](#cda-authenticator) (typically a phone or tablet) and [Cross-Device Authentication client](#cda-client) (typically a laptop or desktop), which enables future use without having to scan a QR code.
+
+Both the client and authenticator must support the functionality.
+
+Example with an Android phone linked to a Windows 11 device:
+
+![Image captions](pkdd-terms-cda-pl-androidwin.png "A screenshot of the Windows Hello prompt asking the user to choose where to save their new passkey. The list of options includes an entry with a phone icon titled cappy-p7p as an example of a phone that has been persistently linked to the access device the user is current registering a new passkey from.")
+
 ## Platform authenticator
 
 A FIDO authenticator that is built-in to a user's device.
