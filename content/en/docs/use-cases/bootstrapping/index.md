@@ -137,15 +137,31 @@ Serve an opt-in or "upsell" modal/interstitial or page to the user offering them
 
 > Consider showing (or linking to) longer descriptions explaining that all users that are able to unlock the current device will be able to access the account at the relying party to ensure that the user is giving fully informed consent.
 
-If the user consents, call `navigator.credentials.create()`, making sure to ask for a [platform authenticator](/), [user verification preferred](#a-note-about-user-verification), [discoverable credentials](/docs/reference/terms/#discoverable-credential) (formerly known as "resident keys"), and passing an [exclude list](https://www.w3.org/TR/webauthn-2/#dom-publickeycredentialcreationoptions-excludecredentials) of existing passkeys for the account:
+If the user consents, call `navigator.credentials.create()` with the options as shown in the example below:
 
 ```js
 navigator.credentials.create({
   publicKey: {
-    rp: { ...},
-    user: { ...},
-    challenge: ...,
+    rp: {
+      // User friendly name of your service
+      name: "Passkeys Developer",
+      // RP identifier (hostname)
+      id: "passkeys.dev"
+    },
+
+    user: {
+      // persistent, unique identifier for the user account in your backend
+      id: Uint8Array.from("0525bc79-5a63-4e47-b7d1-597e25f5caba", c => c.charCodeAt(0)),
+      // user friendly identifier often displayed to the user (e.g. email address)
+      name: "julia@passkeys.dev",
+      // human readable display name, sometimes displayed by the client
+      displayName: "Julia Coleman"
+    },
+    // the challenge is a buffer of cryptographically random bytes generated on your backend
+    // and should be tightly bound to the current user session
+    challenge: Uint8Array.from(`${randomStringFromServer}`, c => c.charCodeAt(0)),
     pubKeyCredParams: [
+      // an array of objects describing what public key types are acceptable to a server.
       {
         "type": "public-key",
         "alg": -7 // EC P256
@@ -156,23 +172,29 @@ navigator.credentials.create({
       }
     ],
     excludeCredentials: [
-      {  // other passkeys (i.e., credentials) tied to the user account
+      // array of credential IDs for existing passkeys tied to the user account.
+      // this avoids creating a new passkey in an authenticator that already has 
+      // a passkey tied to the user account
+      {
+        // example only
         type: "public-key",
-        id: new UInt8Array([21, 31, 56, ...]).buffer,
+        id: new Uint8Array([21, 31, 56, ...]).buffer
       },
       {
+        // example only
         type: "public-key",
-        id: new UInt8Array([21, 31, 56, ...]).buffer,
-      },
-      {
-        ...
+        id: new Uint8Array([21, 31, 56, ...]).buffer
       }
     ],
     authenticatorSelection: {
+      // tells the authenticator to create a passkey
       residentKey: "required",
+      // tells the client / authenticator to request user verification where possible
+      // e.g. biometric or device PIN
       userVerification: "preferred"
     },
     "extensions": {
+      // returns back details about the passkey
       "credProps": true
     }
   }
