@@ -159,7 +159,7 @@ navigator.credentials.create({
     },
     // the challenge is a buffer of cryptographically random bytes generated on your backend
     // and should be tightly bound to the current user session
-    challenge: Uint8Array.from(`${randomStringFromServer}`, c => c.charCodeAt(0)),
+    challenge: Uint8Array.from("XZJscsUqtBH7ZB90t2g0EbZTZYlbSRK6lq7zlN2lJKuoYMnp7Qo2OLzD7xawL3s", c => c.charCodeAt(0)),
     pubKeyCredParams: [
       // an array of objects describing what public key types are acceptable to a server.
       {
