@@ -168,25 +168,20 @@ Passkeys created in **macOS** can be used on:
                         <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
                     </tr>
                     <tr class="align-middle">
-                        <td class="fw-bold">Passkey attestation</td>
+                        <td class="fw-bold">Synced passkey attestation</td>
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
+                                class="fs-6 text-muted">Not
+                                Supported</span></td>
+                        <td class="text-center"><span
+                                class="fs-6 text-muted">n/a</span></td>
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
                                 class="fs-6 text-muted">Not
                                 Supported</span></td>
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
                                 class="fs-6 text-muted">Not
                                 Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
+                        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+                        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
                     </tr>
                 </thead>
             </table>
