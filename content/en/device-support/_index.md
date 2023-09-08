@@ -154,70 +154,24 @@ Passkeys created in **macOS** can be used on:
                         <td class="text-center">Ubuntu</td>
                         <td class="text-center"><a href="/docs/reference/windows/">Windows</a></td>
                     </tr>
-                        <tr class="align-middle">
-                            <td class="fw-bold"><a href="../docs/reference/terms/#device-bound-passkey" target="_blank"><span
-                                        class="fst-italic">Device-bound</span> passkeys</a>
-                            </td>
-                            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                                    Supported</span></td>
-                            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                                    Supported</span></td>
-                            <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>on security keys</td>
-                            <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>on security keys</td>
-                            <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>on security keys</td>
-                            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                        </tr>
                     <tr class="align-middle">
-                        <td class="fw-bold"><a href="../docs/reference/terms/#device-public-key-dpk" target="_blank">Device
-                                Public
-                                Key (DPK)</a>
+                        <td class="fw-bold"><a href="../docs/reference/terms/#device-bound-passkey" target="_blank"><span
+                                    class="fst-italic">Device-bound</span> passkeys</a>
                         </td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                                 Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
+                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                                 Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
+                        <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>on security keys</td>
+                        <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>on security keys</td>
+                        <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>on security keys</td>
+                        <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
                     </tr>
                     <tr class="align-middle">
                         <td class="fw-bold">Passkey attestation</td>
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
                                 class="fs-6 text-muted">Not
                                 Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                    </tr>
-                    <tr class="align-middle">
-                        <td class="fw-bold">DPK attestation</td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
-                                class="fs-6 text-muted">Not
-                                Supported</span>
-                        </td>
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
                                 class="fs-6 text-muted">Not
                                 Supported</span></td>
