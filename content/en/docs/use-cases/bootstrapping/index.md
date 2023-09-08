@@ -143,9 +143,9 @@ If the user consents, call `navigator.credentials.create()` with the options as 
 navigator.credentials.create({
   publicKey: {
     rp: {
-      // User friendly name of your service
+      // user friendly name of your service
       name: "Passkeys Developer",
-      // RP identifier (hostname)
+      // Relying Party (RP) identifier (hostname/FQDN)
       id: "passkeys.dev"
     },
 
