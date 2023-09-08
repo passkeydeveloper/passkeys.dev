@@ -58,7 +58,7 @@ Passkeys created in **macOS** can be used on:
             </tr>
         </thead>
         <tr>
-            <td><span class="fw-bold"><a href="../docs/reference/terms/#synced-passkey" target="_blank">Synced passkeys</a></span></td>
+            <td><span class="fw-bold"><a href="../docs/reference/terms/#synced-passkey" target="_blank">Synced Passkeys</a></span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Android 9+
             </td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned <sup>1</sup>
@@ -156,7 +156,7 @@ Passkeys created in **macOS** can be used on:
                     </tr>
                     <tr class="align-middle">
                         <td class="fw-bold"><a href="../docs/reference/terms/#device-bound-passkey" target="_blank"><span
-                                    class="fst-italic">Device-bound</span> passkeys</a>
+                                    class="fst-italic">Device-bound</span> Passkeys</a>
                         </td>
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                                 Supported</span></td>
@@ -168,7 +168,7 @@ Passkeys created in **macOS** can be used on:
                         <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
                     </tr>
                     <tr class="align-middle">
-                        <td class="fw-bold">Device-bound passkey attestation</td>
+                        <td class="fw-bold">Device-bound Passkey Attestation</td>
                         <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
                         <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
                         <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
@@ -177,7 +177,7 @@ Passkeys created in **macOS** can be used on:
                         <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
                     </tr>
                     <tr class="align-middle">
-                        <td class="fw-bold">Synced passkey attestation</td>
+                        <td class="fw-bold">Synced Passkey Attestation</td>
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
                                 class="fs-6 text-muted">Not
                                 Supported</span></td>
