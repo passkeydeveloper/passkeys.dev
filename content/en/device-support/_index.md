@@ -58,7 +58,7 @@ Passkeys created in **macOS** can be used on:
             </tr>
         </thead>
         <tr>
-            <td><span class="fw-bold">Passkeys</span></td>
+            <td><span class="fw-bold"><a href="../docs/reference/terms/#synced-passkey" target="_blank">Synced Passkeys</a></span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Android 9+
             </td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned <sup>1</sup>
