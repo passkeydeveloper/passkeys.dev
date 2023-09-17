@@ -124,7 +124,7 @@ Passkeys created in **macOS** can be used on:
             </td>
         </tr>
         <tr>
-            <td><a href="../docs/reference/terms/#third-party-passkey-provider" target="_blank">Third-Party Passkey Providers</a>
+            <td><a href="../docs/reference/terms/#third-party-passkey-provider" target="_blank">blah blah blah</a>
             </td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Android 14+
             </td>
