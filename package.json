@@ -46,7 +46,7 @@
     "@hyas/images": "^0.2.1",
     "auto-changelog": "^2.4.0",
     "autoprefixer": "^10.4",
-    "bootstrap": "^5.2",
+    "bootstrap": "^5.3",
     "clipboard": "^2.0",
     "eslint": "^8.38",
     "exec-bin": "^1.0.0",
