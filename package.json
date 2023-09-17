@@ -71,5 +71,8 @@
   },
   "volta": {
     "node": "16.16.0"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.11.0"
   }
 }
