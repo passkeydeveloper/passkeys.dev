@@ -1,5 +1,5 @@
 ---
-title : "Demos and Examples"
+title : "Demos & Examples"
 description: "Resources for demoing and testing passkeys"
 lead: ""
 date: 2023-09-19T16:40:11.007Z
