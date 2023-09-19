@@ -13,6 +13,12 @@ toc: false
 layout: matrix
 ---
 
+The table below lists known active passkeys deployments which largely follow best practices and patterns. Its purpose is to provide developers with real-world examples and is not intended to be an end user facing resource.
+
+> Said differently, please don't link to this page from end user focused resources 😉
+
+To request an addition, update, or deletion, please [create an issue](https://github.com/passkeydeveloper/passkeys.dev/issues/new?assignees=&labels=&projects=&template=active-deployments.yml&title=Add+%3Cservice+name%3E).
+
 | Service Name                                      | Service Type          | Supported           | Notes                                              | Links                                                                                                                            |
 | ------------------------------------------------- | --------------------- | ------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | [Adobe](https://www.adobe.com/)                   | Software as a Service | Web ✅<br>Apps ❓   |                                                    | [Support](https://helpx.adobe.com/manage-account/using/secure-sign-in-with-passkey.html)                                         |
