@@ -73,7 +73,7 @@ Passkeys created in **macOS** can be used on:
             </td>
         </tr>
         <tr>
-            <td class="fw-bold">Browser Autofill UI</td>
+            <td class="fw-bold"><a href="../docs/reference/terms/#autofill-ui" target="_blank">Browser Autofill UI</a></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome<br><br><i
                     class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Edge<br><br><i
                     class="bi bi-x-circle-fill text-danger"></i><br>Firefox</td>
