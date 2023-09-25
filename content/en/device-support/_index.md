@@ -63,9 +63,9 @@ Passkeys created in **macOS** can be used on:
             </td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned <sup>1</sup>
             </td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>iOS 16+</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>macOS 13+
-                <sup>2</sup>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v16+</span></td>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v13+
+                <sup>2</sup></span>
             </td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
@@ -98,7 +98,7 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Android 9+</td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>iOS 16+</td>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v16+</span></td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
@@ -114,8 +114,8 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
             </td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>iOS 16+</td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>macOS 13+</td>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v16+</span></td>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v13+</span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome<br>Edge
             </td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome<br>Edge<br><br><i
@@ -130,9 +130,9 @@ Passkeys created in **macOS** can be used on:
             </td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
-            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>iOS 17+
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4" title="Supported" alt="green check"></i><br><span class="fs-6 text-muted">v17+</span>
             </td>
-            <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>macOS 14+
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4" title="Supported" alt="green check"></i><br><span class="fs-6 text-muted">v14+</span>
             </td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
