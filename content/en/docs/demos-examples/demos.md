@@ -14,7 +14,7 @@ toc: true
 
 ## General Passkey Demo Sites
 
-- [WebAuthn.io](https://webauthn.io)
+- [webauthn.io](https://webauthn.io)
 
 ## Vendor Demo Sites
 
