@@ -118,10 +118,7 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v13+</span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome<br>Edge
             </td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome<br>Edge<br><br><i
-                    class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Firefox
-                <br>Windows apps
-            </td>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v23H2+</span></td>
         </tr>
         <tr>
             <td><a href="../docs/reference/terms/#third-party-passkey-provider" target="_blank">Third-Party Passkey Providers</a>
