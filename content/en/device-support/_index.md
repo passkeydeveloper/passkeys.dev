@@ -59,7 +59,7 @@ Passkeys created in **macOS** can be used on:
         </thead>
         <tr>
             <td><span class="fw-bold"><a href="../docs/reference/terms/#synced-passkey" target="_blank">Synced Passkeys</a></span></td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Android 9+
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v9+</span>
             </td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned <sup>1</sup>
             </td>
@@ -95,7 +95,7 @@ Passkeys created in **macOS** can be used on:
                     Authentication</a><br><a href="../docs/reference/terms/#cda-authenticator" target="_blank"><span
                         class="fst-italic fw-bold">Authenticator</span></i></a>
             </td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Android 9+</td>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v9+</span></td>
             <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
                     Supported</span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v16+</span></td>
