@@ -1,5 +1,5 @@
 ---
-title: "Test & Demo Sites"
+title: "Test Sites & Tools"
 description: ""
 lead: ""
 date: 2022-09-24T16:02:27.390Z
@@ -12,22 +12,11 @@ weight: 702
 toc: true
 ---
 
-## General Passkey Demo Sites
-
-- [WebAuthn.io](https://webauthn.io)
-
-## Vendor Demo Sites
-
-These demo sites have been created and are maintained by FIDO2/WebAuthn vendors in the industry.
-
-- [passkeys.io (Hanko)](https://www.passkeys.io/)
-- [passkeys.guru (Descope)](https://passkeys.guru/)
-- [passkey.org (Yubico)](https://passkey.org)
-
-## Other FIDO2/WebAuthn Tools and Demos
+## FIDO2/WebAuthn Tools
 
 ### Basic
 
+- [WebAuthn.io](https://webauthn.io)
 - [Yubico Demo Site](https://demo.yubico.com/webauthn-technical/)
 - [WebAuthn.me](https://webauthn.me/)
 
