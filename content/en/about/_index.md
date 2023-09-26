@@ -10,7 +10,7 @@ passkeys.dev is brought to you by the [W3C WebAuthn Community Adoption Group](ht
 
 ## What's next?
 
-passkeys.dev was launched in October 2022 and is rapidly evolving. You can expect frequent updates with new content and improvements through the end of 2022 and early 2023 as passkeys continue rolling out across the ecosystem and as guidance is developed for additional use cases and verticals.
+passkeys.dev was launched in October 2022 and is rapidly evolving. You can expect frequent updates with new content and improvements as passkeys continue rolling out across the ecosystem and as guidance is developed for additional use cases and verticals.
 
 <!--
 <a href="roadmap"><button type="button" class="btn btn-primary">View Site Roadmap <i class="bi bi-cone-striped"></i></button></a>
@@ -24,10 +24,16 @@ passkeys.dev was launched in October 2022 and is rapidly evolving. You can expec
 
 <a href="https://github.com/passkeydeveloper/passkeys.dev/issues/new/choose" target="_blank">Suggest content or report a site issue <i class="bi bi-box-arrow-up-right"></i></a>
 
-<a href="https://github.com/passkeydeveloper/discussions/discussions" target="_blank">FIDO2, WebAuthn, and passkey discussions <i class="bi bi-box-arrow-up-right"></i></a>
+<a href="https://passkeys.dev/discuss" target="_blank">Passkeys Developer Discussions (passkeys.dev/discuss) <i class="bi bi-box-arrow-up-right"></i></a>
 
-<strong>Twitter</strong> <i class="bi bi-twitter color-twitter-blue"></i>
+<strong>Mastodon</strong> <i class="bi bi-mastodon"></i>
 
+- <a href="https://fosstodon.org/@passkeysdev" target="_blank">Passkeys Developer <i class="bi bi-box-arrow-up-right"></i></a>
+- <a href="https://w3c.social/@w3cdevs" target="_blank">W3C Developers <i class="bi bi-box-arrow-up-right"></i></a>
+
+<strong>X (Twitter)</strong> <i class="bi bi-twitter-x"></i>
+
+- <a href="https://twitter.com/passkeysdev" target="_blank">Passkeys Dev <i class="bi bi-box-arrow-up-right"></i></a>
 - <a href="https://twitter.com/FIDOAlliance" target="_blank">FIDO Alliance <i class="bi bi-box-arrow-up-right"></i></a>
 - <a href="https://twitter.com/w3cdevs" target="_blank">W3C Developers <i class="bi bi-box-arrow-up-right"></i></a>
 
@@ -37,9 +43,9 @@ Contributing guidance coming soon!
 
 ## Maintainers
 
-Tim Cappalli | <a href="https://github.com/timcappalli" target="_blank"><i class="bi bi-github color-black"></i></a> <a href="https://twitter.com/timcappalli" target="_blank"><i class="bi bi-twitter color-twitter-blue"></i></a> <a href="https://timcappalli.me/" target="_blank"><i class="bi bi-house-heart"></i></a>
+Tim Cappalli | <a href="https://github.com/timcappalli" target="_blank"><i class="bi bi-github color-black"></i></a> <a href="https://twitter.com/timcappalli" target="_blank"><i class="bi bi-twitter-x color-black"></i></a> <a href="https://timcappalli.me/" target="_blank"><i class="bi bi-house-heart color-black"></i></a>
 
-Matthew Miller | <a href="https://github.com/MasterKale" target="_blank"><i class="bi bi-github color-black"></i></a> <a href="https://twitter.com/IAmKale" target="_blank"><i class="bi bi-twitter color-twitter-blue"></i></a> <a href="https://millerti.me/" target="_blank"><i class="bi bi-house-heart"></i></a>
+Matthew Miller | <a href="https://github.com/MasterKale" target="_blank"><i class="bi bi-github color-black"></i></a> <a href="https://millerti.me/" target="_blank"><i class="bi bi-house-heart color-black"></i></a>
 
 ## Contributors
 
@@ -53,6 +59,8 @@ Matthew Miller | <a href="https://github.com/MasterKale" target="_blank"><i clas
 - Jeff Hodges
 - Adam Langley
 - Ricky Mondello
+- Anders Åberg
+- Cody Salas
 
 ## Copyright and Attributions
 
