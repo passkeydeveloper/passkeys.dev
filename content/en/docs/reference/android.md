@@ -40,7 +40,7 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 
 ## Platform Notes
 
-- **Credential Manager** is a new Android Jetpack API that supports multiple sign-in methods, including passkeys, in a single API, thus simplifying the integration for developers.<br><br><a href="https://developer.android.com/training/sign-in/passkeys" target="_blank"><button type="button" class="btn btn-light">Credential Manager API <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
+- **Credential Manager** is a new Android Jetpack API that supports multiple sign-in methods, including passkeys, in a single API, thus simplifying the integration for developers.<br><br><a href="https://developer.android.com/training/sign-in/passkeys" target="_blank"><button type="button" class="btn btn-light">Credential Manager API <i class="bi bi-box-arrow-up-right ms-2"></i></button></a><br><br><a href="https://developer.android.com/training/sign-in/fido2-migration" target="_blank"><button type="button" class="btn btn-light">FIDO2 API to Credential Manager Migration <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
 
 ## Resources
 
