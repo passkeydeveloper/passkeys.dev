@@ -45,7 +45,10 @@ Contributing guidance coming soon!
 
 Tim Cappalli | <a href="https://github.com/timcappalli" target="_blank"><i class="bi bi-github color-black"></i></a> <a href="https://twitter.com/timcappalli" target="_blank"><i class="bi bi-twitter-x color-black"></i></a> <a href="https://timcappalli.me/" target="_blank"><i class="bi bi-house-heart color-black"></i></a>
 
-Matthew Miller | <a href="https://github.com/MasterKale" target="_blank"><i class="bi bi-github color-black"></i></a> <a href="https://millerti.me/" target="_blank"><i class="bi bi-house-heart color-black"></i></a>
+Matthew Miller |
+<a href="https://github.com/MasterKale" target="_blank"><i class="bi bi-github color-black"></i></a>
+<a href="https://infosec.exchange/@iamkale" target="_blank"><i class="bi bi-mastodon color-black"></i></a>
+<a href="https://millerti.me/" target="_blank"><i class="bi bi-house-heart color-black"></i></a>
 
 ## Contributors
 
