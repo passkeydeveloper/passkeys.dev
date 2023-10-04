@@ -62,7 +62,7 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 
 ### Sample Code
 
-- [Sample app](https://github.com/android/identity-samples/tree/main/Fido2)
+- [Credential Manager Sample app](https://github.com/android/identity-samples/tree/main/CredentialManager)
 
 ### Community Resources
 
