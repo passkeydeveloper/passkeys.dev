@@ -20,6 +20,10 @@ The platform authenticator in Android 9+ has the following capabilities:
 - creating and using passkeys that are backed up to Google Password Manager
 - using a passkey from the local Android device to sign into services on another device (such as a laptop or desktop), using FIDO [Cross-Device Authentication](../terms#cross-device-authentication-cda)
 
+Android 14 adds the following capabilities:
+
+- creating and using passkeys in a [third-party passkey provider](../terms/#third-party-passkey-provider)
+
 ### Cross-Device Authentication
 
 Android devices can be an [authenticator](../terms/#cda-authenticator) for [FIDO Cross-Device Authentication (CDA)](../terms#cross-device-authentication-cda).
@@ -27,8 +31,9 @@ Android devices can be an [authenticator](../terms/#cda-authenticator) for [FIDO
 Android devices can be persistently linked to the browsers/platforms below:
 
 - Chrome OS
-- Chrome on Windows 10 & 11
-- Edge on Windows 10 & 11
+- Windows 11 23H2
+- Chrome & Edge on Windows 11 <23H2
+- Chrome & Edge on Windows 10
 - Chrome on macOS
 - Edge on macOS
 - Chrome on Ubuntu
