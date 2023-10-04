@@ -113,7 +113,7 @@ Passkeys created in **macOS** can be used on:
             </td>
             <td class="text-center"><i class="bi bi-calendar-plus" title="Planned" alt="calendar icon"></i><br>Planned
             </td>
-            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+            <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v108+</span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v16+</span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v13+</span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i><br>Chrome<br>Edge
