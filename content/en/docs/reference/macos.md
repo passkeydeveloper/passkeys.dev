@@ -46,9 +46,9 @@ To replace a legacy platform credential with a passkey, start a credential regis
 
 **Safari**: credentials created in Safari are passkeys, are backed up to iCloud Keychain, and are available in other apps and services.
 
-**Chrome**: credentials created by Chrome are currently [***device-bound*** passkeys](/docs/reference/terms/#device-bound-passkey), are not backed up to iCloud Keychain, and are ***not available outside of Chrome***.
+**Chrome**: credentials created by Chrome are currently [***device-bound*** passkeys](/docs/reference/terms/#device-bound-passkey), are not backed up to iCloud Keychain, and are ***not available outside of Chrome***, on versions of Chrome prior to M118 and macOS 13.5. On M118, passkeys can be created in iCloud Keychain and read from iCloud Keychain by default.
 
-The autofill UI in Chrome on macOS only displays device-bound passkeys for the current Chrome profile. Passkeys in iCloud Keychain do not currently surface in the autofill UI.
+The autofill UI in Chrome on macOS only displays device-bound passkeys for the current Chrome profile prior to M118. Passkeys in iCloud Keychain do not currently surface in the autofill UI prior to M118. After M118, iCloud Keychain passkeys are supported if the installed Operating System is macOS 13.5 or later.
 
 **Edge**: credentials created by Edge are currently [***device-bound*** passkeys](/docs/reference/terms/#device-bound-passkey), are not backed up to iCloud Keychain, and are ***not available outside of Edge***.
 
