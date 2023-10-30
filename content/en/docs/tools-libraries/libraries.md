@@ -36,7 +36,7 @@ The ["Awesome WebAuthn"](https://github.com/herrjemand/awesome-webauthn) GitHub 
 
 ### Go
 
-- [Go WebAuthn Library](https://github.com/duo-labs/webauthn) (Duo Labs)
+- [Go WebAuthn Library](https://github.com/go-webauthn/webauthn) (Fork of Duo Labs library)
 
 ### Java
 
