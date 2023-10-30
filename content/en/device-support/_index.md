@@ -165,7 +165,7 @@ Passkeys created in **macOS** can be used on:
                         <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
                     </tr>
                     <tr class="align-middle">
-                        <td class="fw-bold">Device-bound Passkey Attestation</td>
+                        <td class="fw-bold"><a href="../docs/reference/terms/#attestation" target="_blank">Device-bound Passkey Attestation</a></td>
                         <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
                         <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
                         <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
@@ -174,7 +174,7 @@ Passkeys created in **macOS** can be used on:
                         <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
                     </tr>
                     <tr class="align-middle">
-                        <td class="fw-bold">Synced Passkey Attestation</td>
+                        <td class="fw-bold"><a href="../docs/reference/terms/#attestation" target="_blank">Synced Passkey Attestation</a></td>
                         <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span
                                 class="fs-6 text-muted">Not
                                 Supported</span></td>
