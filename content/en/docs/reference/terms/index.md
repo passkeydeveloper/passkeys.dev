@@ -28,6 +28,12 @@ A [Relying Party (RP)](#relying-party-rp) authenticates a user without any prior
 
 > Note that this is different from creating an account with a service in the first place.
 
+## Attestation
+
+Attestation is an optional statement provided by an authenticator which can be used by a Relying Party to identify and verify the provenance of the authenticator.
+
+<a href="https://www.w3.org/TR/2021/REC-webauthn-2-20210408/#sctn-attestation" target="_blank"><button type="button" class="btn btn-light">WebAuthn Spec Reference <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
+
 ## Authentication factor
 
 Information provided by a user (or one of the user’s devices) for purposes of authentication, usually in response to a login challenge. Often categorized into "knowledge factors" (e.g. passwords), "something you have" factors (e.g. another already signed-in device), and "something you are" factors (e.g. biometrics). Note that a single login challenge may collect multiple factors simultaneously.
