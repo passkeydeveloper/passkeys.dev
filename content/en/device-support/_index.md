@@ -45,304 +45,339 @@ Passkeys created in **macOS** can be used on:
 ## Matrix
 
 <div id="device-support-table" class="table-responsive">
-    <table class="table table-striped mt-0">
-      <thead>
-        <tr class="fw-bold">
-          <td>Capability</td>
-          <td class="text-center">
-            <a href="/docs/reference/android/">Android</a>
-          </td>
-          <td class="text-center">Chrome OS</td>
-          <td class="text-center">
-            <a href="/docs/reference/ios/">iOS/iPad OS</a>
-          </td>
-          <td class="text-center"><a href="/docs/reference/macos/">macOS</a></td>
-          <td class="text-center">Ubuntu</td>
-          <td class="text-center">
-            <a href="/docs/reference/windows/">Windows</a>
-          </td>
-        </tr>
-      </thead>
-      <tr>
-        <td>
-          <span class="fw-bold">
-            <a href="../docs/reference/terms/#synced-passkey" target="_blank">
-              Synced Passkeys
-            </a>
-          </span>
-        </td>
+  <table class="table table-striped mt-0">
+    <thead>
+      <tr class="fw-bold">
+        <td>Capability</td>
         <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted">v9+</span>
+          <a href="/docs/reference/android/">Android</a>
         </td>
+        <td class="text-center">Chrome OS</td>
         <td class="text-center">
-          <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
-          <br />
-          Planned <sup>1</sup>
+          <a href="/docs/reference/ios/">iOS/iPad OS</a>
         </td>
+        <td class="text-center"><a href="/docs/reference/macos/">macOS</a></td>
+        <td class="text-center">Ubuntu</td>
         <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted">v16+</span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted"> v13+ <sup>2</sup> </span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-x-circle-fill text-danger fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted"> Not Supported </span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
-          <br />
-          Planned <sup>1</sup>
+          <a href="/docs/reference/windows/">Windows</a>
         </td>
       </tr>
-      <tr>
-        <td class="fw-bold">
-          <a href="../docs/reference/terms/#autofill-ui" target="_blank">
-            Browser Autofill UI
+    </thead>
+    <tr>
+      <td>
+        <span class="fw-bold">
+          <a href="../docs/reference/terms/#synced-passkey" target="_blank">
+            Synced Passkeys
           </a>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          Chrome
-          <br />
-          <br />
-          <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
-          <br />
-          Edge
-          <br />
-          <br />
-          <i class="bi bi-x-circle-fill text-danger fs-4"></i>
-          <br />
-          Firefox
-        </td>
-        <td class="text-center">
-          <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
-          <br />
-          Planned
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          Safari
-          <br />
-          Chrome
-          <br />
-          Edge
-          <br />
-          Firefox
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          Safari
-          <br />
-          Chrome
-          <br />
-          <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
-          <br />
-          Edge
-          <br />
-          <br />
-          <i class="bi bi-x-circle-fill text-danger fs-4"></i>
-          <br />
-          Firefox
-        </td>
-        <td class="text-center">
-          <i class="bi bi-x-circle-fill text-danger fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted">Not Supported</span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i><br />Chrome
-          <sup>3</sup>
-          <br />
-          <br />
-          <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
-          <br />
-          Edge
-          <br />
-          Firefox
-        </td>
-      </tr>
-      <tr class="align-middle">
-        <td>
-          <a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">
-            Cross-Device Authentication
-          </a>
-          <br />
-          <a href="../docs/reference/terms/#cda-authenticator" target="_blank">
-            <span class="fst-italic fw-bold">Authenticator</span>
-          </a>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted">v9+</span>
-        </td>
-        <td class="text-center">
-          <span class="fs-6 text-muted">n/a</span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted">v16+</span>
-        </td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-      </tr>
-      <tr>
-        <td>
-          <a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">
-            Cross-Device Authentication
-          </a>
-          <br />
-          <a href="../docs/reference/terms/#cda-client" target="_blank">
-            <span class="fst-italic fw-bold">Client</span>
-          </a>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
-          <br />
-          Planned
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted">v108+</span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted">v16+</span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted">v13+</span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i
-          ><br />Chrome<br />Edge
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted">v23H2+</span>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="../docs/reference/terms/#third-party-passkey-provider" target="_blank">
-            Third-Party Passkey Providers
-          </a>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted">v14+</span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-x-circle-fill text-danger fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted">Not Supported</span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4" title="Supported" alt="green check"></i>
-          <br />
-          <span class="fs-6 text-muted">v17+</span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-check-circle-fill text-success fs-4" title="Supported" alt="green check"></i>
-          <br />
-          <span class="fs-6 text-muted">v14+</span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-x-circle-fill text-danger fs-4"></i>
-          <br />
-          <span class="fs-6 text-muted">Not Supported</span>
-        </td>
-        <td class="text-center">
-          <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
-          <br />
-          Planned
-        </td>
-      </tr>
-    </table>
-    <details>
-        <summary>Advanced Capabilities</summary>
-        <div id="device-support-table" class="table-responsive">
-            <table class="table table-striped mt-0">
-                <thead>
-                    <tr class="fw-bold">
-                        <td>Capability</td>
-                        <td class="text-center"><a href="/docs/reference/android/">Android</a></td>
-                        <td class="text-center">Chrome OS</td>
-                        <td class="text-center"><a href="/docs/reference/ios/">iOS/iPad OS</a></td>
-                        <td class="text-center"><a href="/docs/reference/macos/">macOS</a></td>
-                        <td class="text-center">Ubuntu</td>
-                        <td class="text-center"><a href="/docs/reference/windows/">Windows</a></td>
-                    </tr>
-                    <tr class="align-middle">
-                        <td class="fw-bold"><a href="../docs/reference/terms/#device-bound-passkey" target="_blank"><span
-                                    class="fst-italic">Device-bound</span> Passkeys</a>
-                        </td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger fs-4"></i>
-                        <br>
-                        <span class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger fs-4"></i>
-                        <br>
-                        <span class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>on security keys</td>
-                        <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>on security keys</td>
-                        <td class="text-center"><i class="bi bi-usb-drive fs-4"></i><br>on security keys</td>
-                        <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                    </tr>
-                    <tr class="align-middle">
-                        <td class="fw-bold"><a href="../docs/reference/terms/#attestation" target="_blank">Device-bound Passkey Attestation</a></td>
-                        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-                        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-                        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-                        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-                        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-                        <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                    </tr>
-                    <tr class="align-middle">
-                        <td class="fw-bold"><a href="../docs/reference/terms/#attestation" target="_blank">Synced Passkey Attestation</a></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger fs-4"></i>
-                        <br>
-                        <span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><span
-                                class="fs-6 text-muted">n/a</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger fs-4"></i>
-                        <br>
-                        <span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><i class="bi bi-x-circle-fill text-danger fs-4"></i>
-                        <br>
-                        <span
-                                class="fs-6 text-muted">Not
-                                Supported</span></td>
-                        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-                        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-    </details>
+        </span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted">v9+</span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
+        <br />
+        Planned <sup>1</sup>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted">v16+</span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted"> v13+ <sup>2</sup> </span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted"> Not Supported </span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
+        <br />
+        Planned <sup>1</sup>
+      </td>
+    </tr>
+    <tr>
+      <td class="fw-bold">
+        <a href="../docs/reference/terms/#autofill-ui" target="_blank">
+          Browser Autofill UI
+        </a>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        Chrome
+        <br />
+        <br />
+        <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
+        <br />
+        Edge
+        <br />
+        <br />
+        <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+        <br />
+        Firefox
+      </td>
+      <td class="text-center">
+        <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
+        <br />
+        Planned
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        Safari
+        <br />
+        Chrome
+        <br />
+        Edge
+        <br />
+        Firefox
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        Safari
+        <br />
+        Chrome
+        <br />
+        <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
+        <br />
+        Edge
+        <br />
+        <br />
+        <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+        <br />
+        Firefox
+      </td>
+      <td class="text-center">
+        <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted">Not Supported</span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i><br />Chrome
+        <sup>3</sup>
+        <br />
+        <br />
+        <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
+        <br />
+        Edge
+        <br />
+        Firefox
+      </td>
+    </tr>
+    <tr class="align-middle">
+      <td>
+        <a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">
+          Cross-Device Authentication
+        </a>
+        <br />
+        <a href="../docs/reference/terms/#cda-authenticator" target="_blank">
+          <span class="fst-italic fw-bold">Authenticator</span>
+        </a>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted">v9+</span>
+      </td>
+      <td class="text-center">
+        <span class="fs-6 text-muted">n/a</span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted">v16+</span>
+      </td>
+      <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+      <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+      <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+    </tr>
+    <tr>
+      <td>
+        <a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">
+          Cross-Device Authentication
+        </a>
+        <br />
+        <a href="../docs/reference/terms/#cda-client" target="_blank">
+          <span class="fst-italic fw-bold">Client</span>
+        </a>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
+        <br />
+        Planned
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted">v108+</span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted">v16+</span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted">v13+</span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i
+        ><br />Chrome<br />Edge
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted">v23H2+</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="../docs/reference/terms/#third-party-passkey-provider" target="_blank">
+          Third-Party Passkey Providers
+        </a>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted">v14+</span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted">Not Supported</span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4" title="Supported" alt="green check"></i>
+        <br />
+        <span class="fs-6 text-muted">v17+</span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-check-circle-fill text-success fs-4" title="Supported" alt="green check"></i>
+        <br />
+        <span class="fs-6 text-muted">v14+</span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+        <br />
+        <span class="fs-6 text-muted">Not Supported</span>
+      </td>
+      <td class="text-center">
+        <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
+        <br />
+        Planned
+      </td>
+    </tr>
+  </table>
+  <details>
+    <summary>Advanced Capabilities</summary>
+    <div id="device-support-table" class="table-responsive">
+      <table class="table table-striped mt-0">
+        <thead>
+          <tr class="fw-bold">
+            <td>Capability</td>
+            <td class="text-center">
+              <a href="/docs/reference/android/">Android</a>
+            </td>
+            <td class="text-center">Chrome OS</td>
+            <td class="text-center">
+              <a href="/docs/reference/ios/">iOS/iPad OS</a>
+            </td>
+            <td class="text-center">
+              <a href="/docs/reference/macos/">macOS</a>
+            </td>
+            <td class="text-center">Ubuntu</td>
+            <td class="text-center">
+              <a href="/docs/reference/windows/">Windows</a>
+            </td>
+          </tr>
+          <tr class="align-middle">
+            <td class="fw-bold">
+              <a href="../docs/reference/terms/#device-bound-passkey" target="_blank">
+                <span class="fst-italic">Device-bound</span> Passkeys
+              </a>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-usb-drive fs-4"></i>
+              <br />
+              on security keys
+            </td>
+            <td class="text-center">
+              <i class="bi bi-usb-drive fs-4"></i>
+              <br />
+              on security keys
+            </td>
+            <td class="text-center">
+              <i class="bi bi-usb-drive fs-4"></i>
+              <br />
+              on security keys
+            </td>
+            <td class="text-center">
+              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+            </td>
+          </tr>
+          <tr class="align-middle">
+            <td class="fw-bold">
+              <a href="../docs/reference/terms/#attestation" target="_blank">
+                Device-bound Passkey Attestation
+              </a>
+            </td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center">
+              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+            </td>
+          </tr>
+          <tr class="align-middle">
+            <td class="fw-bold">
+              <a href="../docs/reference/terms/#attestation" target="_blank">
+                Synced Passkey Attestation
+              </a>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center">
+              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </details>
 </div>
 <div class="text-end mb-5 mt-5">
     <sup>1</sup> Device-bound passkeys supported
