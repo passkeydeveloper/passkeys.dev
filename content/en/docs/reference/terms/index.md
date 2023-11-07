@@ -172,6 +172,8 @@ A FIDO2 [Discoverable Credential](#discoverable-credential) that can reliably be
 
 A [Passkey Provider](#passkey-provider) that plugs in to the OS via platform APIs to store and manage a user's passkeys via the platform authenticator.
 
+> NOTE: Some passkey providers intercept WebAuthn requests using browser extensions which may bypass browser and/or platform interfaces and features.
+
 ## User Presence (UP)
 
 A test of User Presence (UP) is used to ensure the user is in local proximity to the authenticator during an authentication or credential creation ceremony. UP is often satisfied by pressing a button or metallic area of a security key, or interacting with a platform authenticator on a device.
