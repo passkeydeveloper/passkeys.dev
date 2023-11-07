@@ -380,8 +380,16 @@ Passkeys created in **macOS** can be used on:
   </details>
 </div>
 <div class="text-end mb-5 mt-5">
-    <sup>1</sup> Device-bound passkeys supported
-    <br><sup>2</sup> See <a href="/docs/reference/macos/#browser-behavior" target="_blank">macOS browser
-        behavior</a> for caveats
-    <br><sup>3</sup> Chrome M108 and Windows 11 22H2
+  <sup>1</sup>
+  Device-bound passkeys supported
+  <br />
+  <sup>2</sup>
+  See
+  <a href="/docs/reference/macos/#browser-behavior" target="_blank">
+    macOS browser behavior
+  </a>
+  for caveats
+  <br />
+  <sup>3</sup>
+  Chrome M108 and Windows 11 22H2
 </div>
