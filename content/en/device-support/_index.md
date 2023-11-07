@@ -96,15 +96,11 @@ Passkeys created in **macOS** can be used on:
                         class="fst-italic fw-bold">Authenticator</span></i></a>
             </td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v9+</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
             <td class="text-center"><i class="bi bi-check-circle-fill text-success fs-4"></i><br><span class="fs-6 text-muted">v16+</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
-            <td class="text-center"><i class="bi bi-x-circle-fill text-danger"></i><br><span class="fs-6 text-muted">Not
-                    Supported</span></td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
         </tr>
         <tr>
             <td><a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">Cross-Device
