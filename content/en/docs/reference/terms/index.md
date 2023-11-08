@@ -172,7 +172,7 @@ A FIDO2 [Discoverable Credential](#discoverable-credential) that can reliably be
 
 A [Passkey Provider](#passkey-provider) that plugs in to the OS via platform APIs to store and manage a user's passkeys via the platform authenticator.
 
-> NOTE: Some passkey providers intercept WebAuthn requests using browser extensions which may bypass browser and/or platform interfaces and features.
+> NOTE: Some passkey providers intercept WebAuthn requests in order to provide support for passkeys using browser extensions which may bypass browser and/or platform interfaces and features.
 
 ## User Presence (UP)
 
