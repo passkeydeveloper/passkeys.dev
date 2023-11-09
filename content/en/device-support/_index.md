@@ -150,9 +150,6 @@ Passkeys created in **macOS** can be used on:
         <br />
         Edge
         <br />
-        <br />
-        <i class="bi bi-x-circle-fill text-danger fs-4"></i>
-        <br />
         Firefox
       </td>
       <td class="text-center">
