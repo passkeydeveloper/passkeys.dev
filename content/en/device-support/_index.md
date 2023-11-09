@@ -251,9 +251,9 @@ Passkeys created in **macOS** can be used on:
         <span class="fs-6 text-muted">v14+</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+        <i class="bi bi-check-circle text-muted fs-4"></i>
         <br />
-        <span class="fs-6 text-muted">Not Supported</span>
+        <span class="text-muted">Browser<br>Extensions</span>
       </td>
       <td class="text-center">
         <i class="bi bi-check-circle-fill text-success fs-4" title="Supported" alt="green check"></i>
@@ -266,14 +266,18 @@ Passkeys created in **macOS** can be used on:
         <span class="fs-6 text-muted">v14+</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+        <i class="bi bi-check-circle text-muted fs-4"></i>
         <br />
-        <span class="fs-6 text-muted">Not Supported</span>
+        <span class="text-muted">Browser<br>Extensions</span>
       </td>
       <td class="text-center">
+        <i class="bi bi-check-circle text-muted fs-4"></i>
+        <br />
+        <span class="text-muted">Browser<br>Extensions</span>
+        <br />
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
         <br />
-        Planned
+        Native Support<br>Planned
       </td>
     </tr>
   </table>
