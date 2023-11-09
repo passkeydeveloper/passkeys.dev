@@ -297,7 +297,7 @@ Passkeys created in **macOS** can be used on:
         <br />
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
         <br />
-        <span class="fs-6">Native Support<br>Planned</span>
+        <span class="fs-6">Native Planned</span>
       </td>
     </tr>
   </table>
