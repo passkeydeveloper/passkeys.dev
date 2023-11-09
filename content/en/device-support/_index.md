@@ -295,6 +295,7 @@ Passkeys created in **macOS** can be used on:
         <br />
         <span class="fs-6 text-muted">Browser<br>Extensions</span>
         <br />
+        <br />
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
         <br />
         <span class="fs-6">Native Planned</span>
