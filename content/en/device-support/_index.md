@@ -79,7 +79,9 @@ Passkeys created in **macOS** can be used on:
       <td class="text-center">
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
         <br />
+        <span class="fs-6">
         Planned <sup>1</sup>
+        </span>
       </td>
       <td class="text-center">
         <i class="bi bi-check-circle-fill text-success fs-4"></i>
@@ -99,7 +101,9 @@ Passkeys created in **macOS** can be used on:
       <td class="text-center">
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
         <br />
+        <span class="fs-6">
         Planned <sup>1</sup>
+        </span>
       </td>
     </tr>
     <tr>
@@ -110,26 +114,35 @@ Passkeys created in **macOS** can be used on:
       </td>
       <td class="text-center">
         <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <span class="fs-6">
         <br />
         Chrome
         <br />
         <br />
+        </span>
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
+        <span class="fs-6">
         <br />
         Edge
+        </span>
         <br />
         <br />
         <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+        <span class="fs-6">
         <br />
         Firefox
+        </span>
       </td>
       <td class="text-center">
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
+        <span class="fs-6">
         <br />
         Planned
+        </span>
       </td>
       <td class="text-center">
         <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <span class="fs-6">
         <br />
         Safari
         <br />
@@ -138,19 +151,24 @@ Passkeys created in **macOS** can be used on:
         Edge
         <br />
         Firefox
+        </span>
       </td>
       <td class="text-center">
         <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <span class="fs-6">
         <br />
         Safari
         <br />
         Chrome
         <br />
+        </span>
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
+        <span class="fs-6">
         <br />
         Edge
         <br />
         Firefox
+        </span>
       </td>
       <td class="text-center">
         <i class="bi bi-x-circle-fill text-danger fs-4"></i>
@@ -158,15 +176,20 @@ Passkeys created in **macOS** can be used on:
         <span class="fs-6 text-muted">Not Supported</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i><br />Chrome
-        <sup>3</sup>
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <span class="fs-6">
+        <br />
+        Chrome <sup>3</sup>
+        </span>
         <br />
         <br />
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
+        <span class="fs-6">
         <br />
         Edge
         <br />
         Firefox
+        </span>
       </td>
     </tr>
     <tr class="align-middle">
@@ -209,7 +232,7 @@ Passkeys created in **macOS** can be used on:
       <td class="text-center">
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
         <br />
-        Planned
+        <span class="fs-6">Planned</span>
       </td>
       <td class="text-center">
         <i class="bi bi-check-circle-fill text-success fs-4"></i>
@@ -227,8 +250,8 @@ Passkeys created in **macOS** can be used on:
         <span class="fs-6 text-muted">v13+</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i
-        ><br />Chrome<br />Edge
+        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <span class="fs-6"><br />Chrome<br />Edge</span>
       </td>
       <td class="text-center">
         <i class="bi bi-check-circle-fill text-success fs-4"></i>
@@ -250,7 +273,7 @@ Passkeys created in **macOS** can be used on:
       <td class="text-center">
         <i class="bi bi-check-circle text-muted fs-4"></i>
         <br />
-        <span class="text-muted">Browser<br>Extensions</span>
+        <span class="fs-6 text-muted">Browser<br>Extensions</span>
       </td>
       <td class="text-center">
         <i class="bi bi-check-circle-fill text-success fs-4" title="Supported" alt="green check"></i>
@@ -265,16 +288,16 @@ Passkeys created in **macOS** can be used on:
       <td class="text-center">
         <i class="bi bi-check-circle text-muted fs-4"></i>
         <br />
-        <span class="text-muted">Browser<br>Extensions</span>
+        <span class="fs-6 text-muted">Browser<br>Extensions</span>
       </td>
       <td class="text-center">
         <i class="bi bi-check-circle text-muted fs-4"></i>
         <br />
-        <span class="text-muted">Browser<br>Extensions</span>
+        <span class="fs-6 text-muted">Browser<br>Extensions</span>
         <br />
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
         <br />
-        Native Support<br>Planned
+        <span class="fs-6">Native Support<br>Planned</span>
       </td>
     </tr>
   </table>
