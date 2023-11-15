@@ -182,7 +182,7 @@ A test of User Presence (UP) is used to ensure the user is in local proximity to
 
 ## User Verification (UV)
 
-User Verification (UV) requires the user to either perform a biometric gesture or enter the device PIN for the authenticator to authorize creation and use of the credential. In some cases, UV also satisfies a test of [User Presence](#user-presence-up) (such as when the authenticator itself has a biometric built-in or the device PIN is entered directly into the authenticator).
+User Verification (UV) requires the user to either perform a biometric gesture, enter the device PIN, or enter the device password for the authenticator to authorize creation and/or use of the credential.
 
 <a href="https://www.w3.org/TR/webauthn-2/#user-verification" target="_blank"><button type="button" class="btn btn-light">Spec Reference <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
 
