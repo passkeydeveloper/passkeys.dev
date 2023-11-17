@@ -5,7 +5,7 @@ lead: "Performing a reauthentication with passkeys"
 date: 2022-10-10T19:52:16.153Z
 draft: false
 images: []
-weight: 320
+weight: 220
 ---
 
 Reauthentication might happen for the following reasons:

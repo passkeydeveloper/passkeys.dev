@@ -5,7 +5,7 @@ lead: "Bootstrapping an account on the web"
 date: 2022-10-10T19:52:26.819Z
 draft: false
 images: ['pkdd-signin-username-next.png']
-weight: 310
+weight: 210
 ---
 
 ## Authenticating the user
