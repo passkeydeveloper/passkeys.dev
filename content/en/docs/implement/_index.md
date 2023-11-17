@@ -1,9 +1,9 @@
 ---
 title : "Implement"
-description: "Implement passkeys"
+description: "Implementing passkeys"
 lead: ""
-date: 2022-09-24T15:57:34.857Z
-draft: true
+date: 2023-11-17T18:11:52.502Z
+draft: false
 images: []
-weight: 500
+weight: 200
 ---
