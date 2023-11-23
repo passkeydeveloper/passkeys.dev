@@ -68,8 +68,8 @@ This guide outlines how to implement passkey onboarding and signing-in processes
         },
     user: {
         id: *****,
-        name: "john78",
-        displayName: "John",
+        name: "jane123",
+        displayName: "Jane",
         },
     pubKeyCredParams: [{alg: -7, type: "public-key"},{alg: -257, type: "public-key"}],
     excludeCredentials: [{
