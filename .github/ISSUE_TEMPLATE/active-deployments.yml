@@ -1,5 +1,6 @@
 name: ➕ Add, Update, or Delete Known Passkey Deployment
 title: "Add <service name>"
+labels: ["deployments-list"]
 description: Add, update, or delete a service in the active deployments list
 body:
   - type: dropdown
