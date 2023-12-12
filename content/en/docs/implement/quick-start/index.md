@@ -181,7 +181,7 @@ This guide will provide a detailed path for integrating passkeys into your appli
 
 - [Passkeys.dev Bootstrapping](https://passkeys.dev/docs/use-cases/bootstrapping)
 - [FIDO Alliance UX Guidelines for Passkey Creation and Sign-ins](https://fidoalliance.org/ux-guidelines-for-passkey-creation-and-sign-ins/)
-- [What are Passkeys? - Passkeys.dev](https://passkeys.dev/docs/intro)
-- [Passkeys Overview - Apple Developer](https://developer.apple.com/documentation/authenticationservices/implementing_user_authentication_with_passkeys)
-- [Passkeys on the Web - Chrome Developers](https://developer.chrome.com/docs/web-platform/passwordless/)
+- [Supporting Passkeys - Apple](https://developer.apple.com/documentation/authenticationservices/public-private_key_authentication/supporting_passkeys/)
+- [Passkeys on the Web - Chrome for Developers](https://developer.chrome.com/docs/identity/passkeys/)
 - [Web Authentication: An API for accessing Public Key Credentials - W3C](https://www.w3.org/TR/webauthn/)
+- [Sign in with a passkey through form autofill - web.dev](https://web.dev/articles/passkey-form-autofill)
