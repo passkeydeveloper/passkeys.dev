@@ -8,6 +8,10 @@ images: []
 weight: 100
 ---
 
+This page, along with the rest of passkeys.dev, is targeted at relying party developers and is not intended to be an end user facing resource.
+
+> Said differently, **please don’t link to this page from end user focused resources** 😉
+
 ## Overview
 
 Support for passkeys is currently rolling out across major operating systems and browsers. This page will be updated as the ecosystem evolves. The [matrix below](#matrix) maps out the various features that support the passkey experience. Additional information about each platform is available in the [Reference section of Docs](/docs/reference/android).
