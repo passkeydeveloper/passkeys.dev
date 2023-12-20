@@ -366,7 +366,7 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center">
               <i class="bi bi-check-circle-fill text-success fs-4"></i>
               <br />
-              <span class="fs-6 text-muted">AS<br>WebAuthentication<br>Session</span>
+              <span class="fs-6 text-muted">ASWebAuthentication<wbr>Session</span>
             </td>
             <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
             <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
