@@ -312,7 +312,7 @@ Passkeys created in **macOS** can be used on:
       <table class="table table-striped mt-0">
         <thead>
           <tr>
-            <td>Method</td>
+            <td>Invocation Method</td>
             <td class="text-center fw-bold">
               <a href="/docs/reference/android/">Android</a>
             </td>
