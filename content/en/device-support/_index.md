@@ -307,7 +307,108 @@ Passkeys created in **macOS** can be used on:
     </tr>
   </table>
   <details>
-    <summary>Advanced Capabilities</summary>
+    <summary><strong>Native Apps</strong></summary>
+    <div id="device-support-table" class="table-responsive">
+      <table class="table table-striped mt-0">
+        <thead>
+          <tr>
+            <td>Invocation Method</td>
+            <td class="text-center fw-bold">
+              <a href="/docs/reference/android/">Android</a>
+            </td>
+            <td class="text-center fw-bold">Chrome OS</td>
+            <td class="text-center fw-bold">
+              <a href="/docs/reference/ios/">iOS/iPad OS</a>
+            </td>
+            <td class="text-center fw-bold">
+              <a href="/docs/reference/macos/">macOS</a>
+            </td>
+            <td class="text-center fw-bold">Ubuntu</td>
+            <td class="text-center fw-bold">
+              <a href="/docs/reference/windows/">Windows</a>
+            </td>
+          </tr>
+          <tr class="align-middle">
+            <td class="fw-bold">
+                Native Platform APIs
+            </td>
+            <td class="text-center">
+              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+            </td>
+            <td class="text-center">
+              <span class="fs-6 text-muted">n/a</span>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+            </td>
+          </tr>
+          <tr class="align-middle">
+            <td class="fw-bold">
+              System WebView
+            </td>
+            <td class="text-center">
+              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Chrome<br>Custom Tabs</span>
+            </td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center">
+              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">ASWebAuthentication<wbr>Session</span>
+            </td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center">
+              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Edge WebView2</span>
+            </td>
+          </tr>
+          <tr class="align-middle">
+            <td class="fw-bold">
+              Embedded WebView
+            </td>
+            <td class="text-center">
+              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center">
+              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+            <td class="text-center">
+              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </details>
+  <details>
+    <summary><strong>Advanced Capabilities</strong></summary>
     <div id="device-support-table" class="table-responsive">
       <table class="table table-striped mt-0">
         <thead>
