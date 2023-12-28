@@ -1,4 +1,5 @@
 ---
+layout: fullpage
 title: "About"
 description: "About passkeys.dev"
 date: 2022-09-26T19:48:01.955Z

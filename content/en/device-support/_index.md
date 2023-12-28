@@ -1,4 +1,5 @@
 ---
+layout: fullpage
 title: "Device Support"
 description: "Detailed information about passkey support across devices and ecosystems"
 lead: ""
