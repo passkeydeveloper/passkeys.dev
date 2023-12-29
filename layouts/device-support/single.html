@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section id="main">
+  <h1 id="title">{{ .Title }}</h1>
+  <h2>JUST A TEST</h2>
+  <div>
+        <article id="content">
+           {{ .Content }}
+        </article>
+  </div>
+</section>
+<aside id="meta">
+  <div>
+  <section>
+    <p id="date" class="text-muted fs-6"><i class="bi bi-pencil"></i> Last Updated: {{ .Lastmod.Format "Jan 02, 2006" }}</p>
+  </section>
+  {{ with .Params.topics }}
+  <ul id="topics">
+    {{ range . }}
+      <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+  </div>
+</aside>
+
+{{ end }}
