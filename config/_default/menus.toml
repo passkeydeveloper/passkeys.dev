@@ -1,0 +1,14 @@
+[[main]]
+  name = "GitHub"
+  url = "https://github.com/passkeydeveloper/passkeys.dev"
+  weight = 10
+
+[[social]]
+  name = "Mastodon"
+  url = "https://fosstodon.org/@passkeysdev"
+  weight = 20
+
+[[social]]
+  name = "Twitter"
+  url = "https://x.com/@passkeysdev"
+  weight = 30
