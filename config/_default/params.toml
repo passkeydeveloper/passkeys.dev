@@ -6,6 +6,7 @@ images = ["pkdd-social-card.jpg"]
 ## custom
 themeColor = "#005a9c"
 
+
 # Doks (@hyas/doks-core)
 [doks]
   # Color mode
@@ -60,7 +61,7 @@ themeColor = "#005a9c"
   backgroundDots = true # true (default) or false
 
   # Homepage
-  sectionFooter = false # false (default) or true
+  sectionFooter = true # false (default) or true
 
   # Blog
   relatedPosts = false # false (default) or true
