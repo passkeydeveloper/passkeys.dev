@@ -449,17 +449,17 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center">
               <i class="bi bi-usb-drive fs-4"></i>
               <br />
-              on security keys
+              <span class="fs-6">on security keys</span>
             </td>
             <td class="text-center">
               <i class="bi bi-usb-drive fs-4"></i>
               <br />
-              on security keys
+              <span class="fs-6">on security keys</span>
             </td>
             <td class="text-center">
               <i class="bi bi-usb-drive fs-4"></i>
               <br />
-              on security keys
+              <span class="fs-6">on security keys</span>
             </td>
             <td class="text-center">
               <i class="bi bi-check-circle-fill color-green fs-4"></i>
