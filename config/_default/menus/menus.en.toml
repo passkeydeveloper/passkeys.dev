@@ -19,6 +19,30 @@ name = "About"
 url = "/about/"
 weight = 90
 
+[[social]]
+name = "Discussions"
+pre = '<i class="bi bi-chat-square-text-fill"></i>'
+url = "https://passkeys.dev/discuss"
+weight = 15
+
+[[social]]
+name = "GitHub"
+pre = '<i class="bi bi-github"></i>'
+url = "https://github.com/passkeydeveloper/passkeys.dev"
+weight = 20
+
+[[social]]
+name = "Mastodon"
+pre = '<i class="bi bi-mastodon"></i>'
+url = "https://fosstodon.org/@passkeysdev"
+weight = 30
+
+[[social]]
+name = "X"
+pre = '<i class="bi bi-twitter-x"></i>'
+url = "https://x.com/@passkeysdev"
+weight = 40
+
 [[footer]]
 name = "about passkeys.dev"
 url = "/about/"
