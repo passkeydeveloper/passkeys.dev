@@ -43,12 +43,9 @@
 				{{ .Content }}
 			{{ end -}}
 			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
-				{{ if site.Params.doks.lastMod -}}
-					{{ partial "main/last-modified.html" . }}
-				{{ end -}}
-				{{ if site.Params.doks.editPage -}}
-					{{ partial "main/edit-page.html" . }}
-				{{ end -}}
+				<section>
+					<p id="date" class="text-muted fs-6"><i class="bi bi-pencil"></i> Last Updated: {{ .Lastmod.Format "Jan 02, 2006" }}</p>
+				</section>
 			</div>
 			{{ partial "main/docs-navigation.html" . }}
 			<!--
