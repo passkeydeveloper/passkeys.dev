@@ -5,7 +5,7 @@ body {
 }
 
 ::selection {
-  background-color: rgba(0, 90, 156, 0.2);
+  background-color: rgb(0 90 156 / 20%);
 }
 
 h2 {
@@ -113,6 +113,7 @@ COLORS
 .color-red {
   color: #dc3545
 }
+
 /*
 SPECIFIC PAGE OVERRIDES
 */
@@ -358,7 +359,7 @@ YouTube preview image on homepage
 
  @font-face {
   font-display: block;
-  font-family: "bootstrap-icons";
+  font-family: bootstrap-icons;
   src: url("./fonts/bootstrap-icons.woff2?1bb88866b4085542c8ed5fb61b9393dd") format("woff2"),
 url("./fonts/bootstrap-icons.woff?1bb88866b4085542c8ed5fb61b9393dd") format("woff");
 }
