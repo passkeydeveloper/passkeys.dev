@@ -30,22 +30,29 @@ a {
   border-image-slice: 1;
 }
 
+[data-bs-theme="dark"] .header-bar {
+  border-top: 10px solid;
+  border-image-source: linear-gradient(90deg, #005a9c, #4a266b);
+  border-image-slice: 1;
+}
+
 /*
 button tweaks
 */
+
 .btn-primary {
   color: #fff;
   background-color: #005a9c;
   border-color: #005a9c;
 }
 
-[data-dark-mode] body .btn-primary {
+[data-bs-theme="dark"] body .btn-primary {
   color: #fff !important;
   background-color: #005a9c;
   border-color: #005a9c;
 }
 
-[data-dark-mode] body .btn-primary:hover {
+[data-bs-theme="dark"] body .btn-primary:hover {
   background-color: #4a266b;
   border-color: #4a266b;
 }
@@ -53,11 +60,12 @@ button tweaks
 /*
 change bw icons to white in dark mode
 */
+
 .svg-icon-bw g {
   fill: #000;
 }
 
-[data-dark-mode] .svg-icon-bw g {
+[data-bs-theme="dark"] .svg-icon-bw g {
   fill: #fff;
 }
 
@@ -152,7 +160,7 @@ Specific to device support page
   --#{$prefix}table-bg: #{$light};
 }
 
-[data-dark-mode] {
+[data-bs-theme="dark"] {
   #device-support-table table {
     --#{$prefix}table-bg: #{$dark};
   }
