@@ -21,9 +21,6 @@ defaultContentLanguageInSubdir = false
 [build.buildStats]
   enable = true
 
-[social]
-  twitter = "passkeysdev"
-
 [outputs]
   home = ["HTML", "RSS", "searchIndex"]
   section = ["HTML", "RSS", "SITEMAP"]

@@ -1,11 +1,13 @@
 # Hugo
 title = "passkeys.dev"
 description = "A collection of resources and insights to help you deploy passkeys, including practical user experiences, device ecosystem support, frequently asked questions, and more."
-images = ["pkdd-social-card.jpg"]
+images = ["cover.png"]
 
 ## custom
 themeColor = "#005a9c"
 
+[social]
+twitter = "passkeysdev"
 
 # Doks (@hyas/doks-core)
 [doks]
