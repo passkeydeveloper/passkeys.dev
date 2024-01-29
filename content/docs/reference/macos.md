@@ -46,8 +46,6 @@ To replace a legacy platform credential with a passkey, start a credential regis
 
 **Edge**: credentials created by Edge are currently [***device-bound*** passkeys](/docs/reference/terms/#device-bound-passkey), are not backed up to iCloud Keychain, and are ***not available outside of Edge***.
 
-**Firefox**: passkeys are not currently supported in Firefox on macOS. [***Device-bound*** passkeys](/docs/reference/terms/#device-bound-passkey) on a FIDO2 security key are supported.
-
 ## Resources
 
 - [Apple landing page for passkeys](https://developer.apple.com/passkeys/)
