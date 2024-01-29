@@ -1,8 +1,8 @@
 {
   "name": "passkeys.dev",
   "version": "0.0.0",
-  "description": "Doks theme",
-  "author": "Hyas",
+  "description": "passkeys.dev website source",
+  "author": "passkeydeveloper",
   "license": "MIT",
   "scripts": {
     "dev": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache",
