@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@hyas/doks-core": "^1.3.0",
-    "@hyas/images": "^2.0.3",
+    "@hyas/images": "^3.0.0",
     "@hyas/inline-svg": "^1.0.5",
     "@hyas/seo": "^2.1.0",
     "@tabler/icons": "^2.40.0",
