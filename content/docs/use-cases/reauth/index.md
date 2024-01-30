@@ -22,13 +22,13 @@ Let’s look at the UI for the last case first: when it’s time to re-authentic
 
 If _no such credential ID is available_, serve a traditional login challenge suitable for reauthentication, for example:
 
-![Image](pkdd-reauth-password.png "Sample reauthentication screen with a title of: Let's make sure it's you, then showing Account: bob@example.com with a password caption and password field below, and a try another way link and next button at the bottom")
+![Sample reauthentication screen with a title of: Let's make sure it's you, then showing Account: bob@example.com with a password caption and password field below, and a try another way link and next button at the bottom](pkdd-reauth-password.png)
 
 > We recommend that on this login challenge page, users can’t change their account identifier. Also, the login challenge should be something that an unauthorized user of the device can’t pass.
 
 If, however, you do find at least one passkey credential ID for the user, then you can use passkeys for reauthentication:
 
-![Image](pkdd-reauth-passkey.png "Sample reauthentication screen with a title of: Let's make sure it's you, then showing Account: bob@example.com, with text below reading: You'll use your passkey to verify it's you, and a try another way link and a Go button with the passkey icon at the bottom")
+![Sample reauthentication screen with a title of: Let's make sure it's you, then showing Account: bob@example.com, with text below reading: You'll use your passkey to verify it's you, and a try another way link and a Go button with the passkey icon at the bottom](pkdd-reauth-passkey.png)
 
 When the user is ready (in the above example, when they click on the "Go" button), call `navigator.credentials.get()`, passing in all the user’s passkey credential IDs:
 
@@ -64,7 +64,7 @@ Now let’s look at the case where the reauthentication is triggered because the
 
 You, as the relying party, might then serve a sign-in page like this:
 
-![Image](pkdd-reauth-logout-passkey.png "Sample reauthentication screen with a title of: Welcome back!, then showing a button with the passkey icon and text reading sign in as bob@example.com, with a link below saying Use a different account")
+![Sample reauthentication screen with a title of: Welcome back!, then showing a button with the passkey icon and text reading sign in as bob@example.com, with a link below saying Use a different account](pkdd-reauth-logout-passkey.png)
 
 If the user clicks on "Use a different account", then you should enter an account bootstrap flow as explained on the previous page, repeating the steps in [Bootstrapping an account](../bootstrapping), where the platform will let them select which account they want to use.
 
@@ -72,11 +72,11 @@ If the user clicks on "Use a different account", then you should enter an accoun
 
 But if the user clicks the "Sign in as" button, check whether you have at least one passkey credential ID associated with the user. If no credential ID is available, serve a traditional login challenge suitable for reauthentication, for example:
 
-![Image](pkdd-reauth-logout-password.png "Sample reauthentication screen with a title of: Welcome back!, then showing a button with the passkey icon and text reading sign in as bob@example.com, with a link below saying Use a different account")
+![Sample reauthentication screen with a title of: Welcome back!, then showing a button with the passkey icon and text reading sign in as bob@example.com, with a link below saying Use a different account](pkdd-reauth-logout-password.png)
 
 If, however, you _do_ find at least one passkey credential ID for the user, then you can use passkeys for reauthentication:
 
-![Image](pkdd-reauth-logout-passkey-knowncid.png "Sample reauthentication screen with a title of: Welcome back!, then showing a button with the passkey icon and text reading sign in as bob@example.com, with a link below saying Try another way")
+![Sample reauthentication screen with a title of: Welcome back!, then showing a button with the passkey icon and text reading sign in as bob@example.com, with a link below saying Try another way](pkdd-reauth-logout-passkey-knowncid.png)
 
 When the user is ready (in the above example, when they click on the “Go!” button), call `navigator.credentials.get()`, exactly as shown above (i.e., by passing in all the user’s passkey credential IDs).
 

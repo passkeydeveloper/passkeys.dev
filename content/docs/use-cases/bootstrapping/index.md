@@ -16,7 +16,7 @@ To bootstrap an account, serve the user a sign-in page.
 
 Start off by asking the user for their account identifier, typically a username or email address:
 
-![Image](pkdd-signin-username-next.png "Sample sign in screen with a username field and next button")
+![Sample sign in screen with a username field and next button](pkdd-signin-username-next.png)
 
 To support the [autofill UI](/docs/reference/terms/#autofill-ui) for passkeys, make sure to:
 
@@ -75,7 +75,7 @@ This will cause the following to happen:
 
 - When the user interacts with the username field, the browser and platform will check whether a passkey exists in the platform authenticator that can be used with the relying party. <br><br>If this is the case, the passkey will be presented to the user as an option to choose (along with other credentials that can be auto-filled, such as usernames stored in the browser’s password manager). The browser/platform might render a UI similar to the one shown below, although the exact look and feel will vary from platform to platform (Windows vs. Android vs. iOS), and from form factor to form factor (desktop vs. mobile):
 
-![Image](pkdd-signin-username-autofill.png "Sample sign in screen with the autofill UI rendered under the username field, showing a passkey for bob@example.com, an other accounts option and a passkey from another device option")
+![Sample sign in screen with the autofill UI rendered under the username field, showing a passkey for bob@example.com, an other accounts option and a passkey from another device option](pkdd-signin-username-autofill.png)
 
 - If the user selects the passkey, the platform UI will guide the user through a (often biometrics-based) user verification check.
 
@@ -107,7 +107,7 @@ If the user used a passkey from another device (such as a phone, tablet, or FIDO
 
 In such a scenario, offer the user the choice to create a passkey on their local device. This will result in a more seamless user experience in the future, as the user will not be required to use their other device.
 
-![Image](pkdd-interstitial-cdalocal.png "A sample interstitial with the title: Set up a passkey on this device, with the passkey icon to the left. Below is text that reads: Next time you sign in, would you like to use this device instead of your phone? Under that is a button that says yes and a link that says not now.")
+![A sample interstitial with the title: Set up a passkey on this device, with the passkey icon to the left. Below is text that reads: Next time you sign in, would you like to use this device instead of your phone? Under that is a button that says yes and a link that says not now.](pkdd-interstitial-cdalocal.png)
 
 ### A note about user verification
 
@@ -133,7 +133,7 @@ If passkeys are supported, this will return `true`. If they aren't supported, th
 
 Serve an opt-in or "upsell" modal/interstitial or page to the user offering them to create a passkey:
 
-![Image](pkdd-interstitial-upgradeaccount.png "A sample interstitial with the title: Faster, safer sign-in with passkeys, with the passkey icon to the left. Below is text that reads: You can now sign into this site using your face, fingerprint, or device PIN! Under that is a button that says create a passkey and a link that says not now.")
+![A sample interstitial with the title: Faster, safer sign-in with passkeys, with the passkey icon to the left. Below is text that reads: You can now sign into this site using your face, fingerprint, or device PIN! Under that is a button that says create a passkey and a link that says not now.](pkdd-interstitial-upgradeaccount.png)
 
 > Consider showing (or linking to) longer descriptions explaining that all users that are able to unlock the current device will be able to access the account at the relying party to ensure that the user is giving fully informed consent.
 
@@ -201,6 +201,8 @@ navigator.credentials.create({
 })
 ```
 
-> A note on attestation: We recommend that most relying parties not specify the attestation conveyance parameter `attestation` (thus defaulting to none), or instead explicitly use the value `indirect`. This guarantees the most streamlined user experience (platforms are likely to obtain consent from the user for other types of attestation conveyances, which likely results in a larger fraction of unsuccessful credential creations due to users canceling the creation).
+{{< callout context="note" title="A note on attestation" icon="info-circle" >}}
+We recommend that most relying parties not specify the attestation conveyance parameter `attestation` (thus defaulting to none), or instead explicitly use the value `indirect`. This guarantees the most streamlined user experience (platforms are likely to obtain consent from the user for other types of attestation conveyances, which likely results in a larger fraction of unsuccessful credential creations due to users canceling the creation).
+{{< /callout >}}
 
 When the WebAuthn call resolves, send the response to your server and associate the returned public key and credential ID with the previously authenticated user account.

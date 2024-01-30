@@ -1,4 +1,5 @@
 ---
+layout: fullpage
 title: "Device Support"
 description: "Detailed information about passkey support across devices and ecosystems"
 lead: ""
@@ -76,7 +77,7 @@ Passkeys created in **macOS** can be used on:
         </span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <br />
         <span class="fs-6 text-muted">v9+</span>
       </td>
@@ -88,17 +89,17 @@ Passkeys created in **macOS** can be used on:
         </span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <br />
         <span class="fs-6 text-muted">v16+</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <br />
         <span class="fs-6 text-muted"> v13+ <sup>2</sup> </span>
       </td>
       <td class="text-center">
-        <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+        <i class="bi bi-x-circle-fill color-red fs-4"></i>
         <br />
         <span class="fs-6 text-muted"> Not Supported </span>
       </td>
@@ -117,7 +118,7 @@ Passkeys created in **macOS** can be used on:
         </a>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <span class="fs-6">
         <br />
         Chrome
@@ -131,7 +132,7 @@ Passkeys created in **macOS** can be used on:
         </span>
         <br />
         <br />
-        <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+        <i class="bi bi-x-circle-fill color-red fs-4"></i>
         <span class="fs-6">
         <br />
         Firefox
@@ -145,7 +146,7 @@ Passkeys created in **macOS** can be used on:
         </span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <span class="fs-6">
         <br />
         Safari
@@ -158,7 +159,7 @@ Passkeys created in **macOS** can be used on:
         </span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <span class="fs-6">
         <br />
         Safari
@@ -176,12 +177,12 @@ Passkeys created in **macOS** can be used on:
         </span>
       </td>
       <td class="text-center">
-        <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+        <i class="bi bi-x-circle-fill color-red fs-4"></i>
         <br />
         <span class="fs-6 text-muted">Not Supported</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <span class="fs-6">
         <br />
         Chrome <sup>3</sup>
@@ -208,7 +209,7 @@ Passkeys created in **macOS** can be used on:
         </a>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <br />
         <span class="fs-6 text-muted">v9+</span>
       </td>
@@ -216,7 +217,7 @@ Passkeys created in **macOS** can be used on:
         <span class="fs-6 text-muted">n/a</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <br />
         <span class="fs-6 text-muted">v16+</span>
       </td>
@@ -240,26 +241,26 @@ Passkeys created in **macOS** can be used on:
         <span class="fs-6">Planned</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <br />
         <span class="fs-6 text-muted">v108+</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <br />
         <span class="fs-6 text-muted">v16+</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <br />
         <span class="fs-6 text-muted">v13+</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <span class="fs-6"><br />Chrome<br />Edge</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <br />
         <span class="fs-6 text-muted">v23H2+</span>
       </td>
@@ -271,7 +272,7 @@ Passkeys created in **macOS** can be used on:
         </a>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <br />
         <span class="fs-6 text-muted">v14+</span>
       </td>
@@ -281,12 +282,12 @@ Passkeys created in **macOS** can be used on:
         <span class="fs-6 text-muted">Browser<br>Extensions</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4" title="Supported" alt="green check"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4" title="Supported" alt="green check"></i>
         <br />
         <span class="fs-6 text-muted">v17+</span>
       </td>
       <td class="text-center">
-        <i class="bi bi-check-circle-fill text-success fs-4" title="Supported" alt="green check"></i>
+        <i class="bi bi-check-circle-fill color-green fs-4" title="Supported" alt="green check"></i>
         <br />
         <span class="fs-6 text-muted">v14+</span>
       </td>
@@ -334,24 +335,24 @@ Passkeys created in **macOS** can be used on:
                 Native Platform APIs
             </td>
             <td class="text-center">
-              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <i class="bi bi-check-circle-fill color-green fs-4"></i>
             </td>
             <td class="text-center">
               <span class="fs-6 text-muted">n/a</span>
             </td>
             <td class="text-center">
-              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <i class="bi bi-check-circle-fill color-green fs-4"></i>
             </td>
             <td class="text-center">
-              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <i class="bi bi-check-circle-fill color-green fs-4"></i>
             </td>
             <td class="text-center">
-              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
               <br />
               <span class="fs-6 text-muted">Not Supported</span>
             </td>
             <td class="text-center">
-              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <i class="bi bi-check-circle-fill color-green fs-4"></i>
             </td>
           </tr>
           <tr class="align-middle">
@@ -359,20 +360,20 @@ Passkeys created in **macOS** can be used on:
               System WebView
             </td>
             <td class="text-center">
-              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <i class="bi bi-check-circle-fill color-green fs-4"></i>
               <br />
               <span class="fs-6 text-muted">Chrome<br>Custom Tabs</span>
             </td>
             <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
             <td class="text-center">
-              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <i class="bi bi-check-circle-fill color-green fs-4"></i>
               <br />
               <span class="fs-6 text-muted">ASWebAuthentication<wbr>Session</span>
             </td>
             <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
             <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
             <td class="text-center">
-              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <i class="bi bi-check-circle-fill color-green fs-4"></i>
               <br />
               <span class="fs-6 text-muted">Edge WebView2</span>
             </td>
@@ -382,24 +383,24 @@ Passkeys created in **macOS** can be used on:
               Embedded WebView
             </td>
             <td class="text-center">
-              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
               <br />
               <span class="fs-6 text-muted">Not Supported</span>
             </td>
             <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
             <td class="text-center">
-              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
               <br />
               <span class="fs-6 text-muted">Not Supported</span>
             </td>
             <td class="text-center">
-              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
               <br />
               <span class="fs-6 text-muted">Not Supported</span>
             </td>
             <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
             <td class="text-center">
-              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
               <br />
               <span class="fs-6 text-muted">Not Supported</span>
             </td>
@@ -437,32 +438,32 @@ Passkeys created in **macOS** can be used on:
               </a>
             </td>
             <td class="text-center">
-              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
               <br />
               <span class="fs-6 text-muted">Not Supported</span>
             </td>
             <td class="text-center">
-              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
               <br />
               <span class="fs-6 text-muted">Not Supported</span>
             </td>
             <td class="text-center">
               <i class="bi bi-usb-drive fs-4"></i>
               <br />
-              on security keys
+              <span class="fs-6">on security keys</span>
             </td>
             <td class="text-center">
               <i class="bi bi-usb-drive fs-4"></i>
               <br />
-              on security keys
+              <span class="fs-6">on security keys</span>
             </td>
             <td class="text-center">
               <i class="bi bi-usb-drive fs-4"></i>
               <br />
-              on security keys
+              <span class="fs-6">on security keys</span>
             </td>
             <td class="text-center">
-              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <i class="bi bi-check-circle-fill color-green fs-4"></i>
             </td>
           </tr>
           <tr class="align-middle">
@@ -477,7 +478,7 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
             <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
             <td class="text-center">
-              <i class="bi bi-check-circle-fill text-success fs-4"></i>
+              <i class="bi bi-check-circle-fill color-green fs-4"></i>
             </td>
           </tr>
           <tr class="align-middle">
@@ -487,18 +488,18 @@ Passkeys created in **macOS** can be used on:
               </a>
             </td>
             <td class="text-center">
-              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
               <br />
               <span class="fs-6 text-muted">Not Supported</span>
             </td>
             <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
             <td class="text-center">
-              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
               <br />
               <span class="fs-6 text-muted">Not Supported</span>
             </td>
             <td class="text-center">
-              <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
               <br />
               <span class="fs-6 text-muted">Not Supported</span>
             </td>

@@ -1,43 +1,37 @@
+title = "passkeys.dev"
 baseurl = "https://passkeys.dev/"
 canonifyURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true
+# disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
-paginate = 7
+paginate = 10
 rssLimit = 10
+summarylength = 20 # 70 (default)
 
 # Multilingual
 defaultContentLanguage = "en"
 disableLanguages = []
-# defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
-# add redirects/headers
+#copyRight = "Copyright (c) 2023 Hyas"
+
+[build.buildStats]
+  enable = true
+
 [outputs]
-home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
-section = ["HTML", "RSS", "SITEMAP"]
+  home = ["HTML", "RSS", "searchIndex"]
+  section = ["HTML", "RSS", "SITEMAP"]
 
-# remove .{ext} from text/netlify
-[mediaTypes."text/netlify"]
-suffixes = [""]
-delimiter = ""
+[outputFormats.searchIndex]
+  mediaType = "application/json"
+  baseName = "search-index"
+  isPlainText = true
+  notAlternative = true
 
-# add output format for netlify _redirects
-[outputFormats.REDIRECTS]
-mediaType = "text/netlify"
-baseName = "_redirects"
-isPlainText = true
-notAlternative = true
-
-# add output format for netlify _headers
-[outputFormats.HEADERS]
-mediaType = "text/netlify"
-baseName = "_headers"
-isPlainText = true
-notAlternative = true
-
-# add output format for section sitemap.xml
+# Add output format for section sitemap.xml
 [outputFormats.SITEMAP]
 mediaType = "application/xml"
 baseName = "sitemap"
@@ -46,15 +40,15 @@ isPlainText = true
 noUgly = true
 rel  = "sitemap"
 
-[caches]
-  [caches.getjson]
-    dir = ":cacheDir/:project"
-    maxAge = "10s"
-
 [sitemap]
   changefreq = "weekly"
   filename = "sitemap.xml"
   priority = 0.5
+
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "30m"
 
 [taxonomies]
   contributor = "contributors"
@@ -62,8 +56,9 @@ rel  = "sitemap"
   tag = "tags"
 
 [permalinks]
-  blog = "/blog/:title/"
-# docs = "/docs/1.0/:sections[1:]/:title/"
+  blog = "/blog/:slug/"
+##  docs = "/docs/:sections[1:]/:slug/"
+# docs = "/docs/1.0/:sections[1:]/:slug/"
 
 [minify.tdewolff.html]
   keepWhitespace = false
@@ -81,3 +76,10 @@ rel  = "sitemap"
     [[related.indices]]
     name = "date"
     weight = 10
+
+[imaging]
+  anchor = "Smart"
+  bgColor = "#ffffff"
+  hint = "photo"
+  quality = 75
+  resampleFilter = "Box"
