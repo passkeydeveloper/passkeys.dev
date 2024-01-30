@@ -84,6 +84,6 @@ Ubuntu is a trademark of Canonical Limited and is used under license.
 
 Windows is a registered trademark of Microsoft Corporation in the United States and/or other countries.
 
-The FIDO® passkey icon is a trademark (registered in numerous countries) of FIDO Alliance, Inc.
+The passkey icon is a trademark of FIDO Alliance, Inc.
 
 FIDO® is a trademark (registered in numerous countries) of FIDO Alliance, Inc.
