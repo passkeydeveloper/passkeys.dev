@@ -17,7 +17,7 @@ h3 {
 }
 
 a {
-  color: #005a9c;
+  color: #004b4e;
 }
 
 .strong {
@@ -143,8 +143,42 @@ SPECIFIC PAGE OVERRIDES
 HEADER MENU
 */
 
-nav .nav-link.active {
-  font-weight: 600;
+.offcanvas .nav-link.active {
+  color: #004b4e;
+  font-weight: 700;
+}
+
+[data-bs-theme="dark"] .offcanvas .nav-link.active {
+  color: #d39a1e;
+  font-weight: 700;
+}
+
+.offcanvas .nav-link:hover {
+  color: #d39a1e;
+}
+
+[data-bs-theme="dark"] .offcanvas .nav-link:hover {
+  color: #d39a1e;
+}
+
+/*
+SIDEBAR MENU
+*/
+
+.btn-toggle-nav a.active {
+  color: #004b4e;
+}
+
+[data-bs-theme="dark"] .btn-toggle-nav a.active {
+  color: #d39a1e;
+}
+
+.btn-toggle-nav a:hover {
+  color: #d39a1e;
+}
+
+[data-bs-theme="dark"] .btn-toggle-nav a:hover {
+  color: #d39a1e;
 }
 
 /*
