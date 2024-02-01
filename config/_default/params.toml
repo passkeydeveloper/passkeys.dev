@@ -4,7 +4,7 @@ description = "A collection of resources and insights to help you deploy passkey
 images = ["cover.png"]
 
 ## custom
-themeColor = "#005a9c"
+themeColor = "#004b4e"
 
 [social]
 twitter = "passkeysdev"
