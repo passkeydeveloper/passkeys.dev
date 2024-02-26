@@ -23,7 +23,7 @@ Passkeys created in **iOS or iPadOS** can be used on:
 - iPhones and iPads using the same Apple ID (synced automatically)
 - Macs using the same Apple ID (synced automatically)
 - Macs using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-- Windows devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- Windows devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Chromebooks and other ChromeOS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Ubuntu devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 
@@ -32,7 +32,7 @@ Passkeys created in **Android** can be used on:
 - The same Android device
 - Android devices using the same Google account (synced automatically)
 - Macs using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-- Windows devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
+- Windows devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - iPhones and iPads using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Chromebooks and other ChromeOS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
 - Ubuntu devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
