@@ -85,7 +85,7 @@ Passkeys created in **macOS** can be used on:
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
         <br />
         <span class="fs-6">
-        Planned <sup>1</sup>
+        Planned <sup><a href="#supone">1</a></sup>
         </span>
       </td>
       <td class="text-center">
@@ -96,7 +96,7 @@ Passkeys created in **macOS** can be used on:
       <td class="text-center">
         <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <br />
-        <span class="fs-6 text-muted"> v13+ <sup>2</sup> </span>
+        <span class="fs-6 text-muted"> v13+ <sup><a href="#suptwo">2</a></sup>
       </td>
       <td class="text-center">
         <i class="bi bi-x-circle-fill color-red fs-4"></i>
@@ -107,7 +107,7 @@ Passkeys created in **macOS** can be used on:
         <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
         <br />
         <span class="fs-6">
-        Planned <sup>1</sup>
+        Planned <sup><a href="#supone">1</a></sup>
         </span>
       </td>
     </tr>
@@ -166,7 +166,7 @@ Passkeys created in **macOS** can be used on:
         <br />
         Chrome
         <br />
-        Firefox <sup>4</sup>
+        Firefox <sup><a href="#supfour">4</a></sup>
         <br />
         <br />
         </span>
@@ -185,9 +185,9 @@ Passkeys created in **macOS** can be used on:
         <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <span class="fs-6">
         <br />
-        Chrome <sup>3</sup>
+        Chrome <sup><a href="#supthree">3</a></sup>
         <br />
-        Firefox <sup>4</sup>
+        Firefox <sup><a href="#supfour">4</a></sup>
         </span>
         <br />
         <br />
@@ -468,6 +468,74 @@ Passkeys created in **macOS** can be used on:
           </tr>
           <tr class="align-middle">
             <td class="fw-bold">
+                Client Hints
+            </td>
+            <td class="text-center">
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-wrench-adjustable-circle-fill fs-4"></i>
+              <br />
+              <span class="fs-6">Chrome</span> <sup><a href="#supfive">5</a></sup>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-wrench-adjustable-circle-fill fs-4"></i>
+              <span class="fs-6">
+              <br />
+              Chrome <sup><a href="#supfive">5</a></sup>
+              <br />
+              Edge <sup><a href="#supfive">5</a></sup>
+              <br />
+              <br />
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
+              <br />
+              Safari
+              <br />
+              Firefox
+              </span>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-wrench-adjustable-circle-fill fs-4"></i>
+              <span class="fs-6">
+              <br />
+              Chrome <sup><a href="#supfive">5</a></sup>
+              <br />
+              Edge <sup><a href="#supfive">5</a></sup>
+              <br />
+              <br />
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
+              <br />
+              Firefox
+              <br />
+              <br />
+              </span>
+            </td>
+            <td class="text-center">
+              <i class="bi bi-wrench-adjustable-circle-fill fs-4"></i>
+              <span class="fs-6">
+              <br />
+              Chrome <sup><a href="#supfive">5</a> <a href="#supsix">6</a></sup>
+              <br />
+              Edge <sup><a href="#supfive">5</a> <a href="#supsix">6</a></sup>
+              <br />
+              <br />
+              <i class="bi bi-x-circle-fill color-red fs-4"></i>
+              <br />
+              Firefox
+              <br />
+              <br />
+              </span>
+            </td>
+          </tr>
+          <tr class="align-middle">
+            <td class="fw-bold">
               <a href="../docs/reference/terms/#attestation" target="_blank">
                 Device-bound Passkey Attestation
               </a>
@@ -512,21 +580,27 @@ Passkeys created in **macOS** can be used on:
   </details>
 </div>
 <div class="text-end mb-5 mt-5">
-  <sup>1</sup>
+  <sup id="supone">1</sup>
   Device-bound passkeys supported
   <br />
-  <sup>2</sup>
+  <sup id="suptwo">2</sup>
   See
   <a href="/docs/reference/macos/#browser-behavior" target="_blank">
     macOS browser behavior
   </a>
   for caveats
   <br />
-  <sup>3</sup>
+  <sup id="supthree">3</sup>
   Chrome M108 and Windows 11 22H2
   <br />
-  <sup>4</sup>
+  <sup id="supfour">4</sup>
   <a href="https://www.mozilla.org/en-US/firefox/122.0/releasenotes/" target="_blank">
     Firefox 122
   </a>
+  <br />
+  <sup id="supfive">5</sup>
+  Experimental (behind flag)
+  <br />
+  <sup id="supsix">6</sup>
+  Partial support (requires Windows changes)
 </div>
