@@ -49,20 +49,19 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 
 ### User Verification Behavior
 
-When a user tries to interact with a passkey on Android, one of screen lock methods is used for user verification. Users can configure a PIN or a pattern and biometric (fingerprint or face) as their screen lock.
+When a user tries to interact with a passkey on Android, one of screen lock methods is used for user verification. Users can configure a device PIN or a pattern and biometric (fingerprint or face) as their screen lock.
 
-Where these biometrics are not configured or available, both passkey creation and passkey authentication fall back to asking for a PIN or a pattern.
+Where these biometrics are not configured or available, both passkey creation and authentication fall back to asking for the device PIN or pattern.
 
 #### Chrome 120
 
 - When biometrics are not configured on Android, or not available on the device:
-  - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: it asks for a PIN or a pattern for both passkey creation and passkey authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
+  - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: it asks for the device PIN or pattern for both passkey creation and authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
   - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` returns `true`.
-- When a PIN or a pattern is not configured on Android:
+- When a device PIN or pattern are not configured on Android:
   - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same:
-    - It asks for an external security key on passkey creation. The UV flag the server receives depends on the result of
- user verification with the external security key.
-    - It asks the user to set up a PIN or a pattern on passkey authentication. Since they fail locally before a PIN or a pattern is configured, the server does not receive a response.
+    - It asks for an external security key on passkey creation. The UV flag the server receives depends on the result of user verification with the external security key.
+    - It asks the user to set up a device PIN or pattern on passkey authentication. Since they fail locally before a PIN or a pattern is configured, the server does not receive a response.
   - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` returns `false`.
 
 ## Resources
