@@ -45,15 +45,15 @@ To replace a legacy platform credential with a passkey, start a credential regis
 
 When a user tries to interact with a passkey on iOS or iPadOS, one of screen lock methods is used for user verification. Users can configure a passcode and Touch ID or Face ID as their screen lock.
 
-Both passkey creation and passkey authentication ask for Touch ID or Face ID if one is configured, but fallback to a passcode if not. They ask to configure a passcode (and Touch ID or Face ID) if it's not yet set.
+Both passkey creation and authentication ask for Touch ID or Face ID if one is configured, but fallback to a passcode if they are not. iOS asks the user to configure a passcode (and Touch ID or Face ID) if not yet set up.
 
-#### Safari on iOS 17
+#### Safari on iOS / iPadOS 17
 
-- When Touch ID or Face ID is not configured, but a passcode is configured on iOS:
-  - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: iOS asks for tapping on a "Confirmation" button, then a passcode for both passkey creation and passkey authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
+- When Touch ID or Face ID are not configured, but a passcode is configured on iOS:
+  - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: iOS asks for tapping on a "Confirmation" button, then a passcode for both passkey creation and authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
   - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` always returns true.
 - When a passcode is not configured on iOS:
-  - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: iOS asks the user to set up a passcode and the Touch ID or Face ID for both passkey creation and passkey authentication. Since they fail locally before a passcode is configured, the server can always expect the UV flag to be `true`.
+  - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: iOS asks the user to set up a passcode and then Touch ID or Face ID for both passkey creation and authentication. Since they fail locally before a passcode is configured, the server can always expect the UV flag to be `true`.
   - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` always returns true.
 
 ## Resources
