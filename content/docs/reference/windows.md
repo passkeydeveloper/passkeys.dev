@@ -37,14 +37,14 @@ Persistent linking is available between Android devices (authenticator) and Chro
 
 ### User Verification Behavior
 
-When a user tries to interact with a passkey on Windows 11, one of screen lock methods is used for user verification. Users must set up a PIN. Setting up facial recognition or fingerprint recognition are optional.
+When a user tries to interact with a passkey on Windows 11, one of screen lock methods is used for user verification via Windows Hello. Starting in Windows 11 22H2, users must set up Windows Hello with at least a device PIN. Setting up facial recognition or fingerprint recognition are optional.
 
-Where these biometrics are not configured or available, both passkey creation and passkey authentication fall back to asking for a PIN.
+Where these biometrics are not configured or available, both passkey creation and authentication fall back to asking for the Windows Hello PIN.
 
 #### Chrome 120
 
 - When biometrics are not configured on Windows, or not available on the device:
-  - The behavior for both `userVerification='required'` and `userVerification='preferred'` are the same: it asks for a PIN for both passkey creation and passkey authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
+  - The behavior for both `userVerification='required'` and `userVerification='preferred'` are the same: Windows Hello asks for the device PIN for both passkey creation and authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
   - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` returns `true`.
 
 ## Resources
