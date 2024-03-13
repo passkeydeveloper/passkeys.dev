@@ -48,22 +48,22 @@ To replace a legacy platform credential with a passkey, start a credential regis
 
 ### User Verification Behavior
 
-On macOS, the user must set up a system password. Enabling iCloud Keychain and setting up Touch ID are optional.
+On macOS, the user must set up a local system password. Enabling iCloud Keychain and setting up Touch ID are optional.
 
 #### Safari on macOS 14
 
 - When iCloud Keychain is not enabled and Touch ID is not configured on macOS:
   - The behavior for `userVerification='required'` is:
     - macOS asks the user to enable iCloud Keychain on passkey creation. Since user verification fails locally at this point, the server does not receive a credential.
-    - On passkey authentication, macOS asks the user to enter the system password or use Touch ID (if configured).
+    - On passkey authentication, macOS asks the user to enter the local system password or use Touch ID (if configured).
   - The behavior on `userVerification='preferred'` is:
     - macOS asks the user to enable iCloud Keychain on passkey creation. Since user verification fails locally at this point, the server does not receive a credential.
     - On passkey authentication:
       - If Touch ID is not configured, macOS skips user verification and returns the UV flag as `false`.
       - If Touch ID is configured, macOS asks for user verification with Touch ID and returns the UV flag as `true`.
   - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` always returns true.
-- When iCloud Keychain is enabled, but Touch ID is not configured on macOS or not available on the device:
-  - `userVerification='required'` asks the user to enter the system password on both passkey creation and authentication. Since they fail locally if Touch ID setup fails, the server can always expect the UV flag to be `true`.
+- When iCloud Keychain is enabled, but Touch ID is not configured on macOS or not available on the device (e.g. laptop lid is closed):
+  - `userVerification='required'` asks the user to enter the local system password on both passkey creation and authentication. Since they fail locally if Touch ID setup fails, the server can always expect the UV flag to be `true`.
   - `userVerification='preferred'` skips user verification both on passkey creation and authentication. The UV flag is always `false`.
   - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` always returns true.
 
@@ -78,7 +78,7 @@ On macOS, the user must set up a system password. Enabling iCloud Keychain and s
     - On passkey authentication, it skips user verification immediately and returns a credential with the UV flag as `false`.
       - If Touch ID is configured, macOS asks for user verification with Touch ID.The UV flag sent to the server depends on the fallback user verification result.
   - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` always returns `true`.
-- When iCloud Keychain is enabled, but Touch ID is not configured on macOS or not available on the device:
+- When iCloud Keychain is enabled, but Touch ID is not configured on macOS or not available on the device (e.g. laptop lid is closed):
   - `userVerification='required'` asks for the system password on both passkey creation and passkey authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
   - `userVerification='preferred'` skips user verification and returns the UV flag as `false` for both passkey creation and passkey authentication.
   - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` always returns `true`.
