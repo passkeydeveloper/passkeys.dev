@@ -41,6 +41,21 @@ WebAuthn credentials created using the platform authenticator in iOS/iPadOS 15 a
 <!-- TODO: cross link to generic content about "upgrading to a passkey" -->
 To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. iOS/iPadOS will overwrite the legacy credential with a new passkey that will be backed up to iCloud Keychain.
 
+### User Verification Behavior
+
+When a user tries to interact with a passkey on iOS or iPadOS, one of screen lock methods is used for user verification. Users can configure a passcode and Touch ID or Face ID as their screen lock.
+
+Both passkey creation and passkey authentication ask for Touch ID or Face ID if one is configured, but fallback to a passcode if not. They ask to configure a passcode (and Touch ID or Face ID) if it's not yet set.
+
+#### Safari on iOS 17
+
+- When Touch ID or Face ID is not configured, but a passcode is configured on iOS:
+  - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: iOS asks for tapping on a "Confirmation" button, then a passcode for both passkey creation and passkey authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
+  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` always returns true.
+- When a passcode is not configured on iOS:
+  - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: iOS asks the user to set up a passcode and the Touch ID or Face ID for both passkey creation and passkey authentication. Since they fail locally before a passcode is configured, the server can always expect the UV flag to be `true`.
+  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` always returns true.
+
 ## Resources
 
 - [Apple landing page for passkeys](https://developer.apple.com/passkeys/)

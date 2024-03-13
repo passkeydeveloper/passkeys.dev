@@ -35,6 +35,18 @@ Windows does not currently support [FIDO Cross-Device Authentication (CDA)](../t
 
 Persistent linking is available between Android devices (authenticator) and Chrome and Edge (clients) on Windows. iOS and iPadOS do not support persistent linking.
 
+### User Verification Behavior
+
+When a user tries to interact with a passkey on Windows 11, one of screen lock methods is used for user verification. Users must set up a PIN. Setting up facial recognition or fingerprint recognition are optional.
+
+Where these biometrics are not configured or available, both passkey creation and passkey authentication fall back to asking for a PIN.
+
+#### Chrome 120
+
+- When biometrics are not configured on Windows, or not available on the device:
+  - The behavior for both `userVerification='required'` and `userVerification='preferred'` are the same: it asks for a PIN for both passkey creation and passkey authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
+  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` returns `true`.
+
 ## Resources
 
 > Coming Soon
