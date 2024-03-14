@@ -43,7 +43,7 @@ To replace a legacy platform credential with a passkey, start a credential regis
 
 ### User Verification Behavior
 
-When a user tries to interact with a passkey on iOS or iPadOS, one of screen lock methods is used for user verification. Users can configure a passcode and Touch ID or Face ID as their screen lock.
+When a user tries to interact with a passkey on iOS or iPadOS, an available screen unlock method is used for user verification. Users can configure a passcode and Touch ID or Face ID as their screen unlock.
 
 Both passkey creation and authentication ask for Touch ID or Face ID if one is configured, but fallback to a passcode if they are not. iOS asks the user to configure a passcode (and Touch ID or Face ID) if not yet set up.
 
