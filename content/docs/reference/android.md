@@ -51,7 +51,7 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 
 When a user tries to interact with a passkey on Android, one of screen lock methods is used for user verification. Users can configure a device PIN or a pattern and biometric (fingerprint or face) as their screen lock.
 
-Where these biometrics are not configured or available, both passkey creation and authentication fall back to asking for the device PIN or pattern.
+When biometrics are not configured or available, both passkey creation and authentication fall back to asking for the device PIN or pattern.
 
 #### Chrome 120
 
