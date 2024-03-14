@@ -81,7 +81,7 @@ On macOS, the user must set up a local system password. Enabling iCloud Keychain
 - When iCloud Keychain is enabled, but Touch ID is not configured on macOS or not available on the device (e.g. laptop lid is closed):
   - `userVerification='required'` asks for the system password on both passkey creation and passkey authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
   - `userVerification='preferred'` skips user verification and returns the UV flag as `false` for both passkey creation and passkey authentication.
-  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` always returns `true`.
+  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()` always returns `true`.
 
 ## Resources
 
