@@ -62,7 +62,7 @@ Where these biometrics are not configured or available, both passkey creation an
   - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same:
     - It asks for an external security key on passkey creation. The UV flag the server receives depends on the result of user verification with the external security key.
     - It asks the user to set up a device PIN or pattern on passkey authentication. Since they fail locally before a PIN or a pattern is configured, the server does not receive a response.
-  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` returns `false`.
+  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()` returns `false`.
 
 ## Resources
 
