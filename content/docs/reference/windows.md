@@ -44,7 +44,7 @@ Where these biometrics are not configured or available, both passkey creation an
 #### Chrome 120
 
 - When biometrics are not configured on Windows, or not available on the device:
-  - The behavior for both `userVerification='required'` and `userVerification='preferred'` are the same: Windows Hello asks for the device PIN for both passkey creation and authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
+  - The behavior for both `userVerification='required'` and `userVerification='preferred'` are the same: Windows Hello asks for the device PIN for both passkey creation and authentication. Since user verification fails locally, the server only receives a successful response with the UV flag to be `true`.
   - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()` returns `true`.
 
 ## Resources
