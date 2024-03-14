@@ -57,7 +57,7 @@ Where these biometrics are not configured or available, both passkey creation an
 
 - When biometrics are not configured on Android, or not available on the device:
   - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: it asks for the device PIN or pattern for both passkey creation and authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
-  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` returns `true`.
+  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()` returns `true`.
 - When a device PIN or pattern are not configured on Android:
   - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same:
     - It asks for an external security key on passkey creation. The UV flag the server receives depends on the result of user verification with the external security key.
