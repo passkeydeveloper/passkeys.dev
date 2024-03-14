@@ -51,7 +51,7 @@ Both passkey creation and authentication ask for Touch ID or Face ID if one is c
 
 - When Touch ID or Face ID are not configured, but a passcode is configured on iOS:
   - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: iOS asks for tapping on a "Confirmation" button, then a passcode for both passkey creation and authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
-  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` always returns true.
+  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()` always returns true.
 - When a passcode is not configured on iOS:
   - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: iOS asks the user to set up a passcode and then Touch ID or Face ID for both passkey creation and authentication. Since they fail locally before a passcode is configured, the server can always expect the UV flag to be `true`.
   - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticator()` always returns true.
