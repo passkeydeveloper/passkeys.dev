@@ -82,7 +82,7 @@ A FIDO2 [Discoverable Credential](#discoverable-credential) that is bound to a s
 
 ## Discoverable Credential
 
-A Discoverable Credential (previously known as a "resident credential" or "resident key") is a FIDO2/WebAuthn credential that is entirely stored in the authenticator (private key, credential ID, user handle, and other metadata). The [Relying Party (RP)](#relying-party-rp) also stores a copy of the _public_ key and credential ID
+A Discoverable Credential (previously known as a "resident credential" or "resident key") is a FIDO2/WebAuthn credential that is entirely stored in the authenticator (private key, credential ID, user handle, and other metadata). The [Relying Party (RP)](#relying-party-rp) also stores a copy of the _public_ key and credential ID.
 
 [Passkeys](#passkey) are Discoverable Credentials.
 
