@@ -61,9 +61,9 @@ reviews / audits.
     and should be different from the ID you've assigned to a user internally.
 -   **Verification steps**: Check whether the library follows verification
     steps, during
-    [registration](https://developers.devsite.corp.google.com/identity/passkeys/developer-guides/server-registration)
+    [registration](https://developers.google.com/identity/passkeys/developer-guides/server-registration)
     and
-    [authentication](https://developers.devsite.corp.google.com/identity/passkeys/developer-guides/server-authentication).
+    [authentication](https://developers.google.com/identity/passkeys/developer-guides/server-authentication).
 
 ### UX
 
