@@ -58,6 +58,7 @@ Matthew Miller |
 - Christiaan Brand
 - Garrett Davidson
 - Jesse Endahl
+- Eiji Kitamura <a href="https://github.com/agektmr" target="_blank"><i class="bi bi-github color-black"></i></a>
 - Akshay Kumar
 - Dominique Hazael-Massieux <a href="https://github.com/dontcallmedom" target="_blank"><i class="bi bi-github color-black"></i></a>
 - Jeff Hodges
