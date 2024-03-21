@@ -40,6 +40,18 @@ Starting in Windows 11 version 23H2, [FIDO Cross-Device Authentication (CDA)](..
 
 In Windows versions prior to 11 23H2, including Windows 10, support for [FIDO Cross-Device Authentication (CDA)](../terms#cross-device-authentication-cda) is only available in Chrome and Edge. It is not available globally. Persistent linking is available between Android devices (authenticator) and Chrome and Edge (clients) on these versions. iOS and iPadOS do not support persistent linking.
 
+### User Verification Behavior
+
+When a user tries to interact with a passkey on Windows 11, an available screen unlock method is used for user verification via Windows Hello. Starting in Windows 11 22H2, users must set up Windows Hello with at least a device PIN. Setting up facial recognition or fingerprint recognition are optional.
+
+Where these biometrics are not configured or available, both passkey creation and authentication fall back to asking for the Windows Hello PIN.
+
+#### Chrome 120
+
+- When biometrics are not configured on Windows, or not available on the device:
+  - The behavior for both `userVerification='required'` and `userVerification='preferred'` are the same: Windows Hello asks for the device PIN for both passkey creation and authentication. Since user verification fails locally, the server only receives a successful response with the UV flag to be `true`.
+  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()` returns `true`.
+
 ## Resources
 
 > Coming Soon

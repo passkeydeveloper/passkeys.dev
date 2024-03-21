@@ -47,6 +47,23 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 
 - **Credential Manager** is a new Android Jetpack API that supports multiple sign-in methods, including passkeys, in a single API, thus simplifying the integration for developers.<br><br><a href="https://developer.android.com/training/sign-in/passkeys" target="_blank"><button type="button" class="btn btn-light">Credential Manager API <i class="bi bi-box-arrow-up-right ms-2"></i></button></a><br><br><a href="https://developer.android.com/training/sign-in/fido2-migration" target="_blank"><button type="button" class="btn btn-light">FIDO2 API to Credential Manager Migration <i class="bi bi-box-arrow-up-right ms-2"></i></button></a>
 
+### User Verification Behavior
+
+Users can configure a device PIN, pattern, and/or biometric (fingerprint or face) as their device screen lock. When a user interacts with a passkey on Android, one of these available screen unlock methods is used for user verification. 
+
+When biometrics are not configured or available, both passkey creation and authentication fall back to asking for the device PIN or pattern.
+
+#### Chrome 120
+
+- When biometrics are not configured on Android, or not available on the device:
+  - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: it asks for the device PIN or pattern for both passkey creation and authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
+  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()` returns `true`.
+- When a device PIN or pattern are not configured on Android:
+  - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same:
+    - It asks for an external security key on passkey creation. The UV flag the server receives depends on the result of user verification with the external security key.
+    - It asks the user to set up a device PIN or pattern on passkey authentication. Since they fail locally before a PIN or a pattern is configured, the server does not receive a response.
+  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()` returns `false`.
+
 ## Resources
 
 ### Docs

@@ -41,6 +41,21 @@ WebAuthn credentials created using the platform authenticator in iOS/iPadOS 15 a
 <!-- TODO: cross link to generic content about "upgrading to a passkey" -->
 To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. iOS/iPadOS will overwrite the legacy credential with a new passkey that will be backed up to iCloud Keychain.
 
+### User Verification Behavior
+
+When a user tries to interact with a passkey on iOS or iPadOS, an available screen unlock method is used for user verification. Users can configure a passcode and Touch ID or Face ID as their screen unlock.
+
+Both passkey creation and authentication ask for Touch ID or Face ID if one is configured, but fallback to a passcode if they are not. iOS asks the user to configure a passcode (and Touch ID or Face ID) if not yet set up.
+
+#### Safari on iOS / iPadOS 17
+
+- When Touch ID or Face ID are not configured, but a passcode is configured on iOS:
+  - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: iOS asks for tapping on a "Confirmation" button, then a passcode for both passkey creation and authentication. Since they fail locally if user verification fails, the server can always expect the UV flag to be `true`.
+  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()` always returns true.
+- When a passcode is not configured on iOS:
+  - The behavior with both `userVerification='required'` and `userVerification='preferred'` are the same: User verification fails, iOS asks the user to set up a passcode and then Touch ID or Face ID for both passkey creation and authentication. Since the failure happens locally, the server can expect at least a passcode is already configured and the UV flag to be `true`.
+  - Calling `PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()` always returns true.
+
 ## Resources
 
 - [Apple landing page for passkeys](https://developer.apple.com/passkeys/)
