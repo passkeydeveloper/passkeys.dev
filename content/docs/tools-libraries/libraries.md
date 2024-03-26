@@ -17,6 +17,7 @@ toc: true
 ### Rust
 
 - [webauthn_rs: WebAuthn for Rust Server Applications](https://docs.rs/webauthn-rs/latest/webauthn_rs/) (William Brown)
+- [passkey-rs: WebAuthn Authenticators framework that supports passkeys](https://github.com/1Password/passkey-rs) (1Password)
 
 ### TypeScript
 
