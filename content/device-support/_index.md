@@ -123,14 +123,9 @@ Passkeys created in **macOS** can be used on:
         <br />
         Chrome
         <br />
+        Edge 122+
         <br />
         </span>
-        <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
-        <span class="fs-6">
-        <br />
-        Edge
-        </span>
-        <br />
         <br />
         <i class="bi bi-x-circle-fill color-red fs-4"></i>
         <span class="fs-6">
@@ -168,12 +163,8 @@ Passkeys created in **macOS** can be used on:
         <br />
         Firefox <sup><a href="#supfour">4</a></sup>
         <br />
+        Edge 122+
         <br />
-        </span>
-        <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
-        <span class="fs-6">
-        <br />
-        Edge
         </span>
       </td>
       <td class="text-center">
@@ -188,14 +179,10 @@ Passkeys created in **macOS** can be used on:
         Chrome <sup><a href="#supthree">3</a></sup>
         <br />
         Firefox <sup><a href="#supfour">4</a></sup>
+        <br />
+        Edge 122+
         </span>
         <br />
-        <br />
-        <i class="bi bi-calendar-plus fs-4" title="Planned" alt="calendar icon"></i>
-        <span class="fs-6">
-        <br />
-        Edge
-        </span>
       </td>
     </tr>
     <tr class="align-middle">
