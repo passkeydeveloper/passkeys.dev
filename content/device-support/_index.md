@@ -121,7 +121,7 @@ Passkeys created in **macOS** can be used on:
         <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <span class="fs-6">
         <br />
-        Chrome
+        Chrome 108+
         <br />
         Edge 122+
         <br />
@@ -159,9 +159,9 @@ Passkeys created in **macOS** can be used on:
         <br />
         Safari
         <br />
-        Chrome
+        Chrome 108+
         <br />
-        Firefox <sup><a href="#supfour">4</a></sup>
+        Firefox 122+
         <br />
         Edge 122+
         <br />
@@ -176,11 +176,11 @@ Passkeys created in **macOS** can be used on:
         <i class="bi bi-check-circle-fill color-green fs-4"></i>
         <span class="fs-6">
         <br />
-        Chrome <sup><a href="#supthree">3</a></sup>
+        Chrome 108+ <sup><a href="#supthree">3</a></sup>
         <br />
-        Firefox <sup><a href="#supfour">4</a></sup>
+        Firefox 122+ <sup><a href="#supthree">3</a></sup>
         <br />
-        Edge 122+
+        Edge 122+ <sup><a href="#supthree">3</a></sup>
         </span>
         <br />
       </td>
@@ -465,7 +465,7 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center">
               <i class="bi bi-wrench-adjustable-circle-fill fs-4"></i>
               <br />
-              <span class="fs-6">Chrome</span> <sup><a href="#supfive">5</a></sup>
+              <span class="fs-6">Chrome</span> <sup><a href="#supfour">4</a></sup>
             </td>
             <td class="text-center">
               <i class="bi bi-x-circle-fill color-red fs-4"></i>
@@ -476,9 +476,9 @@ Passkeys created in **macOS** can be used on:
               <i class="bi bi-wrench-adjustable-circle-fill fs-4"></i>
               <span class="fs-6">
               <br />
-              Chrome <sup><a href="#supfive">5</a></sup>
+              Chrome <sup><a href="#supfour">4</a></sup>
               <br />
-              Edge <sup><a href="#supfive">5</a></sup>
+              Edge <sup><a href="#supfour">4</a></sup>
               <br />
               <br />
               <i class="bi bi-x-circle-fill color-red fs-4"></i>
@@ -492,9 +492,9 @@ Passkeys created in **macOS** can be used on:
               <i class="bi bi-wrench-adjustable-circle-fill fs-4"></i>
               <span class="fs-6">
               <br />
-              Chrome <sup><a href="#supfive">5</a></sup>
+              Chrome <sup><a href="#supfour">4</a></sup>
               <br />
-              Edge <sup><a href="#supfive">5</a></sup>
+              Edge <sup><a href="#supfour">4</a></sup>
               <br />
               <br />
               <i class="bi bi-x-circle-fill color-red fs-4"></i>
@@ -508,9 +508,9 @@ Passkeys created in **macOS** can be used on:
               <i class="bi bi-wrench-adjustable-circle-fill fs-4"></i>
               <span class="fs-6">
               <br />
-              Chrome <sup><a href="#supfive">5</a> <a href="#supsix">6</a></sup>
+              Chrome <sup><a href="#supfive">4</a> <a href="#supfive">5</a></sup>
               <br />
-              Edge <sup><a href="#supfive">5</a> <a href="#supsix">6</a></sup>
+              Edge <sup><a href="#supfour">4</a> <a href="#supfive">5</a></sup>
               <br />
               <br />
               <i class="bi bi-x-circle-fill color-red fs-4"></i>
@@ -578,16 +578,11 @@ Passkeys created in **macOS** can be used on:
   for caveats
   <br />
   <sup id="supthree">3</sup>
-  Chrome M108 and Windows 11 22H2
+  Windows 11 22H2+
   <br />
   <sup id="supfour">4</sup>
-  <a href="https://www.mozilla.org/en-US/firefox/122.0/releasenotes/" target="_blank">
-    Firefox 122
-  </a>
-  <br />
-  <sup id="supfive">5</sup>
   Experimental (behind flag)
   <br />
-  <sup id="supsix">6</sup>
+  <sup id="supfive">5</sup>
   Partial support (requires Windows changes)
 </div>
