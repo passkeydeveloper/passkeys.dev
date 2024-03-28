@@ -53,6 +53,7 @@ Matthew Miller |
 
 ## Contributors
 
+- Anders Åberg
 - Dirk Balfanz
 - Arnar Birgisson
 - Christiaan Brand
@@ -64,7 +65,7 @@ Matthew Miller |
 - Jeff Hodges
 - Adam Langley
 - Ricky Mondello
-- Anders Åberg
+- Maud Nalpas <a href="https://github.com/maudnals" target="_blank"><i class="bi bi-github color-black"></i></a>
 - Cody Salas
 
 ## Copyright and Attributions
