@@ -38,32 +38,13 @@ to keep in mind when selecting an open-source solution.
         -   Does the library help leverage [FIDO
             MDS](https://fidoalliance.org/metadata/) in some way?
         -   Can it verify all attestation statement formats?
-    -   Does the library support [conditional
-        UI](https://github.com/w3c/webauthn/wiki/Explainer%3A-WebAuthn-Conditional-UI)
-        (sending empty `allowCredentials`)?
 
-### Security
+### Verification steps
 
-This is not a comprehensive security checklist; this only outlines a few
-critical elements. Make sure to run the library through your usual security
-reviews / audits.
-
--   **Challenge parameters**: Ensure the solution follows the [challenge
-    length](https://www.w3.org/TR/webauthn-3/#sctn-cryptographic-challenges) and
-    [timeout](https://www.w3.org/TR/webauthn-3/#sctn-createCredential)
-    recommended in the specification.
--   **User ID**: Prioritize solutions that encourage random identifiers, to
-    enhance user privacy. Passkeys should be
-    [free](https://www.w3.org/TR/webauthn-3/#sctn-user-handle-privacy) of
-    personally identifying information (PII). `user.id` should be a [completely
-    random
-    identifier](https://www.w3.org/TR/webauthn-2/#dom-publickeycredentialuserentity-id),
-    and should be different from the ID you've assigned to a user internally.
--   **Verification steps**: Check whether the library follows verification
-    steps, during
-    [registration](https://developers.google.com/identity/passkeys/developer-guides/server-registration)
-    and
-    [authentication](https://developers.google.com/identity/passkeys/developer-guides/server-authentication).
+Check whether the library follows the necessary verification steps:
+-   During
+    [registration](https://developers.google.com/identity/passkeys/developer-guides/server-registration#appendix_verification_of_the_registration_response)
+- During [authentication](https://developers.google.com/identity/passkeys/developer-guides/server-authentication#appendix_verification_of_the_authentication_response).
 
 ### UX
 
@@ -92,14 +73,6 @@ design](https://developers.google.com/identity/passkeys/ux/user-interface-design
 
 ### Developer involvement and maintenance
 
--   **Standards participation**: Solution maintainers who are active in shaping
-    WebAuthn standards signal expertise. Check whether the maintainers are
-    active in the standards process in some way, in groups such as the [Web
-    Authentication Working Group (WAWG)](https://www.w3.org/groups/wg/webauthn/)
-    or the [WebAuthn Adoption Community Group
-    (WACG)](https://www.w3.org/groups/cg/webauthn-adoption/). The w3c webAuthn
-    [contributor list](https://github.com/w3c/webauthn/graphs/contributors) can
-    be a good place to check.
 -   **Open-source maintenance**: For open-source options, investigate their
     community activity. A few active issues, or many issues with up-to-date
     labels (assuming these require manual assignment), and comments by
