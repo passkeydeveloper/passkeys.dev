@@ -40,27 +40,31 @@ a {
 button tweaks
 */
 
-body .btn-primary {
+body .btn-black {
   color: #fff;
-  background-color: #d39a1e;
-  border-color: #d39a1e;
+  background-color: #000;
+  border-color: #000;
 }
 
-body .btn-primary:hover {
-  background-color: #004b4e;
-  border-color: #004b4e;
+body .btn-black:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
 }
 
-[data-bs-theme="dark"] body .btn-primary {
+[data-bs-theme="dark"] body .btn-black {
+  color: #000 !important;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+[data-bs-theme="dark"] body .btn-black:hover {
   color: #fff !important;
-  background-color: #d39a1e;
-  border-color: #d39a1e;
+  background-color: #000;
+  border-color: #fff;
 }
 
-[data-bs-theme="dark"] body .btn-primary:hover {
-  background-color: #004b4e;
-  border-color: #004b4e;
-}
+
 
 /*
 change bw icons to white in dark mode
