@@ -46,10 +46,8 @@
     "semver": "^7.5.4"
   },
   "engines": {
-    "node": ">=18.14.1",
-    "pnpm": ">=8.10.0"
+    "node": ">=18.14.1"
   },
-  "packageManager": "pnpm",
   "volta": {
     "node": "18.19.0"
   }
