@@ -2,7 +2,7 @@
 	<div class="row flex-xl-nowrap">
 		<div class="col-lg-5 col-xl-4 docs-sidebar{{ if ne .Site.Params.options.navbarSticky true }} docs-sidebar-top{{ end }} d-none d-lg-block">
 			<nav {{ if eq .Site.Params.menu.section.collapsibleSidebar false }}id="sidebar-default" {{ end }}class="docs-links" aria-label="Main navigation">
-				{{ partial "sidebar/docs-menu.html" . }}
+				{{ partial "sidebar/section-menu.html" . }}
 			</nav>
 		</div>
 		<main class="docs-content col-lg-12 mx-xl-auto">
