@@ -14,9 +14,9 @@
 		</nav>
 		{{ end -}}
 		{{ if .Params.toc -}}
-		<main class="docs-content col-lg-16 col-xl-9">
+		<main class="docs-content col-lg-11 col-xl-9">
 		{{ else -}}
-		<main class="docs-content col-lg-16 col-xl-9 mx-xl-auto">
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
 		{{ end -}}
 			{{ if site.Params.doks.breadcrumbTrail -}}
 				<!-- https://discourse.gohugo.io/t/breadcrumb-navigation-for-highly-nested-content/27359/6 -->
@@ -41,9 +41,13 @@
 				{{ .Content }}
 			{{ end -}}
 			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
-				<section>
-					<p id="date" class="text-muted fs-6"><i class="bi bi-pencil"></i> Last Updated: {{ .Lastmod.Format "Jan 02, 2006" }}</p>
-				</section>
+				<p id="date" class="text-muted fs-6"><i class="bi bi-pencil"></i> Last Updated: {{ .Lastmod.Format "Jan 02, 2006" }}</p>
+				{{ if site.Params.doks.lastMod -}}
+					{{ partial "main/last-modified.html" . }}
+				{{ end -}}
+				{{ if site.Params.doks.editPage -}}
+					{{ partial "main/edit-page.html" . }}
+				{{ end -}}
 			</div>
 			{{ partial "main/docs-navigation.html" . }}
 			<!--
