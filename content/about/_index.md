@@ -9,10 +9,6 @@ images: []
 
 passkeys.dev is brought to you by the [W3C WebAuthn Community Adoption Group](https://www.w3.org/community/webauthn-adoption/) and members of the [FIDO Alliance](https://fidoalliance.org/).
 
-## What's next?
-
-passkeys.dev was launched in October 2022 and is rapidly evolving. You can expect frequent updates with new content and improvements as passkeys continue rolling out across the ecosystem and as guidance is developed for additional use cases and verticals.
-
 <!--
 <a href="roadmap"><button type="button" class="btn btn-primary">View Site Roadmap <i class="bi bi-cone-striped"></i></button></a>
 -->
@@ -44,7 +40,11 @@ Contributing guidance coming soon!
 
 ## Maintainers
 
-Tim Cappalli | <a href="https://github.com/timcappalli" target="_blank"><i class="bi bi-github color-black"></i></a> <a href="https://twitter.com/timcappalli" target="_blank"><i class="bi bi-twitter-x color-black"></i></a> <a href="https://timcappalli.me/" target="_blank"><i class="bi bi-house-heart color-black"></i></a>
+Tim Cappalli |
+<a href="https://github.com/timcappalli" target="_blank"><i class="bi bi-github color-black"></i></a>
+<a href="https://infosec.exchange/@timcappalli" target="_blank"><i class="bi bi-mastodon color-black"></i></a>
+<a href="https://threads.net/timcappalli" target="_blank"><i class="bi bi-threads-fill"></i></a>
+<a href="https://timcappalli.me/" target="_blank"><i class="bi bi-house-heart color-black"></i></a>
 
 Matthew Miller |
 <a href="https://github.com/MasterKale" target="_blank"><i class="bi bi-github color-black"></i></a>
