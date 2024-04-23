@@ -32,7 +32,7 @@ A [Relying Party (RP)](#relying-party-rp) authenticates a user without any prior
 
 Attestation is an optional statement provided by an authenticator which can be used by a Relying Party to identify and verify the provenance of the authenticator.
 
-<a href="https://www.w3.org/TR/2021/REC-webauthn-2-20210408/#sctn-attestation" target="_blank"><button type="button" class="btn btn-light">WebAuthn Spec Reference <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></button></a>
+<a href="https://www.w3.org/TR/2021/REC-webauthn-2-20210408/#sctn-attestation" target="_blank"><button type="button" class="btn btn-light">WebAuthn Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
 ## Authentication factor
 
@@ -50,9 +50,9 @@ A generic example of an autofill UI for passkeys is shown below:
 
 The technical name for this feature in the WebAuthn and Credential Management specifications is "Conditional Mediation".
 
-<a href="https://w3c.github.io/webauthn/#dom-publickeycredential-isconditionalmediationavailable" target="_blank"><button type="button" class="btn btn-light">WebAuthn Spec Reference <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></button></a>
+<a href="https://w3c.github.io/webauthn/#dom-publickeycredential-isconditionalmediationavailable" target="_blank"><button type="button" class="btn btn-light">WebAuthn Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
-<a href="https://w3c.github.io/webappsec-credential-management/#mediation-requirements" target="_blank"><button type="button" class="btn btn-light">Credential Management Spec Reference <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></button></a>
+<a href="https://w3c.github.io/webappsec-credential-management/#mediation-requirements" target="_blank"><button type="button" class="btn btn-light">Credential Management Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
 ## Cross-Device Authentication (CDA)
 
@@ -86,7 +86,7 @@ A Discoverable Credential (known in previous version of WebAuthn as a "resident 
 
 [Passkeys](#passkey) are Discoverable Credentials.
 
-<a href="https://www.w3.org/TR/webauthn-2/#discoverable-credential" target="_blank"><button type="button" class="btn btn-light">Spec Reference <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></button></a>
+<a href="https://www.w3.org/TR/webauthn-2/#discoverable-credential" target="_blank"><button type="button" class="btn btn-light">Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
 ## First-Party Passkey Provider
 
@@ -136,7 +136,7 @@ Example with an Android phone linked to a Windows 11 device:
 
 A FIDO authenticator that is built-in to a user's device.
 
-<a href="https://www.w3.org/TR/webauthn-2/#sctn-authenticator-taxonomy" target="_blank"><button type="button" class="btn btn-light">Spec Reference <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></button></a>
+<a href="https://www.w3.org/TR/webauthn-2/#sctn-authenticator-taxonomy" target="_blank"><button type="button" class="btn btn-light">Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
 ## Reauthentication
 
@@ -148,13 +148,13 @@ For example, this can happen before making sensitive changes to an account (addi
 
 The website that is trying to ascertain and verify the identity of the user or perform FIDO authentication.
 
-<a href="https://www.w3.org/TR/webauthn-2/#webauthn-relying-party" target="_blank"><button type="button" class="btn btn-light">Spec Reference <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></button></a>
+<a href="https://www.w3.org/TR/webauthn-2/#webauthn-relying-party" target="_blank"><button type="button" class="btn btn-light">Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
 ## Roaming authenticator
 
 A FIDO authenticator usable with any device the user is trying to sign-in from. Roaming authenticators attach to users' devices in using USB, NFC, and/or Bluetooth. These authenticators are often referred to as "security keys". A smartphone can also act as a roaming authenticator using [FIDO Cross-Device Authentication](#cross-device-authentication-cda).
 
-<a href="https://www.w3.org/TR/webauthn-2/#sctn-authenticator-taxonomy" target="_blank"><button type="button" class="btn btn-light">Spec Reference <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></button></a>
+<a href="https://www.w3.org/TR/webauthn-2/#sctn-authenticator-taxonomy" target="_blank"><button type="button" class="btn btn-light">Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
 ## Signing in
 
@@ -178,16 +178,16 @@ A [Passkey Provider](#passkey-provider) that plugs in to the OS via platform API
 
 A test of User Presence (UP) is used to ensure the user is in local proximity to the authenticator during an authentication or credential creation ceremony. UP is often satisfied by pressing a button or metallic area of a security key, or interacting with a platform authenticator on a device.
 
-<a href="https://www.w3.org/TR/webauthn-2/#test-of-user-presence" target="_blank"><button type="button" class="btn btn-light">Spec Reference <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></button></a>
+<a href="https://www.w3.org/TR/webauthn-2/#test-of-user-presence" target="_blank"><button type="button" class="btn btn-light">Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
 ## User Verification (UV)
 
 User Verification (UV) requires the user to either perform a biometric gesture, enter the device PIN, or enter the device password for the authenticator to authorize creation and/or use of the credential.
 
-<a href="https://www.w3.org/TR/webauthn-2/#user-verification" target="_blank"><button type="button" class="btn btn-light">Spec Reference <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></button></a>
+<a href="https://www.w3.org/TR/webauthn-2/#user-verification" target="_blank"><button type="button" class="btn btn-light">Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
 ## User-Verifying Roaming Authenticator
 
 A User-Verifying Roaming Authentication (UVRA), also known as a first-factor roaming authenticator, can [verify individual](#user-verification-uv) users through the use of biometrics, or through the user entering a device PIN. An important class of UVRAs are smartphones, in which case the “attachment” typically happens over a wireless connection.
 
-<a href="https://www.w3.org/TR/webauthn-2/#first-factor-roaming-authenticator" target="_blank"><button type="button" class="btn btn-light">Spec Reference <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></button></a>
+<a href="https://www.w3.org/TR/webauthn-2/#first-factor-roaming-authenticator" target="_blank"><button type="button" class="btn btn-light">Spec Reference {{< icon-external-link size=24 >}}</button></a>
