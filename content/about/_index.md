@@ -15,24 +15,24 @@ passkeys.dev is brought to you by the [W3C WebAuthn Community Adoption Group](ht
 
 ## Engage and Contribute
 
-<a href="https://www.w3.org/community/webauthn-adoption/" target="_blank">W3C WebAuthn Community Adoption Group <i class="bi bi-box-arrow-up-right"></i></a>
+<a href="https://www.w3.org/community/webauthn-adoption/" target="_blank">W3C WebAuthn Community Adoption Group {{< icon-external-link size=24 >}}</a>
 
-<strong>GitHub</strong> <i class="bi bi-github color-black"></i>
+<strong>GitHub</strong> {{< icon-external-link size=24 >}}
 
-<a href="https://github.com/passkeydeveloper/passkeys.dev/issues/new/choose" target="_blank">Suggest content or report a site issue <i class="bi bi-box-arrow-up-right"></i></a>
+<a href="https://github.com/passkeydeveloper/passkeys.dev/issues/new/choose" target="_blank">Suggest content or report a site issue {{< icon-external-link size=24 >}}</a>
 
-<a href="https://passkeys.dev/discuss" target="_blank">Passkeys Developer Discussions (passkeys.dev/discuss) <i class="bi bi-box-arrow-up-right"></i></a>
+<a href="https://passkeys.dev/discuss" target="_blank">Passkeys Developer Discussions (passkeys.dev/discuss) {{< icon-external-link size=24 >}}</a>
 
-<strong>Mastodon</strong> <i class="bi bi-mastodon"></i>
+<strong>Mastodon</strong> {{< icon-brand-mastodon size=24 >}}
 
-- <a href="https://fosstodon.org/@passkeysdev" target="_blank">Passkeys Developer <i class="bi bi-box-arrow-up-right"></i></a>
-- <a href="https://w3c.social/@w3cdevs" target="_blank">W3C Developers <i class="bi bi-box-arrow-up-right"></i></a>
+- <a href="https://fosstodon.org/@passkeysdev" target="_blank">Passkeys Developer {{< icon-external-link size=24 >}}</a>
+- <a href="https://w3c.social/@w3cdevs" target="_blank">W3C Developers {{< icon-external-link size=24 >}}</a>
 
-<strong>X (Twitter)</strong> <i class="bi bi-twitter-x"></i>
+<strong>X (Twitter)</strong> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
 
-- <a href="https://twitter.com/passkeysdev" target="_blank">Passkeys Dev <i class="bi bi-box-arrow-up-right"></i></a>
-- <a href="https://twitter.com/FIDOAlliance" target="_blank">FIDO Alliance <i class="bi bi-box-arrow-up-right"></i></a>
-- <a href="https://twitter.com/w3cdevs" target="_blank">W3C Developers <i class="bi bi-box-arrow-up-right"></i></a>
+- <a href="https://twitter.com/passkeysdev" target="_blank">Passkeys Dev {{< icon-external-link size=24 >}}</a>
+- <a href="https://twitter.com/FIDOAlliance" target="_blank">FIDO Alliance {{< icon-external-link size=24 >}}</a>
+- <a href="https://twitter.com/w3cdevs" target="_blank">W3C Developers {{< icon-external-link size=24 >}}</a>
 
 ### Contribute
 
@@ -41,15 +41,15 @@ Contributing guidance coming soon!
 ## Maintainers
 
 Tim Cappalli |
-<a href="https://github.com/timcappalli" target="_blank"><i class="bi bi-github color-black"></i></a>
-<a href="https://infosec.exchange/@timcappalli" target="_blank"><i class="bi bi-mastodon color-black"></i></a>
-<a href="https://threads.net/timcappalli" target="_blank"><i class="bi bi-threads-fill"></i></a>
-<a href="https://timcappalli.me/" target="_blank"><i class="bi bi-house-heart color-black"></i></a>
+<a href="https://github.com/timcappalli" target="_blank">{{< icon-external-link size=24 >}}</a>
+<a href="https://infosec.exchange/@timcappalli" target="_blank">{{< icon-brand-mastodon size=24 >}}</a>
+<a href="https://threads.net/timcappalli" target="_blank">{{< icon-brand-threads size=24 >}}</a>
+<a href="https://timcappalli.me/" target="_blank">{{< icon-home-check size=24 >}}</a>
 
 Matthew Miller |
-<a href="https://github.com/MasterKale" target="_blank"><i class="bi bi-github color-black"></i></a>
-<a href="https://infosec.exchange/@iamkale" target="_blank"><i class="bi bi-mastodon color-black"></i></a>
-<a href="https://millerti.me/" target="_blank"><i class="bi bi-house-heart color-black"></i></a>
+<a href="https://github.com/MasterKale" target="_blank">{{< icon-external-link size=24 >}}</a>
+<a href="https://infosec.exchange/@iamkale" target="_blank">{{< icon-brand-mastodon size=24 >}}</a>
+<a href="https://millerti.me/" target="_blank">{{< icon-home-check size=24 >}}</a>
 
 ## Contributors
 
@@ -59,13 +59,13 @@ Matthew Miller |
 - Christiaan Brand
 - Garrett Davidson
 - Jesse Endahl
-- Eiji Kitamura <a href="https://github.com/agektmr" target="_blank"><i class="bi bi-github color-black"></i></a>
+- Eiji Kitamura <a href="https://github.com/agektmr" target="_blank">{{< icon-external-link size=24 >}}</a>
 - Akshay Kumar
-- Dominique Hazael-Massieux <a href="https://github.com/dontcallmedom" target="_blank"><i class="bi bi-github color-black"></i></a>
+- Dominique Hazael-Massieux <a href="https://github.com/dontcallmedom" target="_blank">{{< icon-external-link size=24 >}}</a>
 - Jeff Hodges
 - Adam Langley
 - Ricky Mondello
-- Maud Nalpas <a href="https://github.com/maudnals" target="_blank"><i class="bi bi-github color-black"></i></a>
+- Maud Nalpas <a href="https://github.com/maudnals" target="_blank">{{< icon-external-link size=24 >}}</a>
 - Cody Salas
 
 ## Copyright and Attributions
