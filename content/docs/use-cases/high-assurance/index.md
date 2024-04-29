@@ -60,7 +60,7 @@ Assurance levels provide a framework for assessing the strength of authenticatio
     })
     ```
 
-    {{< callout context="note" title="Note" icon="info-circle" >}}If the relying party accepts a wide range of authenticator assurance levels, then user verification may be set to `preferred`. In this case the relying party should include the authenticator assurance level in risk assessments.{{< /callout >}}
+    {{< callout context="note" title="Note on user verification" icon="info-circle" >}}If the relying party accepts a wide range of authenticator assurance levels, then user verification may be set to `preferred`. In this case the relying party should include the authenticator assurance level in risk assessments.{{< /callout >}}
 
     2. Relying Party always verifies the user verification (UV) flag is true in authenticator response. See the following example extracted information from authenticator data.
 
@@ -89,7 +89,7 @@ Assurance levels provide a framework for assessing the strength of authenticatio
     }
     ```
 
-    {{< callout context="note" title="Note" icon="info-circle" >}}If the relying party accepts various authenticator assurance levels, it's crucial to consider the UV flag in conjunction with other authentication factors when assessing risk.{{< /callout >}}
+    {{< callout context="note" title="Note on user verification" icon="info-circle" >}}If the relying party accepts various authenticator assurance levels, it's crucial to consider the UV flag in conjunction with other authentication factors when assessing risk.{{< /callout >}}
 
 1. **Attestation and Metadata Handling:** Verify authenticator attestation
     1. Request `direct` attestation during passkey creation 
