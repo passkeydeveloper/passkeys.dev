@@ -13,11 +13,10 @@ toc: false
 layout: matrix
 ---
 
-The table below lists known active passkeys deployments which largely follow best practices and patterns. Its purpose is to provide developers with real-world examples and is not intended to be an end user facing resource.
+The table below lists a few known active passkeys deployments which largely follow best practices and patterns. Its purpose is to provide developers with real-world examples and is not intended to be an end user facing resource.
 
 > Said differently, please don't link to this page from end user focused resources 😉
 
-To request an addition, update, or deletion, please [create an issue](https://github.com/passkeydeveloper/passkeys.dev/issues/new?assignees=&labels=&projects=&template=active-deployments.yml&title=Add+%3Cservice+name%3E).
 
 | Service Name                                      | Service Type          | Web Support | App Support | Notes                                             | Links                                                                                                                            |
 |---------------------------------------------------|-----------------------|-------------|-------------|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
