@@ -85,7 +85,7 @@ Passkeys created in **macOS** can be used on:
         {{< icon-calendar-clock size="30" >}}
         <br />
         <span class="fs-6">
-        Planned <sup><a href="#supone">1</a></sup>
+        Planned <sup><a href="#fn1">1</a></sup>
         </span>
       </td>
       <td class="text-center">
@@ -96,7 +96,7 @@ Passkeys created in **macOS** can be used on:
       <td class="text-center">
         {{< icon-circle-check-filled fill="green" size=30 >}}
         <br />
-        <span class="fs-6 text-muted"> v13+ <sup><a href="#suptwo">2</a></sup>
+        <span class="fs-6 text-muted"> v13+ <sup><a href="#fn2">2</a></sup>
       </td>
       <td class="text-center">
         {{< icon-circle-check stroke="grey" size=30 >}}
@@ -107,7 +107,7 @@ Passkeys created in **macOS** can be used on:
         {{< icon-calendar-clock size="30" >}}
         <br />
         <span class="fs-6">
-        Planned <sup><a href="#supone">1</a></sup>
+        Planned <sup><a href="#fn1">1</a></sup>
         </span>
       </td>
     </tr>
@@ -176,11 +176,11 @@ Passkeys created in **macOS** can be used on:
         {{< icon-circle-check-filled fill="green" size=30 >}}
         <span class="fs-6">
         <br />
-        Chrome 108+ <sup><a href="#supthree">3</a></sup>
+        Chrome 108+ <sup><a href="#fn3">3</a></sup>
         <br />
-        Firefox 122+ <sup><a href="#supthree">3</a></sup>
+        Firefox 122+ <sup><a href="#fn3">3</a></sup>
         <br />
-        Edge 122+ <sup><a href="#supthree">3</a></sup>
+        Edge 122+ <sup><a href="#fn3">3</a></sup>
         </span>
         <br />
       </td>
@@ -393,18 +393,18 @@ Passkeys created in **macOS** can be used on:
         <td class="text-center">
           {{< icon-circle-check stroke="green" size=30 >}}
           <br />
-          <span class="fs-6 text-muted">WebView </span><sup><a href="#supsix">6</a></sup>
+          <span class="fs-6 text-muted">WebView </span><sup><a href="#fn6">6</a></sup>
         </td>
         <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
         <td class="text-center">
           {{< icon-circle-check stroke="green" size=30 >}}
           <br />
-          <span class="fs-6 text-muted">WKWebView </span><sup><a href="#supseven">7</a></sup>
+          <span class="fs-6 text-muted">WKWebView </span><sup><a href="#fn7">7</a></sup>
         </td>
         <td class="text-center">
           {{< icon-circle-check stroke="green" size=30 >}}
           <br />
-          <span class="fs-6 text-muted">WKWebView </span><sup><a href="#supeight">8</a></sup>
+          <span class="fs-6 text-muted">WKWebView </span><sup><a href="#sup8">8</a></sup>
         </td>
         <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
         <td class="text-center">
@@ -485,7 +485,7 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center">
               {{< icon-settings-code size=30 >}}
               <br />
-              <span class="fs-6">Chrome</span> <sup><a href="#supfour">4</a></sup>
+              <span class="fs-6">Chrome</span> <sup><a href="#fn4">4</a></sup>
             </td>
             <td class="text-center">
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -496,9 +496,9 @@ Passkeys created in **macOS** can be used on:
               {{< icon-settings-code size=30 >}}
               <span class="fs-6">
               <br />
-              Chrome <sup><a href="#supfour">4</a></sup>
+              Chrome <sup><a href="#fn4">4</a></sup>
               <br />
-              Edge <sup><a href="#supfour">4</a></sup>
+              Edge <sup><a href="#fn4">4</a></sup>
               <br />
               <br />
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -512,9 +512,9 @@ Passkeys created in **macOS** can be used on:
               {{< icon-settings-code size=30 >}}
               <span class="fs-6">
               <br />
-              Chrome <sup><a href="#supfour">4</a></sup>
+              Chrome <sup><a href="#fn4">4</a></sup>
               <br />
-              Edge <sup><a href="#supfour">4</a></sup>
+              Edge <sup><a href="#fn4">4</a></sup>
               <br />
               <br />
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -528,9 +528,9 @@ Passkeys created in **macOS** can be used on:
               {{< icon-settings-code size=30 >}}
               <span class="fs-6">
               <br />
-              Chrome <sup><a href="#supfive">4</a> <a href="#supfive">5</a></sup>
+              Chrome <sup><a href="#fn5">4</a> <a href="#fn5">5</a></sup>
               <br />
-              Edge <sup><a href="#supfour">4</a> <a href="#supfive">5</a></sup>
+              Edge <sup><a href="#fn4">4</a> <a href="#fn5">5</a></sup>
               <br />
               <br />
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -587,31 +587,31 @@ Passkeys created in **macOS** can be used on:
   </details>
 </div>
 <div class="text-end mb-5 mt-5">
-  <sup id="supone">1</sup>
+  <sup id="fn1">1</sup>
   Device-bound passkeys supported
   <br />
-  <sup id="suptwo">2</sup>
+  <sup id="fn2">2</sup>
   See
   <a href="/docs/reference/macos/#browser-behavior" target="_blank">
     macOS browser behavior
   </a>
   for caveats
   <br />
-  <sup id="supthree">3</sup>
+  <sup id="fn3">3</sup>
   Windows 11 22H2+
   <br />
-  <sup id="supfour">4</sup>
+  <sup id="fn4">4</sup>
   Experimental (behind flag)
   <br />
-  <sup id="supfive">5</sup>
+  <sup id="fn5">5</sup>
   Partial support (requires Windows changes)
   <br />
-  <sup id="supsix">6</sup>
+  <sup id="fn6">6</sup>
   See details on the <a href="/docs/reference/android/#webviews" target="_blank">Android reference page</a>
   <br />
-  <sup id="supseven">7</sup>
+  <sup id="fn7">7</sup>
   See details on <a href="/docs/reference/ios/#webviews" target="_blank">iOS reference page</a>
   <br />
-  <sup id="supeight">8</sup>
+  <sup id="fn8">8</sup>
   See details on <a href="/docs/reference/macos/#webviews" target="_blank">macOS reference page</a>
 </div>
