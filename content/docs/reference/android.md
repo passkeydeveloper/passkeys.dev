@@ -24,6 +24,8 @@ Android 14 adds the following capabilities:
 
 - creating and using passkeys in a [third-party passkey provider](../terms/#third-party-passkey-provider)
 
+## Platform Notes
+
 ### Cross-Device Authentication
 
 Android devices can be an [authenticator](../terms/#cda-authenticator) for [FIDO Cross-Device Authentication (CDA)](../terms#cross-device-authentication-cda).
@@ -43,7 +45,7 @@ macOS (Safari and native apps), iOS (global), and iPadOS (global) do not support
 
 When an authenticator is not persistently linked, a QR code must be scanned on every use.
 
-## Platform Notes
+### Native APIs
 
 - **Credential Manager** is a new Android Jetpack API that supports multiple sign-in methods, including passkeys, in a single API, thus simplifying the integration for developers.<br><br><a href="https://developer.android.com/training/sign-in/passkeys" target="_blank"><button type="button" class="btn btn-light">Credential Manager API {{< icon-external-link size=24 >}}</button></a>
 
