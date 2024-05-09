@@ -53,7 +53,7 @@ Passkeys created in **macOS** can be used on:
   <table class="table table-striped mt-0">
     <thead>
       <tr class="fw-bold">
-        <td>Capability</td>
+        <td class="fst-italic">Capability</td>
         <td class="text-center">
           <a href="/docs/reference/android/">Android</a>
         </td>
@@ -70,7 +70,7 @@ Passkeys created in **macOS** can be used on:
     </thead>
     <tr>
       <td>
-        <span class="fw-bold">
+        <span>
           <a href="../docs/reference/terms/#synced-passkey" target="_blank">
             Synced Passkeys
           </a>
@@ -112,7 +112,7 @@ Passkeys created in **macOS** can be used on:
       </td>
     </tr>
     <tr>
-      <td class="fw-bold">
+      <td>
         <a href="../docs/reference/terms/#autofill-ui" target="_blank">
           Browser Autofill UI
         </a>
@@ -192,7 +192,7 @@ Passkeys created in **macOS** can be used on:
         </a>
         <br />
         <a href="../docs/reference/terms/#cda-authenticator" target="_blank">
-          <span class="fst-italic fw-bold">Authenticator</span>
+          <span class="fst-italic">Authenticator</span>
         </a>
       </td>
       <td class="text-center">
@@ -219,7 +219,7 @@ Passkeys created in **macOS** can be used on:
         </a>
         <br />
         <a href="../docs/reference/terms/#cda-client" target="_blank">
-          <span class="fst-italic fw-bold">Client</span>
+          <span class="fst-italic">Client</span>
         </a>
       </td>
       <td class="text-center">
@@ -295,107 +295,124 @@ Passkeys created in **macOS** can be used on:
       </td>
     </tr>
   </table>
-  <details>
-    <summary><strong>Native Apps</strong></summary>
-    <div id="device-support-table" class="table-responsive">
-      <table class="table table-striped mt-0">
-        <thead>
-          <tr>
-            <td>Invocation Method</td>
-            <td class="text-center fw-bold">
-              <a href="/docs/reference/android/">Android</a>
-            </td>
-            <td class="text-center fw-bold">Chrome OS</td>
-            <td class="text-center fw-bold">
-              <a href="/docs/reference/ios/">iOS/iPad OS</a>
-            </td>
-            <td class="text-center fw-bold">
-              <a href="/docs/reference/macos/">macOS</a>
-            </td>
-            <td class="text-center fw-bold">Ubuntu</td>
-            <td class="text-center fw-bold">
-              <a href="/docs/reference/windows/">Windows</a>
-            </td>
-          </tr>
-          <tr class="align-middle">
-            <td class="fw-bold">
-                Native Platform APIs
-            </td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-            </td>
-            <td class="text-center">
-              <span class="fs-6 text-muted">n/a</span>
-            </td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-            </td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-            </td>
-            <td class="text-center">
-              {{< icon-circle-x-filled fill="red" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Not Supported</span>
-            </td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-            </td>
-          </tr>
-          <tr class="align-middle">
-            <td class="fw-bold">
-              System WebView
-            </td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Chrome<br>Custom Tabs</span>
-            </td>
-            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">ASWebAuthentication<wbr>Session</span>
-            </td>
-            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Edge WebView2</span>
-            </td>
-          </tr>
-          <tr class="align-middle">
-            <td class="fw-bold">
-              Embedded WebView
-            </td>
-            <td class="text-center">
-              {{< icon-circle-x-filled fill="red" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Not Supported</span>
-            </td>
-            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-            <td class="text-center">
-              {{< icon-circle-x-filled fill="red" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Not Supported</span>
-            </td>
-            <td class="text-center">
-              {{< icon-circle-x-filled fill="red" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Not Supported</span>
-            </td>
-            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-            <td class="text-center">
-              {{< icon-circle-x-filled fill="red" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Not Supported</span>
-            </td>
-          </tr>
-        </thead>
-      </table>
-    </div>
-  </details>
+
+## Native Apps
+
+  <table class="table table-striped mt-0">
+    <thead>
+      <tr>
+        <td class="fw-bold fst-italic">Invocation Method</td>
+        <td class="text-center fw-bold">
+          <a href="/docs/reference/android/">Android</a>
+        </td>
+        <td class="text-center fw-bold">Chrome OS</td>
+        <td class="text-center fw-bold">
+          <a href="/docs/reference/ios/">iOS/iPad OS</a>
+        </td>
+        <td class="text-center fw-bold">
+          <a href="/docs/reference/macos/">macOS</a>
+        </td>
+        <td class="text-center fw-bold">Ubuntu</td>
+        <td class="text-center fw-bold">
+          <a href="/docs/reference/windows/">Windows</a>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <td>
+            Native Platform APIs
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          <span class="fs-6 text-muted">n/a</span>
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-x-filled fill="red" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <td>
+            Default Browser
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <td>
+          System WebView
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted"><a href="https://developer.chrome.com/docs/android/custom-tabs/guide-get-started" target="_blank">Custom Tabs</a></span>
+        </td>
+        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted"><a href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" target="_blank">ASWebAuthentication<wbr>Session</a></span>
+        </td>
+        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted"><a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/" target="_blank">Edge WebView2</a></span>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <td>
+          Embedded WebView
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check stroke="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted">Supported </span><sup><a href="#supsix">6</a></sup>
+        </td>
+        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+        <td class="text-center">
+          {{< icon-circle-check stroke="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted">Supported </span><sup><a href="#supseven">7</a></sup>
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check stroke="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted">Partially<br>Supported </span><sup><a href="#supeight">8</a></sup>
+        </td>
+        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+        <td class="text-center">
+          {{< icon-circle-x-filled fill="red" size=30 >}}
+        </td>
+      </tr>
+    </thead>
+  </table>
   <details>
     <summary><strong>Advanced Capabilities</strong></summary>
     <div id="device-support-table" class="table-responsive">
@@ -585,4 +602,13 @@ Passkeys created in **macOS** can be used on:
   <br />
   <sup id="supfive">5</sup>
   Partial support (requires Windows changes)
+  <br />
+  <sup id="supsix">6</sup>
+  See caveats on Android reference page
+  <br />
+  <sup id="supseven">7</sup>
+  See caveats on iOS reference page
+  <br />
+  <sup id="supeight">8</sup>
+  See caveats on macOS reference page
 </div>
