@@ -58,7 +58,7 @@ To replace a legacy platform credential with a passkey, start a credential regis
 
 #### System WebViews
 
-`ASWebAuthenticationSession` is the System WebView (SWV) on iOS and iPadOS for authentication flows. All web platform features that are available in Safari, including WebAuthn, are available in a `ASWebAuthenticationSession` instance.
+`ASWebAuthenticationSession` is the System WebView (SWV) on iOS and iPadOS for authentication flows. All Web Platform features that are available in Safari, including WebAuthn, are available in a `ASWebAuthenticationSession` instance.
 
 Sites loaded in `ASWebAuthenticationSession` are isolated from the calling app and run in the context of the top level site, just like in a full browser. This means that sign in flows on third party domains, such as a federated identity provider, can use passkeys for signing in.
 
