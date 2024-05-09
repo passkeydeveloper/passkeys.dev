@@ -393,18 +393,18 @@ Passkeys created in **macOS** can be used on:
         <td class="text-center">
           {{< icon-circle-check stroke="green" size=30 >}}
           <br />
-          <span class="fs-6 text-muted">Supported </span><sup><a href="#supsix">6</a></sup>
+          <span class="fs-6 text-muted">WebView </span><sup><a href="#supsix">6</a></sup>
         </td>
         <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
         <td class="text-center">
           {{< icon-circle-check stroke="green" size=30 >}}
           <br />
-          <span class="fs-6 text-muted">Supported </span><sup><a href="#supseven">7</a></sup>
+          <span class="fs-6 text-muted">WKWebView </span><sup><a href="#supseven">7</a></sup>
         </td>
         <td class="text-center">
           {{< icon-circle-check stroke="green" size=30 >}}
           <br />
-          <span class="fs-6 text-muted">Partially<br>Supported </span><sup><a href="#supeight">8</a></sup>
+          <span class="fs-6 text-muted">WKWebView </span><sup><a href="#supeight">8</a></sup>
         </td>
         <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
         <td class="text-center">
@@ -604,11 +604,11 @@ Passkeys created in **macOS** can be used on:
   Partial support (requires Windows changes)
   <br />
   <sup id="supsix">6</sup>
-  See caveats on Android reference page
+  See details on the <a href="/docs/reference/android/#webviews" target="_blank">Android reference page</a>
   <br />
   <sup id="supseven">7</sup>
-  See caveats on iOS reference page
+  See details on <a href="/docs/reference/ios/#webviews" target="_blank">iOS reference page</a>
   <br />
   <sup id="supeight">8</sup>
-  See caveats on macOS reference page
+  See details on <a href="/docs/reference/macos/#webviews" target="_blank">macOS reference page</a>
 </div>
