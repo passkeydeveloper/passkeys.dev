@@ -376,14 +376,18 @@ Passkeys created in **macOS** can be used on:
         <td class="text-center">
           {{< icon-circle-check-filled fill="green" size=30 >}}
           <br />
-          <span class="fs-6 text-muted"><a href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" target="_blank">ASWebAuthentication<wbr>Session</a></span>
+          <span class="fs-6 text-muted lh-1"><a href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" target="_blank">ASWeb<br>Authentication<br>Session</a></span>
         </td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted lh-1"><a href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" target="_blank">ASWeb<br>Authentication<br>Session</a></span>
+        </td>
         <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
         <td class="text-center">
           {{< icon-circle-check-filled fill="green" size=30 >}}
           <br />
-          <span class="fs-6 text-muted"><a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/" target="_blank">Edge WebView2</a></span>
+          <span class="fs-6 text-muted"><a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/" target="_blank">Edge<br>WebView2</a></span>
         </td>
       </tr>
       <tr class="align-middle">
