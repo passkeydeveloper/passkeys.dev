@@ -99,9 +99,9 @@ Passkeys created in **macOS** can be used on:
         <span class="fs-6 text-muted"> v13+ <sup><a href="#suptwo">2</a></sup>
       </td>
       <td class="text-center">
-        {{< icon-circle-x-filled fill="red" size=30 >}}
+        {{< icon-circle-check stroke="grey" size=30 >}}
         <br />
-        <span class="fs-6 text-muted"> Not Supported </span>
+        <span class="fs-6 text-muted">Browser<br>Extensions</span>
       </td>
       <td class="text-center">
         {{< icon-calendar-clock size="30" >}}
