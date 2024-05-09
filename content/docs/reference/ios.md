@@ -41,6 +41,31 @@ WebAuthn credentials created using the platform authenticator in iOS/iPadOS 15 a
 <!-- TODO: cross link to generic content about "upgrading to a passkey" -->
 To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. iOS/iPadOS will overwrite the legacy credential with a new passkey that will be backed up to iCloud Keychain.
 
+### WebViews
+
+#### Embedded WebViews
+
+`WKWebView` is the embedded WebView (EWV) on iOS and iPadOS. Embedded WebViews allow the calling app full control over the embedded web session, including modifying and intercepting requests, so many web platform features are limited in these contexts.
+
+> **NOTE:**<br>
+> Embedded WebViews run in the context of the calling app, meaning only passkeys for the linked web domain (RP ID) can be created or used for sign in.
+>
+> Said differently, only use EWV when sign in is handled by your own service (non-federated). When supporting multiple identity providers, System WebView should be used (see below).
+
+<a href="https://developer.apple.com/documentation/webkit/wkwebview" target="_blank"><button type="button" class="btn btn-light">WKWebView docs @ Apple Developer {{< icon-external-link size=24 >}}</button></a>
+
+<!-- TODO: add screenshot example -->
+
+#### System WebViews
+
+`ASWebAuthenticationSession` is the System WebView (SWV) on iOS and iPadOS for authentication flows. All web platform features that are available in Safari, including WebAuthn, are available in a `ASWebAuthenticationSession` instance.
+
+Sites loaded in `ASWebAuthenticationSession` are isolated from the calling app and run in the context of the top level site, just like in a full browser. This means that sign in flows on third party domains, such as a federated identity provider, can use passkeys for signing in.
+
+<a href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" target="_blank"><button type="button" class="btn btn-light">ASWebAuthenticationSession docs @ Apple Developer {{< icon-external-link size=24 >}}</button></a>
+
+<!-- TODO: add screenshot example -->
+
 ### User Verification Behavior
 
 When a user tries to interact with a passkey on iOS or iPadOS, an available screen unlock method is used for user verification. Users can configure a passcode and Touch ID or Face ID as their screen unlock.
