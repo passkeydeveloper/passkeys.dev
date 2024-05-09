@@ -413,8 +413,11 @@ Passkeys created in **macOS** can be used on:
       </tr>
     </thead>
   </table>
+
+## Advanced Capabilities
+
   <details>
-    <summary><strong>Advanced Capabilities</strong></summary>
+    <summary><strong>Details</strong></summary>
     <div id="device-support-table" class="table-responsive">
       <table class="table table-striped mt-0">
         <thead>
