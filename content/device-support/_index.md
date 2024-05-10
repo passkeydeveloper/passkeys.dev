@@ -185,7 +185,7 @@ Passkeys created in **macOS** can be used on:
         <br />
       </td>
     </tr>
-    <tr class="align-middle">
+    <tr class="align-top">
       <td>
         <a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">
           Cross-Device Authentication
@@ -201,16 +201,16 @@ Passkeys created in **macOS** can be used on:
         <span class="fs-6 text-muted">v9+</span>
       </td>
       <td class="text-center">
-        <span class="fs-6 text-muted">n/a</span>
+        <span class="fs-6 text-muted">-<br>n/a</span>
       </td>
       <td class="text-center">
         {{< icon-circle-check-filled fill="green" size=30 >}}
         <br />
         <span class="fs-6 text-muted">v16+</span>
       </td>
-      <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-      <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-      <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+      <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
+      <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
+      <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
     </tr>
     <tr>
       <td>
@@ -363,7 +363,7 @@ Passkeys created in **macOS** can be used on:
           {{< icon-circle-check-filled fill="green" size=30 >}}
         </td>
       </tr>
-      <tr class="align-middle">
+      <tr class="align-top">
         <td>
           System WebView
         </td>
@@ -372,7 +372,7 @@ Passkeys created in **macOS** can be used on:
           <br />
           <span class="fs-6 text-muted"><a href="https://developer.chrome.com/docs/android/custom-tabs/guide-get-started" target="_blank">Custom Tabs</a></span>
         </td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+        <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
         <td class="text-center">
           {{< icon-circle-check-filled fill="green" size=30 >}}
           <br />
@@ -383,14 +383,14 @@ Passkeys created in **macOS** can be used on:
           <br />
           <span class="fs-6 text-muted lh-1"><a href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" target="_blank">ASWeb<br>Authentication<br>Session</a></span>
         </td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+        <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
         <td class="text-center">
           {{< icon-circle-check-filled fill="green" size=30 >}}
           <br />
           <span class="fs-6 text-muted"><a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/" target="_blank">Edge<br>WebView2</a></span>
         </td>
       </tr>
-      <tr class="align-middle">
+      <tr class="align-top">
         <td>
           Embedded WebView
         </td>
@@ -399,7 +399,7 @@ Passkeys created in **macOS** can be used on:
           <br />
           <span class="fs-6 text-muted">WebView </span><sup><a href="#fn6">6</a></sup>
         </td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+        <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
         <td class="text-center">
           {{< icon-circle-check stroke="green" size=30 >}}
           <br />
@@ -410,7 +410,7 @@ Passkeys created in **macOS** can be used on:
           <br />
           <span class="fs-6 text-muted">WKWebView </span><sup><a href="#sup8">8</a></sup>
         </td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+        <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
         <td class="text-center">
           {{< icon-circle-x-filled fill="red" size=30 >}}
         </td>
