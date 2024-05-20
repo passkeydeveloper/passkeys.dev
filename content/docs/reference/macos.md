@@ -46,6 +46,31 @@ To replace a legacy platform credential with a passkey, start a credential regis
 
 **Edge**: credentials created by Edge are currently [***device-bound*** passkeys](/docs/reference/terms/#device-bound-passkey), are not backed up to iCloud Keychain, and are ***not available outside of Edge***.
 
+### WebViews
+
+#### Embedded WebViews
+
+`WKWebView` is the embedded WebView (EWV) on macOS. Embedded WebViews allow the calling app full control over the embedded web session, including modifying and intercepting requests, so many web platform features are limited in these contexts.
+
+> **NOTE:**<br>
+> Embedded WebViews run in the context of the calling app, meaning only passkeys for the linked web domain (RP ID) can be created or used for sign in.
+>
+> Said differently, only use EWV when sign in is handled by your own service (non-federated). When supporting multiple identity providers, System WebView should be used (see below).
+
+<a href="https://developer.apple.com/documentation/webkit/wkwebview" target="_blank"><button type="button" class="btn btn-light">WKWebView docs @ Apple Developer {{< icon-external-link size=24 >}}</button></a>
+
+<!-- TODO: add screenshot example -->
+
+#### System WebViews
+
+`ASWebAuthenticationSession` is the System WebView (SWV) on macOS for authentication flows. The user's default web browser will be invoked, allowing any supported Web Platform features, including WebAuthn, for the `ASWebAuthenticationSession` instance.
+
+Sites loaded in `ASWebAuthenticationSession` are isolated from the calling app and run in the context of the top level site, just like in a full browser instance. This means that sign in flows on third party domains, such as a federated identity provider, can use passkeys for signing in.
+
+<a href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" target="_blank"><button type="button" class="btn btn-light">ASWebAuthenticationSession docs @ Apple Developer {{< icon-external-link size=24 >}}</button></a>
+
+<!-- TODO: add screenshot example -->
+
 ### User Verification Behavior
 
 On macOS, the user must set up a local system password. Enabling iCloud Keychain and setting up Touch ID are optional.

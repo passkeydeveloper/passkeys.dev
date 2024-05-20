@@ -53,7 +53,7 @@ Passkeys created in **macOS** can be used on:
   <table class="table table-striped mt-0">
     <thead>
       <tr class="fw-bold">
-        <td>Capability</td>
+        <td class="fst-italic">Capability</td>
         <td class="text-center">
           <a href="/docs/reference/android/">Android</a>
         </td>
@@ -70,7 +70,7 @@ Passkeys created in **macOS** can be used on:
     </thead>
     <tr>
       <td>
-        <span class="fw-bold">
+        <span>
           <a href="../docs/reference/terms/#synced-passkey" target="_blank">
             Synced Passkeys
           </a>
@@ -85,7 +85,7 @@ Passkeys created in **macOS** can be used on:
         {{< icon-calendar-clock size="30" >}}
         <br />
         <span class="fs-6">
-        Planned <sup><a href="#supone">1</a></sup>
+        Planned <sup><a href="#fn1">1</a></sup>
         </span>
       </td>
       <td class="text-center">
@@ -96,23 +96,23 @@ Passkeys created in **macOS** can be used on:
       <td class="text-center">
         {{< icon-circle-check-filled fill="green" size=30 >}}
         <br />
-        <span class="fs-6 text-muted"> v13+ <sup><a href="#suptwo">2</a></sup>
+        <span class="fs-6 text-muted"> v13+ <sup><a href="#fn2">2</a></sup>
       </td>
       <td class="text-center">
-        {{< icon-circle-x-filled fill="red" size=30 >}}
+        {{< icon-circle-check stroke="grey" size=30 >}}
         <br />
-        <span class="fs-6 text-muted"> Not Supported </span>
+        <span class="fs-6 text-muted">Browser<br>Extensions</span>
       </td>
       <td class="text-center">
         {{< icon-calendar-clock size="30" >}}
         <br />
         <span class="fs-6">
-        Planned <sup><a href="#supone">1</a></sup>
+        Planned <sup><a href="#fn1">1</a></sup>
         </span>
       </td>
     </tr>
     <tr>
-      <td class="fw-bold">
+      <td>
         <a href="../docs/reference/terms/#autofill-ui" target="_blank">
           Browser Autofill UI
         </a>
@@ -168,31 +168,31 @@ Passkeys created in **macOS** can be used on:
         </span>
       </td>
       <td class="text-center">
-        {{< icon-circle-x-filled fill="red" size=30 >}}
+        {{< icon-circle-check stroke="grey" size=30 >}}
         <br />
-        <span class="fs-6 text-muted">Not Supported</span>
+        <span class="fs-6 text-muted">Browser<br>Extensions</span>
       </td>
       <td class="text-center">
         {{< icon-circle-check-filled fill="green" size=30 >}}
         <span class="fs-6">
         <br />
-        Chrome 108+ <sup><a href="#supthree">3</a></sup>
+        Chrome 108+ <sup><a href="#fn3">3</a></sup>
         <br />
-        Firefox 122+ <sup><a href="#supthree">3</a></sup>
+        Firefox 122+ <sup><a href="#fn3">3</a></sup>
         <br />
-        Edge 122+ <sup><a href="#supthree">3</a></sup>
+        Edge 122+ <sup><a href="#fn3">3</a></sup>
         </span>
         <br />
       </td>
     </tr>
-    <tr class="align-middle">
+    <tr class="align-top">
       <td>
         <a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">
           Cross-Device Authentication
         </a>
         <br />
         <a href="../docs/reference/terms/#cda-authenticator" target="_blank">
-          <span class="fst-italic fw-bold">Authenticator</span>
+          <span class="fst-italic">Authenticator</span>
         </a>
       </td>
       <td class="text-center">
@@ -201,16 +201,16 @@ Passkeys created in **macOS** can be used on:
         <span class="fs-6 text-muted">v9+</span>
       </td>
       <td class="text-center">
-        <span class="fs-6 text-muted">n/a</span>
+        <span class="fs-6 text-muted">-<br>n/a</span>
       </td>
       <td class="text-center">
         {{< icon-circle-check-filled fill="green" size=30 >}}
         <br />
         <span class="fs-6 text-muted">v16+</span>
       </td>
-      <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-      <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-      <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
+      <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
+      <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
+      <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
     </tr>
     <tr>
       <td>
@@ -219,7 +219,7 @@ Passkeys created in **macOS** can be used on:
         </a>
         <br />
         <a href="../docs/reference/terms/#cda-client" target="_blank">
-          <span class="fst-italic fw-bold">Client</span>
+          <span class="fst-italic">Client</span>
         </a>
       </td>
       <td class="text-center">
@@ -295,109 +295,133 @@ Passkeys created in **macOS** can be used on:
       </td>
     </tr>
   </table>
+
+## Native Apps
+
+  <table class="table table-striped mt-0">
+    <thead>
+      <tr>
+        <td class="fw-bold fst-italic">Invocation Method</td>
+        <td class="text-center fw-bold">
+          <a href="/docs/reference/android/">Android</a>
+        </td>
+        <td class="text-center fw-bold">Chrome OS</td>
+        <td class="text-center fw-bold">
+          <a href="/docs/reference/ios/">iOS/iPad OS</a>
+        </td>
+        <td class="text-center fw-bold">
+          <a href="/docs/reference/macos/">macOS</a>
+        </td>
+        <td class="text-center fw-bold">Ubuntu</td>
+        <td class="text-center fw-bold">
+          <a href="/docs/reference/windows/">Windows</a>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <td>
+            Native Platform APIs
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          <span class="fs-6 text-muted">n/a</span>
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-x-filled fill="red" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <td>
+            Default Browser
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+        </td>
+      </tr>
+      <tr class="align-top">
+        <td>
+          System WebView
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted"><a href="https://developer.chrome.com/docs/android/custom-tabs/guide-get-started" target="_blank">Custom Tabs</a></span>
+        </td>
+        <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted lh-1"><a href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" target="_blank">ASWeb<br>Authentication<br>Session</a></span>
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted lh-1"><a href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" target="_blank">ASWeb<br>Authentication<br>Session</a></span>
+        </td>
+        <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
+        <td class="text-center">
+          {{< icon-circle-check-filled fill="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted"><a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/" target="_blank">Edge<br>WebView2</a></span>
+        </td>
+      </tr>
+      <tr class="align-top">
+        <td>
+          Embedded WebView
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check stroke="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted">WebView </span><sup><a href="#fn6">6</a></sup>
+        </td>
+        <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
+        <td class="text-center">
+          {{< icon-circle-check stroke="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted">WKWebView </span><sup><a href="#fn7">7</a></sup>
+        </td>
+        <td class="text-center">
+          {{< icon-circle-check stroke="green" size=30 >}}
+          <br />
+          <span class="fs-6 text-muted">WKWebView </span><sup><a href="#sup8">8</a></sup>
+        </td>
+        <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
+        <td class="text-center">
+          {{< icon-circle-x-filled fill="red" size=30 >}}
+        </td>
+      </tr>
+    </thead>
+  </table>
+
+## Advanced Capabilities
+
   <details>
-    <summary><strong>Native Apps</strong></summary>
-    <div id="device-support-table" class="table-responsive">
-      <table class="table table-striped mt-0">
-        <thead>
-          <tr>
-            <td>Invocation Method</td>
-            <td class="text-center fw-bold">
-              <a href="/docs/reference/android/">Android</a>
-            </td>
-            <td class="text-center fw-bold">Chrome OS</td>
-            <td class="text-center fw-bold">
-              <a href="/docs/reference/ios/">iOS/iPad OS</a>
-            </td>
-            <td class="text-center fw-bold">
-              <a href="/docs/reference/macos/">macOS</a>
-            </td>
-            <td class="text-center fw-bold">Ubuntu</td>
-            <td class="text-center fw-bold">
-              <a href="/docs/reference/windows/">Windows</a>
-            </td>
-          </tr>
-          <tr class="align-middle">
-            <td class="fw-bold">
-                Native Platform APIs
-            </td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-            </td>
-            <td class="text-center">
-              <span class="fs-6 text-muted">n/a</span>
-            </td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-            </td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-            </td>
-            <td class="text-center">
-              {{< icon-circle-x-filled fill="red" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Not Supported</span>
-            </td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-            </td>
-          </tr>
-          <tr class="align-middle">
-            <td class="fw-bold">
-              System WebView
-            </td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Chrome<br>Custom Tabs</span>
-            </td>
-            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">ASWebAuthentication<wbr>Session</span>
-            </td>
-            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-            <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Edge WebView2</span>
-            </td>
-          </tr>
-          <tr class="align-middle">
-            <td class="fw-bold">
-              Embedded WebView
-            </td>
-            <td class="text-center">
-              {{< icon-circle-x-filled fill="red" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Not Supported</span>
-            </td>
-            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-            <td class="text-center">
-              {{< icon-circle-x-filled fill="red" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Not Supported</span>
-            </td>
-            <td class="text-center">
-              {{< icon-circle-x-filled fill="red" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Not Supported</span>
-            </td>
-            <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-            <td class="text-center">
-              {{< icon-circle-x-filled fill="red" size=30 >}}
-              <br />
-              <span class="fs-6 text-muted">Not Supported</span>
-            </td>
-          </tr>
-        </thead>
-      </table>
-    </div>
-  </details>
-  <details>
-    <summary><strong>Advanced Capabilities</strong></summary>
+    <summary><strong>Details</strong></summary>
     <div id="device-support-table" class="table-responsive">
       <table class="table table-striped mt-0">
         <thead>
@@ -465,7 +489,7 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center">
               {{< icon-settings-code size=30 >}}
               <br />
-              <span class="fs-6">Chrome</span> <sup><a href="#supfour">4</a></sup>
+              <span class="fs-6">Chrome</span> <sup><a href="#fn4">4</a></sup>
             </td>
             <td class="text-center">
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -476,9 +500,9 @@ Passkeys created in **macOS** can be used on:
               {{< icon-settings-code size=30 >}}
               <span class="fs-6">
               <br />
-              Chrome <sup><a href="#supfour">4</a></sup>
+              Chrome <sup><a href="#fn4">4</a></sup>
               <br />
-              Edge <sup><a href="#supfour">4</a></sup>
+              Edge <sup><a href="#fn4">4</a></sup>
               <br />
               <br />
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -492,9 +516,9 @@ Passkeys created in **macOS** can be used on:
               {{< icon-settings-code size=30 >}}
               <span class="fs-6">
               <br />
-              Chrome <sup><a href="#supfour">4</a></sup>
+              Chrome <sup><a href="#fn4">4</a></sup>
               <br />
-              Edge <sup><a href="#supfour">4</a></sup>
+              Edge <sup><a href="#fn4">4</a></sup>
               <br />
               <br />
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -508,9 +532,9 @@ Passkeys created in **macOS** can be used on:
               {{< icon-settings-code size=30 >}}
               <span class="fs-6">
               <br />
-              Chrome <sup><a href="#supfive">4</a> <a href="#supfive">5</a></sup>
+              Chrome <sup><a href="#fn5">4</a> <a href="#fn5">5</a></sup>
               <br />
-              Edge <sup><a href="#supfour">4</a> <a href="#supfive">5</a></sup>
+              Edge <sup><a href="#fn4">4</a> <a href="#fn5">5</a></sup>
               <br />
               <br />
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -567,22 +591,31 @@ Passkeys created in **macOS** can be used on:
   </details>
 </div>
 <div class="text-end mb-5 mt-5">
-  <sup id="supone">1</sup>
+  <sup id="fn1">1</sup>
   Device-bound passkeys supported
   <br />
-  <sup id="suptwo">2</sup>
+  <sup id="fn2">2</sup>
   See
   <a href="/docs/reference/macos/#browser-behavior" target="_blank">
     macOS browser behavior
   </a>
   for caveats
   <br />
-  <sup id="supthree">3</sup>
+  <sup id="fn3">3</sup>
   Windows 11 22H2+
   <br />
-  <sup id="supfour">4</sup>
+  <sup id="fn4">4</sup>
   Experimental (behind flag)
   <br />
-  <sup id="supfive">5</sup>
+  <sup id="fn5">5</sup>
   Partial support (requires Windows changes)
+  <br />
+  <sup id="fn6">6</sup>
+  See details on the <a href="/docs/reference/android/#webviews" target="_blank">Android reference page</a>
+  <br />
+  <sup id="fn7">7</sup>
+  See details on <a href="/docs/reference/ios/#webviews" target="_blank">iOS reference page</a>
+  <br />
+  <sup id="fn8">8</sup>
+  See details on <a href="/docs/reference/macos/#webviews" target="_blank">macOS reference page</a>
 </div>

@@ -24,6 +24,8 @@ Android 14 adds the following capabilities:
 
 - creating and using passkeys in a [third-party passkey provider](../terms/#third-party-passkey-provider)
 
+## Platform Notes
+
 ### Cross-Device Authentication
 
 Android devices can be an [authenticator](../terms/#cda-authenticator) for [FIDO Cross-Device Authentication (CDA)](../terms#cross-device-authentication-cda).
@@ -43,9 +45,38 @@ macOS (Safari and native apps), iOS (global), and iPadOS (global) do not support
 
 When an authenticator is not persistently linked, a QR code must be scanned on every use.
 
-## Platform Notes
+### Native APIs
 
-- **Credential Manager** is a new Android Jetpack API that supports multiple sign-in methods, including passkeys, in a single API, thus simplifying the integration for developers.<br><br><a href="https://developer.android.com/training/sign-in/passkeys" target="_blank"><button type="button" class="btn btn-light">Credential Manager API <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></button></a><br><br><a href="https://developer.android.com/training/sign-in/fido2-migration" target="_blank"><button type="button" class="btn btn-light">FIDO2 API to Credential Manager Migration <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg></button></a>
+- **Credential Manager** is a new Android Jetpack API that supports multiple sign-in methods, including passkeys, in a single API, thus simplifying the integration for developers.<br><br><a href="https://developer.android.com/training/sign-in/passkeys" target="_blank"><button type="button" class="btn btn-light">Credential Manager API {{< icon-external-link size=24 >}}</button></a>
+
+### WebViews
+
+#### Embedded WebViews (EWV)
+
+`WebView` is the embedded WebView (EWV) on Android. Embedded WebViews allow the calling app full control over the embedded web session, including modifying and intercepting requests, so many web platform features are limited in these contexts.
+
+WebAuthn is currently not directly supported in embedded WebViews on Android, but adding additional code can allow you to break out of the EWV to call the platform's Credential Manager APIs.
+
+This is documented at [Android Developer: "Integrate Credential Manager with WebView {{< icon-external-link size=20 >}}](https://developer.android.com/training/sign-in/credential-manager-webview).
+
+> **NOTE:**<br>
+> Embedded WebViews run in the context of the calling app, meaning only passkeys for the linked web domain (RP ID) can be created or used for sign in.
+>
+> Said differently, only use EWV when sign in is handled by your own service (non-federated). When supporting multiple identity providers, System WebView should be used (see below).
+
+<a href="https://developer.android.com/develop/ui/views/layout/webapps/webview" target="_blank"><button type="button" class="btn btn-light">WebView docs @ Android Developer {{< icon-external-link size=24 >}}</button></a>
+
+<!-- TODO: add screenshot example -->
+
+#### System WebViews (SWV)
+
+`Custom Tabs` is the System WebView (SWV) on Android. All Web Platform features that are available in the user's default browser, including WebAuthn, are available in a custom tab.
+
+Sites loaded in `Custom Tabs` are isolated from the calling app and run in the context of the top level site, just like in a full browser. This means that sign in flows on third party domains, such as a federated identity provider, can use passkeys for signing in.
+
+<a href="https://developer.chrome.com/docs/android/custom-tabs/guide-get-started" target="_blank"><button type="button" class="btn btn-light">Custom Tabs docs @ Android Developer {{< icon-external-link size=24 >}}</button></a>
+
+<!-- TODO: add screenshot example -->
 
 ### User Verification Behavior
 
