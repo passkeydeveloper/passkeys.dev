@@ -22,6 +22,14 @@ A user whose account has [2FA](#2-factor-authentication-2fa) turned on, i.e., wh
 
 This refers to a contract between a user and a [Relying Party (RP)](#relying-party-rp) where the RP must collect at least two distinct authentication factors from the user during a [bootstrap](#account-bootstrapping) sign-in.
 
+## Authenticator Attestation Globally Unique Identifier (AAGUID)
+
+AAGUID is a unique number that identifies the model of the authenticator (not the specific instance of the authenticator). AAGUID can be found as part of a public key credential's authenticator data. RPs can use AAGUID to identify the [passkey provider](#passkey-provider).
+
+<a href="https://web.dev/articles/webauthn-aaguid" target="_blank"><button type="button" class="btn btn-light">web.dev {{< icon-external-link size=24 >}}</button></a>
+
+<a href="https://w3c.github.io/webauthn/#aaguid" target="_blank"><button type="button" class="btn btn-light">WebAuthn Spec Reference {{< icon-external-link size=24 >}}</button></a>
+
 ## Account bootstrapping
 
 A [Relying Party (RP)](#relying-party-rp) authenticates a user without any prior knowledge of who the user is. This means that the RP not only has to verify the identity of the user (checking the password, verifying cryptographic signatures, etc), it also has to establish the identity of the user (figure out the user id, username, etc. of the user who’s signing in). This may happen when a user signs into an existing account for the first time on a newly-purchased device; or when a user logs into a website for the first time in a given browser instance. Or when a user logs into a website in a private browsing session. Or when a user signs into a mobile app for the first time on a given device (contrast this with [reauthentication](#reauthentication) below).
@@ -49,6 +57,8 @@ A generic example of an autofill UI for passkeys is shown below:
 ![Image](pkdd-signin-username-autofill.png "Sample sign in screen with the autofill UI rendered under the username field, showing a passkey for bob@example.com, an other accounts option and a passkey from another device option")
 
 The technical name for this feature in the WebAuthn and Credential Management specifications is "Conditional Mediation".
+
+<a href="https://web.dev/articles/passkey-form-autofill" target="_blank"><button type="button" class="btn btn-light">web.dev {{< icon-external-link size=24 >}}</button></a>
 
 <a href="https://w3c.github.io/webauthn/#dom-publickeycredential-isconditionalmediationavailable" target="_blank"><button type="button" class="btn btn-light">WebAuthn Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
@@ -85,6 +95,8 @@ A FIDO2 [Discoverable Credential](#discoverable-credential) that is bound to a s
 A Discoverable Credential (known in previous version of WebAuthn as a "resident credential" or "resident key") is a FIDO2/WebAuthn credential that can be used by a user to log in to a relying party without initially providing a user ID. As such, all parts of the credential are entirely stored in the authenticator (private key, credential ID, user handle, and other metadata).
 
 [Passkeys](#passkey) are Discoverable Credentials.
+
+<a href="https://web.dev/articles/webauthn-discoverable-credentials" target="_blank"><button type="button" class="btn btn-light">web.dev {{< icon-external-link size=24 >}}</button></a>
 
 <a href="https://www.w3.org/TR/webauthn-2/#discoverable-credential" target="_blank"><button type="button" class="btn btn-light">Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
@@ -178,11 +190,15 @@ A [Passkey Provider](#passkey-provider) that plugs in to the OS via platform API
 
 A test of User Presence (UP) is used to ensure the user is in local proximity to the authenticator during an authentication or credential creation ceremony. UP is often satisfied by pressing a button or metallic area of a security key, or interacting with a platform authenticator on a device.
 
+<a href="https://web.dev/articles/webauthn-user-verification" target="_blank"><button type="button" class="btn btn-light">web.dev {{< icon-external-link size=24 >}}</i></button></a>
+
 <a href="https://www.w3.org/TR/webauthn-2/#test-of-user-presence" target="_blank"><button type="button" class="btn btn-light">Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
 ## User Verification (UV)
 
 User Verification (UV) requires the user to either perform a biometric gesture, enter the device PIN, or enter the device password for the authenticator to authorize creation and/or use of the credential.
+
+<a href="https://web.dev/articles/webauthn-user-verification" target="_blank"><button type="button" class="btn btn-light">web.dev {{< icon-external-link size=24 >}}</i></button></a>
 
 <a href="https://www.w3.org/TR/webauthn-2/#user-verification" target="_blank"><button type="button" class="btn btn-light">Spec Reference {{< icon-external-link size=24 >}}</button></a>
 
