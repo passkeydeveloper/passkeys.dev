@@ -449,14 +449,14 @@ Passkeys created in **macOS** can be used on:
               </a>
             </td>
             <td class="text-center">
-              {{< icon-circle-x-filled fill="red" size=30 >}}
+              {{< icon-device-usb size=30 >}}
               <br />
-              <span class="fs-6 text-muted">Not Supported</span>
+              <span class="fs-6">on security keys</span>
             </td>
             <td class="text-center">
-              {{< icon-circle-x-filled fill="red" size=30 >}}
+              {{< icon-device-usb size=30 >}}
               <br />
-              <span class="fs-6 text-muted">Not Supported</span>
+              <span class="fs-6">on security keys</span>
             </td>
             <td class="text-center">
               {{< icon-device-usb size=30 >}}
