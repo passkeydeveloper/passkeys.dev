@@ -487,9 +487,9 @@ Passkeys created in **macOS** can be used on:
               <span class="fs-6 text-muted">Not Supported</span>
             </td>
             <td class="text-center">
-              {{< icon-settings-code size=30 >}}
-              <br />
-              <span class="fs-6">Chrome</span> <sup><a href="#fn4">4</a></sup>
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br>
+              <span class="fs-6">128+</span>
             </td>
             <td class="text-center">
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -497,10 +497,13 @@ Passkeys created in **macOS** can be used on:
               <span class="fs-6 text-muted">Not Supported</span>
             </td>
             <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br />
+              <span class="fs-6">Chrome 128+</span>
+              <br />
+              <br />
               {{< icon-settings-code size=30 >}}
               <span class="fs-6">
-              <br />
-              Chrome <sup><a href="#fn4">4</a></sup>
               <br />
               Edge <sup><a href="#fn4">4</a></sup>
               <br />
@@ -513,10 +516,13 @@ Passkeys created in **macOS** can be used on:
               </span>
             </td>
             <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br />
+              <span class="fs-6">Chrome 128+</span>
+              <br />
+              <br />
               {{< icon-settings-code size=30 >}}
               <span class="fs-6">
-              <br />
-              Chrome <sup><a href="#fn4">4</a></sup>
               <br />
               Edge <sup><a href="#fn4">4</a></sup>
               <br />
@@ -529,10 +535,13 @@ Passkeys created in **macOS** can be used on:
               </span>
             </td>
             <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br />
+              <span class="fs-6">Chrome 128+</span>
+              <br />
+              <br />
               {{< icon-settings-code size=30 >}}
               <span class="fs-6">
-              <br />
-              Chrome <sup><a href="#fn5">4</a> <a href="#fn5">5</a></sup>
               <br />
               Edge <sup><a href="#fn4">4</a> <a href="#fn5">5</a></sup>
               <br />
