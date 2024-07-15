@@ -21,7 +21,7 @@ The following list of passkey providers have not implemented [User Verification]
 | ------------ | ---------------- | ----------------------------- | ------------------------ |
 | 1Password    | Extension        | ❌ Handles request without UV | ❌ Always replies `True` |
 | 1Password    | Native           | ✅ Performs UV                | ✅ UV flag accurate      |
-| Bitwarden    | Extension        | ❌ Handles request without UV | ❌ Always replies `True` |
+| Bitwarden    | Extension        | ✅ Performs UV                | ✅ UV flag accurate      |
 | KeepassXC    | Extension        | ❌ Handles request without UV | ❌ Always replies `True` |
 | Proton Pass  | Extension        | ❌ Handles request without UV | ❌ Always replies `True` |
 | Proton Pass  | Native           | ❌ Handles request without UV | ❌ Always replies `True` |
