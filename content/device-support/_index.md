@@ -477,9 +477,9 @@ Passkeys created in **macOS** can be used on:
               {{< icon-circle-check-filled fill="green" size=30 >}}
             </td>
           </tr>
-          <tr class="align-middle">
+          <tr class="align-top">
             <td class="fw-bold">
-                Client Hints
+                <a href="https://w3c.github.io/webauthn/#enum-hints" target="_blank">Client Hints</a>
             </td>
             <td class="text-center">
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -544,6 +544,81 @@ Passkeys created in **macOS** can be used on:
               <span class="fs-6">
               <br />
               Edge <sup><a href="#fn4">4</a> <a href="#fn5">5</a></sup>
+              <br />
+              <br />
+              {{< icon-circle-x-filled fill="red" size=30 >}}
+              <br />
+              Firefox
+              <br />
+              <br />
+              </span>
+            </td>
+          </tr>
+          <tr class="align-top">
+            <td class="fw-bold">
+                <a href="https://w3c.github.io/webauthn/#sctn-related-origins" target="_blank">Related Origin Requests</a>
+            </td>
+            <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br />
+              <span class="fs-6">Chrome 128+</span>
+              <br />
+              <span class="fs-6">Edge 128+</span>
+              <br />
+              <br />
+              <br />
+              {{< icon-circle-x-filled fill="red" size=30 >}}
+              <br />
+              <span class="fs-6">Firefox</span>
+            </td>
+            <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br />
+              <span class="fs-6">128+</span>
+            </td>
+            <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br />
+              <span class="fs-6">v18+</span>
+            </td>
+            <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br />
+              <span class="fs-6">Chrome 128+</span>
+              <br />
+              <span class="fs-6">Edge 128+</span>
+              <br />
+              <span class="fs-6">Safari (macOS 15+)</span>
+              <br />
+              <br />
+              {{< icon-circle-x-filled fill="red" size=30 >}}
+              <br />
+              Firefox
+              </span>
+            </td>
+            <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br />
+              <span class="fs-6">Chrome 128+</span>
+              <br />
+              <span class="fs-6">Edge 128+</span>
+              <br />
+              <br />
+              <br />
+              {{< icon-circle-x-filled fill="red" size=30 >}}
+              <br />
+              Firefox
+              <br />
+              <br />
+              </span>
+            </td>
+            <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br />
+              <span class="fs-6">Chrome 128+</span>
+              <br />
+              <span class="fs-6">Edge 128+</span>
+              <br />
               <br />
               <br />
               {{< icon-circle-x-filled fill="red" size=30 >}}
