@@ -223,9 +223,9 @@ Passkeys created in **macOS** can be used on:
         </a>
       </td>
       <td class="text-center">
-        {{< icon-calendar-clock size="30" >}}
+        {{< icon-circle-check-filled fill="green" size=30 >}}
         <br />
-        <span class="fs-6">Planned</span>
+        <span class="fs-6 text-muted">v9+</span>
       </td>
       <td class="text-center">
         {{< icon-circle-check-filled fill="green" size=30 >}}
