@@ -7,7 +7,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "tools-libraries"
+    parent: "demos-examples"
 weight: 1110
 toc: false
 layout: matrix
