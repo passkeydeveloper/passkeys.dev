@@ -12,8 +12,6 @@ weight: 501
 toc: true
 ---
 
-## Back End Requirements
-
 The back end drives WebAuthn ceremonies through four primary responsibilities:
 
 1. Generate registration options
