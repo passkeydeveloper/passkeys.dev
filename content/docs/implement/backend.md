@@ -19,9 +19,8 @@ The back end drives WebAuthn ceremonies through four primary responsibilities:
 3. Generate authentication options
 4. Verify authentication responses
 
-A Relying Party has responsibilities along the way that they must be mindful of as they take on
-these responsibilities. The guidance below is intended to identify best practices to securely
-incorporating passkeys-based authentication into your website.
+The guidance below is intended to identify best practices to fulfill these responsibilities and
+securely incorporate passkeys-based authentication into your website.
 
 **Please note that this guidance is not applicable to any specific server implementation.**
 It is intended to be a launching point; care should be taken as you consider how best to adapt this
