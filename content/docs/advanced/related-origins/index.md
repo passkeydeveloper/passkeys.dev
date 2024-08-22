@@ -36,7 +36,7 @@ Related Origin Requests (RoR) works by allowing a Relying Party (RP) to provide 
 
 During a WebAuthn ceremony, if the RP ID and origin do not match, the WebAuthn client can query the RP for a list of valid origins. The client processes that origin list and then re-evaluates the binding based on this additional context. If an origin is matched, the client will continue with the request in the context of the RP ID.
 
-Labels are the portion of a domain name to the left of the [effective top level domain](https://developer.mozilla.org/en-US/docs/Glossary/eTLD) (commonly referred to as "eTLD+1"). For instance, `shopping` is the label for `shopping.com`, `shopping.co.uk`, `shopping.co.jp`, `shopping.net`, and `shopping.org`. Labels are used as a way to support the large number of entries required to support [ccTLDs](#cctld), while enabling clients to restrict the number of unique origins to prevent abuse.
+Labels are the portion of a domain name to the left of the [effective top level domain](https://developer.mozilla.org/en-US/docs/Glossary/eTLD). For instance, `shopping` is the label for `shopping.com`, `shopping.co.uk`, `shopping.co.jp`, `shopping.net`, and `shopping.org`. Labels are used as a way to support the large number of entries required to support [ccTLDs](#cctld), while enabling clients to restrict the number of unique origins to prevent abuse.
 
 If there are 30 origins in the list, all with the same label, these count as 1 unique label. WebAuthn requires client implementations to support at least 5 unique labels, however there are no known clients which support more than 5, so that should be treated as the maximum for deployments.
 
