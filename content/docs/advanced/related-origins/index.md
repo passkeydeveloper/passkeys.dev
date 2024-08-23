@@ -36,7 +36,7 @@ Related Origin Requests (RoR) works by allowing a Relying Party (RP) to provide 
 
 During a WebAuthn ceremony, if the RP ID and origin do not match, the WebAuthn client can query the RP for a list of valid origins. The client processes that origin list and then re-evaluates the binding based on this additional context. If an origin is matched, the client will continue with the request in the context of the RP ID.
 
-Labels are the portion of a domain name to the left of the [effective top level domain](https://developer.mozilla.org/en-US/docs/Glossary/eTLD). For instance, `shopping` is the label for `shopping.com`, `shopping.co.uk`, `shopping.co.jp`, `shopping.net`, and `shopping.org`. Labels are used as a way to support the large number of entries required to support [ccTLDs](#cctld), while enabling clients to restrict the number of unique origins to prevent abuse.
+A label, in the context of this feature, is the name directly preceding the [effective top level domain](https://developer.mozilla.org/en-US/docs/Glossary/eTLD). For instance, `shopping` is the label for `https://shopping.com`, `https://shopping.co.uk`, `https://shopping.co.jp`, `https://shopping.net`, and `https://shopping.org`. Labels are used as a way to support the large number of entries required to support [ccTLDs](#cctld), while enabling clients to restrict the number of unique origins to prevent abuse.
 
 If there are 30 origins in the list, all with the same label, these count as 1 unique label. WebAuthn requires client implementations to support at least 5 unique labels, however there are no known clients which support more than 5, so that should be treated as the maximum for deployments.
 
@@ -50,14 +50,14 @@ Below are three examples of origin lists and their respective label counts.
 ```json
 {
   "origins": [
-    "shopping.com",
-    "shopping.co.uk",
-    "shopping.co.jp",
-    "shopping.ie",
-    "shopping.ca",
-    "shopping.net",
-    "shopping.org",
-    "shopping.github.io"
+    "https://shopping.com",
+    "https://shopping.co.uk",
+    "https://shopping.co.jp",
+    "https://shopping.ie",
+    "https://shopping.ca",
+    "https://shopping.net",
+    "https://shopping.org",
+    "https://shopping.github.io"
   ]
 }
 ```
@@ -72,21 +72,21 @@ Below are three examples of origin lists and their respective label counts.
 ```json
 {
   "origins": [
-    "shopping.com",
-    "shopping.co.uk",
-    "shopping.co.jp",
-    "shopping.ie",
-    "shopping.ca",
-    "myshoppingrewards.com",
-    "myshoppingrewards.co.uk",
-    "myshoppingrewards.co.jp",
-    "myshoppingrewards.ie",
-    "myshoppingrewards.ca",
-    "myshoppingtravel.com",
-    "myshoppingtravel.co.uk",
-    "myshoppingtravel.co.jp",
-    "myshoppingtravel.ie",
-    "myshoppingtravel.ca"
+    "https://shopping.com",
+    "https://shopping.co.uk",
+    "https://shopping.co.jp",
+    "https://shopping.ie",
+    "https://shopping.ca",
+    "https://myshoppingrewards.com",
+    "https://myshoppingrewards.co.uk",
+    "https://myshoppingrewards.co.jp",
+    "https://myshoppingrewards.ie",
+    "https://myshoppingrewards.ca",
+    "https://myshoppingtravel.com",
+    "https://myshoppingtravel.co.uk",
+    "https://myshoppingtravel.co.jp",
+    "https://myshoppingtravel.ie",
+    "https://myshoppingtravel.ca"
   ]
 }
 ```
@@ -103,26 +103,26 @@ Below are three examples of origin lists and their respective label counts.
 ```json
 {
   "origins": [
-    "shopping.com",
-    "shopping.co.uk",
-    "shopping.co.jp",
-    "shopping.ie",
-    "shopping.ca",
-    "myshoppingcard.us",
-    "myshoppingrewards.com",
-    "myshoppingrewards.co.uk",
-    "myshoppingrewards.co.jp",
-    "myshoppingrewards.ie",
-    "myshoppingrewards.ca",
-    "myshoppingcreditcard.co.uk",
-    "myshoppingcreditcard.co.jp",
-    "myshoppingcreditcard.ie",
-    "myshoppingcreditcard.ca",
-    "myshoppingtravel.com",
-    "myshoppingtravel.co.uk",
-    "myshoppingtravel.co.jp",
-    "myshoppingtravel.ie",
-    "myshoppingtravel.ca"
+    "https://shopping.com",
+    "https://shopping.co.uk",
+    "https://shopping.co.jp",
+    "https://shopping.ie",
+    "https://shopping.ca",
+    "https://myshoppingcard.us",
+    "https://myshoppingrewards.com",
+    "https://myshoppingrewards.co.uk",
+    "https://myshoppingrewards.co.jp",
+    "https://myshoppingrewards.ie",
+    "https://myshoppingrewards.ca",
+    "https://myshoppingcreditcard.co.uk",
+    "https://myshoppingcreditcard.co.jp",
+    "https://myshoppingcreditcard.ie",
+    "https://myshoppingcreditcard.ca",
+    "https://myshoppingtravel.com",
+    "https://myshoppingtravel.co.uk",
+    "https://myshoppingtravel.co.jp",
+    "https://myshoppingtravel.ie",
+    "https://myshoppingtravel.ca"
   ]
 }
 ```
@@ -155,14 +155,14 @@ Below is an example for the RP ID `shopping.com`.
 ```json {title="https://shopping.com/.well-known/webauthn"}
 {
   "origins": [
-    "shopping.com",
-    "myshoppingrewards.com",
-    "myshoppingcreditcard.com",
-    "myshoppingtravel.com",
-    "shopping.co.uk",
-    "shopping.co.jp",
-    "shopping.ie",
-    "shopping.ca"
+    "https://shopping.com",
+    "https://myshoppingrewards.com",
+    "https://myshoppingcreditcard.com",
+    "https://myshoppingtravel.com",
+    "https://shopping.co.uk",
+    "https://shopping.co.jp",
+    "https://shopping.ie",
+    "https://shopping.ca"
   ]
 }
 ```
@@ -206,12 +206,12 @@ This flow assumes the [autofill UI](/docs/reference/terms/#autofill-ui) for pass
 
 In this example, passkeys have previously been rolled out to the following users:
 
-- `shopping.com` users, with an RP ID of `shopping.com`
-- `shopping.co.uk` users, with an RP ID or `shopping.co.uk`
+- `https://shopping.com` users, with an RP ID of `shopping.com`
+- `https://shopping.co.uk` users, with an RP ID or `shopping.co.uk`
 
-A user with a passkey for `shopping.com` navigates to `shopping.com`, clicks into the username field, selects their passkey, performs user verification, and is then signed in!
+A user with a passkey for `shopping.com` navigates to `https://shopping.com`, clicks into the username field, selects their passkey, performs user verification, and is then signed in!
 
-A user with a passkey for `shopping.co.uk` has traveled to the US and navigates to `shopping.co.uk`. Based on location data, the user is redirected to `shopping.com`. They click into the username field and do not see any passkey available. They then type their username and click continue. A backend lookup occurs, and WebAuthn is now invoked with an RP ID of `shopping.co.uk` and the user selects their passkey, performs user verification, and is signed in!
+A user with a passkey for `shopping.co.uk` has traveled to the US and navigates to `https://shopping.co.uk`. Based on location data, the user is redirected to `https://shopping.com`. They click into the username field and do not see any passkey available. They then type their username and click continue. A backend lookup occurs, and WebAuthn is now invoked with an RP ID of `shopping.co.uk` and the user selects their passkey, performs user verification, and is signed in!
 
 ## Additional Information
 
