@@ -47,7 +47,7 @@ Passkeys created in **macOS** can be used on:
 
 - the same Windows device that created them
 
-## Matrix
+## Matrix {#matrix}
 
 <div id="device-support-table" class="table-responsive">
   <table class="table table-striped mt-0">
@@ -418,7 +418,7 @@ Passkeys created in **macOS** can be used on:
     </thead>
   </table>
 
-## Advanced Capabilities
+## Advanced Capabilities {#advanced}
 
   <details>
     <summary><strong>Details</strong></summary>
@@ -555,8 +555,8 @@ Passkeys created in **macOS** can be used on:
             </td>
           </tr>
           <tr class="align-top">
-            <td class="fw-bold">
-                <a href="https://w3c.github.io/webauthn/#sctn-related-origins" target="_blank">Related Origin Requests</a>
+            <td class="fw-bold" id="ror">
+                <a href="/docs/advanced/related-origins/" target="_blank">Related Origin Requests</a>
             </td>
             <td class="text-center">
               {{< icon-circle-check-filled fill="green" size=30 >}}
