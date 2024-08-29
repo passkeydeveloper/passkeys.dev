@@ -1,7 +1,7 @@
 ---
 title: "Related Origin Requests"
-description: "The Related Origin Requests (RoR)feature allows an RP to enable a passkey to be created and used across a limited set of related origins."
-lead: "The Related Origin Requests (RoR) feature allows an RP to enable a passkey to be created and used across a limited set of related origins."
+description: "The Related Origin Requests (ROR)feature allows an RP to enable a passkey to be created and used across a limited set of related origins."
+lead: "The Related Origin Requests (ROR) feature allows an RP to enable a passkey to be created and used across a limited set of related origins."
 date: 2024-08-22T15:20:51.937Z
 draft: false
 images: []
@@ -14,13 +14,13 @@ toc: true
 
 ## Use Cases
 
-The two use cases for Related Origin Requests (RoR) are deployments which use different country code top-level domains (ccTLD) across the world, and deployments where different branding is used for different services.
+The two use cases for Related Origin Requests (ROR) are deployments which use different country code top-level domains (ccTLD) across the world, and deployments where different branding is used for different services.
 
 To address these use cases, it is recommended to leverage industry-standard federation protocols such as [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html). This approach facilitates a centralized login experience, by using a dedicated login page (e.g., login.example.com) that serves as the authentication point for all origins and services.
 
-<strong>RoR is designed to be used when federation is <i>not</i> possible.</strong>
+<strong>ROR is designed to be used when federation is <i>not</i> possible.</strong>
 
-{{< callout context="note" title="Websites vs Apps" icon="outline/note" >}} RoR is a WebAuthn feature for the web. App platforms have existing mechanisms for mapping native apps to one or more web origins: [Digital Asset Links](https://developers.google.com/identity/credential-sharing/set-up) for Android and [Associated Domains](https://developer.apple.com/documentation/xcode/supporting-associated-domains) on Apple platforms. {{< /callout >}}
+{{< callout context="note" title="Websites vs Apps" icon="outline/note" >}} ROR is a WebAuthn feature for the web. App platforms have existing mechanisms for mapping native apps to one or more web origins: [Digital Asset Links](https://developers.google.com/identity/credential-sharing/set-up) for Android and [Associated Domains](https://developer.apple.com/documentation/xcode/supporting-associated-domains) on Apple platforms. {{< /callout >}}
 
 ### Country Code Top Level Domains (ccTLDs) {#cctld}
 
@@ -32,7 +32,7 @@ Some organizations offer additional services with different or extended branding
 
 ## How It Works
 
-Related Origin Requests (RoR) works by allowing a Relying Party (RP) to provide a list of valid origins for a given Relying Party ID (RP ID).
+Related Origin Requests (ROR) works by allowing a Relying Party (RP) to provide a list of valid origins for a given Relying Party ID (RP ID).
 
 During a WebAuthn ceremony, if the RP ID and origin do not match, the WebAuthn client can query the RP for a list of valid origins. The client processes that origin list and then re-evaluates the binding based on this additional context. If an origin is matched, the client will continue with the request in the context of the RP ID.
 
@@ -134,7 +134,7 @@ Below are three examples of origin lists and their respective label counts.
 
 ### Client Support
 
-The [Device Support matrix](/device-support/#ror) lists the browsers which support Related Origin Requests. The [Passkeys Feature Detect page](https://featuredetect.passkeys.dev) will also attempt to detect RoR support in the browser in which the page was loaded.
+The [Device Support matrix](/device-support/#ror) lists the browsers which support Related Origin Requests. The [Passkeys Feature Detect page](https://featuredetect.passkeys.dev) will also attempt to detect ROR support in the browser in which the page was loaded.
 
 To dynamically detect support for Related Origin Requests on an enrollment or login page, Relying Parties should check for `relatedOrigins` in the [WebAuthn Get Client Capabilities (`PublicKeyCredential.getClientCapabilities()`)](https://w3c.github.io/webauthn/#sctn-getClientCapabilities) response.
 
@@ -171,7 +171,7 @@ Below is an example for the RP ID `shopping.com`.
 
 ### Greenfield Deployments
 
-The most important design decision for a greenfield deployment using RoR is picking a common Relying Party ID (RP ID) to be used for passkeys across all origins. All WebAuthn requests across all related origins will use that as `rp.id`.
+The most important design decision for a greenfield deployment using ROR is picking a common Relying Party ID (RP ID) to be used for passkeys across all origins. All WebAuthn requests across all related origins will use that as `rp.id`.
 
 It is recommended to pick the most commonly used and/or understood domain for the common RP ID. This is typically the domain closely associated with the organization's brand, and is often the `.com`.
 
