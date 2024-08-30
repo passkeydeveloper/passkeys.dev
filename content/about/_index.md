@@ -28,7 +28,6 @@ passkeys.dev is brought to you by members of the [W3C WebAuthn Community Adoptio
 - <a href="https://fosstodon.org/@passkeysdev" target="_blank">Passkeys Developer {{< icon-external-link size=24 >}}</a>
 - <a href="https://w3c.social/@w3cdevs" target="_blank">W3C Developers {{< icon-external-link size=24 >}}</a>
 
-
 ### Contribute
 
 Contributing guidance coming soon!
@@ -65,7 +64,7 @@ Matthew Miller |
 
 ## Copyright and Attributions
 
-Unless otherwise indicated, passkeys.dev content is available under the terms of the [Creative Commons Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/2.5/) license (CC-BY-SA), v2.5 or any later version.
+Unless otherwise indicated, passkeys.dev content is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/). Additional Terms: You may only link to this content. Copying, distributing, or modifying the content is not permitted.
 
 Code samples are in the [public domain CC0](https://creativecommons.org/publicdomain/zero/1.0/). No licensing notice is necessary but if you need one, you can use: `Any copyright is dedicated to the Public Domain: https://creativecommons.org/publicdomain/zero/1.0/`.
 
