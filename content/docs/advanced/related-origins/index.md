@@ -207,7 +207,7 @@ This flow assumes the [autofill UI](/docs/reference/terms/#autofill-ui) for pass
 In this example, passkeys have previously been rolled out to the following users:
 
 - `https://shopping.com` users, with an RP ID of `shopping.com`
-- `https://shopping.co.uk` users, with an RP ID or `shopping.co.uk`
+- `https://shopping.co.uk` users, with an RP ID of `shopping.co.uk`
 
 A user with a passkey for `shopping.com` navigates to `https://shopping.com`, clicks into the username field, selects their passkey, performs user verification, and is then signed in!
 
