@@ -49,6 +49,8 @@ Passkeys created in **macOS** can be used on:
 
 ## Matrix {#matrix}
 
+<a class="btn btn-black btn-lg px-4 mb-2" href="https://featuredetect.passkeys.dev" role="button" target="_blank">Test this client!</a></div>
+
 <div id="device-support-table" class="table-responsive">
   <table class="table table-striped mt-0">
     <thead>
