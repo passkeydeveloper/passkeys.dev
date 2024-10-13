@@ -100,3 +100,7 @@ The ["Awesome WebAuthn"](https://github.com/herrjemand/awesome-webauthn) GitHub 
 - [webauthn-ruby](https://github.com/cedarcode/webauthn-ruby) (Cedarcode)
 - [devise-passkeys](https://github.com/ruby-passkeys/devise-passkeys) (Ruby Passkeys, wrapper around `webauthn-ruby`)
 - [warden-webauthn](https://github.com/ruby-passkeys/warden-webauthn) (Ruby Passkeys, wrapper around `webauthn-ruby`)
+
+### Elixir
+
+- [webauthn_components](https://github.com/liveshowy/webauthn_components) (LiveShowy)
