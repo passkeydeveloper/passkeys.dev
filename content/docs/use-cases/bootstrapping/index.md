@@ -71,7 +71,7 @@ To support the [autofill UI](/docs/reference/terms/#autofill-ui) for passkeys, m
 
 This will cause the following to happen:
 
-- Retrieve the authentication options from your server. Return at least a random `challenge` and `rpId` to be associated with this authentication request.
+- Retrieve the authentication options from your server. Return at least a random challenge to be associated with this authentication request.
 
 - When the user interacts with the username field, the browser and platform will check whether a passkey exists in the platform authenticator that can be used with the relying party. <br><br>If this is the case, the passkey will be presented to the user as an option to choose (along with other credentials that can be auto-filled, such as usernames stored in the browser’s password manager). The browser/platform might render a UI similar to the one shown below, although the exact look and feel will vary from platform to platform (Windows vs. Android vs. iOS), and from form factor to form factor (desktop vs. mobile):
 

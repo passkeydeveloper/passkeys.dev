@@ -47,7 +47,9 @@ Passkeys created in **macOS** can be used on:
 
 - the same Windows device that created them
 
-## Matrix
+## Matrix {#matrix}
+
+<a class="btn btn-black btn-lg px-4 mb-2" href="https://featuredetect.passkeys.dev" role="button" target="_blank">Test this client!</a></div>
 
 <div id="device-support-table" class="table-responsive">
   <table class="table table-striped mt-0">
@@ -418,7 +420,7 @@ Passkeys created in **macOS** can be used on:
     </thead>
   </table>
 
-## Advanced Capabilities
+## Advanced Capabilities {#advanced}
 
   <details>
     <summary><strong>Details</strong></summary>
@@ -482,14 +484,22 @@ Passkeys created in **macOS** can be used on:
                 <a href="https://w3c.github.io/webauthn/#enum-hints" target="_blank">Client Hints</a>
             </td>
             <td class="text-center">
+              {{< icon-circle-half stroke="orange" size=30 >}}
+              <br />
+              <span class="fs-6">Chrome 128+ <sup><a href="#fn5">5</a></sup></span>
+              <br />
+              <span class="fs-6">Edge 128+ <sup><a href="#fn5">5</a></sup></span>
+              <br />
+              <br />
               {{< icon-circle-x-filled fill="red" size=30 >}}
               <br />
-              <span class="fs-6 text-muted">Not Supported</span>
+              Firefox
+              </span>
             </td>
             <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
+              {{< icon-circle-half stroke="orange" size=30 >}}
               <br>
-              <span class="fs-6">128+</span>
+              <span class="fs-6">128+ <sup><a href="#fn5">5</a></sup></span>
             </td>
             <td class="text-center">
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -497,34 +507,26 @@ Passkeys created in **macOS** can be used on:
               <span class="fs-6 text-muted">Not Supported</span>
             </td>
             <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
+              {{< icon-circle-half stroke="orange" size=30 >}}
               <br />
-              <span class="fs-6">Chrome 128+</span>
+              <span class="fs-6">Chrome 128+ <sup><a href="#fn5">5</a></sup></span>
               <br />
-              <br />
-              {{< icon-settings-code size=30 >}}
-              <span class="fs-6">
-              <br />
-              Edge <sup><a href="#fn4">4</a></sup>
+              <span class="fs-6">Edge 128+ <sup><a href="#fn5">5</a></sup></span>
               <br />
               <br />
               {{< icon-circle-x-filled fill="red" size=30 >}}
+              <br />
+              Firefox
               <br />
               Safari
-              <br />
-              Firefox
               </span>
             </td>
             <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
+              {{< icon-circle-half stroke="orange" size=30 >}}
               <br />
-              <span class="fs-6">Chrome 128+</span>
+              <span class="fs-6">Chrome 128+ <sup><a href="#fn5">5</a></sup></span>
               <br />
-              <br />
-              {{< icon-settings-code size=30 >}}
-              <span class="fs-6">
-              <br />
-              Edge <sup><a href="#fn4">4</a></sup>
+              <span class="fs-6">Edge 128+ <sup><a href="#fn5">5</a></sup></span>
               <br />
               <br />
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -535,15 +537,11 @@ Passkeys created in **macOS** can be used on:
               </span>
             </td>
             <td class="text-center">
-              {{< icon-circle-check-filled fill="green" size=30 >}}
+              {{< icon-circle-half stroke="orange" size=30 >}}
               <br />
-              <span class="fs-6">Chrome 128+</span>
+              <span class="fs-6">Chrome 128+ <sup><a href="#fn5">5</a></sup></span>
               <br />
-              <br />
-              {{< icon-settings-code size=30 >}}
-              <span class="fs-6">
-              <br />
-              Edge <sup><a href="#fn4">4</a> <a href="#fn5">5</a></sup>
+              <span class="fs-6">Edge 128+ <sup><a href="#fn5">5</a></sup></span>
               <br />
               <br />
               {{< icon-circle-x-filled fill="red" size=30 >}}
@@ -555,8 +553,8 @@ Passkeys created in **macOS** can be used on:
             </td>
           </tr>
           <tr class="align-top">
-            <td class="fw-bold">
-                <a href="https://w3c.github.io/webauthn/#sctn-related-origins" target="_blank">Related Origin Requests</a>
+            <td class="fw-bold" id="ror">
+                <a href="/docs/advanced/related-origins/" target="_blank">Related Origin Requests</a>
             </td>
             <td class="text-center">
               {{< icon-circle-check-filled fill="green" size=30 >}}
@@ -692,7 +690,7 @@ Passkeys created in **macOS** can be used on:
   Experimental (behind flag)
   <br />
   <sup id="fn5">5</sup>
-  Partial support (requires Windows changes)
+  Partial support
   <br />
   <sup id="fn6">6</sup>
   See details on the <a href="/docs/reference/android/#webviews" target="_blank">Android reference page</a>

@@ -49,6 +49,6 @@ url = "/about/"
 weight = 10
 
 [[footer]]
-name = "Creative Commons license"
+name = "CC BY-NC-ND 4.0"
 url = "https://passkeys.dev/about/#copyright-and-attributions"
 weight = 15

@@ -11,7 +11,7 @@ weight: 1001
 toc: true
 ---
 
-{{% ds-pa %}}
+{{% ds-full %}}
 
 ## Overview
 
@@ -23,6 +23,7 @@ The platform authenticator in Android 9+ has the following capabilities:
 Android 14 adds the following capabilities:
 
 - creating and using passkeys in a [third-party passkey provider](../terms/#third-party-passkey-provider)
+  - NOTE: some Android devices from a small number of OEMs do not support third party passkey providers in Android 14
 
 ## Platform Notes
 
