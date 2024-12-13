@@ -667,6 +667,73 @@ Passkeys created in **macOS** can be used on:
             <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
             <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
           </tr>
+          <tr class="align-middle">
+            <td class="fw-bold">
+              <a href="https://w3c.github.io/webauthn/#sctn-signal-methods" target="_blank">
+                Signal API
+              </a>
+            </td>
+            <td class="text-center">
+              {{< icon-circle-x-filled fill="red" size=30 >}}
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br>
+              <span class="fs-6">132+</span>
+            </td>
+            <td class="text-center">
+              {{< icon-circle-x-filled fill="red" size=30 >}}
+              <br />
+              <span class="fs-6 text-muted">Not Supported</span>
+            </td>
+            <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br />
+              <span class="fs-6">Chrome 132+</span>
+              <br />
+              <span class="fs-6">Edge 132+</span>
+              <br />
+              <br />
+              {{< icon-circle-x-filled fill="red" size=30 >}}
+              <br />
+              Firefox
+              <br />
+              Safari
+              </span>
+            </td>
+            <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br />
+              <span class="fs-6">Chrome 132+</span>
+              <br />
+              <span class="fs-6">Edge 132+</span>
+              <br />
+              <br />
+              {{< icon-circle-x-filled fill="red" size=30 >}}
+              <br />
+              Firefox
+              <br />
+              <br />
+              </span>
+            </td>
+            <td class="text-center">
+              {{< icon-circle-check-filled fill="green" size=30 >}}
+              <br />
+              <span class="fs-6">Chrome 132+</span>
+              <br />
+              <span class="fs-6">Edge 132+</span>
+              <br />
+              <br />
+              {{< icon-circle-x-filled fill="red" size=30 >}}
+              <br />
+              Firefox
+              <br />
+              <br />
+              </span>
+            </td>
+          </tr>
         </thead>
       </table>
     </div>
