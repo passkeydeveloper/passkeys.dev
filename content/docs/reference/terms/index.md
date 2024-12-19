@@ -22,6 +22,12 @@ A user whose account has [2FA](#2-factor-authentication-2fa) turned on, i.e., wh
 
 This refers to a contract between a user and a [Relying Party (RP)](#relying-party-rp) where the RP must collect at least two distinct authentication factors from the user during a [bootstrap](#account-bootstrapping) sign-in.
 
+## Authenticator Attestation Globally Unique Identifier (AAGUID)
+
+AAGUID is a unique number that identifies the model of the authenticator (not the specific instance of the authenticator). AAGUID can be found as part of a public key credential's authenticator data. RPs can use AAGUID to identify the [passkey provider](#passkey-provider).
+
+<a href="https://w3c.github.io/webauthn/#aaguid" target="_blank"><button type="button" class="btn btn-light">WebAuthn Spec Reference {{< icon-external-link size=24 >}}</button></a>
+
 ## Account bootstrapping
 
 A [Relying Party (RP)](#relying-party-rp) authenticates a user without any prior knowledge of who the user is. This means that the RP not only has to verify the identity of the user (checking the password, verifying cryptographic signatures, etc), it also has to establish the identity of the user (figure out the user id, username, etc. of the user who’s signing in). This may happen when a user signs into an existing account for the first time on a newly-purchased device; or when a user logs into a website for the first time in a given browser instance. Or when a user logs into a website in a private browsing session. Or when a user signs into a mobile app for the first time on a given device (contrast this with [reauthentication](#reauthentication) below).
