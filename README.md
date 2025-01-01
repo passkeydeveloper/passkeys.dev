@@ -1,3 +1,3 @@
-## passkeys.dev
+# passkeys.dev
 
 docs coming soon

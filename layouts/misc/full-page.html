@@ -1,0 +1,67 @@
+{{ define "main" -}}
+    {{- $breakpoint := $.Scratch.Get "breakpoint" -}}
+
+
+    <div class="container-xxl flex-fill p-4 px-xxl-0">
+            <div class="row row-cols-1 row-cols-{{ $breakpoint.current }}-2">
+                <div class="col col-{{ $breakpoint.prev }}-12 col-{{ $breakpoint.current }}-12">
+                    {{- $metadata := "full" -}}
+                    {{ if isset .Params "metadata" }}
+                        {{ $metadata = .Params.metadata }}
+                    {{ else }}
+                        {{- with (index site.Params.pages .Type ) -}}
+                            {{ if isset . "metadata" }}{{ $metadata = (index . "metadata") }}{{ end }}
+                        {{- end -}}
+                    {{ end }}
+                                    
+                    {{- $supportedStates := slice "full" "original" "none" -}}
+                    {{- if not (in $supportedStates $metadata) -}}
+                        {{- errorf "layout [_default/single/header.html] - Invalid value for param 'metadata': %s" $metadata -}}
+                    {{- end -}}
+                                    
+                    {{ with .Title }}<p class="display-4 mt-5">{{ . }}</p>{{ end }}
+                    {{ if ne $metadata "none" }}
+                        <small class="text-body-secondary text-uppercase">
+                            {{ if .Date }}
+                                {{ $lastmodstr := (partial "utilities/date.html" (dict "date" .Lastmod "format" "long")) -}}
+                                {{ $datestr := (partial "utilities/date.html" (dict "date" .Date "format" "long")) -}}
+                                {{ $datestr | i18n "postedOnDate" -}}
+                                {{ if eq $metadata "full" }}
+                                    {{ if ne $datestr $lastmodstr -}}&nbsp;({{ $lastmodstr | i18n "lastModified" }}){{ end }}
+                                {{ end }}
+                                &bull;
+                            {{ end }}
+                        </small>
+                    {{ end }}
+                    
+                    {{- if gt (len (.GetTerms "tags")) 0 -}}
+                        <div class="mt-3">
+                            <div class="d-none-dark">
+                                <div class="hstack gap-1">
+                                    {{ range (.GetTerms "tags") -}}
+                                        {{- $url := .Page.RelPermalink -}}
+                                        {{ partial "assets/button.html" (dict "href" $url "title" .LinkTitle "color" "light" "size" "sm") }}
+                                    {{ end -}}
+                                </div>
+                            </div>
+                            
+                            <div class="d-none-light">
+                                <div class="hstack gap-1">
+                                    {{ range (.GetTerms "tags") -}}
+                                        {{- $url := .Page.RelPermalink -}}
+                                        {{ partial "assets/button.html" (dict "href" $url "title" .LinkTitle "color" "primary" "size" "sm" "outline" "true") }}
+                                    {{ end -}}
+                                </div>
+                            </div>
+                        </div>
+                    {{- end -}}
+                    {{ partial "assets/sharing.html" (dict "page" .) }}
+
+
+                    {{ .Render "single/body" }}
+
+                    {{ .Render "single/footer" }}
+                </div>
+            </div>    
+    </div>
+{{ end -}}

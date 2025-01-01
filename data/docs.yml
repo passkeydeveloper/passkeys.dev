@@ -1,0 +1,41 @@
+# This file holds all menu entries for the docs sidebar
+
+- title: Intro
+  pages:
+    - title: What are passkeys?
+
+- title: Use Cases
+  pages:
+    - title: Bootstrapping
+    - title: Reauthentication
+      link: reauth
+
+- title: Advanced
+  pages:
+    - title: Related Origin Requests
+      link: related-origins
+
+- title: Tools & Libraries
+  pages:
+    - title: Libraries
+    - title: Test Sites
+
+
+- title: Reference
+  pages:
+    - title: Android
+    - title: "iOS & iPadOS"
+      link: iOS
+    - title: Chrome OS
+      link: chromeos
+    - title: macOS
+    - title: Windows
+    - title: Known Issues
+    - title: Specifications
+      link: specs
+    - title: Terms
+
+- title: Demos
+  pages:
+    - title: Demos Sites
+      link: ../demos-examples/demos.md

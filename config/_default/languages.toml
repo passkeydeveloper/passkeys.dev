@@ -1,9 +1,6 @@
 [en]
-  languageName = "English"
-  contentDir = "content/en"
-  weight = 10
-  [en.params]
-    languageISO = "EN"
-    languageTag = "en-US"
-    footer = '<a class="text-muted" href="/privacy-policy/">Privacy Policy</a>'
-    #alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/example-post/">Doks version 1.0 just shipped!</a>'
+    languageName = "English"
+    contentDir = "content/en"
+    weight = 1
+    [en.params.head]
+        tagline = "Passkeys Developer Resources"
