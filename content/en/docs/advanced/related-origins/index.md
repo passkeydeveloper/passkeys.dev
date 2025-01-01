@@ -179,12 +179,12 @@ It is recommended to pick the most commonly used and/or understood domain for th
 
 For deployments where passkeys are already rolled out with multiple RP IDs, there are some unique considerations and requirements.
 
-**Considerations**
+#### Considerations
 
 - Users with a passkey for the "local" RP ID / origin will be able to use all passkeys experiences as normal.
 - Users with a passkey for another RP ID / related origin, will require an identifier first flow and a backend lookup.
 
-**Requirements**
+#### Requirements
 
 - Each existing RP ID will need to host the WebAuthn well-known document, with all of the other origins listed in it. This will allow reciprocal use of passkeys
 - The account database will need to know which RP ID was used for each passkey (this could be an explicit property or inferred based on other data)

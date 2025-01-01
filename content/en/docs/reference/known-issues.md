@@ -50,6 +50,7 @@ Test device details:
   "authenticatorAttachment": "platform"
 }
 ```
+
   {{< /accordion-item >}}
 {{< /accordion >}}
 
@@ -58,6 +59,7 @@ Test device details:
 The following list of passkey providers have not implemented [User Verification](terms#user-verification-uv) in a spec-compliant manner.
 
 {{< table >}}
+
 | **Provider** | **Architecture** | **UV Required Behavior**      | **UV Flag**              |
 | ------------ | ---------------- | ----------------------------- | ------------------------ |
 | 1Password    | Extension        | ❌ Handles request without UV | ❌ Always replies `True` |

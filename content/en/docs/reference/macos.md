@@ -25,9 +25,11 @@ The platform authenticator in macOS Ventura (13) has the following capabilities:
   - an Android device, using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
   - a FIDO2 security key{{< sup 1 >}}
 
+<!-- markdownlint-disable no-inline-html -->
 {{< unsafe >}}
 <p class="fs-6 text-muted text-end">{{< sup 1 >}} On macOS, user verification methods (device PIN, biometric, etc) must already be configured on the security key prior to credential creation</p>
 {{< /unsafe >}}
+<!-- markdownlint-enable no-inline-html -->
 
 ## Platform Notes
 
@@ -57,7 +59,7 @@ To replace a legacy platform credential with a passkey, start a credential regis
 `WKWebView` is the embedded WebView (EWV) on macOS. Embedded WebViews allow the calling app full control over the embedded web session, including modifying and intercepting requests, so many web platform features are limited in these contexts.
 
 > **NOTE:**
-> 
+>
 > Embedded WebViews run in the context of the calling app, meaning only passkeys for the linked web domain (RP ID) can be created or used for sign in.
 >
 > Said differently, only use EWV when sign in is handled by your own service (non-federated). When supporting multiple identity providers, System WebView should be used (see below).

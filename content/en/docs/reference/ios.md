@@ -26,9 +26,11 @@ The platform authenticators in iOS 16+ and iPadOS 16+ have the following capabil
   - a FIDO2 security key{{< sup 1 >}}
 - using a passkey from the local iOS or iPadOS device to sign into services on another device (such as a laptop or desktop), using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
 
+<!-- markdownlint-disable no-inline-html -->
 {{< unsafe >}}
 <p class="fs-6 text-muted text-end">{{< sup 1 >}} On iOS and iPadOS, user verification methods (device PIN, biometric, etc) must already be configured on the security key prior to credential creation</p>
 {{< /unsafe >}}
+<!-- markdownlint-enable no-inline-html -->
 
 ## Platform Notes
 

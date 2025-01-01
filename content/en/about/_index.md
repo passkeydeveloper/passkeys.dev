@@ -13,7 +13,7 @@ passkeys.dev is brought to you by members of the [W3C WebAuthn Community Adoptio
     {{< card title="Ask & Discuss" icon="fa fa-comments" >}}
 
 - [W3C WebAuthn Community Adoption Group](https://www.w3.org/community/webauthn-adoption/)
-- [Passkeys Developer Discussions](https://github.com/orgs/passkeydeveloper/discussions)
+- [Passkeys Developer Discussions (passkeys.dev/discuss)](https://github.com/orgs/passkeydeveloper/discussions)
     {{< /card >}}
     {{< card title="Github" icon="fab github" >}}
 - [Suggest content or report a site issue](https://github.com/passkeydeveloper/passkeys.dev/issues/new/choose)

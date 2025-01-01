@@ -5,6 +5,8 @@ layout: full-page
 type: misc
 ---
 
+<!-- markdownlint-disable no-inline-html -->
+
 This page, along with the rest of passkeys.dev, is targeted at relying party developers and is not intended to be an end user facing resource.
 
 > Said differently, **please don’t link to this page from end user focused resources** 😉
