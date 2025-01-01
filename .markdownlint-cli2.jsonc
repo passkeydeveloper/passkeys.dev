@@ -1,0 +1,14 @@
+{
+  "config": {
+    "default": true,
+    "MD013": false,
+    "MD024": false,
+    "MD026": false,
+    "MD034": false,
+    "MD051": false,
+    "MD053": false,
+    "MD055": false,
+    "MD056": false
+  },
+  "ignores": ["node_modules", "CHANGELOG.md"]
+}
