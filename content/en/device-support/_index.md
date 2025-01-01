@@ -5,8 +5,6 @@ layout: full-page
 type: misc
 ---
 
-<!-- markdownlint-disable no-inline-html -->
-
 This page, along with the rest of passkeys.dev, is targeted at relying party developers and is not intended to be an end user facing resource.
 
 > Said differently, **please don’t link to this page from end user focused resources** 😉
@@ -52,7 +50,7 @@ Passkeys created in **macOS** can be used on:
 ### Basic Capabilities {#basics}
 
 {{< unsafe >}}
-
+<!-- markdownlint-disable no-inline-html -->
 <div id="device-support-table" class="table-responsive mt-3">
   <table class="table table-striped mt-0">
     <thead>
@@ -300,12 +298,13 @@ Passkeys created in **macOS** can be used on:
     </tr>
   </table>
 </div>
-
+<!-- markdownlint-enable no-inline-html -->
 {{< /unsafe >}}
 
 ### Native Apps {#native-apps}
 
 {{< unsafe >}}
+<!-- markdownlint-disable no-inline-html -->
 <div id="device-support-native-apps" class="table-responsive">
   <table class="table table-striped mt-0">
     <thead>
@@ -434,12 +433,13 @@ Passkeys created in **macOS** can be used on:
     </thead>
   </table>
 </div>
+<!-- markdownlint-enable no-inline-html -->
 {{< /unsafe >}}
 
 ### Advanced Capabilities {#advanced}
 
 {{< unsafe >}}
-
+<!-- markdownlint-disable no-inline-html -->
 <div id="device-support-table-adv" class="table-responsive">
   <table class="table table-striped mt-0">
     <thead>
@@ -686,10 +686,11 @@ Passkeys created in **macOS** can be used on:
     </thead>
   </table>
 </div>
-
+<!-- markdownlint-enable no-inline-html -->
 {{< /unsafe >}}
 
 {{< unsafe >}}
+<!-- markdownlint-disable no-inline-html -->
 <div class="text-end mb-5 mt-5">
   <sup id="fn1">1</sup>
   Device-bound passkeys supported
@@ -719,4 +720,5 @@ Passkeys created in **macOS** can be used on:
   <sup id="fn8">8</sup>
   See details on <a href="/docs/reference/macos/#webviews" target="_blank">macOS reference page</a>
 </div>
+<!-- markdownlint-enable no-inline-html -->
 {{< /unsafe >}}

@@ -25,11 +25,11 @@ The platform authenticator in macOS Ventura (13) has the following capabilities:
   - an Android device, using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
   - a FIDO2 security key{{< sup 1 >}}
 
-<!-- markdownlint-disable no-inline-html -->
 {{< unsafe >}}
+<!-- markdownlint-disable no-inline-html -->
 <p class="fs-6 text-muted text-end">{{< sup 1 >}} On macOS, user verification methods (device PIN, biometric, etc) must already be configured on the security key prior to credential creation</p>
-{{< /unsafe >}}
 <!-- markdownlint-enable no-inline-html -->
+{{< /unsafe >}}
 
 ## Platform Notes
 
