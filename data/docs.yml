@@ -14,6 +14,8 @@
   pages:
     - title: Backend Requirements
       link: backend
+    - title: Frontend Requirements
+      link: frontend
 
 - title: Advanced
   pages:
