@@ -10,6 +10,11 @@
     - title: Reauthentication
       link: reauth
 
+- title: Implementation
+  pages:
+    - title: Backend Requirements
+      link: backend
+
 - title: Advanced
   pages:
     - title: Related Origin Requests

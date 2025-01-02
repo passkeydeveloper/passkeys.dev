@@ -1,15 +1,7 @@
 ---
 title: "Back End Requirements"
 description: "Guidance on server-side handling of passkeys registration and authentication"
-lead: ""
 date: 2024-08-13T12:00:00.000Z
-draft: false
-images: []
-menu:
-  docs:
-    parent: "implement"
-weight: 501
-toc: true
 ---
 
 The back end drives WebAuthn ceremonies through four primary responsibilities:
