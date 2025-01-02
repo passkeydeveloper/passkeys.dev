@@ -130,7 +130,7 @@ const regOptions = await generateRegistrationOptions(currentUser);
 await pseudocodeSaveCurrentRegistrationOptions(currentUser, regOptions);
 ```
 
-`regOptions` can then be transmitted to the frontend (docs "coming soon") as JSON for the frontend
+`regOptions` can then be transmitted to the frontend (docs coming soon) as JSON for the frontend
 to eventually pass them in to `navigator.credentials.create()`.
 
 ## 2. Verify registration responses
