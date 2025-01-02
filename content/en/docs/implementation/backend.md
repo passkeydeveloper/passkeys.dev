@@ -125,15 +125,105 @@ These options should then be remembered since some values will be needed to veri
 response generated for these options:
 
 ```ts
+// The ID of the user's auth session that was created after the user logged in
+const sessionID = request.session.id;
+
+// User data associated with the current auth session
+const currentUser: UserModel = await getUserData(sessionID);
+
 const regOptions = await generateRegistrationOptions(currentUser);
 
-await pseudocodeSaveCurrentRegistrationOptions(currentUser, regOptions);
+// Persist the options so we can reference values in them during verification
+await pseudocodeSaveRegistrationOptions(sessionID, regOptions);
 ```
 
-`regOptions` can then be transmitted to the frontend (docs coming soon) as JSON for the frontend
-to eventually pass them in to `navigator.credentials.create()`.
+`regOptions` can then be transmitted to the frontend as JSON for
+{{< link "./frontend.md" >}}the frontend to eventually pass in to
+`navigator.credentials.create()`.{{< /link >}}
 
 ## 2. Verify registration responses
+
+Once the frontend has taken the registration options above and fed them into WebAuthn,
+and after the user succeeds in creating a passkey with their chosen passkey provider,
+then the subsequent registration response returned from the WebAuthn call
+will need to be sent to the backend for verification.
+
+As JSON is a popular way to send the response back,
+the backend method "`verifyRegistrationResponse()`" should prepare to accept a value
+in the shape of [`RegistrationResponseJSON`](https://w3c.github.io/webauthn/#dictdef-registrationresponsejson).
+
+```ts
+/**
+ * Check that the WebAuthn registration data represents a well-formed passkey
+ */
+async function verifyRegistrationResponse(
+  currentUser: UserModel,
+  registrationOptions: PublicKeyCredentialCreationOptionsJSON,
+  registrationResponse: RegistrationResponseJSON,
+): VerifiedRegistration {
+  try {
+    // TODO: Write basic attestation-less response verification here?
+  } catch (error) {
+    throw new Error(`Couldn't verify registration response`, { cause: error });
+  }
+
+  return {
+    passkey: {
+      id: registrationResponse.id,
+      publicKey: new Uint8Array([...]),
+      counter: 0,
+      backupEligible: true,
+      backupStatus: true,
+      transports: ['internal', 'hybrid'],
+    },
+  }
+}
+
+type VerifiedRegistration = {
+  passkey: {
+    id: Base64URLString;
+    publicKey: Uint8Array;
+    counter: number;
+    backupEligible: boolean;
+    backupStatus: boolean;
+    transports?: AuthenticatorTransport[];
+  }
+};
+```
+
+```ts
+// The ID of the user's auth session that was created after the user logged in
+const sessionID = request.session.id;
+
+// User data associated with the current auth session
+const currentUser: UserModel = await getUserData(sessionID);
+
+// Retrieve registration options for the current attempt to check for expected values
+const regOptions: PublicKeyCredentialCreationOptionsJSON =
+  await pseudocodeRetrieveAndDeleteRegistrationOptions(sessionID);
+
+let passkey;
+try {
+  const verification = await verifyRegistrationResponse(currentUser, regOptions, regResponse);
+  passkey = verification.passkey;
+  // User successfully registered a passkey, continue
+} catch (err) {
+  console.error(err);
+  // Something went wrong, notify the user accordingly
+}
+```
+
+Assuming successful creation, information about the newly-created passkey
+should then get stored as a `PasskeyModel` record in the database:
+
+```ts
+/**
+ * - Use `currentUser` for the foreign key needed for `PasskeyModel.user`
+ * - Use `regOptions.user.id` for `PasskeyModel.webauthnUserID`
+ * - Use the values in `passkey` to populate the remaining `PasskeyModel` fields
+ */
+await pseudocodeSaveNewPasskey(currentUser, regOptions, passkey);
+```
 
 ## 3. Generate authentication options
 
