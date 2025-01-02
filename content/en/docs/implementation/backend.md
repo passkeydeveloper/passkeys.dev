@@ -81,13 +81,16 @@ async function generateRegistrationOptions(
 ): PublicKeyCredentialCreationOptionsJSON {
   // A domain name for your site (e.g. "passkeys.dev")
   const rpID: string = process.env.RP_ID;
-  // A human-readable name for your website (e.g. "Passkeys Developer Resources")
+
+  // A human-read able name for your website (e.g. "Passkeys Developer Resources")
   const rpName: string = process.env.RP_NAME;
 
   // Generate one-time-use random bytes for the authenticator to sign
   const challenge: Uint8Array = await pseudocodeGenerateChallenge(currentUser);
+
   // Generate or retrieve a pseudonymous, WebAuthn-specific user identifier as random bytes
   const userID: Uint8Array = await pseudocodeGetWebAuthnUserID(currentUser);
+
   // Get a list of the user's currently registered passkeys to prevent re-registration
   const userCurrentPasskeys: PasskeyModel[] = await pseudocodeGetCurrentPasskeys(currentUser);
 
@@ -157,14 +160,13 @@ in the shape of [`RegistrationResponseJSON`](https://w3c.github.io/webauthn/#dic
  * Check that the WebAuthn registration data represents a well-formed passkey
  */
 async function verifyRegistrationResponse(
-  currentUser: UserModel,
   registrationOptions: PublicKeyCredentialCreationOptionsJSON,
   registrationResponse: RegistrationResponseJSON,
 ): VerifiedRegistration {
   try {
     // TODO: Write basic attestation-less response verification here?
-  } catch (error) {
-    throw new Error(`Couldn't verify registration response`, { cause: error });
+  } catch (err) {
+    throw new Error(`Couldn't verify registration response`, { cause: err });
   }
 
   return {
@@ -195,16 +197,16 @@ type VerifiedRegistration = {
 // The ID of the user's auth session that was created after the user logged in
 const sessionID = request.session.id;
 
-// User data associated with the current auth session
-const currentUser: UserModel = await getUserData(sessionID);
-
 // Retrieve registration options for the current attempt to check for expected values
 const regOptions: PublicKeyCredentialCreationOptionsJSON =
   await pseudocodeRetrieveAndDeleteRegistrationOptions(sessionID);
 
+// Assume `RegistrationResponseJSON` was sent back as JSON via a POST command
+const regResponse = request.body;
+
 let passkey;
 try {
-  const verification = await verifyRegistrationResponse(currentUser, regOptions, regResponse);
+  const verification = await verifyRegistrationResponse(regOptions, regResponse);
   passkey = verification.passkey;
   // User successfully registered a passkey, continue
 } catch (err) {
@@ -217,6 +219,9 @@ Assuming successful creation, information about the newly-created passkey
 should then get stored as a `PasskeyModel` record in the database:
 
 ```ts
+// User data associated with the current auth session
+const currentUser: UserModel = await getUserData(sessionID);
+
 /**
  * - Use `currentUser` for the foreign key needed for `PasskeyModel.user`
  * - Use `regOptions.user.id` for `PasskeyModel.webauthnUserID`
@@ -225,9 +230,176 @@ should then get stored as a `PasskeyModel` record in the database:
 await pseudocodeSaveNewPasskey(currentUser, regOptions, passkey);
 ```
 
+The user is now ready to use their passkey for subsequent authentication.
+
 ## 3. Generate authentication options
 
+For similar reasons, authentication options generation should aim to return a value
+shaped like [`PublicKeyCredentialRequestOptionsJSON`](https://w3c.github.io/webauthn/#dictdef-publickeycredentialrequestoptionsjson).
+This will simplify the work of sending these options to the front end as JSON:
+
+```ts
+/**
+ * Create authentication options for a user to sign in with a passkey
+ */
+async function generateAuthenticationOptions(
+  currentUser?: UserModel,
+): PublicKeyCredentialRequestOptionsJSON {
+  // This must be the same value specified during registration (e.g. "passkeys.dev")
+  const rpID: string = process.env.RP_ID;
+
+  // Generate one-time-use random bytes for the authenticator to sign
+  const challenge: Uint8Array = await pseudocodeGenerateChallenge(currentUser);
+
+  // If you know the user that's trying to log in then get the list of passkeys they can use
+  // Hint: You won't know the user if you're using conditional UI...
+  let userCurrentPasskeys: PasskeyModel[] = [];
+  if (currentUser) {
+    userCurrentPasskeys = await pseudocodeGetCurrentPasskeys(currentUser);
+  }
+
+  return {
+    rpId: rpID,
+    challenge: pseudocodeBytesToBase64URLString(challenge),
+    allowCredentials: userCurrentPasskeys.map((passkey) => ({
+      id: passkey.id,
+      transports: passkey.transports,
+      type: 'public-key',
+    })),
+    userVerification: 'preferred',
+  }
+}
+```
+
+Generate options, then store them for *someone* to use to log in with a registered passkey:
+
+```ts
+// The ID of an UNAUTHENTICATED user session, established when a user hits the login page
+const unknownUserSessionID = request.session.id;
+
+// User data associated with the provided account identifier (email, username, etc...)
+let currentUser: UserModel | undefined = undefined;
+if (enteredAccountID) {
+  currentUser = await getUserData(enteredAccountID);
+}
+
+const authOptions = await generateAuthenticationOptions(currentUser);
+
+// Persist the options so we can reference values in them during verification
+await pseudocodeSaveAuthenticationOptions(unknownUserSessionID, authOptions);
+```
+
+Send these options to the {{< link "./frontend.md" >}}frontend{{< /link >}} to have the user attempt to log in.
+
+{{< alert type="info" >}}
+WebAuthn is capable of handling both "passwordless" and "usernameless" authentication flows:
+
+- **Passwordless** authentication often starts with the user typing in an account identifier.
+  In this flow the Relying Party should populate `allowCredentials` with that user's
+  registered passkeys to lean on the browser to help the user understand when they have a passkey
+  for the site.
+
+- **Usernameless** authentication involves initiating a WebAuthn authentication attempt
+  without any upfront knowledge about the user's identity.
+  Instead, the user first chooses to use a registered passkey in response to a WebAuthn call
+  with an empty `allowCredentials.`
+  Next the website checks that it recognizes the passkey ID,
+  verifies the signature in the response with the public key for that passkey,
+  then logs the user in as whatever user is assigned to `PasskeyModel.user`
+  when the passkey was created.
+{{< /alert >}}
+
 ## 4. Verify authentication responses
+
+Assuming successful use of WebAuthn to generate an authentication response on the frontend,
+the Relying Party should now verify the instance of
+[`AuthenticationResponseJSON`](https://w3c.github.io/webauthn/#dictdef-authenticationresponsejson):
+
+```ts
+/**
+ * Make sure the authentication response is valid for the specified, registered passkey
+ */
+async function verifyAuthenticationResponse(
+  authOptions: PublicKeyCredentialRequestOptionsJSON,
+  authResponse: AuthenticationResponseJSON,
+  registeredPasskey: PasskeyModel,
+): VerifiedAuthentication {
+  try {
+    // TODO: Write basic authentication verification here?
+  } catch (err) {
+    throw new Error(`Couldn't verify authentication response`, { cause: err });
+  }
+
+  return {
+    passkey: {
+      id: registeredPasskey.id,
+      newCounter: 0,
+      backupEligible: true,
+      backupStatus: true,
+    },
+  }
+}
+
+type VerifiedAuthentication = {
+  passkey: {
+    id: Base64URLString;
+    newCounter: number;
+    backupEligible: boolean;
+    backupStatus: boolean;
+  }
+};
+```
+
+Call the method, then log the user in upon successful verification:
+
+```ts
+// The ID of an UNAUTHENTICATED user session, established when a user hits the login page
+const unknownUserSessionID = request.session.id;
+
+// Retrieve registration options for the current attempt to check for expected values
+const authOptions: PublicKeyCredentialRequestOptionsJSON =
+  await pseudocodeRetrieveAndDeleteAuthenticationOptions(unknownUserSessionID);
+
+// Assume `AuthenticationResponseJSON` was sent back as JSON via a POST command
+const authResponse = request.body;
+
+// Make sure the credential ID specified in the response is one the site recognizes
+let registeredPasskey: PasskeyModel;
+try {
+  registeredPasskey = await pseudocodeGetRegisteredPasskey(authResponse.id);
+} catch (err) {
+  console.error(err);
+  // Something went wrong, notify the user accordingly
+  throw new Error('Unrecognized passkey ID');
+}
+
+// Now try to verify the response
+let passkey;
+try {
+  const verification = await verifyAuthenticationResponse(
+    authOptions,
+    authResponse,
+    registeredPasskey,
+  );
+  passkey = verification.passkey;
+  // User successfully registered a passkey, continue
+} catch (err) {
+  console.error(err);
+  // Something went wrong, notify the user accordingly
+}
+```
+
+Assuming successful verification, log the user in and update information about the passkey:
+
+```ts
+// "Log the user in", whatever that looks like for your site
+request.session.user = await pseudocodeGetUserForPasskeyID(passkey.id);
+
+// Update `PasskeyModel.counter` and `PasskeyModel.backupStatus` in the database
+await pseudocodeUpdatePasskeyRecord(passkey);
+```
+
+The user has now successfully used a passkey to log in.
 
 ## Third-Party Libraries
 
