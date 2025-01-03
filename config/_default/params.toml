@@ -33,11 +33,11 @@
     locale = "en-US"
     github = "https://github.com/passkeydeveloper/passkeys.dev"
     [logo]
-        url = "/img/share-cover.png"
+        url = "img/share-cover.png"
         width = 1280
         height = 640
     [image]
-        url = "/img/share-cover.png"
+        url = "img/share-cover.png"
         width = 1280
         height = 640
 
