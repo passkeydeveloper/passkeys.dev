@@ -55,38 +55,54 @@
   parent = "Links"
   name = "Docs"
   pageRef = "/docs/"
-  weight = 1
+  weight = 10
 
 [[footer]]
   parent = "Links"
   name = "About"
   pageRef = "/about/"
-  weight = 10
+  weight = 20
 
 [[footer]]
   parent = "Links"
   name = "Device Support"
   pageRef = "/device-support/"
-  weight = 20
-
-[[footer]]
-  name = "Resources"
   weight = 30
 
 [[footer]]
-  parent = "Resources"
-  name = "Feature Detect"
-  url = "https://featuredetect.passkeys.dev"
-  weight = 10
+  name = "Resources"
+  weight = 20
 
 [[footer]]
   parent = "Resources"
   name = "Passkey Central"
   url = "https://passkeycentral.org"
+  weight = 10
+
+[[footer]]
+  parent = "Resources"
+  name = "Dev Discussions"
+  pageRef = "https://passkeys.dev/discuss"
   weight = 20
 
 [[footer]]
   parent = "Resources"
-  name = "Developer Discussions"
-  pageRef = "https://passkeys.dev/discuss"
+  name = "FIDO Alliance"
+  pageRef = "https://fidoalliance.org"
   weight = 30
+
+[[footer]]
+  name = "Tools"
+  weight = 30
+
+[[footer]]
+  parent = "Tools"
+  name = "Client Feature Detect"
+  url = "https://featuredetect.passkeys.dev"
+  weight = 10
+
+[[footer]]
+  parent = "Tools"
+  name = "WebAuthn Response Decoder"
+  url = "https://debugger.simplewebauthn.dev/"
+  weight = 20
