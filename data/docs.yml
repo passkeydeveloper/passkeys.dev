@@ -18,7 +18,8 @@
 - title: Tools & Libraries
   pages:
     - title: Libraries
-    - title: Test Sites
+    - title: Test & Demo Sites
+      link: test-sites
 
 
 - title: Reference
@@ -34,8 +35,3 @@
     - title: Specifications
       link: specs
     - title: Terms
-
-- title: Demos
-  pages:
-    - title: Demos Sites
-      link: ../demos-examples/demos.md
