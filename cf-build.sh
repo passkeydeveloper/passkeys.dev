@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ "$CF_PAGES_BRANCH" == "production" ]; then
     git fetch --unshallow && hugo --gc --minify
 
