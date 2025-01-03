@@ -1,6 +1,6 @@
 {
     "version": "0.2",
-    "ignorePaths": [],
+    "ignorePaths": ["static/_redirects"],
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [],

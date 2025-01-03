@@ -1,10 +1,27 @@
 # Custom Dictionary Words
+Bluesky
 cdaps
+chromeos
+cloudflareinsights
 CTAP
+Descope
+errorf
 geolocation
+gethinode
+getstarted
+Hanko
+hinode
+isset
 Keychain
 lastmod
+nosniff
+opengraph
+reauth
 Reauthentication
+SAMEORIGIN
+unshallow
 upsell
 UVRA
 webauthn
+webshare
+Yubico
