@@ -1,3 +1,3 @@
 {{ with .GitInfo }}
-Last Updated: <a href="{{ site.Params.docs.github | default site.Params.schema.github }}/commit/{{ .Hash }}">{{ .AuthorDate.Format "Jan 02, 2006" }}</a>
+Last Updated: <a href="{{ site.Params.docs.github | default site.Params.schema.github }}/commit/{{ .Hash }}" target="_blank">{{ .AuthorDate.Format "Jan 02, 2006" }}</a>
 {{ end -}}
