@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Running pre-commit checks..."
+markdownlint-cli2 "*.md" "content/**/*.md"
