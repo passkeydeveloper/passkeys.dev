@@ -69,6 +69,12 @@ See [_Autofill UI_](#autofill-ui)
 
 See [_Autofill UI_](#autofill-ui)
 
+## Credential Exchange
+
+A standardized process to securely transfer passkeys, passwords, and other types of information from one [passkey provider](#passkey-provider) to another.
+
+{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to the FIDO Credential Exchange Specifications" href="https://fidoalliance.org/specifications-credential-exchange-specifications/" >}}FIDO Credential Exchange Specifications{{< /button >}}
+
 ## Device-bound passkey
 
 A FIDO2 [Discoverable Credential](#discoverable-credential) that is bound to a single authenticator. For example, FIDO2 security keys typically hold device-bound passkeys as the credential cannot leave the device. Device-bound passkeys have been previously referred to as _single-device passkeys_.
