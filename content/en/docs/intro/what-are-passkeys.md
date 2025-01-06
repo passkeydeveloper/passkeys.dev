@@ -23,7 +23,7 @@ aliases:
         A passkey is only stored on a user’s devices. [Relying Party (RP)](/docs/reference/terms/#relying-party-rp) servers store public keys. Even servers that assist in the syncing of passkeys across a user’s devices never have the ability to view or use the private keys for a user's passkeys.
     {{< /card >}}
     {{< card title="Phishing-resistant" icon="fa-solid fa-user-shield" align="center">}}
-        Rather than trust being rooted in a human who has to verify they’re signing into the right website or app, browser, and operating systems enforce that passkeys are only ever used for the appropriate service.
+        Rather than trust being rooted in a human who has to verify they’re signing into the right website or app; browser, and operating systems enforce that passkeys are only ever used for the appropriate service.
     {{< /card >}}
 {{< /card-group >}}
 
