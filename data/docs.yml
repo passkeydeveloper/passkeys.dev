@@ -26,7 +26,7 @@
   pages:
     - title: Android
     - title: "iOS & iPadOS"
-      link: iOS
+      link: ios
     - title: Chrome OS
       link: chromeos
     - title: macOS
