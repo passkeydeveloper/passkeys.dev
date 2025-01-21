@@ -28,7 +28,7 @@ CTAP is implemented by authenticator and device vendors and abstracts away all o
 
 ***Current Version***: [CTAP 2.1](https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html)
 
-***Next Version***: [CTAP 2.2 (Review Draft 01)](https://fidoalliance.org/specs/fido-v2.2-rd-20230321/fido-client-to-authenticator-protocol-v2.2-rd-20230321.html)
+***Next Version***: [CTAP 2.2 (Review Draft 02)](https://fidoalliance.org/specs/fido-v2.2-rd-20241003/fido-client-to-authenticator-protocol-v2.2-rd-20241003.html)
 
 The next version of CTAP is currently under development at the FIDO Alliance.
 
