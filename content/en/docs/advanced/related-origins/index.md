@@ -20,7 +20,7 @@ To address these use cases, it is recommended to leverage industry-standard fede
 
 Many global organizations utilize [country code top level domains (ccTLDs)](https://icannwiki.org/Country_code_top-level_domain#Current_ccTLDs) to cater to their international services. For instance, a shopping website might use `shopping.com` for users in the United States, while also having `shopping.ca` for Canada, `shopping.co.uk` for the United Kingdom, `shopping.ie` for Ireland, and `shopping.sg` for Singapore, among others. However, a passkey created on `shopping.com` can't be used  on `shopping.sg`, and vice versa.
 
-### Alternate Branding
+### Alternative Branding
 
 Some organizations offer additional services with different or extended branding and share the same accounts. For instance, a shopping site might have their own credit card or their own travel services, which are accessed via different websites.
 
