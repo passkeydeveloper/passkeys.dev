@@ -84,11 +84,9 @@ Passkeys created in **macOS** can be used on:
           <span class="fs-6 text-muted">v9+</span>
       </td>
       <td class="text-center">
-        {{< fa fa-calendar-plus fa-xl mb-2>}}
+       {{< fas fa-circle-check fa-xl mb-2 text-success >}}
           <br />
-          <span class="fs-6">
-            Planned <sup><a href="#fn1">1</a></sup>
-          </span>
+          <span class="fs-6 text-muted">v129+</span>
       </td>
       <td class="text-center">
         {{< fas fa-circle-check fa-xl mb-2 text-success >}}
