@@ -134,11 +134,9 @@ Passkeys created in **macOS** can be used on:
             </span>
       </td>
       <td class="text-center">
-        {{< fa fa-calendar-plus fa-xl mb-2 text-dark>}}
-          <span class="fs-6">
-            <br />
-            Planned
-          </span>
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <br />
+          <span class="fs-6 text-muted">v129+</span>
       </td>
       <td class="text-center">
         {{< fas fa-circle-check fa-xl mb-2 text-success >}}
