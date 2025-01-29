@@ -34,8 +34,6 @@ The following is also possible in both Windows 10 and Windows 11 (earlier than 2
 
 ## Platform Notes
 
-- The [authenticatorAttachment property of responses](https://w3c.github.io/webauthn/#dom-publickeycredential-authenticatorattachment), planned for specification delivery in WebAuthn L3, is not currently available in responses to `navigator.credentials.get` when using the platform authenticator or a hardware security key. It is supplied during credential creation, or when using [FIDO Cross-Device Authentication](/terms/#cross-device-authentication-cda) for an authentication ceremony.
-
 ### Cross-Device Authentication
 
 Starting in Windows 11 version 23H2, [FIDO Cross-Device Authentication (CDA)](/terms#cross-device-authentication-cda) is supported globally at the operating system level and available for all apps and browsers. Persistent linking is available between Android devices (authenticator) and Windows 11 23H2+. iOS and iPadOS do not support persistent linking.
@@ -56,4 +54,4 @@ Where these biometrics are not configured or available, both passkey creation an
 
 ## Resources
 
-> Coming Soon
+- [Support for passkeys in Windows (Microsoft)](https://learn.microsoft.com/en-us/windows/security/identity-protection/passkeys/)
