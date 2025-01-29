@@ -48,8 +48,6 @@ WebAuthn credentials created using the platform authenticator in macOS Monterey 
 {{% comment %}}  TODO: cross link to generic content about "upgrading to a passkey" {{% /comment %}}
 To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. macOS will overwrite the legacy credential with a new passkey that will be backed up to iCloud Keychain.
 
-### Browser Behavior
-
 ### WebViews
 
 #### Embedded WebViews
