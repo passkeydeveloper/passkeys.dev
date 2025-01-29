@@ -50,8 +50,6 @@ To replace a legacy platform credential with a passkey, start a credential regis
 
 ### Browser Behavior
 
-**Edge**: credentials created by Edge are currently [***device-bound*** passkeys](/terms/#device-bound-passkey), are not backed up to iCloud Keychain, and are ***not available outside of Edge***.
-
 ### WebViews
 
 #### Embedded WebViews
