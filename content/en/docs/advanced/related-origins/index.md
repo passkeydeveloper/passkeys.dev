@@ -132,6 +132,8 @@ The [Device Support matrix](/device-support/#ror) lists the browsers which suppo
 
 To dynamically detect support for Related Origin Requests on an enrollment or login page, Relying Parties should check for `relatedOrigins` in the [WebAuthn Get Client Capabilities (`PublicKeyCredential.getClientCapabilities()`)](https://w3c.github.io/webauthn/#sctn-getClientCapabilities) response.
 
+If Related Origin Requests is not supported by the client, fallback logic can be used. See [Existing Deployments](#existing-deployments) below.
+
 ### Relying Party Changes
 
 A JSON document must be hosted at the WebAuthn well-known path for the Relying Party ID, `/.well-known/webauthn`.
@@ -177,7 +179,7 @@ It is recommended to pick the most commonly used and/or understood domain for th
 
 ### Existing Deployments
 
-For deployments where passkeys are already rolled out with multiple RP IDs, there are some unique considerations and requirements.
+For deployments where passkeys are already rolled out with multiple RP IDs or in cases where Related Origin Requests is not supported by the browser, there are some unique considerations and requirements.
 
 #### Considerations
 
