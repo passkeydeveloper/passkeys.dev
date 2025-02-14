@@ -19,7 +19,7 @@
     fixed = true
 
 [footer]
-    license = '<a href="about/#copyright-and-attributions">CC BY-NC-ND 4.0</a>'
+    license = '<a href="/about/#copyright-and-attributions">CC BY-NC-ND 4.0</a>'
     description = 'This site is brought to you by members of the <a href="https://www.w3.org/community/webauthn-adoption/" target="_blank">W3C WebAuthn Community Adoption Group</a> and the <a href="https://fidoalliance.org/" target="_blank">FIDO Alliance.</a>'
 
 [favicon]
