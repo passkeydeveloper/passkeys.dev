@@ -201,8 +201,10 @@ This flow assumes the [autofill UI](/docs/reference/terms/#autofill-ui) for pass
 3. If the the user enters a username and continues:
       - abort the conditional WebAuthn request
       - send a request to your backend to retrieve the RP ID for the username
-4. Fetch fresh WebAuthn parameters from the backend
-5. Call WebAuthn with the fresh parameters and the correct RP ID
+4. Redirect the user to the origin matching the RP ID (typically using a federation protocol)
+5. Fetch fresh WebAuthn parameters from the backend
+6. Call WebAuthn with the fresh parameters and the correct RP ID
+7. Redirect the user back to the original origin with the necessary artifacts (typically a federated assertion or token)
 
 #### Example
 
@@ -213,7 +215,7 @@ In this example, passkeys have previously been rolled out to the following users
 
 A user with a passkey for `shopping.com` navigates to `https://shopping.com`, clicks into the username field, selects their passkey, performs user verification, and is then signed in!
 
-A user with a passkey for `shopping.co.uk` has traveled to the US and navigates to `https://shopping.co.uk`. Based on location data, the user is redirected to `https://shopping.com`. They click into the username field and do not see any passkey available. They then type their username and click continue. A backend lookup occurs, and WebAuthn is now invoked with an RP ID of `shopping.co.uk` and the user selects their passkey, performs user verification, and is signed in!
+A user with a passkey for `shopping.co.uk` has traveled to the US and navigates to `https://shopping.co.uk`. Based on location data, the user is redirected to `https://shopping.com`. They click into the username field and do not see any passkey available. They then type their username and click continue. A backend lookup occurs, the user is redirected to `https://shopping.co.uk`, WebAuthn is now invoked with an RP ID of `shopping.co.uk`, the user selects their passkey, performs user verification, and is redirected back to `https://shopping.com`!
 
 ## Additional Information
 
