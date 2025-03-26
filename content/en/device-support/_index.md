@@ -64,7 +64,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
       <td class="text-center">
         {{< fas fa-circle-check fa-xl mb-2 text-success >}}
           <br />
-          <span class="fs-6 text-muted"> v13+ <sup><a href="#fn2">2</a></sup>
+          <span class="fs-6 text-muted"> v13+</span>
       </td>
       <td class="text-center">
         {{< fa fa-circle-check fa-xl mb-2>}}
