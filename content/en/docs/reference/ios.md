@@ -17,11 +17,11 @@ layout: docs
 
 ## Overview
 
-The platform authenticators in iOS 16+ and iPadOS 16+ have the following capabilities:
+The default platform authenticator in iOS 16+ and iPadOS 16+, Apple Passwords, has the following capabilities:
 
-- creating and using passkeys that are backed up to iCloud Keychain
+- creating and using passkeys saved to Apple Passwords
 - creating and using passkeys on/from another device, such as:
-  - an iPhone or iPad signed in to a different iCloud account, using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
+  - an iPhone or iPad signed in to a different Apple Account, using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
   - an Android phone or tablet, using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
   - a FIDO2 security key{{< sup 1 >}}
 - using a passkey from the local iOS or iPadOS device to sign into services on another device (such as a laptop or desktop), using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
@@ -44,8 +44,8 @@ iOS and iPadOS devices (as authenticators) do not support persistent linking for
 
 WebAuthn credentials created using the platform authenticator in iOS/iPadOS 15 and earlier ***will not*** not be converted to passkeys but will remain available for the lifetime of the device.
 
-{{% comment %}} TODO: cross link to generic content about "upgrading to a passkey" {{% /comment %}}
-To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. iOS/iPadOS will overwrite the legacy credential with a new passkey that will be backed up to iCloud Keychain.
+<!-- TODO: cross link to generic content about "upgrading to a passkey" -->
+To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. iOS/iPadOS will overwrite the legacy credential with a new passkey that will be saved to Apple Passwords.
 
 ### WebViews
 
@@ -61,7 +61,7 @@ To replace a legacy platform credential with a passkey, start a credential regis
 
 {{< button color="light" size="sm" icon="fab fa-apple" cue=false order="first" tooltip="Go to the Apple developer docs" href="https://developer.apple.com/documentation/webkit/wkwebview" >}}WKWebView docs @ Apple Developer{{< /button >}}
 
-{{% comment %}} TODO: add screenshot example {{% /comment %}}
+<!-- TODO: add screenshot example -->
 
 #### System WebViews
 
@@ -71,7 +71,7 @@ Sites loaded in `ASWebAuthenticationSession` are isolated from the calling app a
 
 {{< button color="light" size="sm" icon="fab fa-apple" cue=false order="first" tooltip="Go to the Apple developer docs" href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" >}}ASWebAuthenticationSession docs @ Apple Developer{{< /button >}}
 
-{{% comment %}} TODO: add screenshot example {{% /comment %}}
+<!-- TODO: add screenshot example -->
 
 ### User Verification Behavior
 
