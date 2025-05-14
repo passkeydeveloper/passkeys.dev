@@ -622,31 +622,6 @@ This matrix represents the default capabilities for a user out of the box. Addit
           {{< fas fa-circle-check fa-xl mb-2 text-success>}}
         </td>
       </tr>
-      <tr class="align-top">
-        <td class="fw-bold">
-          <a href="../docs/reference/terms/#attestation" target="_blank">
-            Synced Passkey Attestation
-          </a>
-        </td>
-        <td class="text-center">
-          {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
-            <br />
-            <span class="fs-6 text-muted">Not Supported</span>
-        </td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-        <td class="text-center">
-          {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
-            <br />
-            <span class="fs-6 text-muted">Not Supported</span>
-        </td>
-        <td class="text-center">
-          {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
-            <br />
-            <span class="fs-6 text-muted">Not Supported</span>
-        </td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-      </tr>
     </thead>
   </table>
 </div>
