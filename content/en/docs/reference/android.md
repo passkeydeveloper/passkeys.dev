@@ -35,16 +35,9 @@ Android devices can be an [authenticator](/terms/#cda-authenticator) for [FIDO C
 
 Android devices can be persistently linked to the browsers/platforms below:
 
-- Chrome OS
-- Windows 11 23H2
-- Chrome & Edge on Windows 11 <23H2
-- Chrome & Edge on Windows 10
-- Chrome on macOS
-- Edge on macOS
-- Chrome on Ubuntu
-- Edge on Ubuntu
+- Windows 11 23H2+
 
-macOS (Safari and native apps), iOS (global), and iPadOS (global) do not support persistent linking.
+macOS (Safari, Chromium-based browsers, and native apps), iOS (global), and iPadOS (global) do not support persistent linking.
 
 When an authenticator is not persistently linked, a QR code must be scanned on every use.
 
@@ -72,7 +65,7 @@ This is documented at [Android Developer: "Integrate Credential Manager with Web
 
 {{< button color="light" size="sm" icon="fab fa-android" cue=false order="first" tooltip="Go to the Android developer docs" href="https://developer.android.com/develop/ui/views/layout/webapps/webview" >}}WebView docs @ Android Developer{{< /button >}}
 
-{{% comment %}} TODO: add screenshot example {{% /comment %}}
+<!-- TODO: add screenshot example -->
 
 #### System WebViews (SWV)
 
@@ -82,7 +75,7 @@ Sites loaded in `Custom Tabs` are isolated from the calling app and run in the c
 
 {{< button color="light" size="sm" icon="fab fa-android" cue=false order="first" tooltip="Go to the Android developer docs" href="https://developer.chrome.com/docs/android/custom-tabs/guide-get-started" >}}Custom Tabs docs @ Android Developer{{< /button >}}
 
-{{% comment %}} TODO: add screenshot example {{% /comment %}}
+<!-- TODO: add screenshot example -->
 
 ### User Verification Behavior
 
