@@ -19,9 +19,9 @@ layout: docs
 
 The platform authenticator in macOS Ventura (13) has the following capabilities:
 
-- creating and using passkeys that are backed up to iCloud Keychain
+- creating and using passkeys saved to Apple Passwords
 - creating and using passkeys on/from another device, such as:
-  - an iPhone or iPad signed in to a different iCloud account, using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
+  - an iPhone or iPad signed in to a different Apple Account, using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
   - an Android device, using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
   - a FIDO2 security key{{< sup 1 >}}
 
@@ -45,8 +45,8 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 
 WebAuthn credentials created using the platform authenticator in macOS Monterey (12) and earlier ***will not*** be converted to passkeys but will remain available for the lifetime of the device.
 
-{{% comment %}}  TODO: cross link to generic content about "upgrading to a passkey" {{% /comment %}}
-To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. macOS will overwrite the legacy credential with a new passkey that will be backed up to iCloud Keychain.
+<!--  TODO: cross link to generic content about "upgrading to a passkey" -->
+To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. macOS will overwrite the legacy credential with a new passkey that will be saved to Apple Passwords.
 
 ### WebViews
 
@@ -62,7 +62,7 @@ To replace a legacy platform credential with a passkey, start a credential regis
 
 {{< button color="light" size="sm" icon="fab fa-apple" cue=false order="first" tooltip="Go to the Apple developer docs" href="https://developer.apple.com/documentation/webkit/wkwebview" >}}WKWebView docs @ Apple Developer{{< /button >}}
 
-{{% comment %}} TODO: add screenshot example {{% /comment %}}
+<!-- TODO: add screenshot example -->
 
 #### System WebViews
 
@@ -72,7 +72,7 @@ Sites loaded in `ASWebAuthenticationSession` are isolated from the calling app a
 
 {{< button color="light" size="sm" icon="fab fa-apple" cue=false order="first" tooltip="Go to the Apple developer docs" href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" >}}ASWebAuthenticationSession docs @ Apple Developer{{< /button >}}
 
-{{% comment %}}  TODO: add screenshot example {{% /comment %}}
+<!-- TODO: add screenshot example -->
 
 ### User Verification Behavior
 
