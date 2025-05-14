@@ -18,7 +18,7 @@ Platforms also create their own platform-specific abstractions of the WebAuthn A
 
 **Current Version**: [WebAuthn Level 2](https://www.w3.org/TR/webauthn-2/)
 
-***Next Version***: [WebAuthn Level 3](https://w3c.github.io/webauthn/)
+***Next Version***: [WebAuthn Level 3](https://www.w3.org/TR/webauthn-3/)
 
 ## Client to Authenticator Protocol (CTAP)
 
@@ -26,9 +26,7 @@ The FIDO *Client to Authenticator Protocol*, often referred to by its acronym CT
 
 CTAP is implemented by authenticator and device vendors and abstracts away all of the complexity of interacting with authenticators from relying parties and developers.
 
-***Current Version***: [CTAP 2.1](https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html)
-
-***Next Version***: [CTAP 2.2 (Review Draft 02)](https://fidoalliance.org/specs/fido-v2.2-rd-20241003/fido-client-to-authenticator-protocol-v2.2-rd-20241003.html)
+***Current Version***: [CTAP 2.2](https://fidoalliance.org/specs/fido-v2.2-ps-20250228/fido-client-to-authenticator-protocol-v2.2-ps-20250228.html)
 
 The next version of CTAP is currently under development at the FIDO Alliance.
 
