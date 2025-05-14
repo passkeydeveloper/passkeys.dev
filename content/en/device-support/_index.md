@@ -306,7 +306,9 @@ This matrix represents the default capabilities for a user out of the box. Addit
           {{< fas fa-circle-check fa-xl mb-2 text-success >}}
         </td>
         <td class="text-center">
-          {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
+          {{< fa fa-calendar-plus fa-xl mb-2>}}
+            <br />
+            <span class="fs-6">Planned</span>
         </td>
         <td class="text-center">
           {{< fas fa-circle-check fa-xl mb-2 text-success >}}
