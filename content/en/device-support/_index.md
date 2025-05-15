@@ -83,6 +83,8 @@ This matrix represents the default capabilities for a user out of the box. Addit
       <td>
         <a href="../docs/reference/terms/#autofill-ui" target="_blank">
           Browser Autofill UI
+          <br />
+          (Conditional Get)
         </a>
       </td>
       <td class="text-center">
@@ -147,6 +149,103 @@ This matrix represents the default capabilities for a user out of the box. Addit
             Firefox 122+ <sup><a href="#fn3">3</a></sup>
             <br />
             Edge 122+ <sup><a href="#fn3">3</a></sup>
+          </span>
+          <br />
+      </td>
+    </tr>
+    <tr>
+      <td>
+          Passkey Upgrades <sup><a href="#fn8">2</a></sup>
+          <br />
+          (Conditional Create)
+      </td>
+      <td class="text-center">
+        {{< fa fa-calendar-plus fa-xl mb-2>}}
+          <span class="fs-6">
+            <br />
+            Chrome
+            <br />
+          </span>
+          <br />
+          <br />
+          {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
+          <span class="fs-6">
+            <br />
+            Edge
+            <br />
+            Firefox
+          </span>
+      </td>
+      <td class="text-center">
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <br />
+          <span class="fs-6 text-muted">136+ </span><sup><a href="#fn8">2</a></sup>
+      </td>
+      <td class="text-center">
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <span class="fs-6">
+            <br />
+            iOS 18+ <sup><a href="#fn8">2</a></sup>
+            <br />
+            -
+          </span>
+          <span class="fs-6 text-muted">
+            <br />
+            Safari <sup><a href="#fn8">2</a></sup>
+            <br />
+            Chrome <sup><a href="#fn8">2</a></sup>
+            <br />
+            Edge <sup><a href="#fn8">2</a></sup>
+            <br />
+            Firefox <sup><a href="#fn8">2</a></sup>
+          </span>
+      </td>
+      <td class="text-center">
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <span class="fs-6">
+            <br />
+            Safari 18+</span><sup><a href="#fn8">2</a></sup>
+            <br />
+            Chrome 136+ </span><sup><a href="#fn8">2</a></sup>
+            <br />
+            <br />
+        {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
+          <span class="fs-6">
+            <br />
+            Edge
+            <br />
+            Firefox
+          </span>
+      </td>
+      <td class="text-center">
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <br />
+          Chrome 136+ </span><sup><a href="#fn8">2</a></sup>
+          <br />
+          <br />
+          <br />
+        {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
+          <span class="fs-6">
+            <br />
+            Edge
+            <br />
+            Firefox
+          </span>
+      </td>
+      <td class="text-center">
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <span class="fs-6">
+            <br />
+            Chrome 136+ <sup><a href="#fn3">3</a></sup>
+            <br />
+            <br />
+            <br />
+        {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
+          <span class="fs-6">
+            <br />
+            Edge
+            <br />
+            Firefox
           </span>
           <br />
       </td>
@@ -635,6 +734,9 @@ This matrix represents the default capabilities for a user out of the box. Addit
 <div class="text-end mb-5 mt-5">
   <sup id="fn1">1</sup>
   Device-bound passkeys supported
+  <br />
+  <sup id="fn8">2</sup>
+  Also requires support from credential providers
   <br />
   <sup id="fn3">3</sup>
   Windows 11 22H2+
