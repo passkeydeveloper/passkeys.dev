@@ -112,6 +112,12 @@ This matrix represents the default capabilities for a user out of the box. Addit
         {{< fas fa-circle-check fa-xl mb-2 text-success >}}
           <span class="fs-6">
             <br />
+            iOS 16.1+
+            <br />
+            -
+          </span>
+          <span class="fs-6 text-muted">
+            <br />
             Safari
             <br />
             Chrome
@@ -125,7 +131,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
         {{< fas fa-circle-check fa-xl mb-2 text-success >}}
           <span class="fs-6">
             <br />
-            Safari
+            Safari 16.1+
             <br />
             Chrome 108+
             <br />
