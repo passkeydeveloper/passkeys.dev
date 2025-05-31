@@ -67,6 +67,7 @@ The following list of passkey providers have not implemented [User Verification]
 | Bitwarden     | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
 | KeepassXC     | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
 | Okta Personal | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
+| Okta Personal | Native           | ✅ Performs UV                                         | ✅ UV flag accurate                   |
 | Proton Pass   | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
 | Proton Pass   | Native           | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
 | Strongbox     | Native           | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
