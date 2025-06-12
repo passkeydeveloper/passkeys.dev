@@ -99,3 +99,7 @@ The ["Awesome WebAuthn"](https://github.com/herrjemand/awesome-webauthn) GitHub 
 ### Swift
 
 - [Swift WebAuthn](https://github.com/swift-server/swift-webauthn) ([Swift Server Workgroup](https://www.swift.org/sswg/))
+
+### Zig
+
+- [Passcay](https://github.com/uzyn/passcay) (U-Zyn Chua)
