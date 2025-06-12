@@ -63,6 +63,7 @@ context of your project.
 ### TypeScript
 
 - [SimpleWebAuthn](https://simplewebauthn.dev/) (Matthew Miller)
+- [@passwordless-id/webauthn](https://webauthn.passwordless.id) (Arnaud Dagnelies)
 
 ### Java
 
