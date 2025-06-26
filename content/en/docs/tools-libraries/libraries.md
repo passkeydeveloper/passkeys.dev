@@ -77,6 +77,7 @@ The ["Awesome WebAuthn"](https://github.com/herrjemand/awesome-webauthn) GitHub 
 
 - [FIDO2 .NET Library](https://fido2-net-lib.passwordless.dev/) (Anders Åberg, Alex Seigler)
 - [Passkeys for ASP.NET](https://www.identityserver.com/products/fido2-for-aspnet) (IdentityServer.com)
+- [WebAuthn.Net](https://github.com/dodobrands/WebAuthn.Net) (Dodo Brands)
 
 ### Go
 
