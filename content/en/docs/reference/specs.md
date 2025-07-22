@@ -26,8 +26,8 @@ The FIDO *Client to Authenticator Protocol*, often referred to by its acronym CT
 
 CTAP is implemented by authenticator and device vendors and abstracts away all of the complexity of interacting with authenticators from relying parties and developers.
 
-***Current Version***: [CTAP 2.2](https://fidoalliance.org/specs/fido-v2.2-ps-20250228/fido-client-to-authenticator-protocol-v2.2-ps-20250228.html)
+***Current Version***: [CTAP 2.2](https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html)
+
+***Next Version***: CTAP 2.3
 
 The next version of CTAP is currently under development at the FIDO Alliance.
-
-In the context of passkeys, CTAP 2.2 adds support for the hybrid transport, more commonly known as the FIDO Cross-Device Authentication flow, allowing a passkey to be used to sign in on another device (ex: passkey on Android signing into a service on Windows).
