@@ -47,6 +47,12 @@ The technical name for this feature in the WebAuthn and Credential Management sp
    Credential Management Spec Reference
 {{< /button >}}
 
+## Credential Manager
+
+The general term for a software or hardware component that securely stores, manages, and controls access to digital credentials and secrets, such as passkeys, passwords, OTP seeds, and verifiable digital credentials (VDCs).
+
+More specific examples of credential managers include password managers, digital identity wallets, [passkeys providers](#passkey-provider), and authenticators.
+
 ## Cross-Device Authentication (CDA)
 
 FIDO Cross-Device Authentication (CDA) allows a passkey from one device to be used to sign in on another device. For example, your phone can be linked to your laptop, allowing you to use a passkey from your phone to sign into a service on your laptop.
@@ -89,7 +95,7 @@ A Discoverable Credential (known in previous version of WebAuthn as a "resident 
 
 ## First-Party Passkey Provider
 
-A [Passkey Provider](#passkey-provider) that is provided by the OS platform vendor and is often enabled by default. Examples include "Windows Hello" on Windows, "Apple iCloud Keychain" on macOS and iOS, and "Google Password Manager" on most Android devices.
+A [Passkey Provider](#passkey-provider) that is provided by the OS platform vendor and is often enabled by default. Examples include "Windows Hello" on Windows, "Apple Passwords" on macOS and iOS, and "Google Password Manager" or "Samsung Pass" on Android devices.
 
 ## Login challenge
 
@@ -119,7 +125,7 @@ From the technical side, there are two flavors of passkeys: [synced](#synced-pas
 
 ## Passkey Provider
 
-An app and/or service that is responsible for storing and managing passkeys. Many operating systems include a default passkey provider ([first-party](#first-party-passkey-provider)), and many also support [third-party](#third-party-passkey-provider) providers.
+An app and/or service that is responsible for storing and managing passkeys. Many operating systems include a default passkey provider ([first-party](#first-party-passkey-provider)), and many also support [third-party](#third-party-passkey-provider) providers. A passkey provider is a type of [credential manager](#credential-manager).
 
 ## Persistent Linking
 
