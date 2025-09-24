@@ -12,6 +12,8 @@
 
 - title: Advanced
   pages:
+    - title: Client Hints
+      link: client-hints
     - title: Related Origin Requests
       link: related-origins
 
