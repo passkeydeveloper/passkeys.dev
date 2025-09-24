@@ -568,7 +568,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
       </tr>
       <tr class="align-top">
         <td class="fw-bold">
-          <a href="https://w3c.github.io/webauthn/#enum-hints" target="_blank">Client Hints</a>
+          <a href="../docs/advanced/client-hints/" target="_blank">Client Hints</a>
         </td>
         <td class="text-center">
           {{< fas fa-circle-check fa-xl mb-2 text-success>}}

@@ -25,3 +25,4 @@ UVRA
 webauthn
 webshare
 Yubico
+xmark
