@@ -25,7 +25,7 @@ A [Relying Party (RP)](#relying-party-rp) authenticates a user without any prior
 
 Attestation is an optional statement provided by an authenticator which can be used by a Relying Party to identify and verify the provenance of the authenticator.
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/2021/REC-webauthn-2-20210408/#sctn-attestation" >}}WebAuthn Spec Reference{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/2021/REC-webauthn-2-20210408/#sctn-attestation" >}}WebAuthn Spec Reference{{< /button >}}
 
 ## Authentication factor
 
@@ -41,9 +41,9 @@ This UI element provides a list of passkeys that are available for the [Relying 
 
 The technical name for this feature in the WebAuthn and Credential Management specifications is "Conditional Mediation".
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://w3c.github.io/webauthn/#dom-publickeycredential-isconditionalmediationavailable" >}}WebAuthn Spec Reference{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://w3c.github.io/webauthn/#dom-publickeycredential-isconditionalmediationavailable" >}}WebAuthn Spec Reference{{< /button >}}
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the Credential Management specification" href="https://w3c.github.io/webappsec-credential-management/#mediation-requirements">}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the Credential Management specification" href="https://w3c.github.io/webappsec-credential-management/#mediation-requirements">}}
    Credential Management Spec Reference
 {{< /button >}}
 
@@ -79,7 +79,7 @@ See [_Autofill UI_](#autofill-ui)
 
 A standardized process to securely transfer passkeys, passwords, and other types of information from one [passkey provider](#passkey-provider) to another.
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to the FIDO Credential Exchange Specifications" href="https://fidoalliance.org/specifications-credential-exchange-specifications/" >}}FIDO Credential Exchange Specifications{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to the FIDO Credential Exchange Specifications" href="https://fidoalliance.org/specifications-credential-exchange-specifications/" >}}FIDO Credential Exchange Specifications{{< /button >}}
 
 ## Device-bound passkey
 
@@ -91,7 +91,7 @@ A Discoverable Credential (known in previous version of WebAuthn as a "resident 
 
 [Passkeys](#passkey) are Discoverable Credentials.
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#discoverable-credential" >}}WebAuthn Spec Reference{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#discoverable-credential" >}}WebAuthn Spec Reference{{< /button >}}
 
 ## First-Party Passkey Provider
 
@@ -139,7 +139,7 @@ Both the client and authenticator must support the functionality.
 
 A FIDO authenticator that is built-in to a user's device.
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#sctn-authenticator-taxonomy" >}}WebAuthn Spec Reference{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#sctn-authenticator-taxonomy" >}}WebAuthn Spec Reference{{< /button >}}
 
 ## Reauthentication
 
@@ -151,13 +151,13 @@ For example, this can happen before making sensitive changes to an account (addi
 
 The website that is trying to ascertain and verify the identity of the user or perform FIDO authentication.
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#webauthn-relying-party" >}}WebAuthn Spec Reference{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#webauthn-relying-party" >}}WebAuthn Spec Reference{{< /button >}}
 
 ## Roaming authenticator
 
 A FIDO authenticator usable with any device the user is trying to sign-in from. Roaming authenticators attach to users' devices in using USB, NFC, and/or Bluetooth. These authenticators are often referred to as "security keys". A smartphone can also act as a roaming authenticator using [FIDO Cross-Device Authentication](#cross-device-authentication-cda).
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#sctn-authenticator-taxonomy" >}}WebAuthn Spec Reference{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#sctn-authenticator-taxonomy" >}}WebAuthn Spec Reference{{< /button >}}
 
 ## Signing in
 
@@ -181,16 +181,16 @@ A [Passkey Provider](#passkey-provider) that plugs in to the OS via platform API
 
 A test of User Presence (UP) is used to ensure the user is in local proximity to the authenticator during an authentication or credential creation ceremony. UP is often satisfied by pressing a button or metallic area of a security key, or interacting with a platform authenticator on a device.
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#test-of-user-presence" >}}WebAuthn Spec Reference{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#test-of-user-presence" >}}WebAuthn Spec Reference{{< /button >}}
 
 ## User Verification (UV)
 
 User Verification (UV) requires the user to either perform a biometric gesture, enter the device PIN, or enter the device password for the authenticator to authorize creation and/or use of the credential.
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#user-verification" >}}WebAuthn Spec Reference{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#user-verification" >}}WebAuthn Spec Reference{{< /button >}}
 
 ## User-Verifying Roaming Authenticator
 
 A User-Verifying Roaming Authentication (UVRA), also known as a first-factor roaming authenticator, can [verify individual](#user-verification-uv) users through the use of biometrics, or through the user entering a device PIN. An important class of UVRAs are smartphones, in which case the “attachment” typically happens over a wireless connection.
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#first-factor-roaming-authenticator" >}}WebAuthn Spec Reference{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-2/#first-factor-roaming-authenticator" >}}WebAuthn Spec Reference{{< /button >}}
