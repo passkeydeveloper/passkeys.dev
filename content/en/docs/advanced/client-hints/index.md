@@ -10,9 +10,9 @@ layout: docs
 
 When creating a passkey, WebAuthn Clients display a credential manager selection screen asking users to choose where to store their new passkey. The selector typically defaults to local credential managers because they offer immediate availability and support for synced passkeys, the default credential type in unmanaged, consumer contexts.
 
-During a sign in flow, the WebAuthn client will do its best to help the user select a passkey which is immediately available, and fall back to an external authenticator selection screen. This typically shows an option for [FIDO Cross-Device Authentication](../reference/terms/#cross-device-authentication-cda) and security keys. In environments where only security keys are allowed, having additional options can confuse users and lead to unnecessary steps.
+During a sign in flow, the WebAuthn Client will do its best to help the user select a passkey which is immediately available, and fall back to an external authenticator selection screen. This typically shows an option for [FIDO Cross-Device Authentication](../reference/terms/#cross-device-authentication-cda) and security keys. In environments where only security keys are allowed, having additional options such as displaying a QR code for cross-device authentication flows can confuse users and lead to unnecessary support costs.
 
-The WebAuthn Client Hints feature allows a Relying Party to request a more predictable experience based on their requirements. It is important to note that this is only a hint, and is not used to enforce security policy.
+The WebAuthn Client Hints feature allows a Relying Party to request a more predictable experience based on their requirements. It is important to note that this is only a hint, and is not used to enforce security policy. Any requirements around security policy enforcement are the responsibility of the Relying Party and should be factored in to response processing in both the registration and authentication flows.
 
 ## Use Cases and Usage
 
@@ -63,9 +63,10 @@ Simply adapt your existing passkey creation flow to use the hints parameter as s
         hints: [ "security-key" ], // this is the WebAuthn Client Hints parameter
         authenticatorSelection: {
           residentKey: "required",
-          userVerification: "preferred",
+          userVerification: "required",
           authenticatorAttachment: "cross-platform"
-        }
+        },
+        attestation: "direct"
       }
     });
     // omitted
@@ -106,15 +107,16 @@ Sample code:
         hints: [ "security-key" ],
         authenticatorSelection: {
           residentKey: "required",
-          userVerification: "preferred",
+          userVerification: "required",
           authenticatorAttachment: "cross-platform"
-        }
+        },
+        attestation: "direct"
       }
     });
     // omitted
   };
 
-    async function createPasskeyOnLocalDevice() {
+  async function createPasskeyOnLocalDevice() {
     const credential = await navigator.credentials.create({
       publicKey: {
         challenge: "challenge-from-server",
@@ -127,7 +129,8 @@ Sample code:
           residentKey: "required",
           userVerification: "preferred",
           authenticatorAttachment: "platform"
-        }
+        },
+        attestation: "direct"
       }
     });
     // omitted
@@ -154,7 +157,7 @@ Sample code for scenario 1:
 ```html
 <!-- additional code omitted -->
 
-<button type="button" onclick="signIn()">Sign in with a passkey</button>
+<button type="button" onclick="signIn()">Use your USB security key</button>
 
 <!-- additional code omitted -->
 
@@ -175,7 +178,7 @@ Sample code for scenario 1:
 
 ##### Scenario 2
 
-In scenario 2, an identifier-first flow is used where the user enters their username, and a request is made to the server for a list of credential IDs for the user. These are then passed in to the WebAuthn request (along with their transports) in the `allowCredentials` list. If only passkeys on security keys are included, the WebAuthn Client will show the security key experience.
+In scenario 2, an identifier-first flow is used where the user enters their username, and a request is made to the server for a list of credential IDs for the user. These are then passed to the WebAuthn request (along with their transports) in the `allowCredentials` list. If only passkeys on security keys are included, the WebAuthn Client will show the security key experience.
 
 Sample code:
 
