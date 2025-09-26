@@ -17,6 +17,9 @@
     toc = true
     sidebar = true
     fixed = true
+    [navigation.search]
+        enabled = true
+        modal = false
 
 [footer]
     license = '<a href="/about/#copyright-and-attributions">CC BY-NC-ND 4.0</a>'
