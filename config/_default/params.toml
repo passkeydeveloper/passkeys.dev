@@ -2,13 +2,14 @@
     primary = "#006b60"
 
 [main]
-
     description = "A collection of resources and insights to help you deploy passkeys, including practical user experiences, device ecosystem support, frequently asked questions, and more."
     images = ["/img/share-cover.png"]
-
-[main.externalLinks]
-    cue = false
-    tab = true
+    [main.externalLinks]
+        cue = false
+        tab = true
+    [main.colorMode]
+        enabled = true
+        toggle = false
 
 [navigation]
     logo = "/img/logos/pdd-logo-color-nopad-light.svg"
