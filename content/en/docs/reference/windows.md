@@ -7,10 +7,10 @@ layout: docs
 ---
 
 {{< card-group padding="3" gutter="3" cols="2">}}
-    {{< card title="Local Authenticator" align="center" color="body" icon="fa fa-circle-check fa-2xl" style="text-warning">}}
+    {{< card title="Local Authenticator" align="center" color="body" icon="fa fa-circle-check fa-2xl" icon-style="text-warning">}}
         (create and use passkeys from the local device)
     {{< /card >}}
-    {{< card title="External Authenticator" align="center" color="body" icon="fas fa-circle-check fa-2xl" style="text-success">}}
+    {{< card title="External Authenticator" align="center" color="body" icon="fas fa-circle-check fa-2xl" icon-style="text-success">}}
         (create and use passkeys from another device)
     {{< /card >}}
 {{< /card-group >}}

@@ -2,7 +2,6 @@
 title: "Client Hints"
 description: "The WebAuthn Client Hints feature allows a Relying Party to request a more specific credential manager or passkey selection experience from the WebAuthn client."
 date: 2025-09-24T05:07:38.473Z
-type: docs
 layout: docs
 ---
 
@@ -241,4 +240,4 @@ WebAuthn Client Hints support is rolling out across the ecosystem. Details about
 
 A presentation by Tim Cappalli at Authenticate 2024 which dives into a WebAuthn Client's selection logic: ["Peeling back the passkeys onion"](https://blog.timcappalli.me/p/preso-authn24-passkeysonion/).
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-3/#enum-hints" >}}WebAuthn Spec Reference{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-3/#enum-hints" >}}WebAuthn Spec Reference{{< /button >}}

@@ -1,9 +1,17 @@
 {
     "version": "0.2",
-    "ignorePaths": ["static/_redirects"],
+    "ignorePaths": [
+        "static/_redirects"
+    ],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": [],
+    "words": [
+        "cctld",
+        "myshoppingcard",
+        "myshoppingcreditcard",
+        "myshoppingrewards",
+        "myshoppingtravel"
+    ],
     "ignoreWords": [],
     "import": []
 }

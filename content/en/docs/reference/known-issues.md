@@ -16,7 +16,7 @@ According to Samsung documentation ([source](https://www.samsung.com/us/apps/sam
 During testing on 2024-09-05, it was observed that passkeys created in Samsung Pass return the backup eligible flag as false, signaling a [device-bound passkey](terms#device-bound-passkey).
 
 {{< accordion id="accordion-default" >}}
-  {{< accordion-item header="Sample passkey registration from Samsung Pass" show="false" >}}
+  {{< accordion-item title="Sample passkey registration from Samsung Pass" show="false" >}}
 Test device details:
 
 - Galaxy S22
