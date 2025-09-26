@@ -157,7 +157,7 @@ Sample code for scenario 1:
 ```html
 <!-- additional code omitted -->
 
-<button type="button" onclick="signIn()">Sign in with a passkey using your external security key</button>
+<button type="button" onclick="signIn()">Use your USB security key</button>
 
 <!-- additional code omitted -->
 
