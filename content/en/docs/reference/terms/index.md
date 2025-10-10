@@ -75,6 +75,17 @@ See [_Autofill UI_](#autofill-ui)
 
 See [_Autofill UI_](#autofill-ui)
 
+## Conditional Create
+
+A WebAuthn capability which allows a Relying Party to request the creation of a passkey after a successful sign in user another credential from their credential manager, such as a password.
+
+Note:
+
+- The browser, operating system, and credential manager must all support conditional create.
+- `conditionalCreate` in getClientCapabilities() represents only the browser's support for the capability and does signal OS and/or credential manager support.
+
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-3/#sctn-createCredential" >}}WebAuthn Spec Reference{{< /button >}}
+
 ## Credential Exchange
 
 A standardized process to securely transfer passkeys, passwords, and other types of information from one [passkey provider](#passkey-provider) to another.
@@ -126,6 +137,10 @@ From the technical side, there are two flavors of passkeys: [synced](#synced-pas
 ## Passkey Provider
 
 An app and/or service that is responsible for storing and managing passkeys. Many operating systems include a default passkey provider ([first-party](#first-party-passkey-provider)), and many also support [third-party](#third-party-passkey-provider) providers. A passkey provider is a type of [credential manager](#credential-manager).
+
+## Passkey Upgrades
+
+See [_Conditional Create_](#conditional-create).
 
 ## Persistent Linking
 
