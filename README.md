@@ -5,7 +5,7 @@
 The following dependencies are required to work on passkeys.dev locally:
 
 - [Golang 1.23.x](https://go.dev/dl/)
-- [Hugo v0.140.x](https://gohugo.io/installation/)
+- [Hugo v0.146.x](https://gohugo.io/installation/)
 - [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2#install) (installed globally)
 
 Once these are installed, enable pre-commit linting:
