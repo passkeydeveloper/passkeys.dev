@@ -1,3 +1,9 @@
+
+/* Increase space between ToC items: #442 */
+.toc-item{
+  margin-bottom: 0.5rem;
+}
+
 .navbar-nav .nav-link.active {
   font-weight: 500;
 }
@@ -8,18 +14,18 @@ a:hover {
 
 .fade-out-text {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); /* Adjust gradient direction and colors as needed */
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
-  background-clip: text; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 @if $enable-dark-mode {
   @include color-mode(dark) {
     .fade-out-text {
       background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Adjust gradient direction and colors as needed */
-      -webkit-background-clip: text; 
-      -webkit-text-fill-color: transparent; 
-      background-clip: text; 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
   }
 }
