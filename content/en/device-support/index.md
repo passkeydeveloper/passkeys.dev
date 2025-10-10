@@ -532,7 +532,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
           <a href="/docs/reference/windows/">Windows</a>
         </td>
       </tr>
-      <tr class="align-top">
+      <tr class="align-middle">
         <td class="fw-bold">
           <a href="../docs/reference/terms/#device-bound-passkey" target="_blank">
             <span class="fst-italic">Device-bound</span> Passkeys
@@ -715,7 +715,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
               </span>
         </td>
       </tr>
-      <tr class="align-top">
+      <tr class="align-middle">
         <td class="fw-bold">
           <a href="../docs/reference/terms/#attestation" target="_blank">
             Device-bound Passkey Attestation
