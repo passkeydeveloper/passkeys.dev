@@ -1,0 +1,42 @@
+{{- $version := partial "assets/version.html" . -}}
+{{- $license := .Site.Params.footer.license | safeHTML -}}
+{{- $description := .Site.Params.footer.description | safeHTML -}}
+{{- $title := site.Title -}}
+{{- $baseurl := urls.Parse $.Site.Params.Baseurl -}}
+
+{{- $page := . -}}
+{{- if not $page -}}
+    {{- errorf "partial [footer/footer.html] - Missing value for param 'page'" -}}
+{{- end -}}
+
+{{- $menuName := "footer" }}
+{{- $menus := index site.Menus $menuName -}}
+{{- if or (ne (printf "%T" $menus) "navigation.Menu") (ne (index $menus 0).Menu $menuName) -}}
+    {{- errorf "partial [footer/footer.html] - Invalid value for param 'menus': %s" $menuName -}}
+{{- end -}}
+
+<footer class="container-fluid footer p-0 border-top">
+    <div class="container-xxl px-3 px-xxl-0 py-5">
+        <div class="row">
+            <div class="col-md-4 small">
+                <a href="{{ site.Home.RelPermalink }}">
+                    {{- partial "assets/image.html" (dict "src" "/img/logos/pdd-logo-bw-nopad-light.svg" "mode" true "wrapper" "w-25" "title" "passkeys.dev") -}}
+                </a>
+                <div class="pt-3">{{ $description }}</div>
+                <div class="pt-2">{{ $license }} | <a href="/privacy-policy">Privacy Policy</a></div>
+            </div>
+            <div class="col-md-2 small">&nbsp</div>
+
+            {{- range $menu := $menus -}}
+                <div class="col-md-2 col-4 pt-5 pt-md-0">
+                    <div class="fs-md-5 fs-6 fw-bold footer-muted">{{ .Name }}</div>
+                    {{- range .Children -}}
+                        <div class="py-1">
+                            {{- partial "assets/helpers/navbar-item.html" (dict "menu" . "page" $page "class" "link-bg-footer") -}}
+                        </div>
+                    {{- end -}}
+                </div>
+            {{- end -}}
+        </div>
+    </div>
+</footer>

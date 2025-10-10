@@ -36,10 +36,9 @@ If there are 30 origins in the list, all with the same label, these count as 1 u
 
 Below are three examples of origin lists and their respective label counts.
 
-{{< nav type="pills" id="pills-1" >}}
-  {{< nav-item header="1 Label" show="true" >}}
+{{< badge title="1 Label" >}}
 
-  1. `shopping`
+1. `shopping`
 
 ```json
 {
@@ -56,12 +55,11 @@ Below are three examples of origin lists and their respective label counts.
 }
 ```
 
-  {{< /nav-item >}}
-  {{< nav-item header="3 Labels" >}}
+{{< badge title="3 Labels" >}}
 
-  1. `shopping`
-  1. `myshoppingrewards`
-  1. `myshoppingtravel`
+1. `shopping`
+2. `myshoppingrewards`
+3. `myshoppingtravel`
 
   ```json
   {
@@ -85,14 +83,13 @@ Below are three examples of origin lists and their respective label counts.
   }
   ```
 
-  {{< /nav-item >}}
-  {{< nav-item header="5 Labels" >}}
+{{< badge title="5 Labels" >}}
 
-  1. `shopping`
-  1. `myshoppingcard`
-  1. `myshoppingrewards`
-  1. `myshoppingcreditcard`
-  1. `myshoppingtravel`
+1. `shopping`
+2. `myshoppingcard`
+3. `myshoppingrewards`
+4. `myshoppingcreditcard`
+5. `myshoppingtravel`
 
 ```json
 {
@@ -121,9 +118,6 @@ Below are three examples of origin lists and their respective label counts.
 }
 ```
 
-  {{< /nav-item >}}
-{{< /nav >}}
-
 ## Requirements
 
 ### Client Support
@@ -148,8 +142,7 @@ The JSON document must have a member named `origins`, containing an array of val
 
 Below is an example for the RP ID `shopping.com`.
 
-{{< nav type="tabs" id="tabs-1" >}}
-  {{< nav-item header="https://shopping.com/.well-known/webauthn" show="true" >}}
+`https://shopping.com/.well-known/webauthn`
 
 ```json
 {
@@ -165,9 +158,6 @@ Below is an example for the RP ID `shopping.com`.
   ]
 }
 ```
-
-  {{< /nav-item >}}
-{{< /nav >}}
 
 ## Deployment Considerations
 
@@ -219,4 +209,4 @@ A user with a passkey for `shopping.co.uk` has traveled to the US and navigates 
 
 ## Additional Information
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://w3c.github.io/webauthn/#sctn-related-origins" >}}WebAuthn Spec Reference{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://w3c.github.io/webauthn/#sctn-related-origins" >}}WebAuthn Spec Reference{{< /button >}}
