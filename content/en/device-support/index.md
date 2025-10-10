@@ -160,15 +160,17 @@ This matrix represents the default capabilities for a user out of the box. Addit
     </tr>
     <tr>
       <td>
-          Passkey Upgrades <sup><a href="#fn8">2</a></sup>
+        <a href="../docs/reference/terms/#conditional-create" target="_blank">
+          Passkey Upgrades
           <br />
           (Conditional Create)
+          </a>
       </td>
       <td class="text-center">
-        {{< fa fa-calendar-plus fa-xl mb-2>}}
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
           <span class="fs-6">
             <br />
-            Chrome
+            Chrome 142+ <sup><a href="#fn3">2</a></sup>
             <br />
           </span>
           <br />
@@ -241,7 +243,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
         {{< fas fa-circle-check fa-xl mb-2 text-success >}}
           <span class="fs-6">
             <br />
-            Chrome 136+ <sup><a href="#fn3">3</a></sup>
+            Chrome 136+ <sup><a href="#fn3">2</a></sup>
             <br />
             <br />
             <br />
@@ -530,7 +532,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
           <a href="/docs/reference/windows/">Windows</a>
         </td>
       </tr>
-      <tr class="align-top">
+      <tr class="align-middle">
         <td class="fw-bold">
           <a href="../docs/reference/terms/#device-bound-passkey" target="_blank">
             <span class="fst-italic">Device-bound</span> Passkeys
@@ -713,7 +715,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
               </span>
         </td>
       </tr>
-      <tr class="align-top">
+      <tr class="align-middle">
         <td class="fw-bold">
           <a href="../docs/reference/terms/#attestation" target="_blank">
             Device-bound Passkey Attestation
@@ -741,7 +743,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
   Device-bound passkeys supported
   <br />
   <sup id="fn8">2</sup>
-  Also requires support from credential providers
+  Also requires support from credential managers and operating systems
   <br />
   <sup id="fn3">3</sup>
   Windows 11 22H2+

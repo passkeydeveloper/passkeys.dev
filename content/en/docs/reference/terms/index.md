@@ -75,6 +75,17 @@ See [_Autofill UI_](#autofill-ui)
 
 See [_Autofill UI_](#autofill-ui)
 
+## Conditional Create
+
+A WebAuthn capability which allows a Relying Party to request the creation of a passkey after a successful sign in user another credential from their credential manager, such as a password.
+
+Note:
+
+- The browser, operating system, and credential manager must all support conditional create.
+- `conditionalCreate` in getClientCapabilities() represents only the browser's support for the capability and does signal OS and/or credential manager support.
+
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://www.w3.org/TR/webauthn-3/#sctn-createCredential" >}}WebAuthn Spec Reference{{< /button >}}
+
 ## Credential Exchange
 
 A standardized process to securely transfer passkeys, passwords, and other types of information from one [passkey provider](#passkey-provider) to another.
@@ -83,7 +94,7 @@ A standardized process to securely transfer passkeys, passwords, and other types
 
 ## Device-bound passkey
 
-A FIDO2 [Discoverable Credential](#discoverable-credential) that is bound to a single authenticator. For example, FIDO2 security keys typically hold device-bound passkeys as the credential cannot leave the device. Device-bound passkeys have been previously referred to as _single-device passkeys_.
+A WebAuthn [Discoverable Credential](#discoverable-credential) that is bound to a single authenticator. For example, FIDO2 security keys typically hold device-bound passkeys as the credential cannot leave the device. Device-bound passkeys have been previously referred to as _single-device passkeys_.
 
 ## Discoverable Credential
 
@@ -127,6 +138,10 @@ From the technical side, there are two flavors of passkeys: [synced](#synced-pas
 
 An app and/or service that is responsible for storing and managing passkeys. Many operating systems include a default passkey provider ([first-party](#first-party-passkey-provider)), and many also support [third-party](#third-party-passkey-provider) providers. A passkey provider is a type of [credential manager](#credential-manager).
 
+## Passkey Upgrades
+
+See [_Conditional Create_](#conditional-create).
+
 ## Persistent Linking
 
 The informal name for creating a relationship between a [Cross-Device Authentication authenticator](#cda-authenticator) (typically a phone or tablet) and [Cross-Device Authentication client](#cda-client) (typically a laptop or desktop), which enables future use without having to scan a QR code.
@@ -169,7 +184,7 @@ see [_Device-bound passkey_.](#device-bound-passkey)
 
 ## Synced passkey
 
-A FIDO2 [Discoverable Credential](#discoverable-credential) that can reliably be used for bootstrapping sign-in, without requiring other login challenges such as passwords and OTPs. "Reliable" here means that the passkey should be available to, and usable by, the user whenever they need to sign in. This availability can be achieved through different means: for example, passkey providers could sync passkeys in real-time across a user's devices, restore passkeys from a backup whenever a user sets up a new device, offer passkeys across different contexts (a passkey established from an app can be used in the browser when visiting the app’s website), or allow users to [exercise passkeys across devices](#cross-device-authentication-cda) (by, say, using the passkey from a nearby phone when signing in from a laptop).
+A WebAuthn [Discoverable Credential](#discoverable-credential) that can reliably be used for bootstrapping sign-in, without requiring other login challenges such as passwords and OTPs. "Reliable" here means that the passkey should be available to, and usable by, the user whenever they need to sign in. This availability can be achieved through different means: for example, passkey providers could sync passkeys in real-time across a user's devices, restore passkeys from a backup whenever a user sets up a new device, offer passkeys across different contexts (a passkey established from an app can be used in the browser when visiting the app’s website), or allow users to [exercise passkeys across devices](#cross-device-authentication-cda) (by, say, using the passkey from a nearby phone when signing in from a laptop).
 
 ## Third-Party Passkey Provider
 
