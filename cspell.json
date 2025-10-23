@@ -6,11 +6,16 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
+        "androidwin",
+        "autofilled",
         "cctld",
+        "fullpage",
         "myshoppingcard",
         "myshoppingcreditcard",
         "myshoppingrewards",
-        "myshoppingtravel"
+        "myshoppingtravel",
+        "nopad",
+        "pkdd"
     ],
     "ignoreWords": [],
     "import": []
