@@ -12,8 +12,6 @@ This page, along with the rest of passkeys.dev, is targeted at relying party dev
 
 This matrix represents the default capabilities for a user out of the box. Additional capabilities may be available when a user installs a different passkey provider.
 
-{{< button color="dark" href="https://featuredetect.passkeys.dev" button-size="md" >}}Test this client!{{< /button >}}
-
 ### Basic Capabilities {#basics}
 
 {{< unsafe >}}
