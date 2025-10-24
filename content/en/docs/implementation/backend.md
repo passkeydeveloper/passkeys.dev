@@ -4,18 +4,21 @@ description: "Guidance on server-side handling of passkeys registration and auth
 date: 2024-08-13T12:00:00.000Z
 ---
 
-The backend drives WebAuthn ceremonies through four primary responsibilities:
+The website's backend plays the following roles in facilitating use of WebAuthn:
 
-1. Generate registration options
-2. Verify registration responses
-3. Generate authentication options
-4. Verify authentication responses
+1. Generate registration options for the frontend to call `navigator.credentials.create()`
+2. Verify the registration response
+3. Generate authentication options for `navigator.credentials.get()`
+4. Verify the authentication response
 
-The guidance below identifies best practices to fulfill these responsibilities and securely incorporate passkeys-based authentication into your website.
+The guidance below identifies best practices to fulfill these responsibilities
+and securely incorporate passkeys-based authentication into your website.
 
-{{< alert type="info" >}}
-**Please note that this is general guidance; it does not account for any one specific server implementation.**
-It is intended to be a launching point. Care should be taken as you consider how best to adapt this guidance for your particular site.
+{{< alert type="info" color="warning" icon="fa-solid fa-triangle-exclamation" >}}
+**Please note that this is general guidance; it does not account
+for any one specific server implementation.**
+It is intended to be a launching point. Care should be taken as you consider
+how best to adapt this guidance for your particular site.
 {{< /alert >}}
 
 ## Data Structures
@@ -58,7 +61,6 @@ type UserModel = {
   username: string;
 };
 ```
-
 
 ## 1. Generate registration options
 
@@ -164,7 +166,13 @@ async function verifyRegistrationResponse(
   registrationResponse: RegistrationResponseJSON,
 ): VerifiedRegistration {
   try {
-    // TODO: Write basic attestation-less response verification here?
+    // Consider using a library to verify the registration response
+    const {
+      publicKey,
+      counter,
+      backupEligible,
+      backupStatus,
+    } = pseudocodeVerifyRegistrationResponse(registrationOptions, registrationResponse);
   } catch (err) {
     throw new Error(`Couldn't verify registration response`, { cause: err });
   }
@@ -172,11 +180,11 @@ async function verifyRegistrationResponse(
   return {
     passkey: {
       id: registrationResponse.id,
-      publicKey: new Uint8Array([...]),
-      counter: 0,
-      backupEligible: true,
-      backupStatus: true,
-      transports: ['internal', 'hybrid'],
+      publicKey,
+      counter,
+      backupEligible,
+      backupStatus,
+      transports: registrationResponse.response.transports,
     },
   }
 }
@@ -291,7 +299,7 @@ await pseudocodeSaveAuthenticationOptions(unknownUserSessionID, authOptions);
 
 Send these options to the {{< link "./frontend.md" >}}frontend{{< /link >}} to have the user attempt to log in.
 
-{{< alert type="info" >}}
+{{< alert alert-type="info" >}}
 WebAuthn is capable of handling both "passwordless" and "usernameless" authentication flows:
 
 - **Passwordless** authentication often starts with the user typing in an account identifier.
@@ -325,7 +333,12 @@ async function verifyAuthenticationResponse(
   registeredPasskey: PasskeyModel,
 ): VerifiedAuthentication {
   try {
-    // TODO: Write basic authentication verification here?
+    // Consider using a library to verify the authentication response
+    const {
+      counter,
+      backupEligible,
+      backupStatus,
+    } = pseudocodeVerifyAuthenticationResponse(authOptions, authResponse, registeredPasskey);
   } catch (err) {
     throw new Error(`Couldn't verify authentication response`, { cause: err });
   }
@@ -333,9 +346,9 @@ async function verifyAuthenticationResponse(
   return {
     passkey: {
       id: registeredPasskey.id,
-      newCounter: 0,
-      backupEligible: true,
-      backupStatus: true,
+      newCounter: counter,
+      backupEligible,
+      backupStatus,
     },
   }
 }
