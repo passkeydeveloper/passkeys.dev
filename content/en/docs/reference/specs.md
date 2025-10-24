@@ -18,7 +18,7 @@ Platforms also create their own platform-specific abstractions of the WebAuthn A
 
 **Current Version**: [WebAuthn Level 2](https://www.w3.org/TR/webauthn-2/)
 
-***Next Version***: [WebAuthn Level 3](https://w3c.github.io/webauthn/)
+***Next Version***: [WebAuthn Level 3](https://www.w3.org/TR/webauthn-3/)
 
 ## Client to Authenticator Protocol (CTAP)
 
@@ -26,10 +26,8 @@ The FIDO *Client to Authenticator Protocol*, often referred to by its acronym CT
 
 CTAP is implemented by authenticator and device vendors and abstracts away all of the complexity of interacting with authenticators from relying parties and developers.
 
-***Current Version***: [CTAP 2.1](https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html)
+***Current Version***: [CTAP 2.2](https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html)
 
-***Next Version***: [CTAP 2.2 (Review Draft 01)](https://fidoalliance.org/specs/fido-v2.2-rd-20230321/fido-client-to-authenticator-protocol-v2.2-rd-20230321.html)
+***Next Version***: CTAP 2.3
 
 The next version of CTAP is currently under development at the FIDO Alliance.
-
-In the context of passkeys, CTAP 2.2 adds support for the hybrid transport, more commonly known as the FIDO Cross-Device Authentication flow, allowing a passkey to be used to sign in on another device (ex: passkey on Android signing into a service on Windows).

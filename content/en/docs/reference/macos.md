@@ -7,10 +7,10 @@ layout: docs
 ---
 
 {{< card-group padding="3" gutter="3" cols="2">}}
-    {{< card title="Local Authenticator" align="center" color="body" icon="fas fa-circle-check fa-2xl" style="text-success">}}
+    {{< card title="Local Authenticator" align="center" color="body" icon="fas fa-circle-check fa-2xl" icon-style="text-success">}}
         (create and use passkeys from the local device)
     {{< /card >}}
-    {{< card title="External Authenticator" align="center" color="body" icon="fas fa-circle-check fa-2xl" style="text-success">}}
+    {{< card title="External Authenticator" align="center" color="body" icon="fas fa-circle-check fa-2xl" icon-style="text-success">}}
         (create and use passkeys from another device)
     {{< /card >}}
 {{< /card-group >}}
@@ -19,9 +19,9 @@ layout: docs
 
 The platform authenticator in macOS Ventura (13) has the following capabilities:
 
-- creating and using passkeys that are backed up to iCloud Keychain
+- creating and using passkeys saved to Apple Passwords
 - creating and using passkeys on/from another device, such as:
-  - an iPhone or iPad signed in to a different iCloud account, using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
+  - an iPhone or iPad signed in to a different Apple Account, using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
   - an Android device, using FIDO [Cross-Device Authentication](/terms#cross-device-authentication-cda)
   - a FIDO2 security key{{< sup 1 >}}
 
@@ -45,12 +45,8 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 
 WebAuthn credentials created using the platform authenticator in macOS Monterey (12) and earlier ***will not*** be converted to passkeys but will remain available for the lifetime of the device.
 
-{{% comment %}}  TODO: cross link to generic content about "upgrading to a passkey" {{% /comment %}}
-To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. macOS will overwrite the legacy credential with a new passkey that will be backed up to iCloud Keychain.
-
-### Browser Behavior
-
-**Edge**: credentials created by Edge are currently [***device-bound*** passkeys](/terms/#device-bound-passkey), are not backed up to iCloud Keychain, and are ***not available outside of Edge***.
+<!--  TODO: cross link to generic content about "upgrading to a passkey" -->
+To replace a legacy platform credential with a passkey, start a credential registration ceremony and pass **the same user handle** (user.id) in the request. macOS will overwrite the legacy credential with a new passkey that will be saved to Apple Passwords.
 
 ### WebViews
 
@@ -64,9 +60,9 @@ To replace a legacy platform credential with a passkey, start a credential regis
 >
 > Said differently, only use EWV when sign in is handled by your own service (non-federated). When supporting multiple identity providers, System WebView should be used (see below).
 
-{{< button color="light" size="sm" icon="fab fa-apple" cue=false order="first" tooltip="Go to the Apple developer docs" href="https://developer.apple.com/documentation/webkit/wkwebview" >}}WKWebView docs @ Apple Developer{{< /button >}}
+{{< button color="light" button-size="sm" icon="fab fa-apple" cue=false order="first" tooltip="Go to the Apple developer docs" href="https://developer.apple.com/documentation/webkit/wkwebview" >}}WKWebView docs @ Apple Developer{{< /button >}}
 
-{{% comment %}} TODO: add screenshot example {{% /comment %}}
+<!-- TODO: add screenshot example -->
 
 #### System WebViews
 
@@ -74,9 +70,9 @@ To replace a legacy platform credential with a passkey, start a credential regis
 
 Sites loaded in `ASWebAuthenticationSession` are isolated from the calling app and run in the context of the top level site, just like in a full browser instance. This means that sign in flows on third party domains, such as a federated identity provider, can use passkeys for signing in.
 
-{{< button color="light" size="sm" icon="fab fa-apple" cue=false order="first" tooltip="Go to the Apple developer docs" href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" >}}ASWebAuthenticationSession docs @ Apple Developer{{< /button >}}
+{{< button color="light" button-size="sm" icon="fab fa-apple" cue=false order="first" tooltip="Go to the Apple developer docs" href="https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession" >}}ASWebAuthenticationSession docs @ Apple Developer{{< /button >}}
 
-{{% comment %}}  TODO: add screenshot example {{% /comment %}}
+<!-- TODO: add screenshot example -->
 
 ### User Verification Behavior
 

@@ -63,6 +63,7 @@ context of your project.
 ### TypeScript
 
 - [SimpleWebAuthn](https://simplewebauthn.dev/) (Matthew Miller)
+- [@passwordless-id/webauthn](https://webauthn.passwordless.id) (Arnaud Dagnelies)
 
 ### Java
 
@@ -76,6 +77,7 @@ The ["Awesome WebAuthn"](https://github.com/herrjemand/awesome-webauthn) GitHub 
 
 - [FIDO2 .NET Library](https://fido2-net-lib.passwordless.dev/) (Anders Åberg, Alex Seigler)
 - [Passkeys for ASP.NET](https://www.identityserver.com/products/fido2-for-aspnet) (IdentityServer.com)
+- [WebAuthn.Net](https://github.com/dodobrands/WebAuthn.Net) (Dodo Brands)
 
 ### Go
 
@@ -94,3 +96,11 @@ The ["Awesome WebAuthn"](https://github.com/herrjemand/awesome-webauthn) GitHub 
 - [webauthn-ruby](https://github.com/cedarcode/webauthn-ruby) (Cedarcode)
 - [devise-passkeys](https://github.com/ruby-passkeys/devise-passkeys) (Ruby Passkeys, wrapper around `webauthn-ruby`)
 - [warden-webauthn](https://github.com/ruby-passkeys/warden-webauthn) (Ruby Passkeys, wrapper around `webauthn-ruby`)
+
+### Swift
+
+- [Swift WebAuthn](https://github.com/swift-server/swift-webauthn) ([Swift Server Workgroup](https://www.swift.org/sswg/))
+
+### Zig
+
+- [Passcay](https://github.com/uzyn/passcay) (U-Zyn Chua)

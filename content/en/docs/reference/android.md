@@ -7,10 +7,10 @@ layout: docs
 ---
 
 {{< card-group padding="3" gutter="3" cols="2">}}
-    {{< card title="Local Authenticator" align="center" color="body" icon="fas fa-circle-check fa-2xl" style="text-success">}}
+    {{< card title="Local Authenticator" align="center" color="body" icon="fas fa-circle-check fa-2xl" icon-style="text-success">}}
         (create and use passkeys from the local device)
     {{< /card >}}
-    {{< card title="External Authenticator" align="center" color="body" icon="fas fa-circle-check fa-2xl" style="text-success">}}
+    {{< card title="External Authenticator" align="center" color="body" icon="fas fa-circle-check fa-2xl" icon-style="text-success">}}
         (create and use passkeys from another device)
     {{< /card >}}
 {{< /card-group >}}
@@ -35,16 +35,9 @@ Android devices can be an [authenticator](/terms/#cda-authenticator) for [FIDO C
 
 Android devices can be persistently linked to the browsers/platforms below:
 
-- Chrome OS
-- Windows 11 23H2
-- Chrome & Edge on Windows 11 <23H2
-- Chrome & Edge on Windows 10
-- Chrome on macOS
-- Edge on macOS
-- Chrome on Ubuntu
-- Edge on Ubuntu
+- Windows 11 23H2+
 
-macOS (Safari and native apps), iOS (global), and iPadOS (global) do not support persistent linking.
+macOS (Safari, Chromium-based browsers, and native apps), iOS (global), and iPadOS (global) do not support persistent linking.
 
 When an authenticator is not persistently linked, a QR code must be scanned on every use.
 
@@ -52,7 +45,7 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 
 - **Credential Manager** is a new Android Jetpack API that supports multiple sign-in methods, including passkeys, in a single API, thus simplifying the integration for developers.
 
-  {{< button color="light" size="sm" icon="fab fa-android" cue=false order="first" tooltip="Go to the Android developer docs" href="https://developer.android.com/training/sign-in/passkeys" >}}Credential Manager API{{< /button >}}
+  {{< button color="light" button-size="sm" icon="fab fa-android" cue=false order="first" tooltip="Go to the Android developer docs" href="https://developer.android.com/training/sign-in/passkeys" >}}Credential Manager API{{< /button >}}
 
 ### WebViews
 
@@ -70,9 +63,9 @@ This is documented at [Android Developer: "Integrate Credential Manager with Web
 >
 > Said differently, only use EWV when sign in is handled by your own service (non-federated). When supporting multiple identity providers, System WebView should be used (see below).
 
-{{< button color="light" size="sm" icon="fab fa-android" cue=false order="first" tooltip="Go to the Android developer docs" href="https://developer.android.com/develop/ui/views/layout/webapps/webview" >}}WebView docs @ Android Developer{{< /button >}}
+{{< button color="light" button-size="sm" icon="fab fa-android" cue=false order="first" tooltip="Go to the Android developer docs" href="https://developer.android.com/develop/ui/views/layout/webapps/webview" >}}WebView docs @ Android Developer{{< /button >}}
 
-{{% comment %}} TODO: add screenshot example {{% /comment %}}
+<!-- TODO: add screenshot example -->
 
 #### System WebViews (SWV)
 
@@ -80,9 +73,9 @@ This is documented at [Android Developer: "Integrate Credential Manager with Web
 
 Sites loaded in `Custom Tabs` are isolated from the calling app and run in the context of the top level site, just like in a full browser. This means that sign in flows on third party domains, such as a federated identity provider, can use passkeys for signing in.
 
-{{< button color="light" size="sm" icon="fab fa-android" cue=false order="first" tooltip="Go to the Android developer docs" href="https://developer.chrome.com/docs/android/custom-tabs/guide-get-started" >}}Custom Tabs docs @ Android Developer{{< /button >}}
+{{< button color="light" button-size="sm" icon="fab fa-android" cue=false order="first" tooltip="Go to the Android developer docs" href="https://developer.chrome.com/docs/android/custom-tabs/guide-get-started" >}}Custom Tabs docs @ Android Developer{{< /button >}}
 
-{{% comment %}} TODO: add screenshot example {{% /comment %}}
+<!-- TODO: add screenshot example -->
 
 ### User Verification Behavior
 

@@ -16,7 +16,7 @@ According to Samsung documentation ([source](https://www.samsung.com/us/apps/sam
 During testing on 2024-09-05, it was observed that passkeys created in Samsung Pass return the backup eligible flag as false, signaling a [device-bound passkey](terms#device-bound-passkey).
 
 {{< accordion id="accordion-default" >}}
-  {{< accordion-item header="Sample passkey registration from Samsung Pass" show="false" >}}
+  {{< accordion-item title="Sample passkey registration from Samsung Pass" show="false" >}}
 Test device details:
 
 - Galaxy S22
@@ -60,15 +60,17 @@ The following list of passkey providers have not implemented [User Verification]
 
 {{< table >}}
 
-| **Provider** | **Architecture** | **UV Required Behavior**      | **UV Flag**              |
-| ------------ | ---------------- | ----------------------------- | ------------------------ |
-| 1Password    | Extension        | ❌ Handles request without UV | ❌ Always replies `True` |
-| 1Password    | Native           | ✅ Performs UV                | ✅ UV flag accurate      |
-| Bitwarden    | Extension        | ❌ Handles request without UV | ❌ Always replies `True` |
-| KeepassXC    | Extension        | ❌ Handles request without UV | ❌ Always replies `True` |
-| Proton Pass  | Extension        | ❌ Handles request without UV | ❌ Always replies `True` |
-| Proton Pass  | Native           | ❌ Handles request without UV | ❌ Always replies `True` |
-| Strongbox    | Native           | ❌ Handles request without UV | ❌ Always replies `True` |
+| **Provider**  | **Architecture** | **`uv`=`required`**                                    | **`uv`=`preferred`**                  |
+| ------------- | ---------------- | ------------------------------------------------------ | ------------------------------------- |
+| 1Password     | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
+| 1Password     | Native           | ✅ Performs UV                                         | ✅ UV flag accurate                   |
+| Bitwarden     | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
+| KeepassXC     | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
+| Okta Personal | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
+| Okta Personal | Native           | ✅ Performs UV                                         | ✅ UV flag accurate                   |
+| Proton Pass   | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
+| Proton Pass   | Native           | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
+| Strongbox     | Native           | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
 {{< /table >}}
 
 > **Architecture**: `Extension` = web browser extension, `Native` = OS native app using provider APIs

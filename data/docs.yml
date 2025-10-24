@@ -19,6 +19,8 @@
 
 - title: Advanced
   pages:
+    - title: Client Hints
+      link: client-hints
     - title: Related Origin Requests
       link: related-origins
 
@@ -33,7 +35,7 @@
   pages:
     - title: Android
     - title: "iOS & iPadOS"
-      link: iOS
+      link: ios
     - title: Chrome OS
       link: chromeos
     - title: macOS

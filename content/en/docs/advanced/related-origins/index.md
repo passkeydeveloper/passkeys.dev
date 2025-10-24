@@ -36,10 +36,9 @@ If there are 30 origins in the list, all with the same label, these count as 1 u
 
 Below are three examples of origin lists and their respective label counts.
 
-{{< nav type="pills" id="pills-1" >}}
-  {{< nav-item header="1 Label" show="true" >}}
+{{< badge title="1 Label" >}}
 
-  1. `shopping`
+1. `shopping`
 
 ```json
 {
@@ -56,12 +55,11 @@ Below are three examples of origin lists and their respective label counts.
 }
 ```
 
-  {{< /nav-item >}}
-  {{< nav-item header="3 Labels" >}}
+{{< badge title="3 Labels" >}}
 
-  1. `shopping`
-  1. `myshoppingrewards`
-  1. `myshoppingtravel`
+1. `shopping`
+2. `myshoppingrewards`
+3. `myshoppingtravel`
 
   ```json
   {
@@ -85,14 +83,13 @@ Below are three examples of origin lists and their respective label counts.
   }
   ```
 
-  {{< /nav-item >}}
-  {{< nav-item header="5 Labels" >}}
+{{< badge title="5 Labels" >}}
 
-  1. `shopping`
-  1. `myshoppingcard`
-  1. `myshoppingrewards`
-  1. `myshoppingcreditcard`
-  1. `myshoppingtravel`
+1. `shopping`
+2. `myshoppingcard`
+3. `myshoppingrewards`
+4. `myshoppingcreditcard`
+5. `myshoppingtravel`
 
 ```json
 {
@@ -121,9 +118,6 @@ Below are three examples of origin lists and their respective label counts.
 }
 ```
 
-  {{< /nav-item >}}
-{{< /nav >}}
-
 ## Requirements
 
 ### Client Support
@@ -131,6 +125,8 @@ Below are three examples of origin lists and their respective label counts.
 The [Device Support matrix](/device-support/#ror) lists the browsers which support Related Origin Requests. The [Passkeys Feature Detect page](https://featuredetect.passkeys.dev) will also attempt to detect ROR support in the browser in which the page was loaded.
 
 To dynamically detect support for Related Origin Requests on an enrollment or login page, Relying Parties should check for `relatedOrigins` in the [WebAuthn Get Client Capabilities (`PublicKeyCredential.getClientCapabilities()`)](https://w3c.github.io/webauthn/#sctn-getClientCapabilities) response.
+
+If Related Origin Requests is not supported by the client, fallback logic can be used. See [Existing Deployments](#existing-deployments) below.
 
 ### Relying Party Changes
 
@@ -146,8 +142,7 @@ The JSON document must have a member named `origins`, containing an array of val
 
 Below is an example for the RP ID `shopping.com`.
 
-{{< nav type="tabs" id="tabs-1" >}}
-  {{< nav-item header="https://shopping.com/.well-known/webauthn" show="true" >}}
+`https://shopping.com/.well-known/webauthn`
 
 ```json
 {
@@ -164,9 +159,6 @@ Below is an example for the RP ID `shopping.com`.
 }
 ```
 
-  {{< /nav-item >}}
-{{< /nav >}}
-
 ## Deployment Considerations
 
 ### Greenfield Deployments
@@ -177,7 +169,7 @@ It is recommended to pick the most commonly used and/or understood domain for th
 
 ### Existing Deployments
 
-For deployments where passkeys are already rolled out with multiple RP IDs, there are some unique considerations and requirements.
+For deployments where passkeys are already rolled out with multiple RP IDs or in cases where Related Origin Requests is not supported by the browser, there are some unique considerations and requirements.
 
 #### Considerations
 
@@ -199,8 +191,10 @@ This flow assumes the [autofill UI](/docs/reference/terms/#autofill-ui) for pass
 3. If the the user enters a username and continues:
       - abort the conditional WebAuthn request
       - send a request to your backend to retrieve the RP ID for the username
-4. Fetch fresh WebAuthn parameters from the backend
-5. Call WebAuthn with the fresh parameters and the correct RP ID
+4. Redirect the user to the origin matching the RP ID (typically using a federation protocol)
+5. Fetch fresh WebAuthn parameters from the backend
+6. Call WebAuthn with the fresh parameters and the correct RP ID
+7. Redirect the user back to the original origin with the necessary artifacts (typically a federated assertion or token)
 
 #### Example
 
@@ -211,8 +205,8 @@ In this example, passkeys have previously been rolled out to the following users
 
 A user with a passkey for `shopping.com` navigates to `https://shopping.com`, clicks into the username field, selects their passkey, performs user verification, and is then signed in!
 
-A user with a passkey for `shopping.co.uk` has traveled to the US and navigates to `https://shopping.co.uk`. Based on location data, the user is redirected to `https://shopping.com`. They click into the username field and do not see any passkey available. They then type their username and click continue. A backend lookup occurs, and WebAuthn is now invoked with an RP ID of `shopping.co.uk` and the user selects their passkey, performs user verification, and is signed in!
+A user with a passkey for `shopping.co.uk` has traveled to the US and navigates to `https://shopping.co.uk`. Based on location data, the user is redirected to `https://shopping.com`. They click into the username field and do not see any passkey available. They then type their username and click continue. A backend lookup occurs, the user is redirected to `https://shopping.co.uk`, WebAuthn is now invoked with an RP ID of `shopping.co.uk`, the user selects their passkey, performs user verification, and is redirected back to `https://shopping.com`!
 
 ## Additional Information
 
-{{< button color="light" size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://w3c.github.io/webauthn/#sctn-related-origins" >}}WebAuthn Spec Reference{{< /button >}}
+{{< button color="light" button-size="sm" icon="fas fa-circle-info" cue=false order="first" tooltip="Go to reference in the WebAuthn specification" href="https://w3c.github.io/webauthn/#sctn-related-origins" >}}WebAuthn Spec Reference{{< /button >}}

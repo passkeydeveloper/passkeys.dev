@@ -1,51 +1,18 @@
 ---
 title: "Device Support"
 description: "Detailed information about passkey support across devices and ecosystems"
-layout: full-page
-type: misc
+layout: fullpage
 ---
 
 This page, along with the rest of passkeys.dev, is targeted at relying party developers and is not intended to be an end user facing resource.
 
 > Said differently, **please don’t link to this page from end user focused resources** 😉
 
-## Overview
-
-Support for passkeys is currently rolling out across major operating systems and browsers. This page will be updated as the ecosystem evolves. The [matrix below](#matrix) maps out the various features that support the passkey experience. Additional information about each platform is available in the [Reference section of Docs](/docs/reference/android).
-
-Passkeys created in **iOS or iPadOS** can be used on:
-
-- The same iPhone or iPad
-- iPhones and iPads using the same Apple ID (synced automatically)
-- Macs using the same Apple ID (synced automatically)
-- Macs using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-- Windows devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-- Chromebooks and other ChromeOS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-- Ubuntu devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-
-Passkeys created in **Android** can be used on:
-
-- The same Android device
-- Android devices using the same Google account (synced automatically)
-- Macs using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-- Windows devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-- iPhones and iPads using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-- Chromebooks and other ChromeOS devices using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-- Ubuntu devices in Edge and Chrome using [FIDO Cross-Device Authentication](/docs/reference/terms/#cross-device-authentication-cda)
-
-Passkeys created in **macOS** can be used on:
-
-- Macs using the same Apple ID (synced automatically)
-- iPhones and iPads using the same Apple ID (synced automatically)
-  - Passkeys created on a Mac and synced to an iPhone and/or iPad via iCloud Keychain can be used in all the places listed above under "iOS or iPadOS"
-
-[Device-bound passkeys](/docs/reference/terms/#device-bound-passkey) created in **Windows** can be used on:
-
-- the same Windows device that created them
-
 ## Matrix {#matrix}
 
-{{< button color="dark" href="https://featuredetect.passkeys.dev" size="md" >}}Test this client!{{< /button >}}
+This matrix represents the default capabilities for a user out of the box. Additional capabilities may be available when a user installs a different passkey provider.
+
+{{< button color="dark" href="https://featuredetect.passkeys.dev" >}}Test this client!{{< /button >}}
 
 ### Basic Capabilities {#basics}
 
@@ -84,11 +51,9 @@ Passkeys created in **macOS** can be used on:
           <span class="fs-6 text-muted">v9+</span>
       </td>
       <td class="text-center">
-        {{< fa fa-calendar-plus fa-xl mb-2>}}
+       {{< fas fa-circle-check fa-xl mb-2 text-success >}}
           <br />
-          <span class="fs-6">
-            Planned <sup><a href="#fn1">1</a></sup>
-          </span>
+          <span class="fs-6 text-muted">v129+</span>
       </td>
       <td class="text-center">
         {{< fas fa-circle-check fa-xl mb-2 text-success >}}
@@ -98,7 +63,7 @@ Passkeys created in **macOS** can be used on:
       <td class="text-center">
         {{< fas fa-circle-check fa-xl mb-2 text-success >}}
           <br />
-          <span class="fs-6 text-muted"> v13+ <sup><a href="#fn2">2</a></sup>
+          <span class="fs-6 text-muted"> v13+</span>
       </td>
       <td class="text-center">
         {{< fa fa-circle-check fa-xl mb-2>}}
@@ -117,6 +82,8 @@ Passkeys created in **macOS** can be used on:
       <td>
         <a href="../docs/reference/terms/#autofill-ui" target="_blank">
           Browser Autofill UI
+          <br />
+          (Conditional Get)
         </a>
       </td>
       <td class="text-center">
@@ -136,15 +103,19 @@ Passkeys created in **macOS** can be used on:
             </span>
       </td>
       <td class="text-center">
-        {{< fa fa-calendar-plus fa-xl mb-2 text-dark>}}
-          <span class="fs-6">
-            <br />
-            Planned
-          </span>
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <br />
+          <span class="fs-6 text-muted">v129+</span>
       </td>
       <td class="text-center">
         {{< fas fa-circle-check fa-xl mb-2 text-success >}}
           <span class="fs-6">
+            <br />
+            iOS 16.1+
+            <br />
+            -
+          </span>
+          <span class="fs-6 text-muted">
             <br />
             Safari
             <br />
@@ -159,7 +130,7 @@ Passkeys created in **macOS** can be used on:
         {{< fas fa-circle-check fa-xl mb-2 text-success >}}
           <span class="fs-6">
             <br />
-            Safari
+            Safari 16.1+
             <br />
             Chrome 108+
             <br />
@@ -183,6 +154,105 @@ Passkeys created in **macOS** can be used on:
             Firefox 122+ <sup><a href="#fn3">3</a></sup>
             <br />
             Edge 122+ <sup><a href="#fn3">3</a></sup>
+          </span>
+          <br />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="../docs/reference/terms/#conditional-create" target="_blank">
+          Passkey Upgrades
+          <br />
+          (Conditional Create)
+          </a>
+      </td>
+      <td class="text-center">
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <span class="fs-6">
+            <br />
+            Chrome 142+ <sup><a href="#fn3">2</a></sup>
+            <br />
+          </span>
+          <br />
+          <br />
+          {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
+          <span class="fs-6">
+            <br />
+            Edge
+            <br />
+            Firefox
+          </span>
+      </td>
+      <td class="text-center">
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <br />
+          <span class="fs-6 text-muted">136+ </span><sup><a href="#fn8">2</a></sup>
+      </td>
+      <td class="text-center">
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <span class="fs-6">
+            <br />
+            iOS 18+ <sup><a href="#fn8">2</a></sup>
+            <br />
+            -
+          </span>
+          <span class="fs-6 text-muted">
+            <br />
+            Safari <sup><a href="#fn8">2</a></sup>
+            <br />
+            Chrome <sup><a href="#fn8">2</a></sup>
+            <br />
+            Edge <sup><a href="#fn8">2</a></sup>
+            <br />
+            Firefox <sup><a href="#fn8">2</a></sup>
+          </span>
+      </td>
+      <td class="text-center">
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <span class="fs-6">
+            <br />
+            Safari 18+</span><sup><a href="#fn8">2</a></sup>
+            <br />
+            Chrome 136+ </span><sup><a href="#fn8">2</a></sup>
+            <br />
+            <br />
+        {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
+          <span class="fs-6">
+            <br />
+            Edge
+            <br />
+            Firefox
+          </span>
+      </td>
+      <td class="text-center">
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <br />
+          Chrome 136+ </span><sup><a href="#fn8">2</a></sup>
+          <br />
+          <br />
+          <br />
+        {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
+          <span class="fs-6">
+            <br />
+            Edge
+            <br />
+            Firefox
+          </span>
+      </td>
+      <td class="text-center">
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
+          <span class="fs-6">
+            <br />
+            Chrome 136+ <sup><a href="#fn3">2</a></sup>
+            <br />
+            <br />
+            <br />
+        {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
+          <span class="fs-6">
+            <br />
+            Edge
+            <br />
+            Firefox
           </span>
           <br />
       </td>
@@ -342,7 +412,9 @@ Passkeys created in **macOS** can be used on:
           {{< fas fa-circle-check fa-xl mb-2 text-success >}}
         </td>
         <td class="text-center">
-          {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
+          {{< fa fa-calendar-plus fa-xl mb-2>}}
+            <br />
+            <span class="fs-6">Planned</span>
         </td>
         <td class="text-center">
           {{< fas fa-circle-check fa-xl mb-2 text-success >}}
@@ -460,7 +532,7 @@ Passkeys created in **macOS** can be used on:
           <a href="/docs/reference/windows/">Windows</a>
         </td>
       </tr>
-      <tr class="align-top">
+      <tr class="align-middle">
         <td class="fw-bold">
           <a href="../docs/reference/terms/#device-bound-passkey" target="_blank">
             <span class="fst-italic">Device-bound</span> Passkeys
@@ -497,7 +569,7 @@ Passkeys created in **macOS** can be used on:
       </tr>
       <tr class="align-top">
         <td class="fw-bold">
-          <a href="https://w3c.github.io/webauthn/#enum-hints" target="_blank">Client Hints</a>
+          <a href="../docs/advanced/client-hints/" target="_blank">Client Hints</a>
         </td>
         <td class="text-center">
           {{< fas fa-circle-check fa-xl mb-2 text-success>}}
@@ -643,7 +715,7 @@ Passkeys created in **macOS** can be used on:
               </span>
         </td>
       </tr>
-      <tr class="align-top">
+      <tr class="align-middle">
         <td class="fw-bold">
           <a href="../docs/reference/terms/#attestation" target="_blank">
             Device-bound Passkey Attestation
@@ -658,31 +730,6 @@ Passkeys created in **macOS** can be used on:
           {{< fas fa-circle-check fa-xl mb-2 text-success>}}
         </td>
       </tr>
-      <tr class="align-top">
-        <td class="fw-bold">
-          <a href="../docs/reference/terms/#attestation" target="_blank">
-            Synced Passkey Attestation
-          </a>
-        </td>
-        <td class="text-center">
-          {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
-            <br />
-            <span class="fs-6 text-muted">Not Supported</span>
-        </td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-        <td class="text-center">
-          {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
-            <br />
-            <span class="fs-6 text-muted">Not Supported</span>
-        </td>
-        <td class="text-center">
-          {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
-            <br />
-            <span class="fs-6 text-muted">Not Supported</span>
-        </td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-        <td class="text-center"><span class="fs-6 text-muted">n/a</span></td>
-      </tr>
     </thead>
   </table>
 </div>
@@ -695,12 +742,8 @@ Passkeys created in **macOS** can be used on:
   <sup id="fn1">1</sup>
   Device-bound passkeys supported
   <br />
-  <sup id="fn2">2</sup>
-  See
-  <a href="/docs/reference/macos/#browser-behavior" target="_blank">
-    macOS browser behavior
-  </a>
-  for caveats
+  <sup id="fn8">2</sup>
+  Also requires support from credential managers and operating systems
   <br />
   <sup id="fn3">3</sup>
   Windows 11 22H2+
