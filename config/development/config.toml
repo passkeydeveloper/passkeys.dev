@@ -1,3 +1,0 @@
-# Overrides for production environment
-canonifyURLs = true
-baseurl = "/"

@@ -1,7 +1,11 @@
-node_modules
-public
-resources
-.netlify
+/_vendor
+/prebuild
+/public
+resources/
+node_modules/
+
+.DS_store
 .hugo_build.lock
-.DS_Store
-static/.DS_Store
+.netlify
+
+hugo

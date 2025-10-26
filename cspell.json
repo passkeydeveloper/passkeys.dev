@@ -1,9 +1,22 @@
 {
     "version": "0.2",
-    "ignorePaths": [],
+    "ignorePaths": [
+        "static/_redirects"
+    ],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": [],
+    "words": [
+        "androidwin",
+        "autofilled",
+        "cctld",
+        "fullpage",
+        "myshoppingcard",
+        "myshoppingcreditcard",
+        "myshoppingrewards",
+        "myshoppingtravel",
+        "nopad",
+        "pkdd"
+    ],
     "ignoreWords": [],
     "import": []
 }
