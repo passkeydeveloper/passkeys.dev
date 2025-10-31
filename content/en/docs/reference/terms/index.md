@@ -2,6 +2,7 @@
 title: "Terms"
 description: "A list of terms which are used frequently throughout this site and in discussions about passkeys, FIDO2, and WebAuthn."
 date: 2020-11-12T13:26:54+01:00
+weight: 408
 layout: docs
 ---
 

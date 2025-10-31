@@ -2,6 +2,7 @@
 title: "Chrome OS"
 description: "Resources for passkeys in Google's Chrome OS"
 date: 2022-09-03T16:09:38.358Z
+weight: 403
 type: docs
 layout: docs
 ---

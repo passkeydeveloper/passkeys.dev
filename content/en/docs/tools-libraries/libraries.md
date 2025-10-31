@@ -2,6 +2,7 @@
 title: "Libraries"
 description: "A list of libraries for passkeys and FIDO2/WebAuthn"
 date: 2022-09-24T16:02:27.390Z
+weight: 301
 layout: docs
 type: docs
 ---

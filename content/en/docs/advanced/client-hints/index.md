@@ -2,6 +2,7 @@
 title: "Client Hints"
 description: "The WebAuthn Client Hints feature allows a Relying Party to request a more specific credential manager or passkey selection experience from the WebAuthn client."
 date: 2025-09-24T05:07:38.473Z
+weight: 201
 layout: docs
 ---
 
