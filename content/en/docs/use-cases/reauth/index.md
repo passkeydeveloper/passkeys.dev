@@ -2,6 +2,7 @@
 title : "Reauthentication"
 description: "Performing a reauthentication with passkeys"
 date: 2022-10-10T19:52:16.153Z
+weight: 110
 type: docs
 layout: docs
 ---
@@ -36,7 +37,7 @@ navigator.credentials.get({
     challenge: ...,
     rpId: ...,
      allowCredentials: [{
-      type: "public-key",      
+      type: "public-key",
       id: new UInt8Array([21, 31, 56, ...]).buffer,
     }, {
       type: "public-key",
@@ -45,7 +46,7 @@ navigator.credentials.get({
       ...
     }],
     // see note below
-    userVerification: "preferred", 
+    userVerification: "preferred",
   }
 });
 ```

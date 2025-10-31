@@ -2,6 +2,7 @@
 title: "Windows"
 description: "Resources for passkeys in Microsoft Windows"
 date: 2022-09-03T16:09:38.358Z
+weight: 405
 type: docs
 layout: docs
 ---

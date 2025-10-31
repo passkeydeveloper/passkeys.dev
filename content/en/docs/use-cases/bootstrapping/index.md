@@ -2,6 +2,7 @@
 title : "Bootstrapping"
 description: "Bootstrapping an account on the web"
 date: 2022-10-10T19:52:26.819Z
+weight: 101
 #images: ['pkdd-signin-username-next.png']
 ---
 
@@ -71,9 +72,9 @@ This will cause the following to happen:
 - Retrieve the authentication options from your server. Return at least a random challenge to be associated with this authentication request.
 
 - When the user interacts with the username field, the browser and platform will check whether a passkey exists in the platform authenticator that can be used with the relying party
-  
+
   If this is the case, the passkey will be presented to the user as an option to choose (along with other credentials that can be auto-filled, such as usernames stored in the browser’s password manager).
-  
+
   The browser/platform might render a UI similar to the one shown below, although the exact look and feel will vary from platform to platform (Windows vs. Android vs. iOS), and from form factor to form factor (desktop vs. mobile):
 
 {{< image src="pkdd-signin-username-autofill.png" class="col-10 col-md-7" wrapper="text-center" title="Sample sign in screen with the autofill UI rendered under the username field, showing a passkey for bob@example.com, an other accounts option and a passkey from another device option">}}
@@ -174,7 +175,7 @@ navigator.credentials.create({
     ],
     excludeCredentials: [
       // array of credential IDs for existing passkeys tied to the user account.
-      // this avoids creating a new passkey in an authenticator that already has 
+      // this avoids creating a new passkey in an authenticator that already has
       // a passkey tied to the user account
       {
         // example only

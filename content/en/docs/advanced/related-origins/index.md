@@ -2,6 +2,7 @@
 title: "Related Origin Requests"
 description: "The Related Origin Requests (ROR) feature allows an RP to enable a passkey to be created and used across a limited set of related origins."
 date: 2024-08-22T15:20:51.937Z
+weight: 210
 layouts: docs
 ---
 
