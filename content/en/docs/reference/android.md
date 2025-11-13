@@ -54,9 +54,13 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 
 `WebView` is the embedded WebView (EWV) on Android. Embedded WebViews allow the calling app full control over the embedded web session, including modifying and intercepting requests, so many web platform features are limited in these contexts.
 
-WebAuthn is currently not directly supported in embedded WebViews on Android, but adding additional code can allow you to break out of the EWV to call the platform's Credential Manager APIs.
+**Native WebAuthn Support (AndroidX WebKit 1.12.1+):**
 
-This is documented at [Android Developer: "Integrate Credential Manager with WebView](https://developer.android.com/training/sign-in/credential-manager-webview).
+Starting with [AndroidX WebKit 1.12.1](https://developer.android.com/jetpack/androidx/releases/webkit#1.12.0), embedded WebViews support WebAuthn natively without requiring a JavaScript bridge or breaking out to Credential Manager. To enable this, include AndroidX WebKit library 1.12.1 or newer in your project, check feature availability at runtime using `WebViewFeature.isFeatureSupported(WebViewFeature.WEB_AUTHENTICATION)`, then enable it with `WebSettingsCompat.setWebAuthenticationSupport(webView.settings, WebSettingsCompat.WEB_AUTHENTICATION_SUPPORT_FOR_APP)` along with properly configured Digital Asset Links. Note that feature availability depends on the user's WebView APK version, and Conditional UI (`mediation:"conditional"`) is not supported in Embedded WebView.
+
+**Legacy Approach (Pre-1.12.1):**
+
+For apps supporting older Android versions or devices without updated WebView APKs, you can break out of the EWV to call the platform's Credential Manager APIs using a JavaScript bridge. This is documented at [Android Developer: "Integrate Credential Manager with WebView"](https://developer.android.com/training/sign-in/credential-manager-webview).
 
 > **NOTE:**
 >
@@ -65,6 +69,7 @@ This is documented at [Android Developer: "Integrate Credential Manager with Web
 > Said differently, only use EWV when sign in is handled by your own service (non-federated). When supporting multiple identity providers, System WebView should be used (see below).
 
 {{< button color="light" button-size="sm" icon="fab fa-android" cue=false order="first" tooltip="Go to the Android developer docs" href="https://developer.android.com/develop/ui/views/layout/webapps/webview" >}}WebView docs @ Android Developer{{< /button >}}
+{{< button color="light" button-size="sm" icon="fab fa-android" cue=false order="first" tooltip="AndroidX WebKit releases" href="https://developer.android.com/jetpack/androidx/releases/webkit#1.12.0" >}}AndroidX WebKit 1.12.1+ Release Notes{{< /button >}}
 
 <!-- TODO: add screenshot example -->
 
