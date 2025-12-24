@@ -137,7 +137,7 @@ For example, if the RP ID is `shopping.com`, the full URL would be `https://shop
 
 The server must respond with a content type of `application/json`.
 
-The JSON document must have a member named `origins`, containing an array of valid origins for use with passkeys scoped for the RP ID.
+The JSON document must have a member named `origins`, containing an array of valid origins for use with passkeys scoped for the RP ID. Origin(s) matching the RP ID should not be included.
 
 > See [Deployment Considerations](#deployment-considerations) below for details on choosing an RP ID.
 
@@ -148,7 +148,6 @@ Below is an example for the RP ID `shopping.com`.
 ```json
 {
   "origins": [
-    "https://shopping.com",
     "https://myshoppingrewards.com",
     "https://myshoppingcreditcard.com",
     "https://myshoppingtravel.com",
@@ -159,6 +158,8 @@ Below is an example for the RP ID `shopping.com`.
   ]
 }
 ```
+
+Notice that `https://shopping.com` and `https://login.shopping.com` are not included, as they match the RP ID (`shopping.com`).
 
 ## Deployment Considerations
 
