@@ -54,7 +54,6 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 
 `WebView` is the embedded WebView (EWV) on Android. Embedded WebViews allow the calling app full control over the embedded web session, including modifying and intercepting requests, so many web platform features are limited in these contexts.
 
-**Native WebAuthn Support (AndroidX WebKit 1.12.1+):**
 
 Starting with [AndroidX WebKit 1.12.1](https://developer.android.com/jetpack/androidx/releases/webkit#1.12.0), embedded WebViews support WebAuthn natively without requiring a JavaScript bridge or breaking out to Credential Manager. To enable this, include AndroidX WebKit library 1.12.1 or newer in your project, check feature availability at runtime using `WebViewFeature.isFeatureSupported(WebViewFeature.WEB_AUTHENTICATION)`, then enable it with `WebSettingsCompat.setWebAuthenticationSupport(webView.settings, WebSettingsCompat.WEB_AUTHENTICATION_SUPPORT_FOR_APP)` along with properly configured Digital Asset Links. Note that feature availability depends on the user's WebView APK version, and Conditional UI (`mediation:"conditional"`) is not supported in Embedded WebView.
 
