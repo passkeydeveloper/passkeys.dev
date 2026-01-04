@@ -68,7 +68,7 @@ For apps supporting older Android versions or devices without updated WebView AP
 > Said differently, only use EWV when sign in is handled by your own service (non-federated). When supporting multiple identity providers, System WebView should be used (see below).
 
 {{< button color="light" button-size="sm" icon="fab fa-android" cue=false order="first" tooltip="Go to the Android developer docs" href="https://developer.android.com/develop/ui/views/layout/webapps/webview" >}}WebView docs @ Android Developer{{< /button >}}
-{{< button color="light" button-size="sm" icon="fab fa-android" cue=false order="first" tooltip="AndroidX WebKit releases" href="https://developer.android.com/jetpack/androidx/releases/webkit#1.12.0" >}}AndroidX WebKit 1.12.1+ Release Notes{{< /button >}}
+{{< button color="light" button-size="sm" icon="fab fa-android" cue=false order="first" tooltip="AndroidX WebKit releases" href="https://developer.android.com/identity/sign-in/credential-manager-webview" >}}Authenticate users with WebView{{< /button >}}
 
 <!-- TODO: add screenshot example -->
 
