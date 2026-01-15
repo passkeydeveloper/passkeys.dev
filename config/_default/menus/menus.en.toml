@@ -10,6 +10,11 @@
   weight = 20
 
 [[main]]
+  name = "Tools"
+  pageRef = "https://tools.passkeys.dev"
+  weight = 25
+
+[[main]]
   name = "About"
   pageRef = "/about/"
   weight = 30
@@ -37,7 +42,7 @@
   url = "https://bsky.app/profile/passkeys.dev"
   weight = 140
   [main.params]
-    icon = true    
+    icon = true
 
 [[main]]
   name = "Mastodon"
@@ -45,7 +50,7 @@
   url = "https://fosstodon.org/@passkeysdev"
   weight = 140
   [main.params]
-    icon = true    
+    icon = true
 
 [[footer]]
   name = "Links"
@@ -97,8 +102,8 @@
 
 [[footer]]
   parent = "Tools"
-  name = "Client Feature Detect"
-  url = "https://featuredetect.passkeys.dev"
+  name = "Passkey Developer Tools"
+  url = "https://tools.passkeys.dev"
   weight = 10
 
 [[footer]]
