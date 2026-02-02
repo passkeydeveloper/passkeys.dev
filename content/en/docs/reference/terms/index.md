@@ -78,7 +78,7 @@ See [_Autofill UI_](#autofill-ui)
 
 ## Conditional Create
 
-A WebAuthn capability which allows a Relying Party to request the creation of a passkey after a successful sign in user another credential from their credential manager, such as a password.
+A WebAuthn capability which allows a Relying Party to request the creation of a passkey after a successful sign in using another credential from their credential manager, such as a password.
 
 Note:
 
