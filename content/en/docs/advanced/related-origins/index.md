@@ -8,11 +8,13 @@ layouts: docs
 
 ## Use Cases
 
-The two use cases for Related Origin Requests (ROR) are deployments which use different country code top-level domains (ccTLD) across the world, and deployments where different branding is used for different services.
+Where suppoted, Related Origin Requests (ROR) can help Relying Parties offer users the ability to use a single origin-bound passkey across the following deployment patterns:
 
-To address these use cases, it is recommended to leverage industry-standard federation protocols such as [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html). This approach facilitates a centralized login experience, by using a dedicated login page (e.g., login.example.com) that serves as the authentication point for all origins and services.
+1. Deployments that use different country code top-level domains (ccTLD) across the world
+2. Deployments where a single company's different services are served from different domains
 
-**ROR is designed to be used when federation is _not_ possible.**
+> [!WARNING]
+> **ROR is designed to be used when federation is _not_ possible!** It is **recommended** that Relying Parties first consider leveraging industry-standard federation protocols such as [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html). Federation achieves a centralized login experience by using a dedicated login page (e.g., login.example.com) that serves as the authentication point for all origins and services.
 
 > [!NOTE]
 > ROR is a WebAuthn feature for the web. App platforms have existing mechanisms for mapping native apps to one or more web origins: [Digital Asset Links](https://developers.google.com/identity/credential-sharing/set-up) for Android and [Associated Domains](https://developer.apple.com/documentation/xcode/supporting-associated-domains) on Apple platforms.
