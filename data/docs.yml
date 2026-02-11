@@ -10,6 +10,13 @@
     - title: Reauthentication
       link: reauth
 
+- title: Implementation
+  pages:
+    - title: Backend Requirements
+      link: backend
+    - title: Frontend Requirements
+      link: frontend
+
 - title: Advanced
   pages:
     - title: Client Hints

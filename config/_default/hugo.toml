@@ -10,3 +10,7 @@ enableRobotsTXT = true
 
 [[module.imports]]
   path = 'github.com/gethinode/hinode'
+
+[markup]
+  [markup.highlight]
+    style = 'onedark'
