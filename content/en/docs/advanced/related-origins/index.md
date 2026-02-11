@@ -2,16 +2,19 @@
 title: "Related Origin Requests"
 description: "The Related Origin Requests (ROR) feature allows an RP to enable a passkey to be created and used across a limited set of related origins."
 date: 2024-08-22T15:20:51.937Z
+weight: 210
 layouts: docs
 ---
 
 ## Use Cases
 
-The two use cases for Related Origin Requests (ROR) are deployments which use different country code top-level domains (ccTLD) across the world, and deployments where different branding is used for different services.
+Where suppoted, Related Origin Requests (ROR) can help Relying Parties offer users the ability to use a single origin-bound passkey across the following deployment patterns:
 
-To address these use cases, it is recommended to leverage industry-standard federation protocols such as [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html). This approach facilitates a centralized login experience, by using a dedicated login page (e.g., login.example.com) that serves as the authentication point for all origins and services.
+1. Deployments that use different country code top-level domains (ccTLD) across the world
+2. Deployments where a single company's different services are served from different domains
 
-**ROR is designed to be used when federation is _not_ possible.**
+> [!WARNING]
+> **ROR is designed to be used when federation is _not_ possible!** It is **recommended** that Relying Parties first consider leveraging industry-standard federation protocols such as [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html). Federation achieves a centralized login experience by using a dedicated login page (e.g., login.example.com) that serves as the authentication point for all origins and services.
 
 > [!NOTE]
 > ROR is a WebAuthn feature for the web. App platforms have existing mechanisms for mapping native apps to one or more web origins: [Digital Asset Links](https://developers.google.com/identity/credential-sharing/set-up) for Android and [Associated Domains](https://developer.apple.com/documentation/xcode/supporting-associated-domains) on Apple platforms.
@@ -136,7 +139,7 @@ For example, if the RP ID is `shopping.com`, the full URL would be `https://shop
 
 The server must respond with a content type of `application/json`.
 
-The JSON document must have a member named `origins`, containing an array of valid origins for use with passkeys scoped for the RP ID.
+The JSON document must have a member named `origins`, containing an array of valid origins for use with passkeys scoped for the RP ID. Origin(s) matching the RP ID should not be included.
 
 > See [Deployment Considerations](#deployment-considerations) below for details on choosing an RP ID.
 
@@ -147,7 +150,6 @@ Below is an example for the RP ID `shopping.com`.
 ```json
 {
   "origins": [
-    "https://shopping.com",
     "https://myshoppingrewards.com",
     "https://myshoppingcreditcard.com",
     "https://myshoppingtravel.com",
@@ -158,6 +160,8 @@ Below is an example for the RP ID `shopping.com`.
   ]
 }
 ```
+
+Notice that `https://shopping.com` and `https://login.shopping.com` are not included, as they match the RP ID (`shopping.com`).
 
 ## Deployment Considerations
 

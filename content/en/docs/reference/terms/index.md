@@ -2,6 +2,7 @@
 title: "Terms"
 description: "A list of terms which are used frequently throughout this site and in discussions about passkeys, FIDO2, and WebAuthn."
 date: 2020-11-12T13:26:54+01:00
+weight: 408
 layout: docs
 ---
 
@@ -77,7 +78,7 @@ See [_Autofill UI_](#autofill-ui)
 
 ## Conditional Create
 
-A WebAuthn capability which allows a Relying Party to request the creation of a passkey after a successful sign in user another credential from their credential manager, such as a password.
+A WebAuthn capability which allows a Relying Party to request the creation of a passkey after a successful sign in using another credential from their credential manager, such as a password.
 
 Note:
 

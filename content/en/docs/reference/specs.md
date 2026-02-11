@@ -2,6 +2,7 @@
 title: "Specifications"
 description: "List of specifications that enable passkeys"
 date: 2022-08-04T17:33:14.682Z
+weight: 407
 layout: docs
 
 ---
