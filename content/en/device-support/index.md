@@ -81,7 +81,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
     <tr>
       <td>
         <a href="../docs/reference/terms/#autofill-ui" target="_blank">
-          Browser Autofill UI
+          Autofill UI
           <br />
           (Conditional Get)
         </a>
