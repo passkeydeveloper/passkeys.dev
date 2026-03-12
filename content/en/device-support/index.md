@@ -327,7 +327,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
     <tr>
       <td>
         <a href="../docs/reference/terms/#third-party-passkey-provider" target="_blank">
-          Third-Party Passkey Providers
+          Third-Party Credential Managers
         </a>
       </td>
       <td class="text-center">
@@ -356,14 +356,9 @@ This matrix represents the default capabilities for a user out of the box. Addit
           <span class="fs-6 text-muted">Browser<br>Extensions</span>
       </td>
       <td class="text-center">
-        {{< fa fa-circle-check fa-xl mb-2>}}
+        {{< fas fa-circle-check fa-xl mb-2 text-success >}}
           <br />
-          <span class="fs-6 text-muted">Browser<br>Extensions</span>
-          <br />
-          <br />
-          {{< fa fa-calendar-plus fa-xl mb-2>}}
-            <br />
-            <span class="fs-6">Native Planned</span>
+          <span class="fs-6 text-muted">v25H2+</span>
       </td>
     </tr>
   </table>
