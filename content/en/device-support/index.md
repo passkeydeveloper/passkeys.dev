@@ -648,9 +648,9 @@ This matrix represents the default capabilities for a user out of the box. Addit
             <br />
             <br />
             <br />
-            {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
-              <br />
-              <span class="fs-6">Firefox</span>
+          {{< fa fa-calendar-plus fa-xl mb-2>}}
+            <br />
+            <span class="fs-6">Planned</span>
         </td>
         <td class="text-center">
           {{< fas fa-circle-check fa-xl mb-2 text-success>}}
@@ -672,10 +672,9 @@ This matrix represents the default capabilities for a user out of the box. Addit
             <span class="fs-6">Safari (macOS 15+)</span>
             <br />
             <br />
-            {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
-              <br />
-              Firefox
-              </span>
+          {{< fa fa-calendar-plus fa-xl mb-2>}}
+            <br />
+            <span class="fs-6">Planned</span>
         </td>
         <td class="text-center">
           {{< fas fa-circle-check fa-xl mb-2 text-success>}}
@@ -686,12 +685,9 @@ This matrix represents the default capabilities for a user out of the box. Addit
             <br />
             <br />
             <br />
-            {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
-              <br />
-              Firefox
-              <br />
-              <br />
-              </span>
+          {{< fa fa-calendar-plus fa-xl mb-2>}}
+            <br />
+            <span class="fs-6">Planned</span>
         </td>
         <td class="text-center">
           {{< fas fa-circle-check fa-xl mb-2 text-success>}}
@@ -702,12 +698,9 @@ This matrix represents the default capabilities for a user out of the box. Addit
             <br />
             <br />
             <br />
-            {{< fas fa-circle-xmark fa-xl mb-2 text-danger>}}
-              <br />
-              Firefox
-              <br />
-              <br />
-              </span>
+          {{< fa fa-calendar-plus fa-xl mb-2>}}
+            <br />
+            <span class="fs-6">Planned</span>
         </td>
       </tr>
       <tr class="align-middle">
@@ -742,12 +735,6 @@ This matrix represents the default capabilities for a user out of the box. Addit
   <br />
   <sup id="fn3">3</sup>
   Windows 11 22H2+
-  <br />
-  <sup id="fn4">4</sup>
-  Experimental (behind flag)
-  <br />
-  <sup id="fn5">5</sup>
-  Partial support
   <br />
   <sup id="fn6">6</sup>
   See details on the <a href="/docs/reference/android/#webviews" target="_blank">Android reference page</a>
