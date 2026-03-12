@@ -650,7 +650,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
             <br />
           {{< fa fa-calendar-plus fa-xl mb-2>}}
             <br />
-            <span class="fs-6">Planned</span>
+            <span class="fs-6">Firefox</span>
         </td>
         <td class="text-center">
           {{< fas fa-circle-check fa-xl mb-2 text-success>}}
@@ -674,7 +674,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
             <br />
           {{< fa fa-calendar-plus fa-xl mb-2>}}
             <br />
-            <span class="fs-6">Planned</span>
+            <span class="fs-6">Firefox</span>
         </td>
         <td class="text-center">
           {{< fas fa-circle-check fa-xl mb-2 text-success>}}
@@ -687,7 +687,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
             <br />
           {{< fa fa-calendar-plus fa-xl mb-2>}}
             <br />
-            <span class="fs-6">Planned</span>
+            <span class="fs-6">Firefox</span>
         </td>
         <td class="text-center">
           {{< fas fa-circle-check fa-xl mb-2 text-success>}}
@@ -700,7 +700,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
             <br />
           {{< fa fa-calendar-plus fa-xl mb-2>}}
             <br />
-            <span class="fs-6">Planned</span>
+            <span class="fs-6">Firefox</span>
         </td>
       </tr>
       <tr class="align-middle">
