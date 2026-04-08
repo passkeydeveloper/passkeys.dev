@@ -5,8 +5,9 @@
 The following dependencies are required to work on passkeys.dev locally:
 
 - [Golang 1.23.x](https://go.dev/dl/)
-- [Hugo v0.146.x](https://gohugo.io/installation/)
+- [Hugo Extended v0.158.x](https://gohugo.io/installation/)
 - [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2#install) (installed globally)
+- [Dart Sass](https://github.com/sass/dart-sass?tab=readme-ov-file#using-dart-sass  )
 
 Once these are installed, enable pre-commit linting:
 
@@ -24,3 +25,5 @@ It is recommended to use [Hugo Version Manager](https://github.com/jmooring/hvm)
 Installation and setup instructions here: https://github.com/jmooring/hvm
 
 HVM will automatically pull the correct version from `.hvm`.
+
+You can also use a more general tool like [mise](https://mise.jdx.dev/).

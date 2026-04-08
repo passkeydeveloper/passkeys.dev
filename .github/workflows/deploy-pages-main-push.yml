@@ -8,8 +8,6 @@ on:
       - CODE_OF_CONDUCT.md
       - LICENSE
       - SECURITY.md
-      - package.json
-      - package-lock.json
       - '.github/**'
     branches:
       - main
@@ -23,35 +21,57 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+env:
+  DART_SASS_VERSION: "1.99.0"
+  HUGO_VERSION: "0.158.0"
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Setup Node
-        uses: actions/setup-node@v2
+      - name: Setup Go
+        uses: actions/setup-go@v5
         with:
-          node-version: '16'
-          cache: 'npm'
+          go-version: "stable"
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb \
+            https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
-      - name: Check for linting errors
-        run: npm test
+      - name: Install Dart Sass
+        run: |
+          curl -sLO https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+          tar -xzf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+          echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Cache Hugo modules
+        uses: actions/cache@v5
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
 
       - name: Build production website
-        run: npm run build
-        
-      - name: Upload artifcact
-        uses: actions/upload-pages-artifact@v1
+        run: hugo --gc --minify
+        env:
+          HUGO_CACHEDIR: /tmp/hugo_cache
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-  
+
   deploy:
     environment:
       name: github-pages
@@ -61,4 +81,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4

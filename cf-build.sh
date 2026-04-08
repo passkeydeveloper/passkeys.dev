@@ -1,13 +1,25 @@
 #!/bin/bash
+set -e
+
+DART_SASS_VERSION="1.99.0"
+
+# Install Dart Sass
+curl -sLO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+tar -xzf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+export PATH="$PATH:$PWD/dart-sass"
+
+# Install PostCSS dependencies
+npm install
+
+# Fetch full git history (needed for Hugo's enableGitInfo)
+git fetch --unshallow
 
 if [ "$CF_PAGES_BRANCH" == "production" ]; then
-    git fetch --unshallow && hugo --gc --minify
+    hugo --gc --minify
 
-elif [ "$CF_PAGES_BRANCH" == "staging" ]; then
-    # Adds the CF pages URL as the Hugo base URL
-    git fetch --unshallow && hugo --gc --minify --baseUrl $CF_PAGES_URL
+elif [ "$CF_PAGES_BRANCH" == "main" ]; then
+    hugo --gc --minify
 
 else
-    # Else run the dev script
-    hugo server
+    hugo --gc --minify --baseURL "$CF_PAGES_URL"
 fi

@@ -32,7 +32,7 @@
                     <div class="fs-md-5 fs-6 fw-bold footer-muted">{{ .Name }}</div>
                     {{- range .Children -}}
                         <div class="py-1">
-                            {{- partial "assets/helpers/navbar-item.html" (dict "menu" . "page" $page "class" "link-bg-footer") -}}
+                            {{- partial "assets/helpers/navbar-item.html" (dict "menu-entry" . "page" $page "class" "link-bg-footer") -}}
                         </div>
                     {{- end -}}
                 </div>
