@@ -1,4 +1,22 @@
 
+/* Sticky footer */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main.main {
+    flex: 1 0 auto;
+    min-height: 0; // override Hinode's min-height: 100vh which pushes footer below fold
+}
+
+/* Restore Bootstrap width utilities removed by Hinode 2.x */
+.w-25 { width: 25% !important; }
+.w-50 { width: 50% !important; }
+.w-75 { width: 75% !important; }
+.w-100 { width: 100% !important; }
+
 /* Increase space between ToC items: #442 */
 .toc-item{
   margin-bottom: 0.5rem;
