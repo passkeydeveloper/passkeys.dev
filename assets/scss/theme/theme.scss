@@ -11,6 +11,13 @@ main.main {
     min-height: 0; // override Hinode's min-height: 100vh which pushes footer below fold
 }
 
+/* Restore sidebar-to-content spacing removed in Hinode 2.x (was p-4 on content column) */
+@include media-breakpoint-up(lg) {
+    .sidebar-overflow + div {
+        padding-left: 2rem;
+    }
+}
+
 /* Restore Bootstrap width utilities removed by Hinode 2.x */
 .w-25 { width: 25% !important; }
 .w-50 { width: 50% !important; }
