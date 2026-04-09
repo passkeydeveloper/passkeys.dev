@@ -11,27 +11,52 @@ on:
 
 concurrency: preview-${{ github.ref }}
 
+env:
+  DART_SASS_VERSION: "1.98.0"
+  HUGO_VERSION: "0.158.0"
+
 jobs:
   deploy-preview:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        
-      - name: Node setup
-        uses: actions/setup-node@v2
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
         with:
-         node-version: '16'
-         cache: 'npm'
+          go-version: "stable"
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb \
+            https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
-      - name: Check for linting errors
-        run: npm test
+      - name: Install Dart Sass
+        run: |
+          curl -sLO https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+          tar -xzf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+          echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Cache Hugo modules
+        uses: actions/cache@v5
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
 
       - name: Build website
-        run: npm run build
+        if: github.event.action != 'closed'
+        run: hugo --gc --minify
+        env:
+          HUGO_CACHEDIR: /tmp/hugo_cache
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1

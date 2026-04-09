@@ -9,4 +9,4 @@ enableRobotsTXT = true
   writeStats = true
 
 [[module.imports]]
-  path = 'github.com/gethinode/hinode'
+  path = 'github.com/gethinode/hinode/v2'

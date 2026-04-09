@@ -1,7 +1,7 @@
 ---
 title: Docs
 redirect: "/docs/"
-_build:
+build:
   list: false
   render: false
 ---

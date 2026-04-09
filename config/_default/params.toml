@@ -4,6 +4,9 @@
 [main]
     description = "A collection of resources and insights to help you deploy passkeys, including practical user experiences, device ecosystem support, frequently asked questions, and more."
     images = ["/img/share-cover.png"]
+    [main.build]
+        transpiler = "dartsass"
+        silenceDeprecations = true
     [main.externalLinks]
         cue = false
         tab = true

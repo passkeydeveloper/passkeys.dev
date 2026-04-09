@@ -26,6 +26,7 @@
   weight = 110
   [main.params]
     icon = true
+    control = true
 
 
 [[main]]
@@ -35,6 +36,7 @@
   weight = 120
   [main.params]
     icon = true
+    control = true
 
 [[main]]
   name = "Bluesky"
@@ -43,6 +45,7 @@
   weight = 140
   [main.params]
     icon = true
+    control = true
 
 [[main]]
   name = "Mastodon"
@@ -51,6 +54,7 @@
   weight = 140
   [main.params]
     icon = true
+    control = true
 
 [[footer]]
   name = "Links"
