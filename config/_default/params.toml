@@ -15,7 +15,7 @@
         toggle = false
 
 [navigation]
-    logo = "/img/logos/pdd-logo-color-nopad-light.svg"
+    logo = "/img/header-logo-light.svg"
     logo-mode = true
     title = "passkeys.dev"
     breadcrumb = false

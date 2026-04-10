@@ -1,0 +1,273 @@
+{{/* 
+    Copyright © 2022 - 2026 The Hinode Team / Mark Dumay. All rights reserved.
+    Use of this source code is governed by The MIT License (MIT) that can be found in the LICENSE file.
+    Visit gethinode.com/license for more details.
+*/}}
+
+{{/* TODO: consider to drop style arg */}}
+
+{{- define "_partials/inline/divider.html" -}}
+    {{- $breakpoint := .breakpoint -}}
+    <li class="nav-item py-2 py-md-1 col-12 col-md-auto d-none d-{{ $breakpoint }}-block me-auto">
+        <div class="vr d-none d-md-flex h-100 mx-md-2"></div>
+    </li>
+    <li><hr class="dropdown-divider-bg"></li>
+{{- end -}}
+
+{{/* Initialize arguments */}}
+{{ $args := partial "utilities/InitArgs.html" (dict "structure" "navbar" "args" . "group" "partial") }}
+{{ if or $args.err $args.warnmsg }}
+    {{ partial (cond $args.err "utilities/LogErr.html" "utilities/LogWarn.html") (dict 
+        "partial" "assets/navbar.html" 
+        "warnid"  "warn-invalid-arguments"
+        "msg"     "Invalid arguments"
+        "details" ($args.errmsg | append $args.warnmsg)
+        "file"    page.File
+    )}}
+{{ end }}
+
+{{/* Initialize global variables */}}
+{{- $padding := partial "utilities/GetPadding.html" (dict "section" "navigation") -}}
+{{- $searchArgs := cond (in $args.default "search") (dict) (dict "search" $args.search) -}}
+{{- $search := partial "utilities/GetSearchConfig.html" $searchArgs -}}
+
+{{- $fs := site.Params.navigation.fontsizeCollapsed | default 6 -}}
+{{- $navbarOverflow := "fas ellipsis" -}}
+{{- $langIcon := "fas globe" -}}
+{{- $navbarOverflow := partial "utilities/GetThemeIcon.html" (dict "id" "navbarOverflow" "default" "fas ellipsis") -}}
+{{- $navbarLanguage := partial "utilities/GetThemeIcon.html" (dict "id" "navbarLanguage" "default" "fas globe") -}}
+{{- with site.Params.navigation.language.icon -}}
+    {{- partial "utilities/LogWarn.html" (dict
+        "partial" "assets/navbar.html"
+        "warnid"  "warn-deprecated-icons"
+        "msg"     "Deprecated icon params detected; migrate to the [icons] section in params.toml"
+        "details" (slice "Replace 'navigation.language.icon' with 'icons.navbarLanguage'")
+    ) -}}
+{{- end -}}
+
+{{/* Initialize local arguments */}}
+{{- $absoluteURL := site.Params.main.canonifyAssetsURLs | default false -}}
+{{- $pretty := site.Params.main.internalLinks.pretty | default false }}
+{{- $id := $args.id | default (printf "navbar-%d" 0) -}}
+{{- $page := $args.page -}}
+{{- $baseURL := $page.Scratch.Get "baseURL" -}}
+{{- $breakpoint := or $args.breakpoint $args.size }}
+
+{{- $defaultMenu := "main" -}}
+{{- $menuName := (or $args.menu $args.menus) | default $defaultMenu }}
+{{- $menu := index site.Menus $menuName -}}
+{{- if or (ne (printf "%T" $menu) "navigation.Menu") (ne (index $menu 0).Menu $menuName) -}}
+    {{- if ne $menuName $defaultMenu }}
+        {{- errorf "partial [assets/navbar.html] - Invalid value for param 'menus': %s" $menuName -}}
+    {{- end -}}
+{{- end -}}
+
+{{- $overlay := $args.overlay | default false -}}
+{{- $overlayMode := $args.overlayMode | default "dark" -}}
+{{- if eq $overlayMode "none" }}{{ $overlayMode = "" }}{{ end }}
+{{- $color := $args.color | default "" -}}
+{{- $enableDarkMode := .mode | default (or site.Params.main.enableDarkMode site.Params.main.colorMode.enabled) -}}
+{{- $modes := site.Params.main.modes | default (slice "light" "dark") -}}
+{{ if isset site.Params.main "enabledarkmode" }}
+    {{ warnf "site parameter %q: deprecated in v%s, use %q instead" "main.enableDarkMode" "1.12.0" "main.colorMode.enabled" }}
+{{ end }}
+{{ if isset site.Params.main "modes" }}
+    {{ warnf "site parameter %q: deprecated in v%s, use %q instead" "main.modes" "1.12.0" "main.colorMode.modes" }}
+{{ end }}
+
+
+{{- $enableVersions := false -}}
+{{ $list := site.Params.docs.releases }}
+{{ if $list }}
+    {{- $enableVersions = gt (len $list ) 1 -}}
+{{ end }}
+
+{{- $enableLanguage := or $page.IsTranslated hugo.IsMultilingual -}}
+{{- $horizontal := default false site.Params.navigation.horizontal -}}
+
+{{- $title := site.Title -}}
+{{- if $args.title -}}
+    {{- $title = $args.title -}}
+{{- end -}}
+
+{{ $logo := "" }}
+{{ $mode := or (index site.Params.navigation "logo-mode") (index $args "logo-mode") | default false }}
+
+{{ $align := index site.Params.navigation "logo-align" | default "center" }}
+{{ if (not (in $args.default "logo-align")) }}
+    {{ $align = $args.logoAlign }}
+{{ end }}
+
+{{ if not $args.title }}
+    {{ with $args.logo | default site.Params.navigation.logo }}
+        {{ $height := index site.Params.navigation "logo-height" | default 30 }}
+        {{ $class := cond (eq $align "start") "my-auto" "m-auto" }}
+        {{ $logo = partial "assets/image.html" (dict
+            "src"          .
+            "loading"      "eager"
+            "title"        $title
+            "image-height" $height
+            "mode"         $mode
+            "class"        $class
+            "wrapper"      ""
+        ) }}
+    {{ end }}
+{{ end }}
+
+{{- $class := $args.class -}}
+
+{{- $contrast := false -}}
+{{- if in (slice "primary" "secondary" "success" "danger") $color }}{{ $contrast = true }}{{ end -}}
+
+{{- $flex := false }}
+{{ if gt (where $menu "Params.spacing" true | len) 0 }}
+    {{ $flex = true }}
+{{ end }}
+
+{{/* Main code */}}
+<div class="container-fluid {{ if $args.fixed }}fixed-top{{ else if $overlay }}navbar-overlay{{ end }} p-0{{ with $class }} {{ . }}{{ end }}">
+    {{- partial "assets/page-alert.html" (dict "page" $page) -}}
+    <nav class="navbar px-{{ $padding.x }} py-{{ $padding.y }} navbar-fs-{{ $fs }} navbar-{{ $args.breakpoint }}-fs
+        {{- if not $overlay }}{{ with $color }} bg-{{ . }}{{ end }}{{ end -}}
+        {{ if $args.fixed }} navbar-fixed-top{{ end }} navbar-expand-{{ $args.breakpoint -}}
+        {{ if $contrast }} navbar-contrast{{ end }}"
+        {{ if $overlay }}
+        data-bs-theme="{{ $overlayMode }}"
+        {{ if $args.fixed }}data-bs-overlay="{{ $overlayMode }}"{{ end }}
+        {{ if $color }}data-navbar-color="{{ $color }}"{{ end }}
+        {{ end }}
+        {{ with $args.transparent }}data-transparent="{{ . }}"{{ end }}
+        >
+        <div class="container-xxl p-0">
+            <div class="d-flex navbar-container">
+                {{/* Insert sidebar toggler or placeholder when applicable */}}
+                {{ $sidebar := $page.Scratch.Get "sidebar" }}
+                {{- if or $sidebar (eq $align "center") -}}
+                    <div class="d-flex align-items-center">
+                        {{- if $sidebar -}}
+                            <button class="navbar-toggler collapsed p-0 mx-auto fw-30" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvas-sidebar" aria-controls="offcanvas-sidebar" aria-label="{{ T "toggleSidebar" }}">
+                                {{- partial "assets/icon.html" (dict "icon" $navbarOverflow "class" "fa-fw" "spacing" false) -}}
+                            </button>
+                        {{- else if eq $align "center" -}}
+                            {{/* Insert invisible sidebar toggler to center logo correctly on smaller screens */}}
+                            <button class="navbar-toggler collapsed p-0 mx-auto invisible fw-30" type="button">
+                                {{- partial "assets/icon.html" (dict "icon" $navbarOverflow "class" "fa-fw" "spacing" false) -}}
+                            </button>
+                        {{- end -}}
+                    </div>
+                {{ end }}
+        
+                {{/* Insert the brand logo or name */}}
+                <div class="width-100 d-flex align-items-center width-{{ $args.breakpoint }}-auto">
+                    <a class="navbar-brand{{ if eq $align "center" }} mx-auto{{ end }}" href="{{ site.Home.RelPermalink }}" aria-label="{{ T "home" }}">
+                        {{- with $logo -}}{{ . }}{{- else -}}<div class="p-0 navbar-title-{{ $align }} fw-bold h-100">{{ $title }}</div>{{- end -}}
+                    </a>
+                </div>
+        
+                {{/* Insert main navigation toggler */}}
+                <div class="d-flex align-items-center">
+                    <button class="navbar-toggler main-nav-toggler collapsed p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#{{ $id }}-collapse"
+                        aria-controls="{{ $id }}" aria-expanded="false" aria-label="{{ T "toggleMainNav" }}">
+                        <span class="toggler-icon top-bar emphasis"></span>
+                        <span class="toggler-icon middle-bar emphasis"></span>
+                        <span class="toggler-icon bottom-bar emphasis"></span>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="navbar-collapse collapse" id="{{ $id }}-collapse">
+                {{/* Insert search input */}}
+                {{- if and $search.enabled (not $search.modal) }}
+                    {{ partial "assets/search-input.html" (dict "class" (printf "mt-4 mt-%s-0 me-%s-3" $args.breakpoint $args.breakpoint)) }}
+                {{ end -}}
+
+                {{- partial "page/navbar-extra.html" (dict "page" $page "breakpoint" $args.breakpoint) -}}
+                
+                <ul class="navbar-nav navbar-nav-scroll {{ if $flex }}d-flex flex-grow-1{{ else }}ms-auto{{ end }}">
+                    {{/* Render top-menu items (maximum depth of 2) */}}
+                    {{- partial "assets/helpers/navbar-render-menu.html" (dict
+                        "page"       $page
+                        "menu"       $menu
+                        "collapsed"  $args.collapsed
+                        "horizontal" $horizontal
+                        "breakpoint" $args.breakpoint
+                        "control"    false
+                    ) }}
+    
+                    {{/* Insert divider if applicable */}}
+                    {{- if and $menu (or $enableLanguage $enableVersions) -}}
+                        {{ partial "inline/divider.html" (dict "breakpoint" $args.breakpoint) }}
+                    {{- end -}}
+    
+                    {{/* Insert version switcher */}}
+                    {{- if $enableVersions -}}
+                        {{- partial "assets/helpers/navbar-versions.html" (dict 
+                            "page"       $page
+                            "breakpoint" $args.breakpoint
+                            "collapsed"  true
+                            "id"         .id
+                            "baseURL"    $baseURL
+                            "fs"         $fs
+                        ) -}}
+                        {{- partial "assets/helpers/navbar-versions.html" (dict
+                            "page"       $page
+                            "breakpoint" $args.breakpoint
+                            "collapsed"  false
+                            "id"         .id
+                            "baseURL"    $baseURL
+                    ) -}}
+                    {{- end -}}
+
+                    {{/* Insert language switcher if applicable */}}
+                    {{- if $enableLanguage -}}
+                        {{ partial "assets/helpers/navbar-languages.html" (dict
+                            "page"       $page
+                            "baseURL"    $baseURL
+                            "breakpoint" $breakpoint
+                            "pretty"     $pretty                        
+                            "icon"       $langIcon
+                        )}}
+                    {{- end -}}
+
+                    {{/* Insert divider if applicable */}}
+                    {{ $hasControls := gt (len (where $menu "Params.control" true)) 0 }}
+                    {{ if and (or $enableLanguage $enableVersions) (or $enableDarkMode (and $search.enabled $search.modal) $hasControls) }}
+                        {{ partial "inline/divider.html" (dict "breakpoint" $args.breakpoint) }}
+                    {{ end }}
+                                    
+                    {{/* Insert color mode switcher */}}
+                    {{- if $enableDarkMode -}}
+                        {{- partial "assets/helpers/navbar-mode.html" (dict
+                            "breakpoint" $args.breakpoint
+                            "collapsed"  true
+                            "id"         .id
+                            "toggle"     (site.Params.main.colorMode.toggle)
+                        ) -}}
+                    {{- end -}}
+
+                    {{/* Insert modal search button */}}
+                    {{- if and $search.enabled $search.modal }}
+                        {{ $searchItem := dict "Name" (T "ui_search") "Menu" "Main" "Pre" $search.icon "Params" (dict "icon" true "control" true) }}
+                        {{- partial "assets/helpers/navbar-item.html" (dict
+                            "menu-entry" $searchItem
+                            "page"       $page
+                            "modal"      "#search-modal"
+                        ) -}}
+                    {{ end -}}
+
+                    {{/* Render custom controls */}}
+                    {{- partial "assets/helpers/navbar-render-menu.html" (dict
+                        "page"       $page
+                        "menu"       $menu
+                        "collapsed"  $args.collapsed
+                        "horizontal" $horizontal
+                        "breakpoint" $args.breakpoint
+                        "control"    true
+                    ) }}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
