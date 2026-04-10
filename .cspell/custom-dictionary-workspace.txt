@@ -26,3 +26,5 @@ webauthn
 webshare
 Yubico
 xmark
+bitwarden
+keepass
