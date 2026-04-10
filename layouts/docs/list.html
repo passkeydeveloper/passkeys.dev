@@ -1,23 +1,38 @@
-{{ define "main" }}
-<div class="row justify-content-center">
-  <div class="col-md-12 col-lg-10 col-xl-8">
-    <div>
-      <h1>{{ if eq .CurrentSection .FirstSection }}{{ .Section | humanize }}{{ else }}{{ .Title }}{{ end }}</h1>
-      {{ with .Content }}<div class="text-center">{{ . }}</div>{{ end }}
-			<div class="card-list">
-				{{ $currentSection := .CurrentSection }}
-				{{ range where .Site.RegularPages.ByTitle "Section" .Section }}
-					{{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
-						<div class="card my-3">
-							<div class="card-body">
-								<a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title }} &rarr;</a>
-                                <p class="card-text">{{ .Params.description }}</p>
-							</div>
-						</div>
-					{{ end }}
-				{{ end }}
-			</div>
-		</div>
-  </div>
-</div>
+{{ define "main" -}}
+    {{- $breakpoint := $.Scratch.Get "breakpoint" -}}
+    {{- $padding := partial "utilities/GetPadding.html" -}}
+
+    {{- $menu := .Scratch.Get "sidebar" -}}
+    {{- if not (reflect.IsSlice $menu) }}{{ $menu = "" }}{{ end }}
+    {{- $version := .Scratch.Get "version" -}}
+    {{- $sidebar := partial "assets/sidebar.html" (dict "page" . "menu" $menu "version" $version "auto-generate" true) -}}
+
+    {{- partial "page/sidebar-offcanvas.html" (dict "section" $.Section "raw" $sidebar) -}}
+
+    <div class="container-xxl flex-fill py-{{ $padding.y }} px-{{ $padding.x }} px-xxl-0">
+        <div class="row row-cols-1 row-cols-{{ $breakpoint.current }}-2 row-cols-{{ $breakpoint.next }}-3">
+            <div class="col col-{{ $breakpoint.next }}-2 d-none d-{{ $breakpoint.next }}-block sidebar-overflow sticky-top p-0">
+                {{ $sidebar | safeHTML }}
+            </div>
+            <div class="col-12 col-{{ $breakpoint.current }}-9 col-{{ $breakpoint.next }}-8 mb-5">
+                <h1>{{ if eq .CurrentSection .FirstSection }}{{ .Section | humanize }}{{ else }}{{ .Title }}{{ end }}</h1>
+                {{ with .Content }}<div>{{ . }}</div>{{ end }}
+                <div class="card-list">
+                    {{ $currentSection := .CurrentSection }}
+                    {{ range where .Site.RegularPages.ByTitle "Section" .Section }}
+                        {{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
+                            <div class="card my-3">
+                                <div class="card-body">
+                                    <a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title }} &rarr;</a>
+                                    <p class="card-text">{{ .Params.description }}</p>
+                                </div>
+                            </div>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+            <div class="col col-{{ $breakpoint.current }}-3 col-{{ $breakpoint.next }}-2 d-none d-{{ $breakpoint.current }}-block">
+            </div>
+        </div>
+    </div>
 {{ end }}
