@@ -38,7 +38,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
       </tr>
     </thead>
     <tr>
-      <td>
+      <td class="fw-bold">
         <span>
           <a href="/docs/reference/terms/#synced-passkey" target="_blank">
             Synced Passkeys
@@ -79,7 +79,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="fw-bold">
         <a href="../docs/reference/terms/#autofill-ui" target="_blank">
           Autofill UI
           <br />
@@ -159,7 +159,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="fw-bold">
         <a href="../docs/reference/terms/#conditional-create" target="_blank">
           Passkey Upgrades
           <br />
@@ -258,7 +258,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
       </td>
     </tr>
     <tr class="align-top">
-      <td>
+      <td class="fw-bold">
         <a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">
           Cross-Device Authentication
         </a>
@@ -285,7 +285,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
       <td class="text-center"><span class="fs-6 text-muted">-<br>n/a</span></td>
     </tr>
     <tr>
-      <td>
+      <td class="fw-bold">
         <a href="../docs/reference/terms/#cross-device-authentication-cda" target="_blank">
           Cross-Device Authentication
         </a>
@@ -325,7 +325,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="fw-bold">
         <a href="../docs/reference/terms/#third-party-passkey-provider" target="_blank">
           Third-Party Credential Managers
         </a>
@@ -391,7 +391,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
         </td>
       </tr>
       <tr class="align-top">
-        <td>
+        <td class="fw-bold">
           Native Platform APIs
         </td>
         <td class="text-center">
@@ -416,7 +416,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
         </td>
       </tr>
       <tr class="align-top">
-        <td>
+        <td class="fw-bold">
           Default Browser
         </td>
         <td class="text-center">
@@ -439,7 +439,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
         </td>
       </tr>
       <tr class="align-top">
-        <td>
+        <td class="fw-bold">
           System WebView
         </td>
         <td class="text-center">
@@ -473,7 +473,7 @@ This matrix represents the default capabilities for a user out of the box. Addit
         </td>
       </tr>
       <tr class="align-top">
-        <td>
+        <td class="fw-bold">
           Embedded WebView
         </td>
         <td class="text-center">
