@@ -5,7 +5,7 @@ layout: minimal
 type: minimal
 ---
 
-passkeys.dev is brought to you by members of the [W3C WebAuthn Community Adoption Group](https://www.w3.org/community/webauthn-adoption/) and the [FIDO Alliance](https://fidoalliance.org/).
+passkeys.dev is brought to you by the [W3C Web Identity & Credentials Adoption CG](https://www.w3.org/groups/cg/wica/) and members of the [FIDO Alliance](https://fidoalliance.org/).
 
 ## Engage and Contribute
 
@@ -34,7 +34,7 @@ Contributing guidance coming soon!
 Tim Cappalli
 [{{< fab fa-github >}}](https://github.com/timcappalli)
 [{{< fab fa-mastodon >}}](https://infosec.exchange/@timcappalli)
-[{{< fas fa-at >}}](https://www.threads.net/@timcappalli)
+[{{< fab fa-bluesky >}}](https://bsky.app/profile/timcappalli.me)
 [{{< fas fa-house >}}](https://timcappalli.me/)
 
 Matthew Miller
