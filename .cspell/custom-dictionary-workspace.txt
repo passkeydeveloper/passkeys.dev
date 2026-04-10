@@ -26,6 +26,8 @@ webauthn
 webshare
 Yubico
 xmark
+bitwarden
+keepass
 cappalli
 anders
 Åberg
