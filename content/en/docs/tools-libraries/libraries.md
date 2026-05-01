@@ -70,6 +70,10 @@ context of your project.
 
 - [java-webauthn-server](https://github.com/Yubico/java-webauthn-server) ([Yubico](https://developers.yubico.com/java-webauthn-server/))
 
+### Kotlin
+
+- [webauthn-kotlin-multiplatform](https://github.com/szijpeter/webauthn-kotlin-multiplatform) (Peter Szij)
+
 ## Other FIDO2/WebAuthn libraries
 
 The ["Awesome WebAuthn"](https://github.com/herrjemand/awesome-webauthn) GitHub repo is also regularly updated with libraries from the community.
