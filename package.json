@@ -10,7 +10,7 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^8.0.0",
     "autoprefixer": "^10.4.27",
-    "cssnano": "^7.1.4",
+    "cssnano": "^7.1.9",
     "cssnano-preset-advanced": "^7.0.12",
     "postcss-cli": "^11.0.1"
   }
