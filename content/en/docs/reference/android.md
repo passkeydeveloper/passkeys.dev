@@ -50,6 +50,16 @@ When an authenticator is not persistently linked, a QR code must be scanned on e
 
 ### WebViews
 
+#### AuthTab
+
+`AuthTab` (launched via `AuthTabIntent`) is a specialized version of `Custom Tabs`, purpose-built for authentication flows. From a passkeys perspective it behaves the same as a System WebView: it runs sites in the context of the top-level site (isolated from the calling app), so the full range of Web Platform features, including WebAuthn, is available, and passkeys for third party or federated identity providers can be used to sign in.
+
+The difference from a standard Custom Tab is in the surrounding flow, not in WebAuthn capability. AuthTab strips the browser UI down to what an auth flow needs (no menu items to open in Chrome, bookmark, or add to homescreen, for example), and it returns the result directly to an `ActivityResultCallback` instead of relying on an intent filter and `AndroidManifest.xml` configuration to catch the redirect. This removes some of the boilerplate that Custom Tabs–based sign-in flows, including those using passkeys, previously required.
+
+AuthTab is available from Chrome 137+ via the AndroidX Browser library (`androidx.browser:browser:1.9.0`+). On devices where the default browser doesn't support it, an `AuthTabIntent` automatically falls back to a standard Custom Tab, so passkey sign-in continues to work either way.
+
+{{< button color="light" button-size="sm" icon="fab fa-android" cue=false order="first" tooltip="Go to the Android developer docs" href="https://developer.chrome.com/docs/android/custom-tabs/guide-auth-tab" >}}AuthTab docs @ Android Developer{{< /button >}}
+
 #### Embedded WebViews (EWV)
 
 `WebView` is the embedded WebView (EWV) on Android. Embedded WebViews allow the calling app full control over the embedded web session, including modifying and intercepting requests, so many web platform features are limited in these contexts.
