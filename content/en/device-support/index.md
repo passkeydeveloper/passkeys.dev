@@ -8,6 +8,8 @@ This page, along with the rest of passkeys.dev, is targeted at relying party dev
 
 > Said differently, **please don’t link to this page from end user focused resources** 😉
 
+Looking for a consumer focused resources on passkeys? Check out [whatarepasskeys.info](https://whatarepasskeys.info?ref=passkeys.dev).
+
 ## Matrix {#matrix}
 
 This matrix represents the default capabilities for a user out of the box. Additional capabilities may be available when a user installs a different passkey provider.
