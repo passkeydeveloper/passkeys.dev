@@ -96,8 +96,8 @@
 
 [[footer]]
   parent = "Resources"
-  name = "FIDO Alliance"
-  pageRef = "https://fidoalliance.org"
+  name = "Consumer Site"
+  pageRef = "https://whatarepasskeys.info?ref=passkeys.dev"
   weight = 30
 
 [[footer]]
