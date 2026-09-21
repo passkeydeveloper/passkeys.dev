@@ -29,3 +29,5 @@ aliases:
 {{< /card-group >}}
 
 > The guidance on this site is currently targeted towards sites and services that are using either password only or password + OTP (SMS, app TOTP, app push, magic link) sign in flows. Future guidance will include more advanced and higher assurance scenarios.
+
+Looking for a consumer-centric explanation of passkeys? Check out [whatarepasskeys.info](https://whatarepasskeys.info?ref=passkeys.dev).
