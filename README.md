@@ -5,7 +5,7 @@
 The following dependencies are required to work on passkeys.dev locally:
 
 - [Golang 1.23.x](https://go.dev/dl/)
-- [Hugo Extended v0.158.x](https://gohugo.io/installation/)
+- [Hugo Extended v0.165.x](https://gohugo.io/installation/)
 - [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2#install) (installed globally)
 - [Dart Sass](https://github.com/sass/dart-sass?tab=readme-ov-file#using-dart-sass  )
 
