@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-HUGO_VERSION="0.158.0"
+HUGO_VERSION="0.165.0"
 DART_SASS_VERSION="1.98.0"
 
 # Install Hugo Extended
