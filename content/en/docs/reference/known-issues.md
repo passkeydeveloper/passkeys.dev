@@ -19,6 +19,7 @@ The following list of passkey providers have not implemented [User Verification]
 | 1Password     | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
 | 1Password     | Native           | ✅ Performs UV                                         | ✅ UV flag accurate                   |
 | Bitwarden     | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
+| Bitwarden     | Native           | ✅ Performs UV                                         | ✅ UV flag accurate                   |
 | KeepassXC     | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
 | Okta Personal | Extension        | ❌ Handles request without performing UV, sets UV true | ❌ Sets UV true without performing UV |
 | Okta Personal | Native           | ✅ Performs UV                                         | ✅ UV flag accurate                   |
