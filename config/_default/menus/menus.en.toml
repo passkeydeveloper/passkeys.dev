@@ -106,12 +106,18 @@
 
 [[footer]]
   parent = "Tools"
-  name = "Passkey Developer Tools"
-  url = "https://tools.passkeys.dev"
+  name = "Feature Detection"
+  url = "https://tools.passkeys.dev/featuredetect/"
   weight = 10
 
 [[footer]]
   parent = "Tools"
-  name = "WebAuthn Response Decoder"
-  url = "https://debugger.simplewebauthn.dev/"
+  name = "Related Origins Validator"
+  url = "https://tools.passkeys.dev/relatedorigins/"
   weight = 20
+
+[[footer]]
+  parent = "Tools"
+  name = "Response Decoder"
+  url = "https://tools.passkeys.dev/responsedecoder/"
+  weight = 30
